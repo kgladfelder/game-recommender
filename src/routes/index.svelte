@@ -3,10 +3,7 @@
 
 	<p>Current Tasks</p>
 	<ul>
-		<li>
-			Randomly choose a game from stored games when user presses "Choose for me" (games marked not
-			finished)
-		</li>
+		<li>Improve UI</li>
 	</ul>
 	<p>Project purpose:</p>
 	<ul>
@@ -19,7 +16,6 @@
 		</li>
 		<li>Give filters based on genre, hltb time, [other?]</li>
 		<li>If chosen game isn't wanted, reshuffle with that one added to exclueded list.</li>
-		<li>Improve UI</li>
 	</ul>
 
 	<p>Other ideas not fully fleshed out:</p>

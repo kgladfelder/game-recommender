@@ -1,7 +1,8 @@
 <script lang="ts">
-import { Genre } from '../../types';
+	import { Genre, Platform, type Game } from '../../types';
 
 	import { gameStore } from '../../stores';
+	import { goto } from '$app/navigation';
 
 	const setLocalStorage = () => {
 		localStorage.setItem('games', JSON.stringify($gameStore));
@@ -29,10 +30,22 @@ import { Genre } from '../../types';
 		}
 		return null;
 	};
+
+	const gotoAddGame = () => {
+		goto('/add-game');
+	};
+
+	let randGame: Game | undefined;
+
+	const chooseRandom = () => {
+		const possibleGames = $gameStore.filter(x => x.completedDate === undefined);
+		randGame = possibleGames[Math.floor(Math.random() * possibleGames.length)];
+	};
 </script>
 
 <div>
-	<a href="/add-game">Add Game</a>
+	<button on:click|preventDefault={gotoAddGame}>Add Game</button>
+	<button on:click|preventDefault={chooseRandom}>Random Game</button>
 	<table>
 		<tr>
 			<th>Completed</th>
@@ -57,8 +70,8 @@ import { Genre } from '../../types';
 					/></td
 				>
 				<td>{game.gameName}</td>
-				<td>{game.platform ?? 'Unknown'}</td>
-				<td>{game.genres?.map(x => Genre[x].toString()).join(', ') ?? 'Unkown'}</td>
+				<td>{game.platform !== undefined ? Platform[game.platform] : 'Unknown'}</td>
+				<td>{game.genres?.map((x) => Genre[x].toString()).join(', ') ?? 'Unkown'}</td>
 				<td>{game.mainStory ?? 'Unknown'}</td>
 				<td>{game.mainExtras ?? 'Unknown'}</td>
 				<td>{game.completionist ?? 'Unknown'}</td>
@@ -69,4 +82,11 @@ import { Genre } from '../../types';
 			</tr>
 		{/each}
 	</table>
+	{#if randGame}
+		<h3>{randGame.gameName}</h3>
+		<h4>{randGame.platform !== undefined ? Platform[randGame.platform] : 'Unknown'}</h4>
+		<p>Main Story: {randGame.mainStory}</p>
+		<p>Main Story + Extras: {randGame.mainExtras}</p>
+		<p>Completionist: {randGame.completionist}</p>
+	{/if}
 </div>

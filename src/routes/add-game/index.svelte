@@ -48,6 +48,10 @@
 		}
 	};
 
+	const cancel = () => {
+		goto('/game-list');
+	};
+
 	const stringToGenre = (str: string): Genre => {
 		let genreName = str.trim();
 		const genre = Genre[genreName as keyof typeof Genre];
@@ -68,8 +72,6 @@
 </script>
 
 <div>
-	<a href="/game-list">Cancel</a>
-
 	<form>
 		<label for="gameNameInput">Game Name:</label>
 		<input name="gameNameInput" bind:value={gameName} />
@@ -104,5 +106,6 @@
 		<input name="developerInput" bind:value={developer} />
 		<br />
 		<button on:click|preventDefault={addGame}>Add</button>
+		<button on:click|preventDefault={cancel}>Cancel</button>
 	</form>
 </div>
