@@ -1,20 +1,29 @@
 <script lang="ts">
 	import { Genre, Platform, type Game } from '../../types';
-
 	import { gameStore } from '../../stores';
-	import { goto } from '$app/navigation';
 
 	const setLocalStorage = () => {
 		localStorage.setItem('games', JSON.stringify($gameStore));
 	};
 
+	const editGame = (id: string) => {
+		const ind: number = $gameStore.findIndex((x) => x.id === id);
+		console.log(ind);
+		// TODO: Edit Modal
+		return null;
+	};
+
 	const removeGame = (id: string) => {
 		const ind: number = $gameStore.findIndex((x) => x.id === id);
-		if (ind > -1) {
-			$gameStore.splice(ind, 1);
-			$gameStore = $gameStore;
-			setLocalStorage();
-		}
+		console.log(ind);
+		// https://svelte-modals.mattjennings.io/
+		// https://github.com/mattjennings/svelte-modals/issues
+		// TODO: Are you sure indicator
+		// if (ind > -1) {
+		// 	$gameStore.splice(ind, 1);
+		// 	$gameStore = $gameStore;
+		// 	setLocalStorage();
+		// }
 		return null;
 	};
 
@@ -31,62 +40,88 @@
 		return null;
 	};
 
-	const gotoAddGame = () => {
-		goto('/add-game');
+	const addGame = () => {
+		// https://svelte-modals.mattjennings.io/
+		// https://github.com/mattjennings/svelte-modals/issues
+		// show('/add-game');
 	};
 
-	let randGame: Game | undefined;
-
-	const chooseRandom = () => {
-		const possibleGames = $gameStore.filter(x => x.completedDate === undefined);
-		randGame = possibleGames[Math.floor(Math.random() * possibleGames.length)];
+	const formatDate = (date: Date) => {
+		return new Date(date).toLocaleDateString('en-US', {
+			weekday: 'long',
+			year: 'numeric',
+			month: 'short',
+			day: '2-digit'
+		});
 	};
 </script>
 
-<div>
-	<button on:click|preventDefault={gotoAddGame}>Add Game</button>
-	<button on:click|preventDefault={chooseRandom}>Random Game</button>
-	<table>
-		<tr>
-			<th>Completed</th>
-			<th>Game Name</th>
-			<th>Platform</th>
-			<th>Genres</th>
-			<th>Main Story</th>
-			<th>Main + Extras</th>
-			<th>Completionist</th>
-			<th>Developer</th>
-			<th>Publisher</th>
-			<th>Date Added</th>
-			<th>Delete</th>
-		</tr>
-		{#each $gameStore as game}
+<div class="row">
+	<div class="col s1" />
+	<table class="col s10">
+		<thead>
 			<tr>
-				<td
-					><input
-						type="checkbox"
-						checked={game.completedDate ? true : false}
-						on:click={completeGame(game.id)}
-					/></td
-				>
-				<td>{game.gameName}</td>
-				<td>{game.platform !== undefined ? Platform[game.platform] : 'Unknown'}</td>
-				<td>{game.genres?.map((x) => Genre[x].toString()).join(', ') ?? 'Unkown'}</td>
-				<td>{game.mainStory ?? 'Unknown'}</td>
-				<td>{game.mainExtras ?? 'Unknown'}</td>
-				<td>{game.completionist ?? 'Unknown'}</td>
-				<td>{game.developer ?? 'Unknown'}</td>
-				<td>{game.publisher ?? 'Unknown'}</td>
-				<td>{game.createdDate.toLocaleString()}</td>
-				<td><button on:click={removeGame(game.id)}>Trash</button></td>
+				<th>Completed</th>
+				<th>Game Name</th>
+				<th>Platform</th>
+				<th>Genres</th>
+				<th>Main Story</th>
+				<th>Main + Extras</th>
+				<th>Completionist</th>
+				<th>Developer</th>
+				<th>Publisher</th>
+				<th>Date Added</th>
+				<th>
+					<button on:click={addGame} class="waves-effect waves-light btn">Add Game</button>
+				</th>
 			</tr>
-		{/each}
+		</thead>
+		<tbody>
+			{#each $gameStore as game}
+				<tr class={game.completedDate === undefined ? 'row' : 'strike'}>
+					<td>
+						<button
+							on:click={completeGame(game.id)}
+							class={game.completedDate === undefined
+								? 'waves-effect waves-light blue lighten-2 btn'
+								: 'waves-effect waves-dark grey lighten-2 black-text btn'}
+						>
+							{game.completedDate === undefined ? 'Complete' : 'Continue'}
+						</button>
+					</td>
+					<td>{game.gameName}</td>
+					<td>{game.platform !== undefined ? Platform[game.platform] : 'Unknown'}</td>
+					<td>{game.genres?.map((x) => Genre[x].toString()).join(', ') ?? 'Unkown'}</td>
+					<td>{game.mainStory ?? 'Unknown'}</td>
+					<td>{game.mainExtras ?? 'Unknown'}</td>
+					<td>{game.completionist ?? 'Unknown'}</td>
+					<td>{game.developer ?? 'Unknown'}</td>
+					<td>{game.publisher ?? 'Unknown'}</td>
+					<td>{formatDate(game.createdDate)}</td>
+					<td>
+						<button on:click={() => editGame(game.id)} class="waves-effect waves-light btn">
+							Edit
+						</button>
+						<button
+							on:click={() => removeGame(game.id)}
+							class="waves-effect waves-light red lighten-2 btn"
+						>
+							Delete
+						</button>
+					</td>
+				</tr>
+			{/each}
+		</tbody>
 	</table>
-	{#if randGame}
-		<h3>{randGame.gameName}</h3>
-		<h4>{randGame.platform !== undefined ? Platform[randGame.platform] : 'Unknown'}</h4>
-		<p>Main Story: {randGame.mainStory}</p>
-		<p>Main Story + Extras: {randGame.mainExtras}</p>
-		<p>Completionist: {randGame.completionist}</p>
-	{/if}
+	<div class="col s1" />
 </div>
+
+<style>
+	.strike {
+		text-decoration: line-through;
+	}
+
+	.row {
+		text-decoration: none;
+	}
+</style>
