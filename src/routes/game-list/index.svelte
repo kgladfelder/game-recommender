@@ -2,6 +2,9 @@
 	import { Genre, Platform, type Game } from '../../types';
 	import { gameStore } from '../../stores';
 
+	let confDelVis: Boolean = false;
+	let confDelGameId: string | undefined;
+
 	const setLocalStorage = () => {
 		localStorage.setItem('games', JSON.stringify($gameStore));
 	};
@@ -15,16 +18,31 @@
 
 	const removeGame = (id: string) => {
 		const ind: number = $gameStore.findIndex((x) => x.id === id);
-		console.log(ind);
-		// https://svelte-modals.mattjennings.io/
-		// https://github.com/mattjennings/svelte-modals/issues
-		// TODO: Are you sure indicator
+		confDelGameId = id;
 		// if (ind > -1) {
 		// 	$gameStore.splice(ind, 1);
 		// 	$gameStore = $gameStore;
 		// 	setLocalStorage();
 		// }
+		confDelVis = true;
 		return null;
+	};
+
+	const clearDelete = () => {
+		confDelVis = false;
+		confDelGameId = undefined;
+	};
+
+	const confirmDelete = (id: string) => {
+		const ind: number = $gameStore.findIndex((x) => x.id === id);
+		console.log(ind);
+		// if (ind > -1) {
+		// 	$gameStore.splice(ind, 1);
+		// 	$gameStore = $gameStore;
+		// 	setLocalStorage();
+		// }
+		confDelVis = false;
+		confDelGameId = undefined;
 	};
 
 	const completeGame = (id: string) => {
@@ -54,6 +72,10 @@
 			day: '2-digit'
 		});
 	};
+
+	// Possible data table replacement
+	// https://github.com/Kiho/svelte-datatable
+	// https://madewithsvelte.com/svelte-materialize-datatable
 </script>
 
 <div class="row">
@@ -72,7 +94,8 @@
 				<th>Publisher</th>
 				<th>Date Added</th>
 				<th>
-					<button on:click={addGame} class="waves-effect waves-light btn">Add Game</button>
+					<button on:click={addGame} class="waves-effect waves-light btn btn-width">Add Game</button
+					>
 				</th>
 			</tr>
 		</thead>
@@ -99,15 +122,34 @@
 					<td>{game.publisher ?? 'Unknown'}</td>
 					<td>{formatDate(game.createdDate)}</td>
 					<td>
-						<button on:click={() => editGame(game.id)} class="waves-effect waves-light btn">
-							Edit
-						</button>
-						<button
-							on:click={() => removeGame(game.id)}
-							class="waves-effect waves-light red lighten-2 btn"
-						>
-							Delete
-						</button>
+						{#if !confDelVis}
+							<button
+								on:click={() => editGame(game.id)}
+								class="waves-effect waves-light btn btn-half-width"
+							>
+								Edit
+							</button>
+							<button
+								on:click={() => removeGame(game.id)}
+								class="waves-effect waves-light red lighten-2 btn btn-half-width"
+							>
+								Delete
+							</button>
+						{/if}
+						{#if confDelVis && game.id === confDelGameId}
+							<button
+								on:click={() => clearDelete()}
+								class="waves-effect waves-light btn btn-half-width"
+							>
+								Cancel
+							</button>
+							<button
+								on:click={() => confirmDelete(game.id)}
+								class="waves-effect waves-light red lighten-2 btn btn-half-width"
+							>
+								Delete
+							</button>
+						{/if}
 					</td>
 				</tr>
 			{/each}
@@ -123,5 +165,13 @@
 
 	.row {
 		text-decoration: none;
+	}
+
+	.btn-width {
+		width: 12em;
+	}
+
+	.btn-half-width {
+		width: 5.75em;
 	}
 </style>
