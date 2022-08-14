@@ -1,10 +1,13 @@
 <script lang="ts">
 	import { Genre, Platform, type Game } from '../../types';
 	import { gameStore } from '../../stores';
-	import AddGame from '../../components/add-game/index.svelte';
+	import GameInformation from '../../components/game-information/index.svelte';
 	let confDelVis: boolean = false;
 	let confDelGameId: string | undefined;
 	let addGameModalVis: boolean = false;
+	let editGameModalVis: boolean = false;
+	let editedGame: Game | undefined = undefined;
+	let editedGameInd: number | undefined = undefined;
 
 	const setLocalStorage = () => {
 		localStorage.setItem('games', JSON.stringify($gameStore));
@@ -12,9 +15,20 @@
 
 	const editGame = (id: string) => {
 		const ind: number = $gameStore.findIndex((x) => x.id === id);
-		console.log(ind);
-		// TODO: Edit Modal
-		return null;
+		editedGameInd = ind;
+		editedGame = $gameStore.at(ind);
+		toggleEditGameModal();
+	};
+
+	const onEditGame = (editGameEvent: CustomEvent<Game>) => {
+		if (editedGameInd) {
+			$gameStore[editedGameInd] = editGameEvent.detail;
+			$gameStore = $gameStore;
+			setLocalStorage();
+		}
+		editedGame = undefined;
+		editedGameInd = undefined;
+		toggleEditGameModal();
 	};
 
 	const removeGame = (id: string) => {
@@ -56,6 +70,10 @@
 		addGameModalVis = !addGameModalVis;
 	};
 
+	const toggleEditGameModal = () => {
+		editGameModalVis = !editGameModalVis;
+	};
+
 	const onNewGame = (newGameEvent: CustomEvent<Game>) => {
 		if (newGameEvent.detail) {
 			$gameStore.push(newGameEvent.detail);
@@ -65,8 +83,12 @@
 		toggleAddGameModal();
 	};
 
-	const onCancel = () => {
+	const onAddGameCancel = () => {
 		toggleAddGameModal();
+	};
+
+	const onEditGameCancel = () => {
+		toggleEditGameModal();
 	};
 
 	const formatDate = (date: Date) => {
@@ -80,7 +102,20 @@
 </script>
 
 <div style="height: calc(100% - 64px);">
-	<AddGame visible={addGameModalVis} on:newGame={onNewGame} on:cancel={onCancel} />
+	<GameInformation visible={addGameModalVis} on:game={onNewGame} on:cancel={onAddGameCancel} />
+	<GameInformation
+		visible={editGameModalVis}
+		gameName={editedGame?.gameName}
+		mainStory={editedGame?.mainStory}
+		mainExtras={editedGame?.mainExtras}
+		completionist={editedGame?.completionist}
+		publisher={editedGame?.publisher}
+		developer={editedGame?.developer}
+		platform={editedGame?.platform}
+		genres={editedGame?.genres}
+		on:game={onEditGame}
+		on:cancel={onEditGameCancel}
+	/>
 	<div class="row">
 		<div class="col s1" />
 		<table class="col s10">
@@ -104,7 +139,7 @@
 				</tr>
 			</thead>
 			<tbody>
-				{#each $gameStore as game}
+				{#each $gameStore as game (game.id)}
 					<tr class={game.completedDate === undefined ? 'row' : 'strike'}>
 						<td>
 							<button
