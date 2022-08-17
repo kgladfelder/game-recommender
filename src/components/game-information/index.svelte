@@ -81,6 +81,7 @@
 <div class:hidden-modal="{!visible}" class:modal="{visible}">
 	{#if visible}
 		<div class="container" bind:this="{box}">
+			<!-- TODO call cancel event if clicked out of -->
 			<form class="row">
 				<div class="col s12">
 					<h6>Game Information:</h6>
