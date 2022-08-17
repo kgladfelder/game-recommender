@@ -1,5 +1,6 @@
 import '@testing-library/jest-dom';
 
+import { vi } from 'vitest';
 import { act, fireEvent, render, screen } from '@testing-library/svelte';
 import { Chance } from 'chance';
 
@@ -196,14 +197,24 @@ describe('should render properly when visibility is set', () => {
 		expect(screen.getByLabelText(Genre[genreChoice])).toBeChecked();
 	});
 
-	//TODO: Test cancel button
 	it('should send cancel dispatch if cancel button is pressed', async () => {
-		render(GameInformation, { visible: true });
+		const { component } = render(GameInformation, { visible: true });
+
+		const mockEvent = vi.fn();
+		component.$on('cancel', function (event) {
+			mockEvent(event.detail);
+		});
+
+		const cancelBtn = await screen.findByText("Cancel");
+
+		fireEvent.click(cancelBtn);
+
+		expect(mockEvent).toHaveBeenCalled();
+		expect(mockEvent).toHaveBeenCalledTimes(1);
 	});
 
-	//TODO: Test submit button
-    it('should send the game dispatch if the submit button is clicked', async () => {
-        const props = {
+	it('should send the game dispatch if the submit button is clicked', async () => {
+		const props = {
 			visible: true,
 			gameName: chance.word(),
 			mainStory: chance.normal({ mean: 30, dev: 5 }),
@@ -215,8 +226,25 @@ describe('should render properly when visibility is set', () => {
 			developer: chance.word(),
 		};
 
-		render(GameInformation, props);
-    });
+		const { component } = render(GameInformation, props);
+
+		const mockEvent = vi.fn();
+		component.$on('game', function (event) {
+			mockEvent(event.detail);
+		});
+
+		const submitBtn = await screen.findByText("Submit");
+
+		fireEvent.click(submitBtn);
+
+		expect(mockEvent).toHaveBeenCalled();
+		expect(mockEvent).toHaveBeenCalledTimes(1);
+		expect(mockEvent).toHaveBeenCalledWith(expect.objectContaining({
+			gameName: props.gameName,
+			platform: props.platform,
+			developer: props.developer
+		}));
+	});
 });
 
 describe('should be empty if not visible', () => {
