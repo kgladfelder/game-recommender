@@ -14,7 +14,7 @@
 
 <div>
 	<div class="row">
-		<div class="col s1 m1" />
+		<div class="col s1 m1"></div>
 		<div class="col s8 m6">
 			{#if randGame}
 				<div class="card cyan darken-2">
@@ -57,9 +57,8 @@
 					</div>
 					<div class="card-action">
 						<button
-							on:click={chooseRandom}
-							class="waves-effect waves-light cyan darken-1 btn-flat white-text"
-						>
+							on:click="{chooseRandom}"
+							class="waves-effect waves-light cyan darken-1 btn-flat white-text">
 							Choose Another
 						</button>
 					</div>

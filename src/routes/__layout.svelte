@@ -1,11 +1,7 @@
-<script lang="ts">
-	import { goto } from '$app/navigation';
-</script>
-
 <svelte:head>
 	<title>Rec Game</title>
 	<meta name="robots" content="noindex nofollow" />
-	<html lang="en" />
+	<html lang="en"></html>
 </svelte:head>
 
 <nav>
@@ -16,10 +12,10 @@
 				<a aria-label="Home" href="/">Home</a>
 			</li>
 			<li>
-				<a aria-label="Games List" href="/game-list"> Game List </a>
+				<a aria-label="Games List" href="/game-list">Games List</a>
 			</li>
 			<li>
-				<a aria-label="Game Selector" href="/game-selector"> Game Selector </a>
+				<a aria-label="Game Selector" href="/game-selector">Game Selector</a>
 			</li>
 		</ul>
 	</div>
