@@ -96,28 +96,30 @@
 			weekday: 'long',
 			year: 'numeric',
 			month: 'short',
-			day: '2-digit'
+			day: '2-digit',
 		});
 	};
 </script>
 
 <div style="height: calc(100% - 64px);">
-	<GameInformation visible={addGameModalVis} on:game={onNewGame} on:cancel={onAddGameCancel} />
 	<GameInformation
-		visible={editGameModalVis}
-		gameName={editedGame?.gameName}
-		mainStory={editedGame?.mainStory}
-		mainExtras={editedGame?.mainExtras}
-		completionist={editedGame?.completionist}
-		publisher={editedGame?.publisher}
-		developer={editedGame?.developer}
-		platform={editedGame?.platform}
-		genres={editedGame?.genres}
-		on:game={onEditGame}
-		on:cancel={onEditGameCancel}
-	/>
+		visible="{addGameModalVis}"
+		on:game="{onNewGame}"
+		on:cancel="{onAddGameCancel}" />
+	<GameInformation
+		visible="{editGameModalVis}"
+		gameName="{editedGame?.gameName}"
+		mainStory="{editedGame?.mainStory}"
+		mainExtras="{editedGame?.mainExtras}"
+		completionist="{editedGame?.completionist}"
+		publisher="{editedGame?.publisher}"
+		developer="{editedGame?.developer}"
+		platform="{editedGame?.platform}"
+		genres="{editedGame?.genres}"
+		on:game="{onEditGame}"
+		on:cancel="{onEditGameCancel}" />
 	<div class="row">
-		<div class="col s1" />
+		<div class="col s1"></div>
 		<table class="col s10">
 			<thead>
 				<tr>
@@ -132,7 +134,7 @@
 					<th>Publisher</th>
 					<th>Date Added</th>
 					<th>
-						<button on:click={toggleAddGameModal} class="waves-effect waves-light btn btn-width">
+						<button on:click="{toggleAddGameModal}" class="waves-effect waves-light btn btn-width">
 							Add Game
 						</button>
 					</th>
@@ -140,14 +142,13 @@
 			</thead>
 			<tbody>
 				{#each $gameStore as game (game.id)}
-					<tr class={game.completedDate === undefined ? 'row' : 'strike'}>
+					<tr class="{game.completedDate === undefined ? 'row' : 'strike'}">
 						<td>
 							<button
-								on:click={completeGame(game.id)}
-								class={game.completedDate === undefined
+								on:click="{completeGame(game.id)}"
+								class="{game.completedDate === undefined
 									? 'waves-effect waves-light blue lighten-2 btn'
-									: 'waves-effect waves-dark grey lighten-2 black-text btn'}
-							>
+									: 'waves-effect waves-dark grey lighten-2 black-text btn'}">
 								{game.completedDate === undefined ? 'Complete' : 'Continue'}
 							</button>
 						</td>
@@ -163,28 +164,24 @@
 						<td>
 							{#if !confDelVis}
 								<button
-									on:click={() => editGame(game.id)}
-									class="waves-effect waves-light btn btn-half-width"
-								>
+									on:click="{() => editGame(game.id)}"
+									class="waves-effect waves-light btn btn-half-width">
 									Edit
 								</button>
 								<button
-									on:click={() => removeGame(game.id)}
-									class="waves-effect waves-light red lighten-2 btn btn-half-width"
-								>
+									on:click="{() => removeGame(game.id)}"
+									class="waves-effect waves-light red lighten-2 btn btn-half-width">
 									Delete
 								</button>
 							{:else if confDelVis && game.id === confDelGameId}
 								<button
-									on:click={() => clearDelete()}
-									class="waves-effect waves-light btn btn-half-width"
-								>
+									on:click="{() => clearDelete()}"
+									class="waves-effect waves-light btn btn-half-width">
 									Cancel
 								</button>
 								<button
-									on:click={() => confirmDelete(game.id)}
-									class="waves-effect waves-light red lighten-2 btn btn-half-width"
-								>
+									on:click="{() => confirmDelete(game.id)}"
+									class="waves-effect waves-light red lighten-2 btn btn-half-width">
 									Delete
 								</button>
 							{/if}
@@ -193,7 +190,7 @@
 				{/each}
 			</tbody>
 		</table>
-		<div class="col s1" />
+		<div class="col s1"></div>
 	</div>
 </div>
 

@@ -11,7 +11,10 @@
 	</ul>
 	<p>Project purpose:</p>
 	<ul>
-		<li>Pull playtime data from HLTB & cache on server for 1 day (?) [https://github.com/ckatzorke/howlongtobeat]</li>
+		<li>
+			Pull playtime data from HLTB & cache on server for 1 day (?)
+			[https://github.com/ckatzorke/howlongtobeat]
+		</li>
 		<li>After marking complete. Prompt to mark completed time on HLTB</li>
 		<li>Export/import data to move to different computer</li>
 		<li>

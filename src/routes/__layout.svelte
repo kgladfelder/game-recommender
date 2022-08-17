@@ -1,7 +1,7 @@
 <svelte:head>
 	<title>Rec Game</title>
 	<meta name="robots" content="noindex nofollow" />
-	<html lang="en" />
+	<html lang="en"></html>
 </svelte:head>
 
 <nav>
