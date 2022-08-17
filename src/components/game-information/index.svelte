@@ -52,81 +52,119 @@
 		dispatch('cancel');
 		cleanUp();
 	};
+
+	const getGenres = () => {
+		const keys = Object.values(Genre);
+		const gs: { key: number; value: string }[] = [];
+
+		for (let key of keys) {
+			if (!isNaN(Number(key)) && Genre[Number(key)] !== "Undefined") {
+				gs.push({ key: Number(key), value: Genre[Number(key)] });
+			}
+		}
+		return gs;
+	};
+
+	const getPlatforms = () => {
+		const keys = Object.values(Platform);
+		const ps: { key: number; value: string }[] = [];
+
+		for (let key of keys) {
+			if (!isNaN(Number(key)) && Platform[Number(key)] !== "Unknown") {
+				ps.push({ key: Number(key), value: Platform[Number(key)] });
+			}
+		}
+		return ps;
+	};
 </script>
 
 <div class:hidden-modal={!visible} class:modal={visible}>
 	{#if visible}
-	<div class="container" bind:this={box}>
-		<form class="row">
-			<div class="col s12">
-				<h6>Game Information:</h6>
-			</div>
-			<div class="input-field col s12">
-				<label for="gameNameInput" class:active={gameName}>Game Name</label>
-				<input id="gameNameInput" bind:value={gameName} type="text" />
-			</div>
-			<div>
-				<label for="platformInput" class="col s12">Platform</label>
-				{#each Object.entries(Platform) as [key, value]}
-					{#if isNaN(parseInt(key)) && key !== "Unknown"}
-					<label class="col s11 offset-s1 m3 offset-m1">
-						<input bind:group={platform} type="radio" name="platformInput" value={value} />
-						<span>{key}</span>
-					</label>
-					{/if}
-				{/each}
-			</div>
-			<div class="input-field col s12 m6">
-				<label for="developerInput" class:active={developer}>Developer</label>
-				<input id="developerInput" bind:value={developer} autocomplete="off" type="text" />
-			</div>
-			<div class="input-field col s12 m6">
-				<label for="publisherInput" class:active={publisher}>Publisher</label>
-				<input id="publisherInput" bind:value={publisher} autocomplete="off" type="text" />
-			</div>
-			<div>
-				<label for="genresInput" class="col s12">Genres</label>
-				{#each Object.entries(Genre) as [key, value]}
-					{#if isNaN(parseInt(key)) && key !== "Unknown"}
-					<div class="col s5 offset-s1 m3 offset-m1">
-						<label>
-							<input type="checkbox" bind:group={genres} name="genres" value={value} />
-							<span>{key}</span>
+		<div class="container" bind:this={box}>
+			<form class="row">
+				<div class="col s12">
+					<h6>Game Information:</h6>
+				</div>
+				<div class="input-field col s12">
+					<label for="gameNameInput" class:active={gameName}>Game Name</label>
+					<input id="gameNameInput" bind:value={gameName} type="text" />
+				</div>
+				<div>
+					<label for="platformInput" class="col s12">Platform</label>
+					{#each getPlatforms() as pf}
+						<label for="platform-{pf.value}" class="col s11 offset-s1 m3 offset-m1">
+							<input
+								id="platform-{pf.value}"
+								bind:group={platform}
+								type="radio"
+								name="platformInput"
+								value={pf.key}
+							/>
+							<span>{pf.value}</span>
 						</label>
-					</div>
-					{/if}
-				{/each}
-			</div>
-			<div class="col s12">
-				<h6>Hours to Complete:</h6>
-			</div>
-			<div class="input-field col s12 m4">
-				<label for="mainstoryInput" class:active={mainStory}>Main Story:</label>
-				<input id="mainstoryInput" bind:value={mainStory} type="number" autocomplete="off" />
-			</div>
-			<div class="input-field  col s12 m4">
-				<label for="mainextrasInput" class:active={mainExtras}>Main Story + Extras</label>
-				<input id="mainextrasInput" bind:value={mainExtras} type="number" autocomplete="off" />
-			</div>
-			<div class="input-field col s12 m4">
-				<label for="completionistInput" class:active={completionist}>Completionist</label>
-				<input
-					id="completionistInput"
-					bind:value={completionist}
-					type="number"
-					autocomplete="off"
-				/>
-			</div>
-			<div class="col s2 offset-s10">
-				<button on:click|preventDefault={cancel} class="waves-effect waves-light red lighten-2 btn">
-					Cancel
-				</button>
-				<button on:click|preventDefault={submitGame} class="waves-effect waves-light btn">
-					Submit
-				</button>
-			</div>
-		</form>
-	</div>
+					{/each}
+				</div>
+				<div class="input-field col s12 m6">
+					<label for="developerInput" class:active={developer}>Developer</label>
+					<input id="developerInput" bind:value={developer} autocomplete="off" type="text" />
+				</div>
+				<div class="input-field col s12 m6">
+					<label for="publisherInput" class:active={publisher}>Publisher</label>
+					<input id="publisherInput" bind:value={publisher} autocomplete="off" type="text" />
+				</div>
+				<div>
+					<label for="genresInput" class="col s12">Genres</label>
+					{#each getGenres() as gr}
+						<label for="genres-{gr.value}" class="col s5 offset-s1 m3 offset-m1">
+							<input
+								id="genres-{gr.value}"
+								type="checkbox"
+								bind:group={genres}
+								name="genres"
+								value={gr.key}
+							/>
+							<span>{gr.value}</span>
+						</label>
+					{/each}
+				</div>
+				<div class="col s12">
+					<h6>Hours to Complete:</h6>
+				</div>
+				<div class="input-field col s12 m4">
+					<label for="mainstoryInput" class:active={mainStory}>Main Story</label>
+					<input id="mainstoryInput" bind:value={mainStory} type="number" autocomplete="off" />
+				</div>
+				<div class="input-field  col s12 m4">
+					<label for="mainextrasInput" class:active={mainExtras}>Main Story + Extras</label>
+					<input id="mainextrasInput" bind:value={mainExtras} type="number" autocomplete="off" />
+				</div>
+				<div class="input-field col s12 m4">
+					<label for="completionistInput" class:active={completionist}>Completionist</label>
+					<input
+						id="completionistInput"
+						bind:value={completionist}
+						type="number"
+						autocomplete="off"
+					/>
+				</div>
+				<div class="col s2 offset-s10">
+					<button
+						id="cancel-btn"
+						on:click|preventDefault={cancel}
+						class="waves-effect waves-light red lighten-2 btn"
+					>
+						Cancel
+					</button>
+					<button
+						id="submit-btn"
+						on:click|preventDefault={submitGame}
+						class="waves-effect waves-light btn"
+					>
+						Submit
+					</button>
+				</div>
+			</form>
+		</div>
 	{/if}
 </div>
 
