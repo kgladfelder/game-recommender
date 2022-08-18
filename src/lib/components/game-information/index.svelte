@@ -1,5 +1,4 @@
 <script lang="ts">
-	import { v4 } from 'uuid';
 	import { createEventDispatcher } from 'svelte';
 
 	import { Genre, Platform, type Game } from '$lib/types';
@@ -30,9 +29,9 @@
 		box.scrollTop = 0;
 	};
 
-	const submitGame = () => {
+	const submitGame = async () => {
 		const game: Game = {
-			id: v4(),
+			id: crypto.randomUUID(),
 			createdDate: new Date(),
 			gameName,
 			platform,
@@ -78,9 +77,13 @@
 	};
 </script>
 
-<div class:hidden-modal="{!visible}" class:modal="{visible}">
+<div class:hidden-modal="{!visible}" class:modal="{visible}" on:click="{() => cancel()}">
 	{#if visible}
-		<div class="container" bind:this="{box}">
+		<div
+			id="edit-modal"
+			class="container"
+			bind:this="{box}"
+			on:click="{(event) => event.stopPropagation()}">
 			<!-- TODO call cancel event if clicked out of -->
 			<form class="row">
 				<div class="col s12">
@@ -88,7 +91,7 @@
 				</div>
 				<div class="input-field col s12">
 					<label for="gameNameInput" class:active="{gameName}">Game Name</label>
-					<input id="gameNameInput" bind:value="{gameName}" type="text" />
+					<input id="gameNameInput" bind:value="{gameName}" autocomplete="off" type="text" />
 				</div>
 				<div>
 					<label for="platformInput" class="col s12">Platform</label>

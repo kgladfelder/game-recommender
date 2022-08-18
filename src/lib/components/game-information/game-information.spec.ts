@@ -205,7 +205,7 @@ describe('should render properly when visibility is set', () => {
 			mockEvent(event.detail);
 		});
 
-		const cancelBtn = await screen.findByText("Cancel");
+		const cancelBtn = await screen.findByText('Cancel');
 
 		fireEvent.click(cancelBtn);
 
@@ -233,17 +233,19 @@ describe('should render properly when visibility is set', () => {
 			mockEvent(event.detail);
 		});
 
-		const submitBtn = await screen.findByText("Submit");
+		const submitBtn = await screen.findByText('Submit');
 
 		fireEvent.click(submitBtn);
 
 		expect(mockEvent).toHaveBeenCalled();
 		expect(mockEvent).toHaveBeenCalledTimes(1);
-		expect(mockEvent).toHaveBeenCalledWith(expect.objectContaining({
-			gameName: props.gameName,
-			platform: props.platform,
-			developer: props.developer
-		}));
+		expect(mockEvent).toHaveBeenCalledWith(
+			expect.objectContaining({
+				gameName: props.gameName,
+				platform: props.platform,
+				developer: props.developer,
+			})
+		);
 	});
 });
 

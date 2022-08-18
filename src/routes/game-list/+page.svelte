@@ -83,6 +83,12 @@
 		toggleAddGameModal();
 	};
 
+	// const testCall = async () => {
+	// 	const res = await fetch(`api/game-search?gameName=${gameName}`);
+	// 	console.log(res);
+	// }
+
+
 	const onAddGameCancel = () => {
 		toggleAddGameModal();
 	};

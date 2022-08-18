@@ -66,3 +66,17 @@ export enum Genre {
 	'Visual Novel',
 	'Undefined',
 }
+
+export type hltbSearch = {
+	detailId: string,
+	gameName: string,
+	gameDescription: string,
+	platforms: string[],
+	gameImage: string,
+	timeLabels: string[][],
+	main: number,
+	mainExtra: number,
+	complete: number,
+	distancePercentage: number,
+	searchGameName: string
+}
