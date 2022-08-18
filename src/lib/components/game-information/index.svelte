@@ -2,7 +2,7 @@
 	import { v4 } from 'uuid';
 	import { createEventDispatcher } from 'svelte';
 
-	import { Genre, Platform, type Game } from '../../types';
+	import { Genre, Platform, type Game } from '$lib/types';
 
 	export let gameName: string = '';
 	export let mainStory: number | undefined = undefined;

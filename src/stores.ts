@@ -1,6 +1,6 @@
 import { writable } from 'svelte/store';
 
-import type { Game } from './types';
+import type { Game } from './lib/types';
 
 let gameSet: Game[] = [];
 if (typeof window !== 'undefined') {

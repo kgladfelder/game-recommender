@@ -1,7 +1,7 @@
 <script lang="ts">
-	import { Genre, Platform, type Game } from '../../types';
+	import { Genre, Platform, type Game } from '$lib/types';
 	import { gameStore } from '../../stores';
-	import GameInformation from '../../components/game-information/index.svelte';
+	import GameInformation from '$lib/components/game-information/index.svelte';
 	let confDelVis: boolean = false;
 	let confDelGameId: string | undefined;
 	let addGameModalVis: boolean = false;
