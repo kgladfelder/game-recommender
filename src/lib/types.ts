@@ -72,11 +72,14 @@ export type hltbSearch = {
 	gameName: string,
 	gameDescription: string,
 	platforms: string[],
+	genres: string[],
 	gameImage: string,
 	timeLabels: string[][],
 	main: number,
 	mainExtra: number,
 	complete: number,
 	distancePercentage: number,
-	searchGameName: string
+	searchGameName: string,
+	publisher: string,
+	developer: string
 }

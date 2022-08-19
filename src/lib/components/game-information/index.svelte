@@ -3,14 +3,16 @@
 
 	import { Genre, Platform, type Game } from '$lib/types';
 
-	export let gameName: string = '';
-	export let mainStory: number | undefined = undefined;
-	export let mainExtras: number | undefined = undefined;
-	export let completionist: number | undefined = undefined;
+	export let id: string;
+	export let createdDate: Date;
+	export let gameName: string;
+	export let mainStory: number | undefined;
+	export let mainExtras: number | undefined; 
+	export let completionist: number | undefined;
 	export let genres: number[] = [];
-	export let platform: number | undefined = undefined;
-	export let publisher: string = '';
-	export let developer: string = '';
+	export let platform: number | undefined;
+	export let publisher: string | undefined;
+	export let developer: string | undefined;
 	export let visible: boolean;
 
 	let box: HTMLDivElement;
@@ -18,21 +20,16 @@
 	const dispatch = createEventDispatcher<{ game: Game; cancel: void }>();
 
 	const cleanUp = () => {
-		gameName = '';
-		platform = undefined;
-		mainStory = undefined;
-		mainExtras = undefined;
-		completionist = undefined;
 		genres = [];
-		publisher = '';
-		developer = '';
-		box.scrollTop = 0;
+		if (box) {
+			box.scrollTop = 0;
+		}
 	};
 
 	const submitGame = async () => {
 		const game: Game = {
-			id: crypto.randomUUID(),
-			createdDate: new Date(),
+			id: id,
+			createdDate: createdDate,
 			gameName,
 			platform,
 			mainStory,
@@ -84,7 +81,6 @@
 			class="container"
 			bind:this="{box}"
 			on:click="{(event) => event.stopPropagation()}">
-			<!-- TODO call cancel event if clicked out of -->
 			<form class="row">
 				<div class="col s12">
 					<h6>Game Information:</h6>
@@ -148,7 +144,7 @@
 						type="number"
 						autocomplete="off" />
 				</div>
-				<div class="col s2 offset-s10">
+				<div class="col s3 offset-s9">
 					<button
 						id="cancel-btn"
 						on:click|preventDefault="{cancel}"

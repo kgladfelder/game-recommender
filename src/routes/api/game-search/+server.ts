@@ -121,13 +121,16 @@ export async function GET({ url }: RequestEvent) {
 				gameName,
 				gameDescription: '',
 				platforms: [],
+				genres: [],
 				gameImage,
 				timeLabels,
 				main,
 				mainExtra,
 				complete,
 				distancePercentage: hltbCalcDistancePercentage(gameName, searchGameName),
-				searchGameName
+				searchGameName,
+				publisher: "",
+				developer: ""
 			};
 			results.push(entry);
 		});
