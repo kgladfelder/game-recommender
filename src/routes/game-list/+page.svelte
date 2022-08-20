@@ -116,6 +116,7 @@
 			developer="{editedGame.developer}"
 			platform="{editedGame.platform}"
 			genres="{editedGame.genres}"
+			releaseDates="{editedGame.releaseDates}"
 			on:game="{onEditGame}"
 			on:cancel="{onEditGameCancel}" />
 	{/if}
