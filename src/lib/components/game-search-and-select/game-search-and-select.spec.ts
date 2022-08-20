@@ -8,7 +8,11 @@ import { Genre, Platform, type Game } from '$lib/types';
 import GameSearchAndSelect from './index.svelte';
 
 describe('game search', () => {
-    it('should render', () => {
-        render(GameSearchAndSelect);
-    })
+	it('should render visible', () => {
+		render(GameSearchAndSelect, { visible: true });
+	});
+
+	it('should not render visible', () => {
+		render(GameSearchAndSelect, { visible: false });
+	});
 });

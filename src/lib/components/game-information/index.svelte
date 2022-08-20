@@ -1,18 +1,19 @@
 <script lang="ts">
 	import { createEventDispatcher } from 'svelte';
 
-	import { Genre, Platform, type Game } from '$lib/types';
+	import { Genre, Platform, type Game, type ReleaseDates } from '$lib/types';
 
 	export let id: string;
 	export let createdDate: Date;
 	export let gameName: string;
 	export let mainStory: number | undefined;
-	export let mainExtras: number | undefined; 
+	export let mainExtras: number | undefined;
 	export let completionist: number | undefined;
 	export let genres: number[] = [];
 	export let platform: number | undefined;
 	export let publisher: string | undefined;
 	export let developer: string | undefined;
+	export let releaseDates: ReleaseDates | undefined;
 	export let visible: boolean;
 
 	let box: HTMLDivElement;
@@ -38,6 +39,7 @@
 			genres,
 			publisher,
 			developer,
+			releaseDates
 		};
 		// TODO Validation in modal
 		dispatch('game', game);

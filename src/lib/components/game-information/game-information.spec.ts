@@ -30,6 +30,11 @@ describe('should render properly when visibility is set', () => {
 			platform: undefined,
 			publisher: chance.word(),
 			developer: chance.word(),
+			releaseDates: {
+				northAmerica: chance.date(),
+				europe: chance.date(),
+				japan: chance.date()
+			}
 		};
 	});
 
@@ -193,7 +198,6 @@ describe('should render properly when visibility is set', () => {
 				expect(screen.getByLabelText(Genre[genre])).not.toBeChecked();
 			}
 		}
-
 	});
 
 	it('should send cancel dispatch if cancel button is pressed', async () => {
@@ -220,7 +224,7 @@ describe('should render properly when visibility is set', () => {
 			mockEvent(event.detail);
 		});
 
-		if(container.children[0]?.children[0]){ 
+		if (container.children[0]?.children[0]) {
 			fireEvent.click(container.children[0].children[0]);
 		}
 
@@ -267,6 +271,11 @@ describe('should be empty if not visible', () => {
 			platform: chance.pickone(getPlatformKeys()),
 			publisher: chance.word(),
 			developer: chance.word(),
+			releaseDates: {
+				northAmerica: chance.date(),
+				europe: chance.date(),
+				japan: chance.date()
+			}
 		};
 	});
 

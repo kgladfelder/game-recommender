@@ -99,7 +99,10 @@
 </script>
 
 <div style="height: calc(100% - 64px);">
-	<GameSearchAndSelect visible="{addGameModalVis}" on:cancel="{onAddGameCancel}" on:game="{onNewGameRet}" />
+	<GameSearchAndSelect
+		visible="{addGameModalVis}"
+		on:cancel="{onAddGameCancel}"
+		on:game="{onNewGameRet}" />
 	{#if editedGame}
 		<GameInformation
 			visible="{editGameModalVis}"

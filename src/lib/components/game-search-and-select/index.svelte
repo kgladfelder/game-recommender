@@ -8,46 +8,51 @@
 	let searchResults: hltbSearch[] = [];
 	let searched: boolean = false;
 
-	const dispatch = createEventDispatcher<{ game: Game, cancel: void }>();
+	const dispatch = createEventDispatcher<{ game: Game; cancel: void }>();
 
 	const searchGame = async () => {
 		if (gameName) {
 			const response = await fetch(`api/game-search?gameName=${gameName}`);
 			const data = await response.json();
-			searchResults = data.map((r: hltbSearch) => {
-				return { ...r };
+			searchResults = data.map((hltbResult: hltbSearch) => {
+				return { ...hltbResult };
 			});
 			searched = true;
 		}
 	};
 
-    const strToGenre = (search: string): Genre => {
-        return Object.values(Genre).indexOf(search);
-    }
+	const strToGenre = (search: string): Genre => {
+		return Object.values(Genre).indexOf(search);
+	};
 
 	const getDetail = async (gameId: string) => {
 		const response = await fetch(`api/game-details?id=${gameId}`);
-		
-        const data: hltbSearch = await response.json();
-        console.log(data);
-        // TODO: Platform? May need to rethink platform process
-        dispatch('game', {
-            id: crypto.randomUUID(),
-            createdDate: new Date(),
-            gameName: data.gameName,
-            mainStory: data.main,
-            mainExtras: data.mainExtra,
-            completionist: data.complete,
-            genres: data.genres.map(strToGenre).filter(x => x >= 0),
-            publisher: data.publisher,
-            developer: data.developer
-        });
+
+		const data: hltbSearch = await response.json();
+		console.log(data);
+		// TODO: Platform? May need to rethink platform process
+		dispatch('game', {
+			id: crypto.randomUUID(),
+			createdDate: new Date(),
+			gameName: data.gameName,
+			mainStory: data.main,
+			mainExtras: data.mainExtra,
+			completionist: data.complete,
+			genres: data.genres.map(strToGenre).filter((x) => x >= 0),
+			publisher: data.publisher,
+			developer: data.developer,
+			releaseDates: {
+				northAmerica: data.naRelease,
+				europe: data.euRelease,
+				japan: data.jpRelease
+			}
+		});
 	};
 
 	const cleanUp = () => {
 		gameName = '';
 		searchResults = [];
-        searched = false;
+		searched = false;
 		if (box) {
 			box.scrollTop = 0;
 		}
@@ -142,11 +147,11 @@
 	}
 
 	.results {
-        height: calc(50%);
+		height: calc(50%);
 		overflow: auto;
 	}
 
-    .card-title {
-        font-weight: 500;
-    }
+	.card-title {
+		font-weight: 500;
+	}
 </style>

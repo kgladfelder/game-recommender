@@ -35,20 +35,23 @@ export async function GET({ url }: RequestEvent) {
 		method: 'POST',
 		headers: {
 			'Content-type': 'application/x-www-form-urlencoded',
-			'origin': 'https://howlongtobeat.com',
-			'referer': 'https://howlongtobeat.com'
+			origin: 'https://howlongtobeat.com',
+			referer: 'https://howlongtobeat.com',
 		},
-	}).then(function (response) {
-		return response.text();
-	}).then(function (data) {
-		return data;
-	}).catch(error => {
-		if (error.response.status !== 200) {
-			throw new Error(`Got non-200 status code from howlongtobeat.com [${error.response.status}]
+	})
+		.then(function (response) {
+			return response.text();
+		})
+		.then(function (data) {
+			return data;
+		})
+		.catch((error) => {
+			if (error.response.status !== 200) {
+				throw new Error(`Got non-200 status code from howlongtobeat.com [${error.response.status}]
 			${JSON.stringify(error.response)}
 		  `);
-		}
-	});
+			}
+		});
 
 	if (!resultData) {
 		throw new Error('No data returned;');
@@ -82,33 +85,15 @@ export async function GET({ url }: RequestEvent) {
 							type.startsWith('Single-Player') ||
 							type.startsWith('Solo')
 						) {
-							const time: number = hltbParseTime(
-								$(this)
-									.next()
-									.text()
-							);
+							const time: number = hltbParseTime($(this).next().text());
 							main = time;
 							timeLabels.push(['gameplayMain', type]);
-						} else if (
-							type.startsWith('Main + Extra') ||
-							type.startsWith('Co-Op')
-						) {
-							const time: number = hltbParseTime(
-								$(this)
-									.next()
-									.text()
-							);
+						} else if (type.startsWith('Main + Extra') || type.startsWith('Co-Op')) {
+							const time: number = hltbParseTime($(this).next().text());
 							mainExtra = time;
 							timeLabels.push(['gameplayMainExtra', type]);
-						} else if (
-							type.startsWith('Completionist') ||
-							type.startsWith('Vs.')
-						) {
-							const time: number = hltbParseTime(
-								$(this)
-									.next()
-									.text()
-							);
+						} else if (type.startsWith('Completionist') || type.startsWith('Vs.')) {
+							const time: number = hltbParseTime($(this).next().text());
 							complete = time;
 							timeLabels.push(['gameplayCompletionist', type]);
 						}
@@ -129,8 +114,8 @@ export async function GET({ url }: RequestEvent) {
 				complete,
 				distancePercentage: hltbCalcDistancePercentage(gameName, searchGameName),
 				searchGameName,
-				publisher: "",
-				developer: ""
+				publisher: '',
+				developer: '',
 			};
 			results.push(entry);
 		});
