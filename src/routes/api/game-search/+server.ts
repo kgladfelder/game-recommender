@@ -1,5 +1,6 @@
 import { error, json } from '@sveltejs/kit';
 import type { RequestEvent } from './$types';
+
 import * as cheerio from 'cheerio';
 
 import type { hltbSearch } from '$lib/types';
@@ -47,9 +48,7 @@ export async function GET({ url }: RequestEvent) {
 		})
 		.catch((error) => {
 			if (error.response.status !== 200) {
-				throw new Error(`Got non-200 status code from howlongtobeat.com [${error.response.status}]
-			${JSON.stringify(error.response)}
-		  `);
+				throw new Error(`Got non-200 status code from howlongtobeat.com [${error.response.status}]: ${JSON.stringify(error.response)}`);
 			}
 		});
 
@@ -116,6 +115,9 @@ export async function GET({ url }: RequestEvent) {
 				searchGameName,
 				publisher: '',
 				developer: '',
+				naRelease: undefined,
+				euRelease: undefined,
+				jpRelease: undefined,
 			};
 			results.push(entry);
 		});

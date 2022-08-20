@@ -27,10 +27,7 @@
 
 	const getDetail = async (gameId: string) => {
 		const response = await fetch(`api/game-details?id=${gameId}`);
-
 		const data: hltbSearch = await response.json();
-		console.log(data);
-		// TODO: Platform? May need to rethink platform process
 		dispatch('game', {
 			id: crypto.randomUUID(),
 			createdDate: new Date(),
@@ -44,8 +41,8 @@
 			releaseDates: {
 				northAmerica: data.naRelease,
 				europe: data.euRelease,
-				japan: data.jpRelease
-			}
+				japan: data.jpRelease,
+			},
 		});
 	};
 
@@ -93,7 +90,7 @@
 			<div class="row results">
 				{#each searchResults as result (result.detailId)}
 					<div class="col s6 m4 l3">
-						<div class="card small blue lighten-3">
+						<div class="card small blue lighten-3" data-testid="{'card-game-' + result.gameName}">
 							<div class="card-content">
 								<span class="card-title">{result.gameName}</span>
 								<p>Main Game: {result.main}</p>

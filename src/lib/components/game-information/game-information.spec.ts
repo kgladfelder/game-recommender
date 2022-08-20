@@ -240,7 +240,7 @@ describe('should render properly when visibility is set', () => {
 			mockEvent(event.detail);
 		});
 
-		const submitBtn = await screen.findByText('Submit');
+		const submitBtn = screen.getByText('Submit');
 
 		fireEvent.click(submitBtn);
 

@@ -32,9 +32,7 @@ export async function GET({ url }: RequestEvent) {
 		})
 		.catch((error) => {
 			if (error.response.status !== 200) {
-				throw new Error(`Got non-200 status code from howlongtobeat.com [${error.response.status}]
-			${JSON.stringify(error.response)}
-		  `);
+				throw new Error(`Got non-200 status code from howlongtobeat.com [${error.response.status}]: ${JSON.stringify(error.response)}`);
 			}
 		});
 
