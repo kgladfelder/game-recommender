@@ -12,8 +12,10 @@
 
 	const searchGame = async () => {
 		if (gameName) {
+			console.log(gameName);
 			const response = await fetch(`api/game-search?gameName=${gameName}`);
 			const data = await response.json();
+			console.log(response);
 			searchResults = data.map((hltbResult: hltbSearch) => {
 				return { ...hltbResult };
 			});
