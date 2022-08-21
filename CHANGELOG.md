@@ -1,5 +1,15 @@
 # Changelog
 
+## [1.1.0](https://github.com/kgladfelder/game-recommender/compare/v1.0.0...v1.1.0) (2022-08-21)
+
+
+### Features
+
+* ability to search and add by game name ([86ac727](https://github.com/kgladfelder/game-recommender/commit/86ac727496eb4d534e83224089556a5a8f5fda2a))
+* add game search and game detail ([272fa57](https://github.com/kgladfelder/game-recommender/commit/272fa57baf62614fe36ed2b0be8fdbc62757b06b))
+* husky and commitlint ([7a03fa2](https://github.com/kgladfelder/game-recommender/commit/7a03fa2e236d88be59e10d0fdd8f36e503108a4f))
+* update svelte.kit to 1.0.0 ([e0f4012](https://github.com/kgladfelder/game-recommender/commit/e0f401299a6d4a4918eb2014d24477a7d4df6d15))
+
 ## 1.0.0 (2022-08-17)
 
 
