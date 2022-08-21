@@ -33,8 +33,8 @@ describe('should render properly when visibility is set', () => {
 			releaseDates: {
 				northAmerica: chance.date(),
 				europe: chance.date(),
-				japan: chance.date()
-			}
+				japan: chance.date(),
+			},
 		};
 	});
 
@@ -274,8 +274,8 @@ describe('should be empty if not visible', () => {
 			releaseDates: {
 				northAmerica: chance.date(),
 				europe: chance.date(),
-				japan: chance.date()
-			}
+				japan: chance.date(),
+			},
 		};
 	});
 

@@ -39,7 +39,7 @@
 			genres,
 			publisher,
 			developer,
-			releaseDates
+			releaseDates,
 		};
 		// TODO Validation in modal
 		dispatch('game', game);

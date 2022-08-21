@@ -12,34 +12,34 @@ describe('game search', () => {
 
 	beforeEach(() => {
 		games = buildManyHltbSearchResults(chance);
-	})
+	});
 
 	it('should render visible', () => {
 		render(GameSearchAndSelect, { visible: true });
-		expect(screen.queryByText("Game Search:")).toBeInTheDocument();
+		expect(screen.queryByText('Game Search:')).toBeInTheDocument();
 	});
 
 	it('should search for a game and return results', async () => {
 		// TODO: Figure out how to intercept the api call
 
 		render(GameSearchAndSelect, { visible: true });
-		expect(screen.queryByText("Game Search:")).toBeInTheDocument();
+		expect(screen.queryByText('Game Search:')).toBeInTheDocument();
 
-		const inputBox = screen.getByLabelText("Game Name");
-		const submitBtn = screen.getByText('Submit');
+		const inputBox = screen.getByLabelText('Game Name');
+		// const submitBtn = screen.getByText('Submit');
 
 		await act(() => {
 			fireEvent.input(inputBox, { target: { value: games[0].searchGameName } });
 		});
 
-		fireEvent.click(submitBtn);
-	})
+		// fireEvent.click(submitBtn);
+	});
 });
 
 describe('hidden game search', () => {
 	it('should not render visible', () => {
 		render(GameSearchAndSelect, { visible: false });
-		expect(screen.queryByText("Game Search:")).not.toBeInTheDocument();
+		expect(screen.queryByText('Game Search:')).not.toBeInTheDocument();
 	});
 });
 
@@ -51,7 +51,7 @@ const buildManyHltbSearchResults = (chance: Chance.Chance): hltbSearch[] => {
 		ret.push(buildhltbSearchResult(chance, searchGameName));
 	}
 	return ret;
-}
+};
 
 const buildhltbSearchResult = (chance: Chance.Chance, searchGameName: string): hltbSearch => {
 	return {
@@ -72,10 +72,10 @@ const buildhltbSearchResult = (chance: Chance.Chance, searchGameName: string): h
 		naRelease: undefined,
 		euRelease: undefined,
 		jpRelease: undefined,
-	}
-}
+	};
+};
 
-const platforms = ["Steam", "Switch", "PS5", "Series S/X", "Android", "iOS"];
+const platforms = ['Steam', 'Switch', 'PS5', 'Series S/X', 'Android', 'iOS'];
 const genres = [
 	'Action',
 	'Adventure',
@@ -117,5 +117,5 @@ const genres = [
 	'Tower Defense',
 	'Trivia',
 	'Vehicular Combat',
-	'Visual Novel'
-]
+	'Visual Novel',
+];
