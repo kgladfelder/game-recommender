@@ -12,13 +12,13 @@
 
 	const searchGame = async () => {
 		if (gameName) {
-			console.log(gameName);
 			const response = await fetch(`api/game-search?gameName=${gameName}`);
-			const data = await response.json();
-			console.log(response);
-			searchResults = data.map((hltbResult: hltbSearch) => {
-				return { ...hltbResult };
-			});
+			if (response.status === 200) {
+				const data: hltbSearch[] = await response.json();
+				searchResults = data.map((hltbResult: hltbSearch) => {
+					return { ...hltbResult };
+				});
+			}
 			searched = true;
 		}
 	};
@@ -29,23 +29,25 @@
 
 	const getDetail = async (gameId: string) => {
 		const response = await fetch(`api/game-details?id=${gameId}`);
-		const data: hltbSearch = await response.json();
-		dispatch('game', {
-			id: crypto.randomUUID(),
-			createdDate: new Date(),
-			gameName: data.gameName,
-			mainStory: data.main,
-			mainExtras: data.mainExtra,
-			completionist: data.complete,
-			genres: data.genres.map(strToGenre).filter((x) => x >= 0),
-			publisher: data.publisher,
-			developer: data.developer,
-			releaseDates: {
-				northAmerica: data.naRelease,
-				europe: data.euRelease,
-				japan: data.jpRelease,
-			},
-		});
+		if (response.status === 200) {
+			const data: hltbSearch = await response.json();
+			dispatch('game', {
+				id: crypto.randomUUID(),
+				createdDate: new Date(),
+				gameName: data.gameName,
+				mainStory: data.main,
+				mainExtras: data.mainExtra,
+				completionist: data.complete,
+				genres: data.genres.map(strToGenre).filter((x) => x >= 0),
+				publisher: data.publisher,
+				developer: data.developer,
+				releaseDates: {
+					northAmerica: data.naRelease,
+					europe: data.euRelease,
+					japan: data.jpRelease,
+				},
+			});
+		}
 	};
 
 	const cleanUp = () => {
@@ -92,7 +94,7 @@
 			<div class="row results">
 				{#each searchResults as result (result.detailId)}
 					<div class="col s6 m4 l3">
-						<div class="card small blue lighten-3" data-testid="{'card-game-' + result.gameName}">
+						<div class="card small blue lighten-3" data-testid="{'game-card-' + result.gameName}">
 							<div class="card-content">
 								<span class="card-title">{result.gameName}</span>
 								<p>Main Game: {result.main}</p>
