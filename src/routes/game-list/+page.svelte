@@ -1,7 +1,8 @@
 <script lang="ts">
-	import { Genre, Platform, type Game } from '../../types';
+	import { Genre, Platform, type Game } from '$lib/types';
 	import { gameStore } from '../../stores';
-	import GameInformation from '../../components/game-information/index.svelte';
+	import GameInformation from '$lib/components/game-information/index.svelte';
+	import GameSearchAndSelect from '$lib/components/game-search-and-select/index.svelte';
 	let confDelVis: boolean = false;
 	let confDelGameId: string | undefined;
 	let addGameModalVis: boolean = false;
@@ -17,7 +18,11 @@
 		const ind: number = $gameStore.findIndex((x) => x.id === id);
 		editedGameInd = ind;
 		editedGame = $gameStore.at(ind);
-		toggleEditGameModal();
+		editGameModalVis = true;
+	};
+
+	const onNewGame = () => {
+		addGameModalVis = true;
 	};
 
 	const onEditGame = (editGameEvent: CustomEvent<Game>) => {
@@ -28,7 +33,7 @@
 		}
 		editedGame = undefined;
 		editedGameInd = undefined;
-		toggleEditGameModal();
+		editGameModalVis = false;
 	};
 
 	const removeGame = (id: string) => {
@@ -66,29 +71,21 @@
 		return null;
 	};
 
-	const toggleAddGameModal = () => {
-		addGameModalVis = !addGameModalVis;
-	};
-
-	const toggleEditGameModal = () => {
-		editGameModalVis = !editGameModalVis;
-	};
-
-	const onNewGame = (newGameEvent: CustomEvent<Game>) => {
+	const onNewGameRet = (newGameEvent: CustomEvent<Game>) => {
 		if (newGameEvent.detail) {
 			$gameStore.push(newGameEvent.detail);
 			$gameStore = $gameStore;
 			setLocalStorage();
 		}
-		toggleAddGameModal();
+		addGameModalVis = false;
 	};
 
 	const onAddGameCancel = () => {
-		toggleAddGameModal();
+		addGameModalVis = false;
 	};
 
 	const onEditGameCancel = () => {
-		toggleEditGameModal();
+		editGameModalVis = false;
 	};
 
 	const formatDate = (date: Date) => {
@@ -102,22 +99,27 @@
 </script>
 
 <div style="height: calc(100% - 64px);">
-	<GameInformation
+	<GameSearchAndSelect
 		visible="{addGameModalVis}"
-		on:game="{onNewGame}"
-		on:cancel="{onAddGameCancel}" />
-	<GameInformation
-		visible="{editGameModalVis}"
-		gameName="{editedGame?.gameName}"
-		mainStory="{editedGame?.mainStory}"
-		mainExtras="{editedGame?.mainExtras}"
-		completionist="{editedGame?.completionist}"
-		publisher="{editedGame?.publisher}"
-		developer="{editedGame?.developer}"
-		platform="{editedGame?.platform}"
-		genres="{editedGame?.genres}"
-		on:game="{onEditGame}"
-		on:cancel="{onEditGameCancel}" />
+		on:cancel="{onAddGameCancel}"
+		on:game="{onNewGameRet}" />
+	{#if editedGame}
+		<GameInformation
+			visible="{editGameModalVis}"
+			id="{editedGame.id}"
+			createdDate="{editedGame.createdDate}"
+			gameName="{editedGame.gameName}"
+			mainStory="{editedGame.mainStory}"
+			mainExtras="{editedGame.mainExtras}"
+			completionist="{editedGame.completionist}"
+			publisher="{editedGame.publisher}"
+			developer="{editedGame.developer}"
+			platform="{editedGame.platform}"
+			genres="{editedGame.genres}"
+			releaseDates="{editedGame.releaseDates}"
+			on:game="{onEditGame}"
+			on:cancel="{onEditGameCancel}" />
+	{/if}
 	<div class="row">
 		<div class="col s1"></div>
 		<table class="col s10">
@@ -134,7 +136,7 @@
 					<th>Publisher</th>
 					<th>Date Added</th>
 					<th>
-						<button on:click="{toggleAddGameModal}" class="waves-effect waves-light btn btn-width">
+						<button on:click="{onNewGame}" class="waves-effect waves-light btn btn-width">
 							Add Game
 						</button>
 					</th>

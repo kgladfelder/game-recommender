@@ -10,6 +10,13 @@ export type Game = {
 	genres?: Genre[];
 	publisher?: string;
 	developer?: string;
+	releaseDates: ReleaseDates | undefined;
+};
+
+export type ReleaseDates = {
+	northAmerica: Date | undefined;
+	europe: Date | undefined;
+	japan: Date | undefined;
 };
 
 export enum Platform {
@@ -66,3 +73,23 @@ export enum Genre {
 	'Visual Novel',
 	'Undefined',
 }
+
+export type hltbSearch = {
+	detailId: string;
+	gameName: string;
+	gameDescription: string;
+	platforms: string[];
+	genres: string[];
+	gameImage: string;
+	timeLabels: string[][];
+	main: number;
+	mainExtra: number;
+	complete: number;
+	distancePercentage: number;
+	searchGameName: string;
+	publisher: string;
+	developer: string;
+	naRelease: Date | undefined;
+	euRelease: Date | undefined;
+	jpRelease: Date | undefined;
+};

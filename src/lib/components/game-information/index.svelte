@@ -1,17 +1,19 @@
 <script lang="ts">
-	import { v4 } from 'uuid';
 	import { createEventDispatcher } from 'svelte';
 
-	import { Genre, Platform, type Game } from '../../types';
+	import { Genre, Platform, type Game, type ReleaseDates } from '$lib/types';
 
-	export let gameName: string = '';
-	export let mainStory: number | undefined = undefined;
-	export let mainExtras: number | undefined = undefined;
-	export let completionist: number | undefined = undefined;
+	export let id: string;
+	export let createdDate: Date;
+	export let gameName: string;
+	export let mainStory: number | undefined;
+	export let mainExtras: number | undefined;
+	export let completionist: number | undefined;
 	export let genres: number[] = [];
-	export let platform: number | undefined = undefined;
-	export let publisher: string = '';
-	export let developer: string = '';
+	export let platform: number | undefined;
+	export let publisher: string | undefined;
+	export let developer: string | undefined;
+	export let releaseDates: ReleaseDates | undefined;
 	export let visible: boolean;
 
 	let box: HTMLDivElement;
@@ -19,21 +21,16 @@
 	const dispatch = createEventDispatcher<{ game: Game; cancel: void }>();
 
 	const cleanUp = () => {
-		gameName = '';
-		platform = undefined;
-		mainStory = undefined;
-		mainExtras = undefined;
-		completionist = undefined;
 		genres = [];
-		publisher = '';
-		developer = '';
-		box.scrollTop = 0;
+		if (box) {
+			box.scrollTop = 0;
+		}
 	};
 
-	const submitGame = () => {
+	const submitGame = async () => {
 		const game: Game = {
-			id: v4(),
-			createdDate: new Date(),
+			id: id,
+			createdDate: createdDate,
 			gameName,
 			platform,
 			mainStory,
@@ -42,6 +39,7 @@
 			genres,
 			publisher,
 			developer,
+			releaseDates,
 		};
 		// TODO Validation in modal
 		dispatch('game', game);
@@ -78,17 +76,20 @@
 	};
 </script>
 
-<div class:hidden-modal="{!visible}" class:modal="{visible}">
+<div class:hidden-modal="{!visible}" class:modal="{visible}" on:click="{() => cancel()}">
 	{#if visible}
-		<div class="container" bind:this="{box}">
-			<!-- TODO call cancel event if clicked out of -->
+		<div
+			id="edit-modal"
+			class="container"
+			bind:this="{box}"
+			on:click="{(event) => event.stopPropagation()}">
 			<form class="row">
 				<div class="col s12">
 					<h6>Game Information:</h6>
 				</div>
 				<div class="input-field col s12">
 					<label for="gameNameInput" class:active="{gameName}">Game Name</label>
-					<input id="gameNameInput" bind:value="{gameName}" type="text" />
+					<input id="gameNameInput" bind:value="{gameName}" autocomplete="off" type="text" />
 				</div>
 				<div>
 					<label for="platformInput" class="col s12">Platform</label>
@@ -145,7 +146,7 @@
 						type="number"
 						autocomplete="off" />
 				</div>
-				<div class="col s2 offset-s10">
+				<div class="col s3 offset-s9">
 					<button
 						id="cancel-btn"
 						on:click|preventDefault="{cancel}"

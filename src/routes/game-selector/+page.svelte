@@ -1,6 +1,6 @@
 <script lang="ts">
 	import { gameStore } from '../../stores';
-	import { Platform, type Game } from '../../types';
+	import { Platform, type Game } from '../../lib/types';
 
 	let randGame: Game | undefined;
 

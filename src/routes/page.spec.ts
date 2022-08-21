@@ -2,7 +2,7 @@ import '@testing-library/jest-dom';
 
 import { render, screen } from '@testing-library/svelte';
 
-import Home from './index.svelte';
+import Home from './+page.svelte';
 
 describe('should render the home page', () => {
 	it('shows proper heading when rendered', () => {

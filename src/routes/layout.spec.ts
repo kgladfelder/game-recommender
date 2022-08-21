@@ -2,7 +2,7 @@ import '@testing-library/jest-dom';
 
 import { render, screen } from '@testing-library/svelte';
 
-import Layout from './__layout.svelte';
+import Layout from './+layout.svelte';
 
 describe('should show the navigation bar in layout', () => {
 	test('shows proper links when rendered', () => {
