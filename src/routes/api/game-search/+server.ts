@@ -126,6 +126,5 @@ export async function GET({ url }: RequestEvent) {
 			results.push(entry);
 		});
 	}
-
 	return json(results);
 }
