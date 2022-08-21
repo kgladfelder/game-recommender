@@ -94,7 +94,7 @@
 			<div class="row results">
 				{#each searchResults as result (result.detailId)}
 					<div class="col s6 m4 l3">
-						<div class="card small blue lighten-3" data-testid="{'game-card-' + result.gameName}">
+						<div class="card small blue lighten-3" data-testid="{`game-card-${result.gameName}`}">
 							<div class="card-content">
 								<span class="card-title">{result.gameName}</span>
 								<p>Main Game: {result.main}</p>

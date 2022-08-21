@@ -214,7 +214,7 @@ describe('game search', () => {
 					developer: halo_infinite.developer,
 				})
 			);
-		})
+		});
 	});
 
 	it('should cancel the search', async () => {
