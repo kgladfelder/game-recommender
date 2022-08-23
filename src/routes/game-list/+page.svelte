@@ -26,7 +26,7 @@
 	};
 
 	const onEditGame = (editGameEvent: CustomEvent<Game>) => {
-		if (editedGameInd) {
+		if (editedGameInd !== undefined && editedGameInd >= 0) {
 			$gameStore[editedGameInd] = editGameEvent.detail;
 			$gameStore = $gameStore;
 			setLocalStorage();
@@ -192,7 +192,6 @@
 				{/each}
 			</tbody>
 		</table>
-		<div class="col s1"></div>
 	</div>
 </div>
 

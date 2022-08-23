@@ -41,8 +41,7 @@ describe('should render properly when visibility is set', () => {
 	it('shows prepopulated data when provided', () => {
 		render(GameInformation, { visible: true, ...props });
 
-		expect(screen.getByText(/Game Information/)).toBeInTheDocument();
-		expect(screen.getByLabelText(/Game Name/)).toHaveValue(props.gameName);
+		expect(screen.getByText(props.gameName)).toBeInTheDocument();
 		expect(screen.getByLabelText(/Developer/)).toHaveValue(props.developer);
 		expect(screen.getByLabelText(/Publisher/)).toHaveValue(props.publisher);
 		expect(screen.getByLabelText(/^Main Story$/)).toHaveValue(props.mainStory);
@@ -68,18 +67,6 @@ describe('should render properly when visibility is set', () => {
 				expect(screen.getByLabelText(Genre[genre])).not.toBeChecked();
 			}
 		}
-	});
-
-	it('should update game name', async () => {
-		render(GameInformation, { visible: true, ...props });
-
-		const newGameName = chance.word();
-		const gameNameEl = screen.getByLabelText(/Game Name/);
-		await act(() => {
-			fireEvent.input(gameNameEl, { target: { value: newGameName } });
-		});
-
-		expect(screen.getByLabelText(/Game Name/)).toHaveValue(newGameName);
 	});
 
 	it('should update developer', async () => {

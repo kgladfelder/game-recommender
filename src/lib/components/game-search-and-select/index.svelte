@@ -4,14 +4,24 @@
 
 	export let visible: boolean;
 	let box: HTMLDivElement;
+	let searchBox: HTMLDivElement;
 	let gameName: string;
 	let searchResults: hltbSearch[] = [];
 	let searched: boolean = false;
+	let disabled: boolean = false;
 
 	const dispatch = createEventDispatcher<{ game: Game; cancel: void }>();
 
+	const checkForEnter = async (key: KeyboardEvent) => {
+		if (key.key === 'Enter' && !disabled) {
+			key.preventDefault();
+			searchGame();
+		}
+	};
+
 	const searchGame = async () => {
 		if (gameName) {
+			disabled = true;
 			const response = await fetch(`api/game-search?gameName=${gameName}`);
 			if (response.status === 200) {
 				const data: hltbSearch[] = await response.json();
@@ -20,6 +30,7 @@
 				});
 			}
 			searched = true;
+			disabled = false;
 		}
 	};
 
@@ -63,6 +74,12 @@
 		dispatch('cancel');
 		cleanUp();
 	};
+
+	$: {
+		if (visible && searchBox) {
+			searchBox.focus();
+		}
+	}
 </script>
 
 <div class:hidden-modal="{!visible}" class:modal="{visible}" on:click="{() => cancel()}">
@@ -74,18 +91,27 @@
 				</div>
 				<div class="input-field col s11">
 					<label for="gameNameInput" class:active="{gameName}">Game Name</label>
-					<input id="gameNameInput" bind:value="{gameName}" autocomplete="off" type="text" />
+					<input
+						id="gameNameInput"
+						bind:value="{gameName}"
+						bind:this="{searchBox}"
+						on:keypress="{checkForEnter}"
+						disabled="{disabled}"
+						autocomplete="off"
+						type="text" />
 				</div>
 				<div class="col s3 offset-s9">
 					<button
 						id="cancel-btn"
 						on:click|preventDefault="{cancel}"
+						disabled="{disabled}"
 						class="waves-effect waves-light red lighten-2 btn">
 						Cancel
 					</button>
 					<button
 						id="submit-btn"
 						on:click|preventDefault="{searchGame}"
+						disabled="{disabled}"
 						class="waves-effect waves-light btn">
 						Submit
 					</button>
