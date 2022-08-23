@@ -133,15 +133,15 @@
 					<h6>Hours to Complete:</h6>
 				</div>
 				<div class="input-field col s12 m4">
-					<label for="mainstoryInput" class:active="{mainStory}">Main Story</label>
+					<label for="mainstoryInput" class:active="{mainStory !== undefined && mainStory >= 0}">Main Story</label>
 					<input id="mainstoryInput" bind:value="{mainStory}" on:keypress="{checkForEnter}" type="number" autocomplete="off" />
 				</div>
 				<div class="input-field  col s12 m4">
-					<label for="mainextrasInput" class:active="{mainExtras}">Main Story + Extras</label>
+					<label for="mainextrasInput" class:active="{mainExtras !== undefined && mainExtras >= 0}">Main Story + Extras</label>
 					<input id="mainextrasInput" bind:value="{mainExtras}" on:keypress="{checkForEnter}" type="number" autocomplete="off" />
 				</div>
 				<div class="input-field col s12 m4">
-					<label for="completionistInput" class:active="{completionist}">Completionist</label>
+					<label for="completionistInput" class:active="{completionist !== undefined && completionist >= 0}">Completionist</label>
 					<input
 						id="completionistInput"
 						bind:value="{completionist}"
