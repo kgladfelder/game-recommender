@@ -9,6 +9,8 @@
 	let editGameModalVis: boolean = false;
 	let editedGame: Game | undefined = undefined;
 	let editedGameInd: number | undefined = undefined;
+	let gameListFilter: string = "";
+	let games: Game[] = $gameStore;
 
 	const setLocalStorage = () => {
 		localStorage.setItem('games', JSON.stringify($gameStore));
@@ -96,6 +98,8 @@
 			day: '2-digit',
 		});
 	};
+
+	$: games = gameListFilter !== "" ? $gameStore.filter(x => x.gameName.toLowerCase().includes(gameListFilter.toLowerCase())) : $gameStore;
 </script>
 
 <div style="height: calc(100% - 64px);">
@@ -121,8 +125,17 @@
 			on:cancel="{onEditGameCancel}" />
 	{/if}
 	<div class="row">
-		<div class="col s1"></div>
-		<table class="col s10">
+		<div class="input-field col s6 offset-s3">
+			<label for="gameNameInput">Filter Games</label>
+			<input
+				id="gameNameInput"
+				bind:value="{gameListFilter}"
+				autocomplete="off"
+				type="text" />
+		</div>
+	</div>
+	<div class="row">
+		<table class="col s10 offset-s1">
 			<thead>
 				<tr>
 					<th>Completed</th>
@@ -143,7 +156,7 @@
 				</tr>
 			</thead>
 			<tbody>
-				{#each $gameStore as game (game.id)}
+				{#each games as game (game.id)}
 					<tr class="{game.completedDate === undefined ? 'row' : 'strike'}">
 						<td>
 							<button
