@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.2.1](https://github.com/kgladfelder/game-recommender/compare/v1.2.0...v1.2.1) (2022-08-23)
+
+
+### Bug Fixes
+
+* ui for search ([03cfc87](https://github.com/kgladfelder/game-recommender/commit/03cfc87f4449bf687a56099c5786de1e5ef1fb05))
+
 ## [1.2.0](https://github.com/kgladfelder/game-recommender/compare/v1.1.1...v1.2.0) (2022-08-23)
 
 
