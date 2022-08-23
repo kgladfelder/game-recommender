@@ -133,7 +133,7 @@
 	{/if}
 	<div class="row search-row">
 		<div class="col s3">
-			<button on:click="{onNewGame}" class="waves-effect waves-light btn btn-width">
+			<button on:click="{onNewGame}" class="waves-effect waves-light green lighten-2 btn btn-width">
 				Add Game
 			</button>
 		</div>
@@ -141,26 +141,23 @@
 			<label for="gameNameInput">Filter Games by Name:</label>
 			<input id="gameNameInput" bind:value="{gameListFilter}" autocomplete="off" type="text" />
 		</div>
-		<div class="col s3 view">
-			<div>
-				<span class="text">View: </span>
-				<button
-					title="Switch to grid view"
-					class="waves-effect waves-light btn"
-					class:blue="{gridVis}"
-					class:grey="{!gridVis}"
-					on:click="{onGridViewClick}">
-					<i class="material-icons text">widgets</i>
-				</button>
-				<button
-					title="Switch to table view"
-					class="waves-effect waves-light btn"
-					class:blue="{tableVis}"
-					class:grey="{!tableVis}"
-					on:click="{onTableViewClick}">
-					<i class="material-icons text">list</i>
-				</button>
-			</div>
+		<div class="col s2 offset-s1">
+			<button
+				title="Switch to grid view"
+				class="waves-effect waves-light btn view-btn"
+				class:blue="{gridVis}"
+				class:grey="{!gridVis}"
+				on:click="{onGridViewClick}">
+				<i class="material-icons">widgets</i>
+			</button>
+			<button
+				title="Switch to table view"
+				class="waves-effect waves-light btn view-btn"
+				class:blue="{tableVis}"
+				class:grey="{!tableVis}"
+				on:click="{onTableViewClick}">
+				<i class="material-icons">list</i>
+			</button>
 		</div>
 	</div>
 
@@ -208,7 +205,8 @@
 
 <style>
 	.btn-width {
-		width: 12em;
+		width: 75%;
+		margin-left: 12.5%;
 	}
 
 	.row {
@@ -220,15 +218,9 @@
 		align-items: center;
 	}
 
-	.view .text {
-		font-size: small;
+	.view-btn {
+		width: 25%;
+		padding: 0px;
 	}
 
-	.view .btn {
-		font-size: small;
-	}
-
-	.view .btn .text {
-		margin: -1em;
-	}
 </style>
