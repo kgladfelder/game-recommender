@@ -1,5 +1,13 @@
 # Changelog
 
+## [1.2.0](https://github.com/kgladfelder/game-recommender/compare/v1.1.1...v1.2.0) (2022-08-23)
+
+
+### Features
+
+* add game list filter ([adb049c](https://github.com/kgladfelder/game-recommender/commit/adb049c2cd995752c585bce36f48bb764f2055ee))
+* add grid and table views for listing all items ([4e60fc9](https://github.com/kgladfelder/game-recommender/commit/4e60fc9ccd430e14afe624391b28f1943d432e2b))
+
 ## [1.1.1](https://github.com/kgladfelder/game-recommender/compare/v1.1.0...v1.1.1) (2022-08-23)
 
 
