@@ -14,6 +14,7 @@
 	export let publisher: string | undefined;
 	export let developer: string | undefined;
 	export let releaseDates: ReleaseDates | undefined;
+	export let description: string;
 	export let visible: boolean;
 
 	let box: HTMLDivElement;
@@ -46,6 +47,7 @@
 			publisher,
 			developer,
 			releaseDates,
+			description,
 		};
 		// TODO Validation in modal
 		dispatch('game', game);

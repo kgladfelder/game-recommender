@@ -38,6 +38,14 @@
 		return Object.values(Genre).indexOf(search);
 	};
 
+	const getGameDescription = (description: string): string => {
+		try {
+			return description.split('\n')[0].trim();
+		} catch {
+			return "";
+		}
+	}
+
 	const getDetail = async (gameId: string) => {
 		const response = await fetch(`api/game-details?id=${gameId}`);
 		if (response.status === 200) {
@@ -57,6 +65,7 @@
 					europe: data.euRelease,
 					japan: data.jpRelease,
 				},
+				description: getGameDescription(data.gameDescription)
 			});
 		}
 	};
@@ -149,13 +158,13 @@
 <style>
 	.modal {
 		display: block;
-		position: fixed; /* Stay in place */
-		z-index: 75; /* Sit on top */
+		position: fixed;
+		z-index: 75;
 		left: 0;
-		width: 100%; /* Full width */
-		overflow: hidden; /* Enable scroll if needed */
-		background-color: rgb(0, 0, 0); /* Fallback color */
-		background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+		width: 100%;
+		overflow: hidden;
+		background-color: rgb(0, 0, 0);
+		background-color: rgba(0, 0, 0, 0.4);
 		max-height: max-content;
 		height: 100%;
 	}
@@ -174,7 +183,7 @@
 	}
 
 	.results {
-		height: calc(50%);
+		height: calc(75%);
 		overflow: auto;
 	}
 

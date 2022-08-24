@@ -128,6 +128,7 @@
 			platform="{editedGame.platform}"
 			genres="{editedGame.genres}"
 			releaseDates="{editedGame.releaseDates}"
+			description="{editedGame.description}"
 			on:game="{onEditGame}"
 			on:cancel="{onEditGameCancel}" />
 	{/if}

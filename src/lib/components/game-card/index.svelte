@@ -8,6 +8,13 @@
 	export let game: Game;
 
 	let confirmDelete = false;
+	let lineLength = 15;
+
+	let offsetWidth: number;
+
+	$: if (offsetWidth) {
+		lineLength = offsetWidth / 10 - 3;
+	}
 
 	let fullPlatform: string;
 	$: fullPlatform = game.platform !== undefined ? Platform[game.platform] : 'Unknown';
@@ -20,37 +27,26 @@
 
 	let displayPlatform: string;
 	$: {
-		if (fullPlatform.length > 18) {
-			displayPlatform = fullPlatform.slice(0, 15) + '...';
+		if (fullPlatform.length > lineLength + 3) {
+			displayPlatform = fullPlatform.slice(0, lineLength) + '...';
 		} else {
 			displayPlatform = fullPlatform;
 		}
 	}
 	let displayPublisher: string;
 	$: {
-		if (fullPublisher.length > 18) {
-			displayPublisher = fullPublisher.slice(0, 15) + '...';
+		if (fullPublisher.length > lineLength + 3) {
+			displayPublisher = fullPublisher.slice(0, lineLength) + '...';
 		} else {
 			displayPublisher = fullPublisher;
 		}
 	}
 	let displayDeveloper: string;
 	$: {
-		if (fullDeveloper.length > 18) {
-			displayDeveloper = fullDeveloper.slice(0, 15) + '...';
+		if (fullDeveloper.length > lineLength + 3) {
+			displayDeveloper = fullDeveloper.slice(0, lineLength) + '...';
 		} else {
 			displayDeveloper = fullDeveloper;
-		}
-	}
-	let displayGenres: string;
-	$: {
-		if (game.genres && game.genres?.length > 5) {
-			displayGenres = game.genres
-				.slice(0, 5)
-				.map((x) => Genre[x].toString())
-				.join('\n');
-		} else {
-			displayGenres = fullGenres;
 		}
 	}
 
@@ -98,14 +94,14 @@
 					<div>
 						<span class="col s3 grey-text text-darken-1 label">Platform:</span>
 						{#if displayPlatform !== fullPlatform}
-							<span class="col s9 info-box">
+							<span class="col s9 info-box" bind:offsetWidth>
 								{displayPlatform}
 								<span class="tooltip">
 									{fullPlatform}
 								</span>
 							</span>
 						{:else}
-							<span class="col s9">{fullPlatform}</span>
+							<span class="col s9" bind:offsetWidth>{fullPlatform}</span>
 						{/if}
 					</div>
 					<div>
@@ -216,6 +212,7 @@
 	.info-box {
 		position: relative;
 		display: inline-block;
+		text-overflow: ellipsis;
 		height: 1.5em;
 	}
 

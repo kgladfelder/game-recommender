@@ -35,6 +35,7 @@ describe('should render properly when visibility is set', () => {
 				europe: chance.date(),
 				japan: chance.date(),
 			},
+			description: ""
 		};
 	});
 
@@ -263,6 +264,7 @@ describe('should be empty if not visible', () => {
 				europe: chance.date(),
 				japan: chance.date(),
 			},
+			description: ""
 		};
 	});
 
