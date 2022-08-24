@@ -73,7 +73,9 @@
 
 <div class="col s6 m4 l3">
 	<div class="card medium" class:completed-game="{game.completedDate !== undefined}">
-		<div class="card-title blue lighten-4 ctr">{game.gameName}</div>
+		<div class="card-title lighten-4 ctr" class:blue="{game.completedDate === undefined}">
+			{game.gameName}
+		</div>
 		{#if !confirmDelete}
 			<div class="card-content">
 				<div class="row">
@@ -139,7 +141,9 @@
 			<div class="card-action">
 				<button
 					class="waves-effect waves-light green lighten-2 btn action-btn"
-					title="Mark game complete"
+					title="{game.completedDate === undefined
+						? 'Mark game complete.'
+						: 'Mark game as still in progress.'}"
 					on:click|preventDefault="{onCompleteGame}">
 					<i class="material-icons">check</i>
 				</button>

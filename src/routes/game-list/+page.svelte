@@ -14,7 +14,15 @@
 	let gridVis: boolean = true;
 	let tableVis: boolean = false;
 	let gameListFilter: string = '';
-	let games: Game[] = $gameStore;
+	let games: Game[] = $gameStore.sort((a, b) => {
+		if (a.gameName > b.gameName) {
+			return 1;
+		} else if (a.gameName < b.gameName) {
+			return -1;
+		} else {
+			return 0;
+		}
+	});
 
 	const setLocalStorage = () => {
 		localStorage.setItem('games', JSON.stringify($gameStore));
@@ -109,7 +117,7 @@
 			: $gameStore;
 </script>
 
-<div style="height: calc(100% - 64px);">
+<div style="display: flex; flex-direction: column;">
 	<GameSearchAndSelect
 		visible="{addGameModalVis}"
 		on:cancel="{onAddGameCancel}"
@@ -162,46 +170,46 @@
 		</div>
 	</div>
 
-	{#if tableVis}
+		{#if tableVis}
 		<div class="row">
 			<table class="col s10 offset-s1">
-				<thead>
-					<tr>
-						<th>Game Name</th>
-						<th>Platform</th>
-						<th>Genres</th>
-						<th>Main Story</th>
-						<th>Main + Extras</th>
-						<th>Completionist</th>
-						<th>Developer</th>
-						<th>Publisher</th>
-						<th>Date Added</th>
-						<th></th>
-					</tr>
-				</thead>
-				<tbody>
-					{#each games as game (game.id)}
-						<GameRow
-							game="{game}"
-							on:complete="{completeGameEvent}"
-							on:edit="{editGameEvent}"
-							on:delete="{confirmDeleteEvent}" />
-					{/each}
-				</tbody>
-			</table>
-		</div>
-	{/if}
-	{#if gridVis}
+					<thead>
+						<tr>
+							<th>Game Name</th>
+							<th>Platform</th>
+							<th>Genres</th>
+							<th>Main Story</th>
+							<th>Main + Extras</th>
+							<th>Completionist</th>
+							<th>Developer</th>
+							<th>Publisher</th>
+							<th>Date Added</th>
+							<th></th>
+						</tr>
+					</thead>
+					<tbody>
+						{#each games as game (game.id)}
+							<GameRow
+								game="{game}"
+								on:complete="{completeGameEvent}"
+								on:edit="{editGameEvent}"
+								on:delete="{confirmDeleteEvent}" />
+						{/each}
+					</tbody>
+				</table>
+			</div>
+		{/if}
+		{#if gridVis}
 		<div class="row">
-			{#each games as game (game.id)}
-				<GameCard
-					game="{game}"
-					on:complete="{completeGameEvent}"
-					on:edit="{editGameEvent}"
-					on:delete="{confirmDeleteEvent}" />
-			{/each}
-		</div>
-	{/if}
+				{#each games as game (game.id)}
+					<GameCard
+						game="{game}"
+						on:complete="{completeGameEvent}"
+						on:edit="{editGameEvent}"
+						on:delete="{confirmDeleteEvent}" />
+				{/each}
+			</div>
+		{/if}
 </div>
 
 <style>
@@ -210,12 +218,9 @@
 		margin-left: 12.5%;
 	}
 
-	.row {
-		text-decoration: none;
-	}
-
 	.search-row {
-		display: flex;
+		width: 100%;
+		display: inline-flex;
 		align-items: center;
 	}
 
@@ -223,5 +228,4 @@
 		width: 25%;
 		padding: 0px;
 	}
-
 </style>

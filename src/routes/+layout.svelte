@@ -4,7 +4,7 @@
 	<html lang="en"></html>
 </svelte:head>
 
-<div class="navbar-fixed">
+<div class="page">
 	<nav>
 		<div class="nav-wrapper light-blue darken-3">
 			<a href="/" class="brand-logo right hide-on-med-and-down"> Rec Game </a>
@@ -21,5 +21,14 @@
 			</ul>
 		</div>
 	</nav>
+	<main>
+		<slot />
+	</main>
 </div>
-<slot style="height:100% - 64px;" />
+
+<style>
+	.page {
+		display: flex;
+		flex-direction: column;
+	}
+</style>
