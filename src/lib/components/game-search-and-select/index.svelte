@@ -94,12 +94,12 @@
 <div class:hidden-modal="{!visible}" class:modal="{visible}" on:click="{() => cancel()}">
 	{#if visible}
 		<div class="container" bind:this="{box}" on:click="{(event) => event.stopPropagation()}">
-			<form class="row">
-				<div class="col s10">
+			<form>
+				<div>
 					<h6>Game Search:</h6>
 				</div>
-				<div class="input-field col s11">
-					<label for="gameNameInput" class:active="{gameName}">Game Name</label>
+				<div>
+					<label for="gameNameInput">Game Name</label>
 					<input
 						id="gameNameInput"
 						bind:value="{gameName}"
@@ -109,45 +109,42 @@
 						autocomplete="off"
 						type="text" />
 				</div>
-				<div class="col s3 offset-s9">
+				<div>
 					<button
 						id="cancel-btn"
 						on:click|preventDefault="{cancel}"
-						disabled="{disabled}"
-						class="waves-effect waves-light red lighten-2 btn">
+						disabled="{disabled}">
 						Cancel
 					</button>
 					<button
 						id="submit-btn"
 						on:click|preventDefault="{searchGame}"
-						disabled="{disabled}"
-						class="waves-effect waves-light btn">
+						disabled="{disabled}">
 						Submit
 					</button>
 				</div>
 			</form>
-			<div class="row results">
+			<div class="results">
 				{#each searchResults as result (result.detailId)}
-					<div class="col s6 m4 l3">
-						<div class="card small blue lighten-3" data-testid="{`game-card-${result.gameName}`}">
-							<div class="card-content">
-								<span class="card-title">{result.gameName}</span>
+					<div>
+						<div data-testid="{`game-card-${result.gameName}`}">
+							<div>
+								<span>{result.gameName}</span>
 								<p>Main Game: {result.main}</p>
 								<p>Main Game + Extras: {result.mainExtra}</p>
 								<p>Completionist: {result.complete}</p>
 							</div>
-							<div class="card-action">
+							<div>
 								<button
-									class="waves-effect waves-light btn btn-width"
 									on:click|preventDefault="{() => getDetail(result.detailId)}">Select Game</button>
 							</div>
 						</div>
 					</div>
 				{:else}
 					{#if !searched}
-						<h6 class="s12">Please search for a game.</h6>
+						<h6>Please search for a game.</h6>
 					{:else}
-						<h6 class="s12">No results found. Please search for another game.</h6>
+						<h6>No results found. Please search for another game.</h6>
 					{/if}
 				{/each}
 			</div>
@@ -166,7 +163,7 @@
 		background-color: rgb(0, 0, 0);
 		background-color: rgba(0, 0, 0, 0.4);
 		max-height: max-content;
-		height: 100%;
+		height: calc(100% - 80px);
 	}
 
 	.hidden-modal {
@@ -176,18 +173,15 @@
 	.container {
 		background-color: rgb(255, 255, 255);
 		background-color: rgba(255, 255, 255, 1);
-		height: calc(100% - 64px);
+		height: calc(100%);
 		margin: 0 auto;
 		padding: 1.25em;
 		overflow: hidden;
+		width: 75%;
 	}
 
 	.results {
 		height: calc(75%);
 		overflow: auto;
-	}
-
-	.card-title {
-		font-weight: 500;
 	}
 </style>

@@ -117,115 +117,100 @@
 			: $gameStore;
 </script>
 
-<div style="display: flex; flex-direction: column;">
-	<GameSearchAndSelect
-		visible="{addGameModalVis}"
-		on:cancel="{onAddGameCancel}"
-		on:game="{onNewGameRet}" />
-	{#if editedGame}
+<div class="game-list-page">
+	{#if addGameModalVis}
+		<GameSearchAndSelect
+			visible="{addGameModalVis}"
+			on:cancel="{onAddGameCancel}"
+			on:game="{onNewGameRet}" />
+	{:else if editedGame && editGameModalVis}
 		<GameInformation
 			visible="{editGameModalVis}"
-			id="{editedGame.id}"
-			createdDate="{editedGame.createdDate}"
-			gameName="{editedGame.gameName}"
-			mainStory="{editedGame.mainStory}"
-			mainExtras="{editedGame.mainExtras}"
-			completionist="{editedGame.completionist}"
-			publisher="{editedGame.publisher}"
-			developer="{editedGame.developer}"
-			platform="{editedGame.platform}"
-			genres="{editedGame.genres}"
-			releaseDates="{editedGame.releaseDates}"
-			description="{editedGame.description}"
+			game="{editedGame}"
 			on:game="{onEditGame}"
 			on:cancel="{onEditGameCancel}" />
 	{/if}
-	<div class="row search-row">
-		<div class="col s3">
-			<button on:click="{onNewGame}" class="waves-effect waves-light green lighten-2 btn btn-width">
-				Add Game
-			</button>
+	<div class="search-bar">
+		<div>
+			<button on:click="{onNewGame}"><i class="material-icons">add</i></button>
 		</div>
-		<div class="input-field col s6">
+		<div>
 			<label for="gameNameInput">Filter Games by Name:</label>
 			<input id="gameNameInput" bind:value="{gameListFilter}" autocomplete="off" type="text" />
 		</div>
-		<div class="col s2 offset-s1">
-			<button
-				title="Switch to grid view"
-				class="waves-effect waves-light btn view-btn"
-				class:blue="{gridVis}"
-				class:grey="{!gridVis}"
-				on:click="{onGridViewClick}">
+		<div>
+			<button title="Switch to grid view" on:click="{onGridViewClick}">
 				<i class="material-icons">widgets</i>
 			</button>
-			<button
-				title="Switch to table view"
-				class="waves-effect waves-light btn view-btn"
-				class:blue="{tableVis}"
-				class:grey="{!tableVis}"
-				on:click="{onTableViewClick}">
+			<button title="Switch to table view" on:click="{onTableViewClick}">
 				<i class="material-icons">list</i>
 			</button>
 		</div>
 	</div>
 
-		{#if tableVis}
-		<div class="row">
-			<table class="col s10 offset-s1">
-					<thead>
-						<tr>
-							<th>Game Name</th>
-							<th>Platform</th>
-							<th>Genres</th>
-							<th>Main Story</th>
-							<th>Main + Extras</th>
-							<th>Completionist</th>
-							<th>Developer</th>
-							<th>Publisher</th>
-							<th>Date Added</th>
-							<th></th>
-						</tr>
-					</thead>
-					<tbody>
-						{#each games as game (game.id)}
-							<GameRow
-								game="{game}"
-								on:complete="{completeGameEvent}"
-								on:edit="{editGameEvent}"
-								on:delete="{confirmDeleteEvent}" />
-						{/each}
-					</tbody>
-				</table>
-			</div>
-		{/if}
-		{#if gridVis}
-		<div class="row">
-				{#each games as game (game.id)}
-					<GameCard
-						game="{game}"
-						on:complete="{completeGameEvent}"
-						on:edit="{editGameEvent}"
-						on:delete="{confirmDeleteEvent}" />
-				{/each}
-			</div>
-		{/if}
+	{#if tableVis}
+		<div class="game-list-content">
+			<table>
+				<thead>
+					<tr>
+						<th>Game Name</th>
+						<th>Platform</th>
+						<th>Genres</th>
+						<th>Main Story</th>
+						<th>Main + Extras</th>
+						<th>Completionist</th>
+						<th>Developer</th>
+						<th>Publisher</th>
+						<th>Date Added</th>
+						<th></th>
+					</tr>
+				</thead>
+				<tbody>
+					{#each games as game (game.id)}
+						<GameRow
+							game="{game}"
+							on:complete="{completeGameEvent}"
+							on:edit="{editGameEvent}"
+							on:delete="{confirmDeleteEvent}" />
+					{/each}
+				</tbody>
+			</table>
+		</div>
+	{/if}
+	{#if gridVis}
+		<div class="game-list-content grid">
+			{#each games as game (game.id)}
+				<GameCard
+					game="{game}"
+					on:complete="{completeGameEvent}"
+					on:edit="{editGameEvent}"
+					on:delete="{confirmDeleteEvent}" />
+			{/each}
+		</div>
+	{/if}
 </div>
 
 <style>
-	.btn-width {
-		width: 75%;
-		margin-left: 12.5%;
-	}
-
-	.search-row {
-		width: 100%;
-		display: inline-flex;
+	.search-bar {
+		display: flex;
+		justify-content: space-between;
 		align-items: center;
+		height: 3em;
 	}
 
-	.view-btn {
-		width: 25%;
-		padding: 0px;
+	.game-list-page {
+		display: flex;
+		flex-direction: column;
+		height: 100%;
+	}
+
+	.game-list-content {
+		flex: 1;
+		overflow: auto;
+	}
+
+	.grid {
+		display: flex;
+		flex-wrap: wrap;
 	}
 </style>

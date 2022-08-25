@@ -38,7 +38,7 @@
 	};
 </script>
 
-<tr class="row" class:completed-game="{game.completedDate !== undefined}">
+<tr class:completed-game="{game.completedDate !== undefined}">
 	<td>{game.gameName}</td>
 	<td>{game.platform !== undefined ? Platform[game.platform] : 'Unknown'}</td>
 	<td>{game.genres?.map((x) => Genre[x].toString()).join(', ') ?? 'Unkown'}</td>
@@ -50,44 +50,24 @@
 	<td>{formatDate(game.createdDate)}</td>
 	<td>
 		{#if !confirmDelete}
-			<button
-				class="waves-effect waves-light green lighten-2 btn action-btn"
-				title="Mark game complete"
-				on:click|preventDefault="{onCompleteGame}">
+			<button title="Mark game complete" on:click|preventDefault="{onCompleteGame}">
 				<i class="material-icons">check</i>
 			</button>
-			<button
-				class="waves-effect waves-light blue lighten-2 btn action-btn"
-				title="Edit game"
-				on:click|preventDefault="{onEditGame}">
+			<button title="Edit game" on:click|preventDefault="{onEditGame}">
 				<i class="material-icons">edit</i>
 			</button>
-			<button
-				class="waves-effect waves-light red lighten-2 btn action-btn"
-				title="Delete game from list"
-				on:click|preventDefault="{onDelete}">
+			<button title="Delete game from list" on:click|preventDefault="{onDelete}">
 				<i class="material-icons">delete</i>
 			</button>
 		{:else}
-			<button on:click="{onCancel}" class="waves-effect waves-light btn btn-half-width">
-				Cancel
-			</button>
-			<button
-				on:click="{raiseDelete}"
-				class="waves-effect waves-light red lighten-2 btn btn-half-width">
-				Delete
-			</button>
+			<button on:click="{onCancel}"> Cancel </button>
+			<button on:click="{raiseDelete}"> Delete </button>
 		{/if}
 	</td>
 </tr>
 
 <style>
-	.btn-half-width {
-		width: 5.75em;
-	}
-
 	.completed-game {
-		color: rgb(100,100,100);
-        background-color: rgb(200,200,200);
+		background-color: rgba(100,250,100);
 	}
 </style>

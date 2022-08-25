@@ -3,18 +3,7 @@
 
 	import { Genre, Platform, type Game, type ReleaseDates } from '$lib/types';
 
-	export let id: string;
-	export let createdDate: Date;
-	export let gameName: string;
-	export let mainStory: number | undefined;
-	export let mainExtras: number | undefined;
-	export let completionist: number | undefined;
-	export let genres: number[] = [];
-	export let platform: number | undefined;
-	export let publisher: string | undefined;
-	export let developer: string | undefined;
-	export let releaseDates: ReleaseDates | undefined;
-	export let description: string;
+	export let game: Game;
 	export let visible: boolean;
 
 	let box: HTMLDivElement;
@@ -28,28 +17,12 @@
 	};
 
 	const cleanUp = () => {
-		genres = [];
 		if (box) {
 			box.scrollTop = 0;
 		}
 	};
 
 	const submitGame = () => {
-		const game: Game = {
-			id: id,
-			createdDate: createdDate,
-			gameName,
-			platform,
-			mainStory,
-			mainExtras,
-			completionist,
-			genres,
-			publisher,
-			developer,
-			releaseDates,
-			description,
-		};
-		// TODO Validation in modal
 		dispatch('game', game);
 		cleanUp();
 	};
@@ -91,17 +64,17 @@
 			class="container"
 			bind:this="{box}"
 			on:click="{(event) => event.stopPropagation()}">
-			<form class="row">
-				<div class="col s12">
-					<h6>{gameName}</h6>
+			<form>
+				<div>
+					<h6>{game.gameName}</h6>
 				</div>
 				<div>
-					<label for="platformInput" class="col s12">Platform</label>
+					<label for="platformInput">Platform</label>
 					{#each getPlatforms() as pf}
-						<label for="platform-{pf.value}" class="col s11 offset-s1 m3 offset-m1">
+						<label for="platform-{pf.value}">
 							<input
 								id="platform-{pf.value}"
-								bind:group="{platform}"
+								bind:group="{game.platform}"
 								type="radio"
 								name="platformInput"
 								value="{pf.key}" />
@@ -109,59 +82,57 @@
 						</label>
 					{/each}
 				</div>
-				<div class="input-field col s12 m6">
-					<label for="developerInput" class:active="{developer}">Developer</label>
-					<input id="developerInput" bind:value="{developer}" on:keypress="{checkForEnter}" autocomplete="off" type="text" />
-				</div>
-				<div class="input-field col s12 m6">
-					<label for="publisherInput" class:active="{publisher}">Publisher</label>
-					<input id="publisherInput" bind:value="{publisher}" on:keypress="{checkForEnter}" autocomplete="off" type="text" />
+				<div>
+					<label for="developerInput">Developer</label>
+					<input id="developerInput" bind:value="{game.developer}" on:keypress="{checkForEnter}" autocomplete="off" type="text" />
 				</div>
 				<div>
-					<label for="genresInput" class="col s12">Genres</label>
+					<label for="publisherInput">Publisher</label>
+					<input id="publisherInput" bind:value="{game.publisher}" on:keypress="{checkForEnter}" autocomplete="off" type="text" />
+				</div>
+				<div>
+					<label for="genresInput">Genres</label>
 					{#each getGenres() as gr}
-						<label for="genres-{gr.value}" class="col s5 offset-s1 m3 offset-m1">
+						<label for="genres-{gr.value}">
 							<input
 								id="genres-{gr.value}"
 								type="checkbox"
-								bind:group="{genres}"
+								bind:group="{game.genres}"
 								name="genres"
 								value="{gr.key}" />
 							<span>{gr.value}</span>
 						</label>
 					{/each}
 				</div>
-				<div class="col s12">
+				<div>
 					<h6>Hours to Complete:</h6>
 				</div>
-				<div class="input-field col s12 m4">
-					<label for="mainstoryInput" class:active="{mainStory !== undefined && mainStory >= 0}">Main Story</label>
-					<input id="mainstoryInput" bind:value="{mainStory}" on:keypress="{checkForEnter}" type="number" autocomplete="off" />
+				<div>
+					<label for="mainstoryInput">Main Story</label>
+					<input id="mainstoryInput" bind:value="{game.mainStory}" on:keypress="{checkForEnter}" type="number" autocomplete="off" />
 				</div>
-				<div class="input-field  col s12 m4">
-					<label for="mainextrasInput" class:active="{mainExtras !== undefined && mainExtras >= 0}">Main Story + Extras</label>
-					<input id="mainextrasInput" bind:value="{mainExtras}" on:keypress="{checkForEnter}" type="number" autocomplete="off" />
+				<div>
+					<label for="mainextrasInput">Main Story + Extras</label>
+					<input id="mainextrasInput" bind:value="{game.mainExtras}" on:keypress="{checkForEnter}" type="number" autocomplete="off" />
 				</div>
-				<div class="input-field col s12 m4">
-					<label for="completionistInput" class:active="{completionist !== undefined && completionist >= 0}">Completionist</label>
+				<div>
+					<label for="completionistInput">Completionist</label>
 					<input
 						id="completionistInput"
-						bind:value="{completionist}"
+						bind:value="{game.completionist}"
 						on:keypress="{checkForEnter}"
 						type="number"
 						autocomplete="off" />
 				</div>
-				<div class="col s3 offset-s9">
+				<div>
 					<button
 						id="cancel-btn"
-						on:click|preventDefault="{cancel}"
-						class="waves-effect waves-light red lighten-2 btn">
+						on:click|preventDefault="{cancel}">
 						Cancel
 					</button>
 					<button
 						id="submit-btn"
-						on:click|preventDefault="{submitGame}"
-						class="waves-effect waves-light btn">
+						on:click|preventDefault="{submitGame}">
 						Submit
 					</button>
 				</div>
@@ -173,15 +144,14 @@
 <style>
 	.modal {
 		display: block;
-		position: fixed; /* Stay in place */
-		z-index: 75; /* Sit on top */
+		position: fixed;
+		z-index: 75;
 		left: 0;
-		width: 100%; /* Full width */
-		overflow: hidden; /* Enable scroll if needed */
-		background-color: rgb(0, 0, 0); /* Fallback color */
-		background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
-		max-height: max-content;
-		height: 100%;
+		width: 100%;
+		overflow: hidden;
+		background-color: rgb(0, 0, 0);
+		background-color: rgba(0, 0, 0, 0.4);
+		height: calc(100% - 80px);
 	}
 
 	.hidden-modal {
@@ -191,7 +161,8 @@
 	.container {
 		background-color: rgb(255, 255, 255);
 		background-color: rgba(255, 255, 255, 1);
-		height: calc(100% - 64px);
+		height: 100%;
+		width: 75%;
 		margin: 0 auto;
 		padding: 1.25em;
 		overflow: auto;
