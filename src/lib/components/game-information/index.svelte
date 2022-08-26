@@ -64,75 +64,96 @@
 			class="container"
 			bind:this="{box}"
 			on:click="{(event) => event.stopPropagation()}">
+			<div>
+				<h1>{game.gameName}</h1>
+			</div>
 			<form>
 				<div>
-					<h6>{game.gameName}</h6>
-				</div>
-				<div>
 					<label for="platformInput">Platform</label>
-					{#each getPlatforms() as pf}
-						<label for="platform-{pf.value}">
-							<input
-								id="platform-{pf.value}"
-								bind:group="{game.platform}"
-								type="radio"
-								name="platformInput"
-								value="{pf.key}" />
-							<span>{pf.value}</span>
-						</label>
-					{/each}
+					<div class="options-grouping">
+						{#each getPlatforms() as pf}
+							<label for="platform-{pf.value}">
+								<input
+									id="platform-{pf.value}"
+									bind:group="{game.platform}"
+									type="radio"
+									name="platformInput"
+									value="{pf.key}" />
+								<span>{pf.value}</span>
+							</label>
+						{/each}
+					</div>
 				</div>
-				<div>
+				<div class="input-grouping">
 					<label for="developerInput">Developer</label>
-					<input id="developerInput" bind:value="{game.developer}" on:keypress="{checkForEnter}" autocomplete="off" type="text" />
+					<input
+						id="developerInput"
+						bind:value="{game.developer}"
+						on:keypress="{checkForEnter}"
+						autocomplete="off"
+						type="text" />
 				</div>
-				<div>
+				<div class="input-grouping">
 					<label for="publisherInput">Publisher</label>
-					<input id="publisherInput" bind:value="{game.publisher}" on:keypress="{checkForEnter}" autocomplete="off" type="text" />
+					<input
+						id="publisherInput"
+						bind:value="{game.publisher}"
+						on:keypress="{checkForEnter}"
+						autocomplete="off"
+						type="text" />
 				</div>
 				<div>
 					<label for="genresInput">Genres</label>
-					{#each getGenres() as gr}
-						<label for="genres-{gr.value}">
-							<input
-								id="genres-{gr.value}"
-								type="checkbox"
-								bind:group="{game.genres}"
-								name="genres"
-								value="{gr.key}" />
-							<span>{gr.value}</span>
-						</label>
-					{/each}
+					<div class="options-grouping">
+						{#each getGenres() as gr}
+							<label for="genres-{gr.value}">
+								<input
+									id="genres-{gr.value}"
+									type="checkbox"
+									bind:group="{game.genres}"
+									name="genres"
+									value="{gr.key}" />
+								<span>{gr.value}</span>
+							</label>
+						{/each}
+					</div>
 				</div>
 				<div>
-					<h6>Hours to Complete:</h6>
+					<h2>Hours to Complete:</h2>
 				</div>
-				<div>
+				<div class="input-grouping">
 					<label for="mainstoryInput">Main Story</label>
-					<input id="mainstoryInput" bind:value="{game.mainStory}" on:keypress="{checkForEnter}" type="number" autocomplete="off" />
+					<input
+						id="mainstoryInput"
+						step="0.5"
+						bind:value="{game.mainStory}"
+						on:keypress="{checkForEnter}"
+						type="number"
+						autocomplete="off" />
 				</div>
-				<div>
+				<div class="input-grouping">
 					<label for="mainextrasInput">Main Story + Extras</label>
-					<input id="mainextrasInput" bind:value="{game.mainExtras}" on:keypress="{checkForEnter}" type="number" autocomplete="off" />
+					<input
+						id="mainextrasInput"
+						step="0.5"
+						bind:value="{game.mainExtras}"
+						on:keypress="{checkForEnter}"
+						type="number"
+						autocomplete="off" />
 				</div>
-				<div>
+				<div class="input-grouping">
 					<label for="completionistInput">Completionist</label>
 					<input
 						id="completionistInput"
+						step="0.5"
 						bind:value="{game.completionist}"
 						on:keypress="{checkForEnter}"
 						type="number"
 						autocomplete="off" />
 				</div>
 				<div>
-					<button
-						id="cancel-btn"
-						on:click|preventDefault="{cancel}">
-						Cancel
-					</button>
-					<button
-						id="submit-btn"
-						on:click|preventDefault="{submitGame}">
+					<button id="cancel-btn" class="red" on:click|preventDefault="{cancel}"> Cancel </button>
+					<button id="submit-btn" class="green" on:click|preventDefault="{submitGame}">
 						Submit
 					</button>
 				</div>
@@ -142,8 +163,15 @@
 </div>
 
 <style>
+	.hidden-modal {
+		display: none;
+	}
+
 	.modal {
-		display: block;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
 		position: fixed;
 		z-index: 75;
 		left: 0;
@@ -154,27 +182,124 @@
 		height: calc(100% - 80px);
 	}
 
-	.hidden-modal {
-		display: none;
-	}
-
 	.container {
+		display: flex;
+		flex-direction: column;
 		background-color: rgb(255, 255, 255);
 		background-color: rgba(255, 255, 255, 1);
-		height: 100%;
-		width: 75%;
-		margin: 0 auto;
+		height: 80%;
+		width: 80%;
 		padding: 1.25em;
+		overflow: hidden;
+	}
+
+	.red {
+		background-color: red;
+		color: white;
+	}
+
+	.green {
+		background-color: green;
+		color: white;
+	}
+
+	.options-grouping {
+		display: flex;
+		flex-flow: row wrap;
+		justify-content: space-between;
+		font-size: 20px;
+	}
+
+	.options-grouping label {
+		width: 30%;
+	}
+
+	.input-grouping {
+		display: flex;
+		flex-direction: column;
+	}
+
+	label {
+		width: 100%;
+		font-size: larger;
+	}
+
+	button {
+		border: none;
+		text-align: center;
+		align-content: center;
+		text-decoration: none;
+		display: inline-block;
+		font-size: 24px;
+	}
+
+	form {
+		flex: 1;
 		overflow: auto;
+	}
+
+	input:focus {
+		outline: none;
+	}
+
+	input[type='checkbox'],
+	input[type='radio'] {
+		width: 1em;
+		height: 1em;
+		margin-top: 0.25em;
+		vertical-align: top;
+		background-color: #fff;
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: contain;
+		border: 1px solid rgba(0, 0, 0, 0.25);
+		-webkit-appearance: none;
+		-moz-appearance: none;
+		appearance: none;
+		-webkit-print-color-adjust: exact;
+		color-adjust: exact;
+		/* float: left; */
+		/* margin-left: -1.5em; */
+	}
+
+	input[type='radio'] {
+		border-radius: 50%;
+	}
+
+	input[type='checkbox']:checked,
+	input[type='radio']:checked {
+		background-color: #0d6efd;
+		border-color: #163c75;
+	}
+
+	input[type='text'] {
+		border: none;
+		border-bottom: 0.125rem solid;
+		width: 50%;
+		height: 2rem;
+		font-size: 1.5rem;
+		padding-left: 0.875rem;
+		line-height: 147.6%;
+		padding-top: 0.825rem;
+		padding-bottom: 0.5rem;
+	}
+
+	input[type='number'] {
+		-moz-appearance: textfield; /* Firefox */
+		border: none;
+		border-bottom: 0.125rem solid;
+		width: 50%;
+		height: 2rem;
+		font-size: 1.5rem;
+		padding-left: 0.875rem;
+		line-height: 147.6%;
+		padding-top: 0.825rem;
+		padding-bottom: 0.5rem;
 	}
 
 	input::-webkit-outer-spin-button,
 	input::-webkit-inner-spin-button {
 		-webkit-appearance: none;
 		margin: 0;
-	}
-
-	input[type='number'] {
-		-moz-appearance: textfield; /* Firefox */
 	}
 </style>

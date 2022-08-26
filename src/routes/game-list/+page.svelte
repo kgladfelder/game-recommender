@@ -132,17 +132,17 @@
 	{/if}
 	<div class="search-bar">
 		<div>
-			<button on:click="{onNewGame}"><i class="material-icons">add</i></button>
+			<button class="button-add green" on:click="{onNewGame}"><i class="material-icons">add</i></button>
 		</div>
 		<div>
 			<label for="gameNameInput">Filter Games by Name:</label>
 			<input id="gameNameInput" bind:value="{gameListFilter}" autocomplete="off" type="text" />
 		</div>
 		<div>
-			<button title="Switch to grid view" on:click="{onGridViewClick}">
+			<button class:grey={!gridVis} class:blue={gridVis} title="Switch to grid view" on:click="{onGridViewClick}">
 				<i class="material-icons">widgets</i>
 			</button>
-			<button title="Switch to table view" on:click="{onTableViewClick}">
+			<button class="button-list" class:grey={!tableVis} class:blue={tableVis} title="Switch to table view" on:click="{onTableViewClick}">
 				<i class="material-icons">list</i>
 			</button>
 		</div>
@@ -207,10 +207,44 @@
 	.game-list-content {
 		flex: 1;
 		overflow: auto;
+		margin-left: 1em;
 	}
 
 	.grid {
 		display: flex;
 		flex-wrap: wrap;
+	}
+
+	.button-add {
+		margin-left: 0.5em;
+	}
+
+	.button-list {
+		margin-right: 0.5em;
+	}
+
+	.grey {
+		background-color: gray;
+		color: white;
+	}
+
+	.green {
+		background-color: green;
+		color: white;
+	}
+
+	.blue {
+		background-color: blue;
+		color: white;
+	}
+
+	button {
+		border: none;
+		text-align: center;
+		align-content: center;
+		text-decoration: none;
+		display: inline-block;
+		font-size: 36px;
+		width: 3em;
 	}
 </style>
