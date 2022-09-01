@@ -1,5 +1,21 @@
 # Changelog
 
+## [1.3.0](https://github.com/kgladfelder/game-recommender/compare/v1.2.1...v1.3.0) (2022-09-01)
+
+
+### Features
+
+* edit game refactor ([2f234d6](https://github.com/kgladfelder/game-recommender/commit/2f234d608f3f40e99e9060fd36dacebbe547b520))
+* pull description as well ([95853f6](https://github.com/kgladfelder/game-recommender/commit/95853f60efe16ca5e700e5301979ea6d74fe9b18))
+* remove materialize ([3948277](https://github.com/kgladfelder/game-recommender/commit/3948277c3022add6bdfbccc7e739c4f31bafcbeb))
+* search and filter game selection ([8dd26f5](https://github.com/kgladfelder/game-recommender/commit/8dd26f5cfbe0aba019ec7d537b4c7e24bdcf9a07))
+* ui improvements ([00ba92f](https://github.com/kgladfelder/game-recommender/commit/00ba92fd9edbe9a4550ae31a9930b988bb28334c))
+
+
+### Bug Fixes
+
+* game list paths fixed ([148c1be](https://github.com/kgladfelder/game-recommender/commit/148c1bea5772d71d8b3f2c5532424902a073eda0))
+
 ## [1.2.1](https://github.com/kgladfelder/game-recommender/compare/v1.2.0...v1.2.1) (2022-08-23)
 
 
