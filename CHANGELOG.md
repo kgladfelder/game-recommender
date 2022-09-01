@@ -14,7 +14,7 @@
 
 ### Bug Fixes
 
-* game list paths fuxed ([148c1be](https://github.com/kgladfelder/game-recommender/commit/148c1bea5772d71d8b3f2c5532424902a073eda0))
+* game list paths fixed ([148c1be](https://github.com/kgladfelder/game-recommender/commit/148c1bea5772d71d8b3f2c5532424902a073eda0))
 
 ## [1.2.1](https://github.com/kgladfelder/game-recommender/compare/v1.2.0...v1.2.1) (2022-08-23)
 
