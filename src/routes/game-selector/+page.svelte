@@ -1,108 +1,233 @@
 <script lang="ts">
 	import { gameStore } from '../../stores';
-	import { Platform, type Game } from '../../lib/types';
+	import type { Game } from '$lib/types';
+	import LargeGameCard from '$lib/components/large-game-card/large-game-card.svelte';
+	import SmallGameCard from '$lib/components/small-game-card/small-game-card.svelte';
 
-	let randGame: Game | undefined;
+	const gameHours = $gameStore
+		.filter((x) => x.completedDate === undefined)
+		.flatMap((x) => {
+			let ret: number[] = [];
+			if (x.mainStory !== undefined && x.mainStory >= 0) {
+				ret.push(x.mainStory);
+			}
+			if (x.mainExtras !== undefined && x.mainExtras >= 0) {
+				ret.push(x.mainExtras);
+			}
+			if (x.completionist !== undefined && x.completionist >= 0) {
+				ret.push(x.completionist);
+			}
+			return ret;
+		});
+
+	let selectedGame: Game | undefined;
+	let timer: NodeJS.Timeout;
+	let minHours: number = Math.min(...gameHours);
+	let minHoursInput: number = minHours;
+	let maxHours: number = Math.max(...gameHours);
+	let maxHoursInput: number = maxHours;
+	let developer: string = '';
+	let developerInput: string = '';
+	let publisher: string = '';
+	let publisherInput: string = '';
+
+	let games = $gameStore
+		.filter((x) => x.completedDate === undefined)
+		.sort((a, b) => {
+			if (a.gameName > b.gameName) {
+				return 1;
+			} else if (a.gameName < b.gameName) {
+				return -1;
+			} else {
+				return 0;
+			}
+		});
+
+	const reset = () => {
+		minHoursInput = Math.min(...gameHours);
+		minHours = Math.min(...gameHours);
+		maxHoursInput = Math.max(...gameHours);
+		maxHours = Math.max(...gameHours);
+		chooseRandom();
+	};
 
 	const chooseRandom = () => {
-		const possibleGames = $gameStore.filter((x) => x.completedDate === undefined);
-		randGame = possibleGames[Math.floor(Math.random() * possibleGames.length)];
+		selectedGame = games[Math.floor(Math.random() * games.length)];
 	};
+
+	const onMinHoursChange = () => {
+		clearTimeout(timer);
+		timer = setTimeout(() => {
+			if (minHoursInput < 0) {
+				minHoursInput = 0;
+			}
+			minHours = maxHoursInput;
+			if (maxHours < maxHoursInput) {
+				maxHours = maxHoursInput;
+				maxHoursInput = maxHoursInput;
+			}
+		}, 500);
+	};
+
+	const onMaxHoursChange = () => {
+		clearTimeout(timer);
+		timer = setTimeout(() => {
+			if (maxHoursInput < 0) {
+				maxHoursInput = 0;
+			}
+			maxHours = maxHoursInput;
+			if (minHours > maxHoursInput) {
+				minHours = maxHoursInput;
+				minHoursInput = maxHoursInput;
+			}
+		}, 500);
+	};
+
+	const onPublisherChange = () => {
+		clearTimeout(timer);
+		timer = setTimeout(() => {
+			publisher = publisherInput;
+		}, 500);
+	};
+
+	const onDeveloperChange = () => {
+		clearTimeout(timer);
+		timer = setTimeout(() => {
+			developer = developerInput;
+		}, 500);
+	};
+
+	$: {
+		games = $gameStore.filter(
+			(x) =>
+				x.completedDate === undefined &&
+				((x.mainStory && x.mainStory >= minHours) ||
+					(x.mainExtras && x.mainExtras >= minHours) ||
+					(x.completionist && x.completionist >= minHours)) &&
+				((x.mainStory && x.mainStory <= maxHours) ||
+					(x.mainExtras && x.mainExtras <= maxHours) ||
+					(x.completionist && x.completionist <= maxHours)) &&
+				(!developer || x.developer?.includes(developer)) &&
+				(!publisher || x.publisher?.includes(publisher))
+		);
+		chooseRandom();
+	}
 
 	chooseRandom();
 </script>
 
 <div>
-	<div class="row">
-		<div class="col s1 m1"></div>
-		<div class="col s8 m6">
-			{#if randGame}
-				<div class="card cyan darken-2">
-					<div class="card-content white-text">
-						<span class="card-title">{randGame.gameName}</span>
-						<div class="row">
-							<span class="col s12 card-subtitle">
-								{randGame.platform !== undefined ? Platform[randGame.platform] : 'Unknown'}
-							</span>
-						</div>
-						<div class="row">
-							<div class="col s4">
-								<div class="row">
-									<p class="col s12 card-hours">Main Story:</p>
-									<p class="col s12 card-hours-text">
-										{randGame.mainStory}
-										{randGame.mainStory !== 1 ? 'hours' : 'hour'}
-									</p>
-								</div>
-							</div>
-							<div class="col s4">
-								<div class="row">
-									<p class="col s12 card-hours">Main Story + Extras:</p>
-									<p class="col s12 card-hours-text">
-										{randGame.mainExtras}
-										{randGame.mainExtras !== 1 ? 'hours' : 'hour'}
-									</p>
-								</div>
-							</div>
-							<div class="col s4">
-								<div class="row">
-									<p class="col s12 card-hours">Completionist:</p>
-									<p class="col s12 card-hours-text">
-										{randGame.completionist}
-										{randGame.completionist !== 1 ? 'hours' : 'hour'}
-									</p>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="card-action">
-						<button
-							on:click="{chooseRandom}"
-							class="waves-effect waves-light cyan darken-1 btn-flat white-text">
-							Choose Another
-						</button>
-					</div>
-				</div>
-			{/if}
+	<div class="input-grouping">
+		<div>
+			<label for="minHours">Minimum Hours:</label>
+			<input
+				type="number"
+				name="minHours"
+				on:input="{onMinHoursChange}"
+				bind:value="{minHoursInput}"
+				min="0"
+				step="0.01" />
+			<label for="maxHours">Maximum Hours:</label>
+			<input
+				type="number"
+				name="maxHours"
+				on:input="{onMaxHoursChange}"
+				bind:value="{maxHoursInput}"
+				min="0"
+				step="0.01" />
+			<label for="developer">Developer:</label>
+			<input
+				type="text"
+				name="developer"
+				on:input="{onDeveloperChange}"
+				bind:value="{developerInput}" />
+			<label for="publisher">Publisher:</label>
+			<input
+				type="text"
+				name="publisher"
+				on:input="{onPublisherChange}"
+				bind:value="{publisherInput}" />
 		</div>
-		<div class="col s2 m4">
-			{#each $gameStore.filter((x) => x.completedDate === undefined) as unfinished}
-				<div class="card red accent-1">
-					<div class="card-content">
-						<div class="card-side-title">{unfinished.gameName}</div>
-						<div class="card-side-subtitle">
-							{unfinished.platform !== undefined ? Platform[unfinished.platform] : 'Unknown'}
-						</div>
-					</div>
-				</div>
-			{/each}
-		</div>
+		<!-- Platform filter - TODO -->
+		<!-- Genre filter - TODO -->
+	</div>
+	<div class="button-grouping">
+		<button on:click="{chooseRandom}" class="green">Choose Another</button>
+		<button on:click="{reset}" class="red">Reset</button>
+	</div>
+	<div>
+		{#if selectedGame}
+			<LargeGameCard game="{selectedGame}" />
+		{:else}
+			<div>No matches found.</div>
+		{/if}
 	</div>
 </div>
 
 <style>
-	.card-title {
-		font-size: 30px;
-		font-weight: 600px;
+	.input-grouping {
+		display: flex;
+		flex-direction: column;
 	}
-	.card-side-title {
-		font-size: 20px;
-		font-weight: 500;
+
+	.button-grouping {
+		margin-left: 1rem;
 	}
-	.card-subtitle {
-		font-size: 20px;
-		font-weight: 500;
+
+	.red {
+		background-color: red;
+		color: white;
 	}
-	.card-side-subtitle {
+
+	.green {
+		background-color: green;
+		color: white;
+	}
+
+	button {
+		border: none;
+		text-align: center;
+		align-content: center;
+		text-decoration: none;
+		display: inline-block;
 		font-size: 18px;
-		font-weight: 400;
 	}
-	.card-hours {
-		font-size: 16px;
-		font-weight: 400;
+
+	label {
+		margin-left: 1.25rem;
+		font-size: 18px;
 	}
-	.card-hours-text {
-		font-size: 20px;
-		font-weight: 700;
+
+	input:focus {
+		outline: none;
+	}
+
+	input[type='text'] {
+		border: none;
+		border-bottom: 0.125rem solid;
+		width: 10rem;
+		height: 1.5rem;
+		font-size: 1rem;
+		padding-left: 0.875rem;
+		margin-bottom: 0.5rem;
+		margin-top: 0.125rem;
+	}
+
+	input[type='number'] {
+		-moz-appearance: textfield; /* Firefox */
+		border: none;
+		border-bottom: 0.125rem solid;
+		width: 3rem;
+		height: 1.5rem;
+		font-size: 1rem;
+		padding-left: 0.875rem;
+		margin-bottom: 0.5rem;
+		margin-top: 0.125rem;
+	}
+
+	input::-webkit-outer-spin-button,
+	input::-webkit-inner-spin-button {
+		-webkit-appearance: none;
+		margin: 0;
 	}
 </style>

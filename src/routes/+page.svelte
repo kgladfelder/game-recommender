@@ -1,7 +1,3 @@
-<script>
-	import { gameStore } from '../stores';
-</script>
-
 <div>
 	<h1>Welcome to Game Recommender</h1>
 

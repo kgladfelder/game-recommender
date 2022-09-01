@@ -1,6 +1,7 @@
 export type Game = {
 	id: string;
 	gameName: string;
+	description: string;
 	createdDate: Date;
 	completedDate?: Date;
 	platform?: Platform;

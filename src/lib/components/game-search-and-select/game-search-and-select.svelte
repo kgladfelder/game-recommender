@@ -38,6 +38,14 @@
 		return Object.values(Genre).indexOf(search);
 	};
 
+	const getGameDescription = (description: string): string => {
+		try {
+			return description.split('\n')[0].trim();
+		} catch {
+			return '';
+		}
+	};
+
 	const getDetail = async (gameId: string) => {
 		const response = await fetch(`api/game-details?id=${gameId}`);
 		if (response.status === 200) {
@@ -57,6 +65,7 @@
 					europe: data.euRelease,
 					japan: data.jpRelease,
 				},
+				description: getGameDescription(data.gameDescription),
 			});
 		}
 	};
@@ -85,12 +94,12 @@
 <div class:hidden-modal="{!visible}" class:modal="{visible}" on:click="{() => cancel()}">
 	{#if visible}
 		<div class="container" bind:this="{box}" on:click="{(event) => event.stopPropagation()}">
-			<form class="row">
-				<div class="col s10">
-					<h6>Game Search:</h6>
+			<form>
+				<div>
+					<h1>Game Search</h1>
 				</div>
-				<div class="input-field col s11">
-					<label for="gameNameInput" class:active="{gameName}">Game Name</label>
+				<div>
+					<label for="gameNameInput">Game Name:</label>
 					<input
 						id="gameNameInput"
 						bind:value="{gameName}"
@@ -100,45 +109,56 @@
 						autocomplete="off"
 						type="text" />
 				</div>
-				<div class="col s3 offset-s9">
+				<div>
 					<button
+						class="red"
 						id="cancel-btn"
 						on:click|preventDefault="{cancel}"
-						disabled="{disabled}"
-						class="waves-effect waves-light red lighten-2 btn">
+						disabled="{disabled}">
 						Cancel
 					</button>
 					<button
+						class="green"
 						id="submit-btn"
 						on:click|preventDefault="{searchGame}"
-						disabled="{disabled}"
-						class="waves-effect waves-light btn">
+						disabled="{disabled}">
 						Submit
 					</button>
 				</div>
 			</form>
-			<div class="row results">
+			<div class="results">
 				{#each searchResults as result (result.detailId)}
-					<div class="col s6 m4 l3">
-						<div class="card small blue lighten-3" data-testid="{`game-card-${result.gameName}`}">
-							<div class="card-content">
-								<span class="card-title">{result.gameName}</span>
-								<p>Main Game: {result.main}</p>
-								<p>Main Game + Extras: {result.mainExtra}</p>
-								<p>Completionist: {result.complete}</p>
+					<div class="result" data-testid="{`game-card-${result.gameName}`}">
+						<h2>
+							{result.gameName}
+						</h2>
+						<div class="game-hours">
+							<div>
+								<div class="game-info">{result.main}</div>
+								<div class="game-info-desc">Main Story</div>
 							</div>
-							<div class="card-action">
-								<button
-									class="waves-effect waves-light btn btn-width"
-									on:click|preventDefault="{() => getDetail(result.detailId)}">Select Game</button>
+							<div>
+								<div class="game-info">{result.mainExtra}</div>
+								<div class="game-info-desc">Extras</div>
 							</div>
+							<div>
+								<div class="game-info">{result.complete}</div>
+								<div class="game-info-desc">Complete</div>
+							</div>
+						</div>
+						<div>
+							<button
+								class="blue submit-btn"
+								on:click|preventDefault="{() => getDetail(result.detailId)}">
+								Select Game
+							</button>
 						</div>
 					</div>
 				{:else}
 					{#if !searched}
-						<h6 class="s12">Please search for a game.</h6>
+						<h2>Please search for a game.</h2>
 					{:else}
-						<h6 class="s12">No results found. Please search for another game.</h6>
+						<h2>No results found. Please search for another game.</h2>
 					{/if}
 				{/each}
 			</div>
@@ -149,15 +169,15 @@
 <style>
 	.modal {
 		display: block;
-		position: fixed; /* Stay in place */
-		z-index: 75; /* Sit on top */
+		position: fixed;
+		z-index: 75;
 		left: 0;
-		width: 100%; /* Full width */
-		overflow: hidden; /* Enable scroll if needed */
-		background-color: rgb(0, 0, 0); /* Fallback color */
-		background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+		width: 100%;
+		overflow: hidden;
+		background-color: rgb(0, 0, 0);
+		background-color: rgba(0, 0, 0, 0.4);
 		max-height: max-content;
-		height: 100%;
+		height: calc(100% - 80px);
 	}
 
 	.hidden-modal {
@@ -167,18 +187,96 @@
 	.container {
 		background-color: rgb(255, 255, 255);
 		background-color: rgba(255, 255, 255, 1);
-		height: calc(100% - 64px);
+		height: calc(100%);
 		margin: 0 auto;
 		padding: 1.25em;
 		overflow: hidden;
+		width: 75%;
 	}
 
 	.results {
-		height: calc(50%);
+		height: 75%;
+		width: 100%;
 		overflow: auto;
+		display: flex;
+		flex-wrap: wrap;
+		flex-direction: row;
 	}
 
-	.card-title {
-		font-weight: 500;
+	.result {
+		border-style: solid;
+		border-width: 2px;
+		padding: 0.5em;
+		margin: 0.5em;
+		width: 30%;
+		height: 15rem;
+		display: flex;
+		flex-direction: column;
+		position: relative;
+	}
+
+	.submit-btn {
+		position: absolute;
+		bottom: 5px;
+		right: 5px;
+	}
+
+	.blue {
+		background-color: blue;
+		color: white;
+	}
+
+	.red {
+		background-color: red;
+		color: white;
+	}
+
+	.green {
+		background-color: green;
+		color: white;
+	}
+
+	.game-hours {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+	}
+
+	.game-info-desc {
+		font-weight: 400;
+	}
+
+	.game-info {
+		font-weight: 700;
+		font-size: x-large;
+	}
+
+	button {
+		border: none;
+		text-align: center;
+		align-content: center;
+		text-decoration: none;
+		display: inline-block;
+		font-size: 18px;
+	}
+
+	label {
+		margin-left: 1.25rem;
+		font-size: 18px;
+	}
+
+	input:focus {
+		outline: none;
+	}
+
+	input[type='text'] {
+		border: none;
+		border-bottom: 0.125rem solid;
+		width: 10rem;
+		height: 1.5rem;
+		font-size: 1rem;
+		padding-left: 0.875rem;
+		margin-bottom: 0.5rem;
+		margin-top: 0.125rem;
 	}
 </style>

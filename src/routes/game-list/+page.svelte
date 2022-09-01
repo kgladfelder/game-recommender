@@ -1,10 +1,10 @@
 <script lang="ts">
 	import type { Game } from '$lib/types';
 	import { gameStore } from '../../stores';
-	import GameInformation from '$lib/components/game-information/index.svelte';
-	import GameSearchAndSelect from '$lib/components/game-search-and-select/index.svelte';
-	import GameCard from '$lib/components/game-card/index.svelte';
-	import GameRow from '$lib/components/game-row/index.svelte';
+	import GameInformation from '$lib/components/game-information/game-information.svelte';
+	import GameSearchAndSelect from '$lib/components/game-search-and-select/game-search-and-select.svelte';
+	import GameCard from '$lib/components/game-card/game-card.svelte';
+	import GameRow from '$lib/components/game-row/game-row.svelte';
 
 	let addGameModalVis: boolean = false;
 	let editGameModalVis: boolean = false;
@@ -14,7 +14,15 @@
 	let gridVis: boolean = true;
 	let tableVis: boolean = false;
 	let gameListFilter: string = '';
-	let games: Game[] = $gameStore;
+	let games: Game[] = $gameStore.sort((a, b) => {
+		if (a.gameName > b.gameName) {
+			return 1;
+		} else if (a.gameName < b.gameName) {
+			return -1;
+		} else {
+			return 0;
+		}
+	});
 
 	const setLocalStorage = () => {
 		localStorage.setItem('games', JSON.stringify($gameStore));
@@ -109,61 +117,40 @@
 			: $gameStore;
 </script>
 
-<div style="height: calc(100% - 64px);">
-	<GameSearchAndSelect
-		visible="{addGameModalVis}"
-		on:cancel="{onAddGameCancel}"
-		on:game="{onNewGameRet}" />
-	{#if editedGame}
+<div class="game-list-page">
+	{#if addGameModalVis}
+		<GameSearchAndSelect
+			visible="{addGameModalVis}"
+			on:cancel="{onAddGameCancel}"
+			on:game="{onNewGameRet}" />
+	{:else if editedGame && editGameModalVis}
 		<GameInformation
 			visible="{editGameModalVis}"
-			id="{editedGame.id}"
-			createdDate="{editedGame.createdDate}"
-			gameName="{editedGame.gameName}"
-			mainStory="{editedGame.mainStory}"
-			mainExtras="{editedGame.mainExtras}"
-			completionist="{editedGame.completionist}"
-			publisher="{editedGame.publisher}"
-			developer="{editedGame.developer}"
-			platform="{editedGame.platform}"
-			genres="{editedGame.genres}"
-			releaseDates="{editedGame.releaseDates}"
+			game="{editedGame}"
 			on:game="{onEditGame}"
 			on:cancel="{onEditGameCancel}" />
 	{/if}
-	<div class="row search-row">
-		<div class="col s3">
-			<button on:click="{onNewGame}" class="waves-effect waves-light green lighten-2 btn btn-width">
-				Add Game
-			</button>
+	<div class="search-bar">
+		<div>
+			<button class="button-add green" on:click="{onNewGame}"><i class="material-icons">add</i></button>
 		</div>
-		<div class="input-field col s6">
+		<div>
 			<label for="gameNameInput">Filter Games by Name:</label>
 			<input id="gameNameInput" bind:value="{gameListFilter}" autocomplete="off" type="text" />
 		</div>
-		<div class="col s2 offset-s1">
-			<button
-				title="Switch to grid view"
-				class="waves-effect waves-light btn view-btn"
-				class:blue="{gridVis}"
-				class:grey="{!gridVis}"
-				on:click="{onGridViewClick}">
+		<div>
+			<button class:grey={!gridVis} class:blue={gridVis} title="Switch to grid view" on:click="{onGridViewClick}">
 				<i class="material-icons">widgets</i>
 			</button>
-			<button
-				title="Switch to table view"
-				class="waves-effect waves-light btn view-btn"
-				class:blue="{tableVis}"
-				class:grey="{!tableVis}"
-				on:click="{onTableViewClick}">
+			<button class="button-list" class:grey={!tableVis} class:blue={tableVis} title="Switch to table view" on:click="{onTableViewClick}">
 				<i class="material-icons">list</i>
 			</button>
 		</div>
 	</div>
 
 	{#if tableVis}
-		<div class="row">
-			<table class="col s10 offset-s1">
+		<div class="game-list-content">
+			<table>
 				<thead>
 					<tr>
 						<th>Game Name</th>
@@ -191,7 +178,7 @@
 		</div>
 	{/if}
 	{#if gridVis}
-		<div class="row">
+		<div class="game-list-content grid">
 			{#each games as game (game.id)}
 				<GameCard
 					game="{game}"
@@ -204,23 +191,60 @@
 </div>
 
 <style>
-	.btn-width {
-		width: 75%;
-		margin-left: 12.5%;
-	}
-
-	.row {
-		text-decoration: none;
-	}
-
-	.search-row {
+	.search-bar {
 		display: flex;
+		justify-content: space-between;
 		align-items: center;
+		height: 3em;
 	}
 
-	.view-btn {
-		width: 25%;
-		padding: 0px;
+	.game-list-page {
+		display: flex;
+		flex-direction: column;
+		height: 100%;
 	}
 
+	.game-list-content {
+		flex: 1;
+		overflow: auto;
+		margin-left: 1em;
+	}
+
+	.grid {
+		display: flex;
+		flex-wrap: wrap;
+	}
+
+	.button-add {
+		margin-left: 0.5em;
+	}
+
+	.button-list {
+		margin-right: 0.5em;
+	}
+
+	.grey {
+		background-color: gray;
+		color: white;
+	}
+
+	.green {
+		background-color: green;
+		color: white;
+	}
+
+	.blue {
+		background-color: blue;
+		color: white;
+	}
+
+	button {
+		border: none;
+		text-align: center;
+		align-content: center;
+		text-decoration: none;
+		display: inline-block;
+		font-size: 36px;
+		width: 3em;
+	}
 </style>
