@@ -1,10 +1,10 @@
 <script lang="ts">
 	import type { Game } from '$lib/types';
 	import { gameStore } from '../../stores';
-	import GameInformation from '$lib/components/game-information/index.svelte';
-	import GameSearchAndSelect from '$lib/components/game-search-and-select/index.svelte';
-	import GameCard from '$lib/components/game-card/index.svelte';
-	import GameRow from '$lib/components/game-row/index.svelte';
+	import GameInformation from '$lib/components/game-information/game-information.svelte';
+	import GameSearchAndSelect from '$lib/components/game-search-and-select/game-search-and-select.svelte';
+	import GameCard from '$lib/components/game-card/game-card.svelte';
+	import GameRow from '$lib/components/game-row/game-row.svelte';
 
 	let addGameModalVis: boolean = false;
 	let editGameModalVis: boolean = false;
