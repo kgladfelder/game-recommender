@@ -28,7 +28,7 @@
 	<div class="game-hours">
 		{#each hoursArray as ha}
 			<div>
-				<div class="game-info">{ha.hours}</div>
+				<div class="game-info">{ha.hours ?? ''}</div>
 				<div class="game-info-desc">{ha.section}</div>
 			</div>
 		{/each}

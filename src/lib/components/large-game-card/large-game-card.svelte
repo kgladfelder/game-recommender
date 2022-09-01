@@ -54,7 +54,7 @@
 		{#each hoursArray as ha}
 			<div class="card-section">
 				<div class="section">{ha.section}</div>
-				<div class="hours">{ha.hours}</div>
+				<div class="hours">{ha.hours ?? ''}</div>
 			</div>
 		{/each}
 		{#each detailsArry as da}

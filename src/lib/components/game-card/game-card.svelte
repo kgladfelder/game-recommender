@@ -88,7 +88,7 @@
 				{#each hoursArray as ha}
 					<li>
 						<div class="game-info-desc">{ha.section}:</div>
-						<div class="game-info">{ha.hours}</div>
+						<div class="game-info">{ha.hours ?? ''}</div>
 					</li>
 				{/each}
 			</ul>
@@ -155,6 +155,15 @@
 		border-style: solid;
 		border-width: 0px 0px 1px 0px;
 		line-height: 1.5em;
+	}
+
+	button {
+		border: none;
+		text-align: center;
+		align-content: center;
+		text-decoration: none;
+		display: inline-block;
+		font-size: 18px;
 	}
 
 	.card {

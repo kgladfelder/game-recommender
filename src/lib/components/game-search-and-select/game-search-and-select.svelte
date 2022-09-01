@@ -42,9 +42,9 @@
 		try {
 			return description.split('\n')[0].trim();
 		} catch {
-			return "";
+			return '';
 		}
-	}
+	};
 
 	const getDetail = async (gameId: string) => {
 		const response = await fetch(`api/game-details?id=${gameId}`);
@@ -65,7 +65,7 @@
 					europe: data.euRelease,
 					japan: data.jpRelease,
 				},
-				description: getGameDescription(data.gameDescription)
+				description: getGameDescription(data.gameDescription),
 			});
 		}
 	};
@@ -96,10 +96,10 @@
 		<div class="container" bind:this="{box}" on:click="{(event) => event.stopPropagation()}">
 			<form>
 				<div>
-					<h6>Game Search:</h6>
+					<h1>Game Search</h1>
 				</div>
 				<div>
-					<label for="gameNameInput">Game Name</label>
+					<label for="gameNameInput">Game Name:</label>
 					<input
 						id="gameNameInput"
 						bind:value="{gameName}"
@@ -111,12 +111,14 @@
 				</div>
 				<div>
 					<button
+						class="red"
 						id="cancel-btn"
 						on:click|preventDefault="{cancel}"
 						disabled="{disabled}">
 						Cancel
 					</button>
 					<button
+						class="green"
 						id="submit-btn"
 						on:click|preventDefault="{searchGame}"
 						disabled="{disabled}">
@@ -126,25 +128,37 @@
 			</form>
 			<div class="results">
 				{#each searchResults as result (result.detailId)}
-					<div>
-						<div data-testid="{`game-card-${result.gameName}`}">
+					<div class="result" data-testid="{`game-card-${result.gameName}`}">
+						<h2>
+							{result.gameName}
+						</h2>
+						<div class="game-hours">
 							<div>
-								<span>{result.gameName}</span>
-								<p>Main Game: {result.main}</p>
-								<p>Main Game + Extras: {result.mainExtra}</p>
-								<p>Completionist: {result.complete}</p>
+								<div class="game-info">{result.main}</div>
+								<div class="game-info-desc">Main Story</div>
 							</div>
 							<div>
-								<button
-									on:click|preventDefault="{() => getDetail(result.detailId)}">Select Game</button>
+								<div class="game-info">{result.mainExtra}</div>
+								<div class="game-info-desc">Extras</div>
 							</div>
+							<div>
+								<div class="game-info">{result.complete}</div>
+								<div class="game-info-desc">Complete</div>
+							</div>
+						</div>
+						<div>
+							<button
+								class="blue submit-btn"
+								on:click|preventDefault="{() => getDetail(result.detailId)}">
+								Select Game
+							</button>
 						</div>
 					</div>
 				{:else}
 					{#if !searched}
-						<h6>Please search for a game.</h6>
+						<h2>Please search for a game.</h2>
 					{:else}
-						<h6>No results found. Please search for another game.</h6>
+						<h2>No results found. Please search for another game.</h2>
 					{/if}
 				{/each}
 			</div>
@@ -181,7 +195,88 @@
 	}
 
 	.results {
-		height: calc(75%);
+		height: 75%;
+		width: 100%;
 		overflow: auto;
+		display: flex;
+		flex-wrap: wrap;
+		flex-direction: row;
+	}
+
+	.result {
+		border-style: solid;
+		border-width: 2px;
+		padding: 0.5em;
+		margin: 0.5em;
+		width: 30%;
+		height: 15rem;
+		display: flex;
+		flex-direction: column;
+		position: relative;
+	}
+
+	.submit-btn {
+		position: absolute;
+		bottom: 5px;
+		right: 5px;
+	}
+
+	.blue {
+		background-color: blue;
+		color: white;
+	}
+
+	.red {
+		background-color: red;
+		color: white;
+	}
+
+	.green {
+		background-color: green;
+		color: white;
+	}
+
+	.game-hours {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+	}
+
+	.game-info-desc {
+		font-weight: 400;
+	}
+
+	.game-info {
+		font-weight: 700;
+		font-size: x-large;
+	}
+
+	button {
+		border: none;
+		text-align: center;
+		align-content: center;
+		text-decoration: none;
+		display: inline-block;
+		font-size: 18px;
+	}
+
+	label {
+		margin-left: 1.25rem;
+		font-size: 18px;
+	}
+
+	input:focus {
+		outline: none;
+	}
+
+	input[type='text'] {
+		border: none;
+		border-bottom: 0.125rem solid;
+		width: 10rem;
+		height: 1.5rem;
+		font-size: 1rem;
+		padding-left: 0.875rem;
+		margin-bottom: 0.5rem;
+		margin-top: 0.125rem;
 	}
 </style>
