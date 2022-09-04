@@ -213,6 +213,7 @@
 	.grid {
 		display: flex;
 		flex-wrap: wrap;
+		justify-content: space-around;
 	}
 
 	.button-add {
@@ -246,5 +247,10 @@
 		display: inline-block;
 		font-size: 36px;
 		width: 3em;
+	}
+
+	label {
+		margin-left: 1.25rem;
+		font-size: 18px;
 	}
 </style>
