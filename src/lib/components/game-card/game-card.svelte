@@ -194,6 +194,6 @@
 	}
 
 	.completed {
-		background-color: rgba(100, 250, 100);
+		background-color: rgb(82, 185, 82);
 	}
 </style>
