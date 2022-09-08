@@ -9,6 +9,7 @@
 
 	let box: HTMLDivElement;
 	let format = 'YYYY-MM-DD';
+	let localGame: Game = {...game};
 
 	let internalDate: string | undefined;
 
@@ -17,14 +18,16 @@
 			internalDate = dayjs(x).format(format);
 		}
 	};
+	
 	const output = (x: string | undefined) => {
 		if (x) {
-			game.completedDate = dayjs(x, format).toDate();
+			localGame.completedDate = dayjs(x, format).toDate();
 		}
 	};
 
-	$: input(game.completedDate);
+	$: input(localGame.completedDate);
 	$: output(internalDate);
+
 
 	const dispatch = createEventDispatcher<{ game: Game; cancel: void }>();
 
@@ -41,7 +44,7 @@
 	};
 
 	const submitGame = () => {
-		dispatch('game', game);
+		dispatch('game', localGame);
 		cleanUp();
 	};
 
@@ -84,7 +87,7 @@
 			on:click="{(event) => event.stopPropagation()}">
 			<div class="header">
 				<div>
-					<h1>{game.gameName}</h1>
+					<h1>{localGame.gameName}</h1>
 				</div>
 				<div>
 					<button id="cancel-btn" class="red" on:click|preventDefault="{cancel}"> Cancel </button>
@@ -101,7 +104,7 @@
 							<label for="platform-{pf.value}">
 								<input
 									id="platform-{pf.value}"
-									bind:group="{game.platform}"
+									bind:group="{localGame.platform}"
 									type="radio"
 									name="platformInput"
 									value="{pf.key}" />
@@ -114,7 +117,7 @@
 					<label for="developerInput">Developer</label>
 					<input
 						id="developerInput"
-						bind:value="{game.developer}"
+						bind:value="{localGame.developer}"
 						on:keypress="{checkForEnter}"
 						autocomplete="off"
 						type="text" />
@@ -123,7 +126,7 @@
 					<label for="publisherInput">Publisher</label>
 					<input
 						id="publisherInput"
-						bind:value="{game.publisher}"
+						bind:value="{localGame.publisher}"
 						on:keypress="{checkForEnter}"
 						autocomplete="off"
 						type="text" />
@@ -136,7 +139,7 @@
 								<input
 									id="genres-{gr.value}"
 									type="checkbox"
-									bind:group="{game.genres}"
+									bind:group="{localGame.genres}"
 									name="genres"
 									value="{gr.key}" />
 								<span>{gr.value}</span>
@@ -152,7 +155,7 @@
 					<input
 						id="mainstoryInput"
 						step="0.5"
-						bind:value="{game.mainStory}"
+						bind:value="{localGame.mainStory}"
 						on:keypress="{checkForEnter}"
 						type="number"
 						autocomplete="off" />
@@ -162,7 +165,7 @@
 					<input
 						id="mainextrasInput"
 						step="0.5"
-						bind:value="{game.mainExtras}"
+						bind:value="{localGame.mainExtras}"
 						on:keypress="{checkForEnter}"
 						type="number"
 						autocomplete="off" />
@@ -172,7 +175,7 @@
 					<input
 						id="completionistInput"
 						step="0.5"
-						bind:value="{game.completionist}"
+						bind:value="{localGame.completionist}"
 						on:keypress="{checkForEnter}"
 						type="number"
 						autocomplete="off" />
