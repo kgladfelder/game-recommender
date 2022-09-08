@@ -1,5 +1,6 @@
 <script lang="ts">
 	import { createEventDispatcher } from 'svelte';
+	import dayjs from 'dayjs';
 
 	import { Genre, Platform, type Game, type ReleaseDates } from '$lib/types';
 
@@ -7,6 +8,23 @@
 	export let visible: boolean;
 
 	let box: HTMLDivElement;
+	let format = 'YYYY-MM-DD';
+
+	let internalDate: string | undefined;
+
+	const input = (x: Date | undefined) => {
+		if (x) {
+			internalDate = dayjs(x).format(format);
+		}
+	};
+	const output = (x: string | undefined) => {
+		if (x) {
+			game.completedDate = dayjs(x, format).toDate();
+		}
+	};
+
+	$: input(game.completedDate);
+	$: output(internalDate);
 
 	const dispatch = createEventDispatcher<{ game: Game; cancel: void }>();
 
@@ -64,8 +82,16 @@
 			class="container"
 			bind:this="{box}"
 			on:click="{(event) => event.stopPropagation()}">
-			<div>
-				<h1>{game.gameName}</h1>
+			<div class="header">
+				<div>
+					<h1>{game.gameName}</h1>
+				</div>
+				<div>
+					<button id="cancel-btn" class="red" on:click|preventDefault="{cancel}"> Cancel </button>
+					<button id="submit-btn" class="green" on:click|preventDefault="{submitGame}">
+						Submit
+					</button>
+				</div>
 			</div>
 			<form>
 				<div>
@@ -151,11 +177,9 @@
 						type="number"
 						autocomplete="off" />
 				</div>
-				<div>
-					<button id="cancel-btn" class="red" on:click|preventDefault="{cancel}"> Cancel </button>
-					<button id="submit-btn" class="green" on:click|preventDefault="{submitGame}">
-						Submit
-					</button>
+				<div class="input-grouping">
+					<label for="completionDate">Completed Date</label>
+					<input id="completionDate" type="date" bind:value="{internalDate}" />
 				</div>
 			</form>
 		</div>
@@ -219,6 +243,12 @@
 		flex-direction: column;
 	}
 
+	.header {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+	}
+
 	label {
 		width: 100%;
 		font-size: larger;
@@ -229,7 +259,7 @@
 		text-align: center;
 		align-content: center;
 		text-decoration: none;
-		display: inline-block;
+		margin-top: 1em;
 		font-size: 24px;
 	}
 
@@ -273,6 +303,18 @@
 	}
 
 	input[type='text'] {
+		border: none;
+		border-bottom: 0.125rem solid;
+		width: 50%;
+		height: 2rem;
+		font-size: 1.5rem;
+		padding-left: 0.875rem;
+		line-height: 147.6%;
+		padding-top: 0.825rem;
+		padding-bottom: 0.5rem;
+	}
+
+	input[type='date'] {
 		border: none;
 		border-bottom: 0.125rem solid;
 		width: 50%;
