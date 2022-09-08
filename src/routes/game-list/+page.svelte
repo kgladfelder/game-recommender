@@ -71,11 +71,18 @@
 		completeGame(event.detail);
 	};
 
+	const format = (date: Date) => {
+		var d = date.getDate();
+		var m = date.getMonth() + 1;
+		var y = date.getFullYear();
+		return '' + y + '-' + (m <= 9 ? '0' + m : m) + '-' + (d <= 9 ? '0' + d : d);
+	}
+
 	const completeGame = (id: string) => {
 		const ind: number = $gameStore.findIndex((x) => x.id === id);
 		if (ind > -1) {
 			if (!$gameStore[ind].completedDate) {
-				$gameStore[ind].completedDate = new Date();
+				$gameStore[ind].completedDate = new Date(format(new Date()));
 			} else {
 				$gameStore[ind].completedDate = undefined;
 			}
@@ -132,17 +139,27 @@
 	{/if}
 	<div class="search-bar">
 		<div>
-			<button class="button-add green" on:click="{onNewGame}"><i class="material-icons">add</i></button>
+			<button class="button-add green" on:click="{onNewGame}"
+				><i class="material-icons">add</i></button>
 		</div>
 		<div>
 			<label for="gameNameInput">Filter Games by Name:</label>
 			<input id="gameNameInput" bind:value="{gameListFilter}" autocomplete="off" type="text" />
 		</div>
 		<div>
-			<button class:grey={!gridVis} class:blue={gridVis} title="Switch to grid view" on:click="{onGridViewClick}">
+			<button
+				class:grey="{!gridVis}"
+				class:blue="{gridVis}"
+				title="Switch to grid view"
+				on:click="{onGridViewClick}">
 				<i class="material-icons">widgets</i>
 			</button>
-			<button class="button-list" class:grey={!tableVis} class:blue={tableVis} title="Switch to table view" on:click="{onTableViewClick}">
+			<button
+				class="button-list"
+				class:grey="{!tableVis}"
+				class:blue="{tableVis}"
+				title="Switch to table view"
+				on:click="{onTableViewClick}">
 				<i class="material-icons">list</i>
 			</button>
 		</div>
@@ -213,7 +230,7 @@
 	.grid {
 		display: flex;
 		flex-wrap: wrap;
-		justify-content: space-around;
+		justify-content: space-around; /* TODO: this looks terrible for the last row */
 	}
 
 	.button-add {
