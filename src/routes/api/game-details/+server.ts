@@ -23,22 +23,19 @@ export async function GET({ url }: RequestEvent) {
 			origin: 'https://howlongtobeat.com',
 			referer: 'https://howlongtobeat.com',
 		},
-	})
-		.then(function (response) {
-			return response.text();
-		})
-		.then(function (data) {
-			return data;
-		})
-		.catch((error) => {
-			if (error.response.status !== 200) {
-				throw new Error(
-					`Got non-200 status code from howlongtobeat.com [${
-						error.response.status
-					}]: ${JSON.stringify(error.response)}`
-				);
-			}
-		});
+	}).then(function (response) {
+		return response.text();
+	}).then(function (data) {
+		return data;
+	}).catch((error) => {
+		if (error.response.status !== 200) {
+			throw new Error(
+				`Got non-200 status code from howlongtobeat.com [${
+					error.response.status
+				}]: ${JSON.stringify(error.response)}`
+			);
+		}
+	});
 
 	if (!resultData) {
 		throw new Error('No data returned from HLTB');

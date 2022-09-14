@@ -118,6 +118,21 @@
 		tableVis = false;
 	};
 
+	const download = (filename: string, contents: string) => {
+		const element = document.createElement('a');
+		element.setAttribute('href', 'data:text/plain;charset=utf-8,' + encodeURIComponent(contents));
+		element.setAttribute('download', filename);
+
+		element.style.display = 'none';
+		document.body.appendChild(element);
+		element.click();
+		document.body.removeChild(element);
+	}
+
+	const onDownload = () => {
+		download("gamelist.json", JSON.stringify($gameStore));
+	}
+
 	$: games =
 		gameListFilter !== ''
 			? $gameStore.filter((x) => x.gameName.toLowerCase().includes(gameListFilter.toLowerCase()))
@@ -139,8 +154,12 @@
 	{/if}
 	<div class="search-bar">
 		<div>
-			<button class="button-add green" on:click="{onNewGame}"
-				><i class="material-icons">add</i></button>
+			<button class="button-add green" on:click="{onNewGame}">
+				<i class="material-icons">add</i>
+			</button>
+			<button on:click="{onDownload}">
+				<i class="material-icons">save</i>
+			</button>
 		</div>
 		<div>
 			<label for="gameNameInput">Filter Games by Name:</label>
