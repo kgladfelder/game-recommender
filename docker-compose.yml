@@ -1,0 +1,22 @@
+version: "3.8"
+
+services:
+  gamerecommend:
+    build:
+      context: .
+    ports:
+      - 3000:3000
+    restart: unless-stopped
+  
+  db:
+    image: postgres:14.1-alpine
+    restart: always
+    environment:
+      - POSTGRES_USER=${POSTGRES_USER}
+      - POSTGRES_PASSWORD=${POSTGRES_PASSWORD}
+    volumes:
+      - db:/var/lib/postgres/data
+
+volumes:
+  db:
+    driver: local
