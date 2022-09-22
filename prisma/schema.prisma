@@ -42,6 +42,7 @@ model Game {
 model System {
   id          String       @id @default(uuid())
   name        String
+  alias       String[]
   company     Company      @relation(fields: [companyId], references: [id])
   companyId   String
   gameSystems GameSystem[]
@@ -93,8 +94,8 @@ model UserGameSystem {
 
 model GameSystem {
   id       String           @id @default(uuid())
-  System   System           @relation(fields: [SystemId], references: [id])
-  SystemId String
+  system   System           @relation(fields: [systemId], references: [id])
+  systemId String
   game     Game             @relation(fields: [gameId], references: [id])
   gameId   String
   users    UserGameSystem[]

@@ -16,6 +16,7 @@ COPY --from=build /usr/src/app/wait-for-it.sh .
 COPY --from=build /usr/src/app/build .
 COPY --from=build /usr/src/app/package.json .
 COPY --from=build /usr/src/app/node_modules ./node_modules
+COPY --from=build /usr/src/app/.env.docker ./.env
 
 EXPOSE 3000
 
