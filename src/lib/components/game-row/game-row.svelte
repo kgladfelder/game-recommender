@@ -68,6 +68,6 @@
 
 <style>
 	.completed-game {
-		background-color: rgba(100,250,100);
+		background-color: rgba(100, 250, 100);
 	}
 </style>

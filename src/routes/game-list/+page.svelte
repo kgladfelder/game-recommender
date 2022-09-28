@@ -76,7 +76,7 @@
 		var m = date.getMonth() + 1;
 		var y = date.getFullYear();
 		return '' + y + '-' + (m <= 9 ? '0' + m : m) + '-' + (d <= 9 ? '0' + d : d);
-	}
+	};
 
 	const completeGame = (id: string) => {
 		const ind: number = $gameStore.findIndex((x) => x.id === id);
@@ -127,11 +127,11 @@
 		document.body.appendChild(element);
 		element.click();
 		document.body.removeChild(element);
-	}
+	};
 
 	const onDownload = () => {
-		download("gamelist.json", JSON.stringify($gameStore));
-	}
+		download('gamelist.json', JSON.stringify($gameStore));
+	};
 
 	$: games =
 		gameListFilter !== ''

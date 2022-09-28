@@ -40,7 +40,7 @@
 		font-size: larger;
 		line-height: 1em;
 	}
-    
+
 	.card {
 		border-style: solid;
 		border-width: 2px;
@@ -52,7 +52,7 @@
 	.game-hours {
 		display: flex;
 		flex-direction: row;
-        justify-content: space-between;
+		justify-content: space-between;
 	}
 
 	.game-info-desc {

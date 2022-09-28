@@ -97,40 +97,40 @@
 		gap: 15px 15px;
 	}
 
-    .card-section {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
-    }
+	.card-section {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-around;
+	}
 
-    .card-section-double {
-        grid-column: 1 / 3;
-    }
+	.card-section-double {
+		grid-column: 1 / 3;
+	}
 
-    .section {
-        text-align: center;
-    }
+	.section {
+		text-align: center;
+	}
 
-    .hours {
-        text-align: center;
-        font-size: 90px;
-    }
+	.hours {
+		text-align: center;
+		font-size: 90px;
+	}
 
-    .detail {
-        text-align: center;
-        font-size: 45px;
-    }
+	.detail {
+		text-align: center;
+		font-size: 45px;
+	}
 
-    .description {
-        min-height: 10em;
-        max-height: 10em;
-        overflow: auto;
-    }
+	.description {
+		min-height: 10em;
+		max-height: 10em;
+		overflow: auto;
+	}
 
-    .genres {
-        white-space: pre;
-        min-height: 10em;
-        max-height: 10em;
-        overflow: auto;
-    }
+	.genres {
+		white-space: pre;
+		min-height: 10em;
+		max-height: 10em;
+		overflow: auto;
+	}
 </style>

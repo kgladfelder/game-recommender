@@ -9,7 +9,7 @@
 
 	let box: HTMLDivElement;
 	let format = 'YYYY-MM-DD';
-	let localGame: Game = {...game};
+	let localGame: Game = { ...game };
 
 	let internalDate: string | undefined;
 
@@ -18,7 +18,7 @@
 			internalDate = dayjs(x).format(format);
 		}
 	};
-	
+
 	const output = (x: string | undefined) => {
 		if (x) {
 			localGame.completedDate = dayjs(x, format).toDate();
@@ -27,7 +27,6 @@
 
 	$: input(localGame.completedDate);
 	$: output(internalDate);
-
 
 	const dispatch = createEventDispatcher<{ game: Game; cancel: void }>();
 

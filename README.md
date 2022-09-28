@@ -15,3 +15,5 @@ DATABASE_URL
 and
 
 `DATABASE_URL` should contain `postgresql://${POSTGRES_USER}:${POSTGRES_PASSWORD}@db/gamrec` in `.env.docker`
+
+Add `JWT_KEY` to `.env` and supply a value to use as the JWT signing key

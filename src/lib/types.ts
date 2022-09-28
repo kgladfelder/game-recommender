@@ -1,3 +1,9 @@
+export type AccessToken = {
+	userId: string;
+	admin: boolean;
+	timeToExpire: number;
+};
+
 export type Game = {
 	id: string;
 	gameName: string;
