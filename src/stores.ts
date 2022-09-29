@@ -1,10 +1,5 @@
+import type { User } from '@prisma/client';
 import { writable } from 'svelte/store';
 
-import type { Game } from './lib/types';
-
-let gameSet: Game[] = [];
-if (typeof window !== 'undefined') {
-	gameSet = JSON.parse(localStorage.getItem('games') || '[]');
-}
-
-export const gameStore = writable<Game[]>(gameSet);
+let userSet: User | undefined = undefined;
+export const userStore = writable<User>(userSet);
