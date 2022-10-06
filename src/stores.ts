@@ -1,5 +1,8 @@
-import type { User } from '@prisma/client';
+import type { UIUser } from '$lib/types';
 import { writable } from 'svelte/store';
 
-let userSet: User | undefined = undefined;
-export const userStore = writable<User>(userSet);
+let userSet: UIUser | undefined = undefined;
+export const userStore = writable<UIUser>(userSet);
+
+let authTokenSet: String | undefined = undefined;
+export const authToken = writable<String>(authTokenSet);

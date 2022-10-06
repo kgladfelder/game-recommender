@@ -1,11 +1,39 @@
 <script lang="ts">
 	import Button from '$lib/components/Button.svelte';
 	import Input from '$lib/components/Input.svelte';
+	import { userStore, authToken } from '../../stores'
 
 	let username: string;
 	let password: string;
 
-	function signin() {}
+	function signin() {
+		// Send data somewhere
+		const fetchBody = {
+			username,
+			password,
+		};
+		fetch('api/login', {
+			method: 'POST',
+			body: JSON.stringify(fetchBody),
+			headers: {
+				'Content-Type': 'application/json',
+			},
+		})
+			.then((response) => {
+				return response.json();
+			})
+			.then((data) => {
+				console.log(data);
+				authToken.set(data.authToken);
+				userStore.set({
+					username: data.username,
+					email: data.email
+				});
+			})
+			.catch((error) => {
+				console.error(error);
+			});
+	}
 </script>
 
 <form

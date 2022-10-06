@@ -1,5 +1,5 @@
 import { PrismaClient } from '@prisma/client';
-import { error, type RequestEvent } from '@sveltejs/kit';
+import { error, json, type RequestEvent } from '@sveltejs/kit';
 import bcrypt from 'bcrypt';
 
 import { generateAuthToken } from '$lib/authentication';
@@ -20,16 +20,19 @@ export async function POST({ request }: RequestEvent) {
 			username: true,
 			email: true,
 			password: true,
-			admin: true
+			admin: true,
 		},
 	});
 
 	prisma.$disconnect();
 
-	if (user && user.password && await bcrypt.compare(password, user.password)) {
-		return generateAuthToken(user.id, false);
+	if (user && user.password && (await bcrypt.compare(password, user.password))) {
+		return json({
+			username: user.username,
+			email: user.email,
+			authToken: generateAuthToken(user.id, false)
+		});
 	} else {
 		throw error(401, 'Unauthorized');
 	}
-	
 }

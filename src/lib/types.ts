@@ -3,3 +3,8 @@ export type AccessToken = {
 	admin: boolean;
 	timeToExpire: number;
 };
+
+export type UIUser = {
+	username: string;
+	email: string;
+}
