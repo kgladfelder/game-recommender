@@ -13,7 +13,7 @@ export const generateAuthToken = (userId: string, admin: boolean): string => {
 	return jwt.sign(token, JWT_KEY);
 };
 
-export const validateAuthToken = (token: string | null): AccessToken => {
+export const validateAuthToken = (token: string | null | undefined): AccessToken => {
 	if (!token) {
 		throw error(401, 'Unauthorized');
 	}
@@ -24,7 +24,7 @@ export const validateAuthToken = (token: string | null): AccessToken => {
 			'userId' in jwtToken &&
 			'admin' in jwtToken &&
 			'timeToExpire' in jwtToken &&
-			jwtToken.timeToExpire < Date.now() / 1000
+			jwtToken.timeToExpire >= Date.now() / 1000
 		) {
 			const accessToken: AccessToken = {
 				userId: jwtToken.userId,
