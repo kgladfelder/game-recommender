@@ -1,7 +1,6 @@
 import { error, redirect, type RequestEvent } from '@sveltejs/kit';
 import { PrismaClient } from '@prisma/client';
 
-import { customResponse } from '$lib/utils';
 import * as bcrypt from 'bcrypt';
 
 import { generateAuthToken } from '$lib/authentication';
@@ -13,10 +12,10 @@ export const actions = {
 		const password = form.get('password');
 
 		if (!username || !password)
-			return customResponse(400, false, 'Email and Password are required');
+			throw error(400, 'Email and Password are required');
 
 		if (typeof username !== 'string' || typeof password !== 'string') {
-			return customResponse(400, false, 'Enter a valid email and password.');
+			throw error(400, 'Email and Password are required');
 		}
 
 		const prisma = new PrismaClient();
@@ -52,7 +51,6 @@ export const actions = {
 				maxAge: 60 * 60 * 24 * 30,
 			});
 
-			// return customResponse(200, true, 'User loggedIn successfully');
 			throw redirect(307, `/user/${user.username}`);
 		}
 		throw error(403, 'Invalid credentials.');

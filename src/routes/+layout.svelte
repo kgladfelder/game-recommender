@@ -6,7 +6,7 @@
 	import Header from '$lib/components/Header.svelte';
 	import Footer from '$lib/components/Footer.svelte';
 
-	let username: string = data.username;
+	let username: string | undefined = data.username;
 </script>
 
 <svelte:head>

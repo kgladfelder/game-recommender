@@ -1,7 +1,6 @@
 import { error, redirect, type RequestEvent } from '@sveltejs/kit';
 import { PrismaClient } from '@prisma/client';
 
-import { customResponse } from '$lib/utils';
 import * as bcrypt from 'bcrypt';
 
 /** @type {import('./$types').Actions} */
@@ -17,7 +16,7 @@ export const actions = {
 		const passwordRegex = /(?=.*\d)(?=.*[\W_]).{7,}/;
 
 		if (typeof username !== 'string' || typeof password !== 'string' || typeof email !== 'string') {
-			return customResponse(400, false, 'Unable to create user with information provided');
+			throw error(400, 'Unable to create user with information provided');
 		}
 
 		if (
@@ -27,7 +26,7 @@ export const actions = {
 			!emailRegex.test(String(email).toLowerCase()) ||
 			!passwordRegex.test(String(password))
 		) {
-			return customResponse(400, false, 'Unable to create user with information provided');
+			throw error(400, 'Unable to create user with information provided');
 		}
 
 		const saltRounds = 10;

@@ -10,3 +10,7 @@ export const customResponse = (status: number, success: boolean, message: string
 	}
 	return error(status, message);
 };
+
+export const fieldInvalid = (value: string): boolean => {
+	return value === undefined || value === '';
+};
