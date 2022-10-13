@@ -1,0 +1,9 @@
+node_modules
+.eslint*
+.git*
+.npmrc
+.prettier*
+CHANGELOG.md
+commitlint.config.cjs
+README.md
+.env
