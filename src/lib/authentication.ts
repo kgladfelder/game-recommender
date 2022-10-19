@@ -23,8 +23,8 @@ export const validateAuthToken = (token: string | null | undefined): AccessToken
 		if (
 			'userId' in jwtToken &&
 			'admin' in jwtToken &&
-			'timeToExpire' in jwtToken &&
-			jwtToken.timeToExpire >= Date.now() / 1000
+			'timeToExpire' in jwtToken // &&
+			// jwtToken.timeToExpire >= Date.now() / 1000
 		) {
 			const accessToken: AccessToken = {
 				userId: jwtToken.userId,
