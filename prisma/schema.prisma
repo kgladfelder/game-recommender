@@ -6,8 +6,8 @@ generator client {
 }
 
 datasource db {
-  provider = "postgresql"
-  url      = env("DATABASE_URL")
+  provider = "sqlite"
+  url      = "file:./dev.db"
 }
 
 model User {
@@ -43,7 +43,6 @@ model Game {
 model System {
   id          String       @id @default(uuid())
   name        String
-  alias       String[]
   company     Company      @relation(fields: [companyId], references: [id])
   companyId   String
   gameSystems GameSystem[]

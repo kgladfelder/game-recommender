@@ -10,7 +10,7 @@
 	let invalid: boolean;
 
 	const emailRegex =
-		/^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+		/^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
 	const passwordRegex = /(?=.*\d)(?=.*[\W_]).{7,}/;
 
 	const checkDisabled = (
@@ -30,6 +30,14 @@
 		) {
 			invalid = true;
 		}
+		console.log("--- Start ---")
+		console.log("username", fieldInvalid(username));
+		console.log("email", fieldInvalid(email));
+		console.log("password", fieldInvalid(password));
+		console.log("emailRegex", !emailRegex.test(String(email).toLowerCase()));
+		console.log("passwordRegex", !passwordRegex.test(String(password)));
+		console.log("comparison", password !== passwordRepeat);
+		console.log("--- End ---");
 		return invalid;
 	};
 </script>
