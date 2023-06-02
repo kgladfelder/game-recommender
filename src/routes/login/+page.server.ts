@@ -51,7 +51,7 @@ export const actions = {
 				maxAge: 60 * 60 * 24 * 30,
 			});
 
-			throw redirect(307, `/user/${user.username}`);
+			throw redirect(303, `/user/${user.username}`);
 		}
 		throw error(403, 'Invalid credentials.');
 	},
