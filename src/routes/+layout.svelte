@@ -7,6 +7,7 @@
 	import Footer from '$lib/components/Footer.svelte';
 
 	let username: string | undefined = data.username;
+	let admin: boolean | undefined = data.admin;
 </script>
 
 <svelte:head>
@@ -15,9 +16,9 @@
 	<html lang="en"></html>
 </svelte:head>
 
-<div class="flex flex-col w-screen h-screen">
-	<Header username={username} />
-	<main class="grow grid grid-rows-1 grid-flow-col place-items-center">
+<div>
+	<Header username={username} admin={admin}/>
+	<main>
 		<slot />
 	</main>
 	<Footer />

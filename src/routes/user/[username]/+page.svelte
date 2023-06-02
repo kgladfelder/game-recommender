@@ -6,5 +6,3 @@
 </script>
 
 <h1>Hello {username}!</h1>
-<p>{JSON.stringify(data)}</p>
-
