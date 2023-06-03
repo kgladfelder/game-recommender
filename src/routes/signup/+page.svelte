@@ -1,7 +1,7 @@
 <script lang="ts">
-	import Button from '$lib/components/Button.svelte';
-	import Input from '$lib/components/Input.svelte';
-	import { fieldInvalid } from '$lib/utils';
+	import Button from "$lib/components/Button.svelte";
+	import Input from "$lib/components/Input.svelte";
+	import { fieldInvalid } from "$lib/utils";
 
 	let username: string;
 	let email: string;
@@ -30,7 +30,7 @@
 		) {
 			invalid = true;
 		}
-		console.log("--- Start ---")
+		console.log("--- Start ---");
 		console.log("username", fieldInvalid(username));
 		console.log("email", fieldInvalid(email));
 		console.log("password", fieldInvalid(password));

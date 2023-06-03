@@ -1,6 +1,11 @@
-import { error } from '@sveltejs/kit';
+import { error } from "@sveltejs/kit";
 
-export const customResponse = (status: number, success: boolean, message: string, data?: any) => {
+export const customResponse = (
+	status: number,
+	success: boolean,
+	message: string,
+	data?: unknown
+) => {
 	if (success) {
 		return {
 			success: success,
@@ -12,5 +17,5 @@ export const customResponse = (status: number, success: boolean, message: string
 };
 
 export const fieldInvalid = (value: string): boolean => {
-	return value === undefined || value === '';
+	return value === undefined || value === "";
 };

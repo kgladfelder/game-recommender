@@ -1,11 +1,11 @@
 <script lang="ts">
-	import type { PageData } from './$types';
-	import { fieldInvalid } from '$lib/utils';
+	import type { PageData } from "./$types";
+	import { fieldInvalid } from "$lib/utils";
 	export let data: PageData;
 
 	let developers = data.developers;
 
-	let newDeveloper: string = '';
+	let newDeveloper = "";
 	let invalid: boolean;
 	let showNewDeveloper = false;
 
@@ -15,7 +15,7 @@
 	};
 
 	const switchShowNewDeveloper = () => {
-		newDeveloper = '';
+		newDeveloper = "";
 		showNewDeveloper = !showNewDeveloper;
 	};
 </script>

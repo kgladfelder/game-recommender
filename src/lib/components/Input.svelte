@@ -3,20 +3,16 @@
 	export let value: string;
 
 	const toTitleCase = (label: string) => {
-		const strSplit = label.toLowerCase().split(' ');
+		const strSplit = label.toLowerCase().split(" ");
 		return strSplit
 			.map((word) => {
 				return word.charAt(0).toUpperCase() + word.slice(1);
 			})
-			.join(' ');
+			.join(" ");
 	};
 </script>
 
 <div>
 	<label for="{label}">{toTitleCase(label)}</label>
-	<input
-		id="{label}"
-		name="{label}"
-		bind:value
-		{...$$restProps} />
+	<input id="{label}" name="{label}" bind:value="{value}" {...$$restProps} />
 </div>

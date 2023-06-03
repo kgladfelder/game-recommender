@@ -1,10 +1,9 @@
-import { validateAuthToken } from '$lib/authentication';
-import prisma from '$lib/prisma';
-import { error, redirect, type RequestEvent, type ServerLoadEvent } from '@sveltejs/kit';
-
+import { validateAuthToken } from "$lib/authentication";
+import prisma from "$lib/prisma";
+import { error, redirect, type RequestEvent, type ServerLoadEvent } from "@sveltejs/kit";
 
 export async function load({ cookies }: ServerLoadEvent) {
-	const authToken = cookies.get('session');
+	const authToken = cookies.get("session");
 	const jwt = validateAuthToken(authToken);
 	if (jwt && jwt.admin) {
 		try {
@@ -14,26 +13,26 @@ export async function load({ cookies }: ServerLoadEvent) {
 					name: true,
 				},
 			});
-			
+
 			if (companies) {
 				return { companies };
 			} else {
 				return { companies: [] };
 			}
 		} catch (ex) {
-			throw error(500, 'Something went wrong');
+			throw error(500, "Something went wrong");
 		}
 	}
-	redirect(307, '/');
+	redirect(307, "/");
 }
 
 export const actions = {
 	create: async ({ request }: RequestEvent) => {
 		const form = await request.formData();
-		const companyName = form.get('companyName');
+		const companyName = form.get("companyName");
 
-		if (typeof companyName !== 'string') {
-			throw error(500, 'Something went wrong');
+		if (typeof companyName !== "string") {
+			throw error(500, "Something went wrong");
 		}
 
 		if (companyName) {
@@ -44,16 +43,16 @@ export const actions = {
 					},
 				});
 			} catch (ex) {
-				throw error(500, 'Something went wrong');
+				throw error(500, "Something went wrong");
 			}
 		}
 	},
 	delete: async ({ request }: RequestEvent) => {
 		const form = await request.formData();
-		const id = form.get('id');
+		const id = form.get("id");
 
-		if (typeof id !== 'string') {
-			throw error(500, 'Something went wrong');
+		if (typeof id !== "string") {
+			throw error(500, "Something went wrong");
 		}
 
 		if (id) {
@@ -64,7 +63,7 @@ export const actions = {
 					},
 				});
 			} catch (ex) {
-				throw error(500, 'Something went wrong');
+				throw error(500, "Something went wrong");
 			}
 		}
 	},

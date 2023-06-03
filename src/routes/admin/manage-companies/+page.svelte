@@ -1,10 +1,10 @@
 <script lang="ts">
-	import type { PageData } from './$types';
-	import { fieldInvalid } from '$lib/utils';
+	import type { PageData } from "./$types";
+	import { fieldInvalid } from "$lib/utils";
 	export let data: PageData;
 
 	let companies = data.companies;
-	let newCompany: string = '';
+	let newCompany = "";
 	let invalid: boolean;
 	let showNewCompany = false;
 
@@ -14,7 +14,7 @@
 	};
 
 	const switchShowNewCompany = () => {
-		newCompany = '';
+		newCompany = "";
 		showNewCompany = !showNewCompany;
 	};
 </script>

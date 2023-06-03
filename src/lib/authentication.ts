@@ -1,8 +1,8 @@
-import { error } from '@sveltejs/kit';
-import jwt from 'jsonwebtoken';
-import { JWT_KEY } from '$env/static/private';
+import { error } from "@sveltejs/kit";
+import jwt from "jsonwebtoken";
+import { JWT_KEY } from "$env/static/private";
 
-import type { AccessToken } from './types';
+import type { AccessToken } from "./types";
 
 export const generateAuthToken = (userId: string, admin: boolean): string => {
 	const token: AccessToken = {
@@ -15,15 +15,15 @@ export const generateAuthToken = (userId: string, admin: boolean): string => {
 
 export const validateAuthToken = (token: string | null | undefined): AccessToken => {
 	if (!token) {
-		throw error(401, 'Unauthorized');
+		throw error(401, "Unauthorized");
 	}
 
 	try {
 		const jwtToken = jwt.verify(token, JWT_KEY) as jwt.JwtPayload;
 		if (
-			'userId' in jwtToken &&
-			'admin' in jwtToken &&
-			'timeToExpire' in jwtToken // &&
+			"userId" in jwtToken &&
+			"admin" in jwtToken &&
+			"timeToExpire" in jwtToken // &&
 			// jwtToken.timeToExpire >= Date.now() / 1000
 		) {
 			const accessToken: AccessToken = {
@@ -33,8 +33,8 @@ export const validateAuthToken = (token: string | null | undefined): AccessToken
 			};
 			return accessToken;
 		}
-		throw error(401, 'Unauthorized');
+		throw error(401, "Unauthorized");
 	} catch (ex) {
-		throw error(401, 'Unauthorized');
+		throw error(401, "Unauthorized");
 	}
 };

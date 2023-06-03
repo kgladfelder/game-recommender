@@ -1,9 +1,9 @@
 <script lang="ts">
-	import { page } from '$app/stores';
+	import { page } from "$app/stores";
 
-	import Button from '$lib/components/Button.svelte';
-	import Input from '$lib/components/Input.svelte';
-	import { fieldInvalid } from '$lib/utils';
+	import Button from "$lib/components/Button.svelte";
+	import Input from "$lib/components/Input.svelte";
+	import { fieldInvalid } from "$lib/utils";
 
 	let username: string;
 	let password: string;

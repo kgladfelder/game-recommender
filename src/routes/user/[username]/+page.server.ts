@@ -1,13 +1,13 @@
-import { error, type ServerLoadEvent } from '@sveltejs/kit';
-import prisma from '$lib/prisma.js';
-import { validateAuthToken } from '$lib/authentication';
+import { error, type ServerLoadEvent } from "@sveltejs/kit";
+import prisma from "$lib/prisma.js";
+import { validateAuthToken } from "$lib/authentication";
 
 /** @type {import('./$types').PageServerLoad} */
 export async function load({ params, cookies }: ServerLoadEvent) {
 	if (!params.username) {
-		throw error(404, 'Not found');
+		throw error(404, "Not found");
 	}
-	const authToken = cookies.get('session');
+	const authToken = cookies.get("session");
 	const jwt = validateAuthToken(authToken);
 	if (jwt) {
 		try {
@@ -59,13 +59,13 @@ export async function load({ params, cookies }: ServerLoadEvent) {
 					},
 				},
 			});
-			
+
 			if (user) {
 				return user;
 			}
 		} catch (ex) {
-			throw error(500, 'Something went wrong');
+			throw error(500, "Something went wrong");
 		}
 	}
-	throw error(401, 'Unauthorized');
+	throw error(401, "Unauthorized");
 }

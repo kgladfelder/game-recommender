@@ -1,10 +1,10 @@
 <script lang="ts">
 	import type { PageData } from "./$types";
-    export let data: PageData;
+	export let data: PageData;
 
-	import '../app.css';
-	import Header from '$lib/components/Header.svelte';
-	import Footer from '$lib/components/Footer.svelte';
+	import "../app.css";
+	import Header from "$lib/components/Header.svelte";
+	import Footer from "$lib/components/Footer.svelte";
 
 	let username: string | undefined = data.username;
 	let admin: boolean | undefined = data.admin;
@@ -17,7 +17,7 @@
 </svelte:head>
 
 <div>
-	<Header username={username} admin={admin}/>
+	<Header username="{username}" admin="{admin}" />
 	<main>
 		<slot />
 	</main>

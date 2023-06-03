@@ -7,4 +7,4 @@ export type AccessToken = {
 export type UIUser = {
 	username: string;
 	email: string;
-}
+};
