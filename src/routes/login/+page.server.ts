@@ -31,8 +31,6 @@ export const actions = {
 			},
 		});
 
-		prisma.$disconnect();
-
 		if (user && user.password && (await bcrypt.compare(password, user.password))) {
 			const authToken = generateAuthToken(user.id, user.admin);
 			cookies.set('session', authToken, {

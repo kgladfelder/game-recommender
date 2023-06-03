@@ -26,7 +26,6 @@ export async function GET({ url, request }: RequestEvent) {
 					},
 				},
 			});
-			await prisma.$disconnect();
 
 			return publishers;
 		} else {
@@ -42,7 +41,6 @@ export async function GET({ url, request }: RequestEvent) {
 					},
 				},
 			});
-			await prisma.$disconnect();
 
 			return publishers;
 		}

@@ -20,7 +20,6 @@ export async function GET({ url, request }: RequestEvent) {
 					name: true,
 				},
 			});
-			await prisma.$disconnect();
 
 			return companies;
 		} else {
@@ -30,7 +29,6 @@ export async function GET({ url, request }: RequestEvent) {
 					name: true,
 				},
 			});
-			await prisma.$disconnect();
 
 			return companies;
 		}

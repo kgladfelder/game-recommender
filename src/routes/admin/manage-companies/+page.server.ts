@@ -14,7 +14,7 @@ export async function load({ cookies }: ServerLoadEvent) {
 					name: true,
 				},
 			});
-			await prisma.$disconnect();
+			
 			if (companies) {
 				return { companies };
 			} else {

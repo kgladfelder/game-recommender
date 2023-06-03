@@ -43,8 +43,6 @@ export const actions = {
 					email: true,
 				},
 			});
-
-			prisma.$disconnect();
 		} catch (e) {
 			throw error(500, 'Something went wrong');
 		}

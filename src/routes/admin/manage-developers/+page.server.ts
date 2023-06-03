@@ -13,7 +13,7 @@ export async function load({ params, cookies }: ServerLoadEvent) {
 					name: true,
 				},
 			});
-			await prisma.$disconnect();
+			
 			if (developers) {
 				return { developers };
 			} else {

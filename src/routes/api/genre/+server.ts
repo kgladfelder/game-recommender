@@ -30,7 +30,7 @@ export async function GET({ url, request }: RequestEvent) {
 					},
 				},
 			});
-			await prisma.$disconnect();
+			
 			//TODO: Flatten gameGenres
 			return genres;
 		} else {
@@ -50,7 +50,7 @@ export async function GET({ url, request }: RequestEvent) {
 					},
 				},
 			});
-			await prisma.$disconnect();
+			
 			//TODO: Flatten gameGenres
 			return genres;
 		}

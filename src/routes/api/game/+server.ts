@@ -66,7 +66,7 @@ export async function GET({ url, request }: RequestEvent) {
 			},
 			select: gameSelect,
 		});
-		await prisma.$disconnect();
+		
 		//TODO: Flatten gameSystems and gameGenres
 		return games;
 	}

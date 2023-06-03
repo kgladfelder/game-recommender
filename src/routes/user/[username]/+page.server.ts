@@ -59,7 +59,7 @@ export async function load({ params, cookies }: ServerLoadEvent) {
 					},
 				},
 			});
-			await prisma.$disconnect();
+			
 			if (user) {
 				return user;
 			}
