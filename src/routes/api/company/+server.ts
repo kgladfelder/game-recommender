@@ -1,4 +1,4 @@
-import { PrismaClient } from '@prisma/client';
+import prisma from '$lib/prisma.js';
 import { error, type RequestEvent } from '@sveltejs/kit';
 import { validateAuthToken } from '$lib/authentication';
 
@@ -11,7 +11,6 @@ export async function GET({ url, request }: RequestEvent) {
 		const companyName = url.searchParams.get('companyname');
 
 		if (companyName) {
-			const prisma = new PrismaClient();
 			const companies = await prisma.company.findMany({
 				where: {
 					name: { contains: companyName },
@@ -25,7 +24,6 @@ export async function GET({ url, request }: RequestEvent) {
 
 			return companies;
 		} else {
-			const prisma = new PrismaClient();
 			const companies = await prisma.company.findMany({
 				select: {
 					id: true,

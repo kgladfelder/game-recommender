@@ -1,5 +1,6 @@
 import { validateAuthToken } from '$lib/authentication';
-import { Prisma, PrismaClient } from '@prisma/client';
+import type { Prisma } from '@prisma/client';
+import prisma from '$lib/prisma.js';
 import { error, type RequestEvent } from '@sveltejs/kit';
 
 /** @type {import('./$types').RequestHandler} */
@@ -59,7 +60,6 @@ export async function GET({ url, request }: RequestEvent) {
 			},
 		};
 
-		const prisma = new PrismaClient();
 		const games = await prisma.game.findMany({
 			where: {
 				name: { contains: gamename }, //TODO: make this a more generalized search (case insensitive, etc)

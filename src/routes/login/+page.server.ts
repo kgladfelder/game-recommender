@@ -1,5 +1,5 @@
 import { error, redirect, type RequestEvent } from '@sveltejs/kit';
-import { PrismaClient } from '@prisma/client';
+import prisma from '$lib/prisma.js';
 
 import * as bcrypt from 'bcrypt';
 
@@ -18,7 +18,6 @@ export const actions = {
 			throw error(400, 'Email and Password are required');
 		}
 
-		const prisma = new PrismaClient();
 		const user = await prisma.user.findFirst({
 			where: {
 				OR: [{ username }, { email: username }],

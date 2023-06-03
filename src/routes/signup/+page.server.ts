@@ -1,5 +1,5 @@
 import { error, redirect, type RequestEvent } from '@sveltejs/kit';
-import { PrismaClient } from '@prisma/client';
+import prisma from '$lib/prisma.js';
 
 import * as bcrypt from 'bcrypt';
 
@@ -30,7 +30,6 @@ export const actions = {
 		}
 
 		const saltRounds = 10;
-		const prisma = new PrismaClient();
 		try {
 			await prisma.user.create({
 				data: {

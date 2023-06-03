@@ -1,5 +1,5 @@
 import { validateAuthToken } from '$lib/authentication';
-import { PrismaClient } from '@prisma/client';
+import prisma from '$lib/prisma.js';
 import { error, type RequestEvent } from '@sveltejs/kit';
 
 /** @type {import('./$types').RequestHandler} */
@@ -11,7 +11,6 @@ export async function GET({ url, request }: RequestEvent) {
 		const genre = url.searchParams.get('genre');
 
 		if (genre) {
-			const prisma = new PrismaClient();
 			const genres = await prisma.genre.findMany({
 				where: {
 					name: { contains: genre },
@@ -35,7 +34,6 @@ export async function GET({ url, request }: RequestEvent) {
 			//TODO: Flatten gameGenres
 			return genres;
 		} else {
-			const prisma = new PrismaClient();
 			const genres = await prisma.genre.findMany({
 				select: {
 					id: true,

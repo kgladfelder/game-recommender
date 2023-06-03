@@ -1,6 +1,5 @@
 import { error, type ServerLoadEvent } from '@sveltejs/kit';
-import { PrismaClient } from '@prisma/client';
-
+import prisma from '$lib/prisma.js';
 import { validateAuthToken } from '$lib/authentication';
 
 /** @type {import('./$types').PageServerLoad} */
@@ -11,7 +10,6 @@ export async function load({ params, cookies }: ServerLoadEvent) {
 	const authToken = cookies.get('session');
 	const jwt = validateAuthToken(authToken);
 	if (jwt) {
-		const prisma = new PrismaClient();
 		try {
 			const user = await prisma.user.findFirst({
 				where: {

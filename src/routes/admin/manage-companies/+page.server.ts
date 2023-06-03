@@ -1,12 +1,12 @@
 import { validateAuthToken } from '$lib/authentication';
-import { PrismaClient } from '@prisma/client';
+import prisma from '$lib/prisma';
 import { error, redirect, type RequestEvent, type ServerLoadEvent } from '@sveltejs/kit';
+
 
 export async function load({ cookies }: ServerLoadEvent) {
 	const authToken = cookies.get('session');
 	const jwt = validateAuthToken(authToken);
 	if (jwt && jwt.admin) {
-		const prisma = new PrismaClient();
 		try {
 			const companies = await prisma.company.findMany({
 				select: {
@@ -37,7 +37,6 @@ export const actions = {
 		}
 
 		if (companyName) {
-			const prisma = new PrismaClient();
 			try {
 				await prisma.company.create({
 					data: {
@@ -58,7 +57,6 @@ export const actions = {
 		}
 
 		if (id) {
-			const prisma = new PrismaClient();
 			try {
 				await prisma.company.delete({
 					where: {

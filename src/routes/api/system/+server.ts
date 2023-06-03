@@ -1,5 +1,5 @@
 import { validateAuthToken } from '$lib/authentication';
-import { PrismaClient } from '@prisma/client';
+import prisma from '$lib/prisma.js';
 import { error, type RequestEvent } from '@sveltejs/kit';
 
 /** @type {import('./$types').RequestHandler} */
@@ -11,7 +11,6 @@ export async function GET({ url, request }: RequestEvent) {
 		const systemName = url.searchParams.get('systemname');
 
 		if (systemName) {
-			const prisma = new PrismaClient();
 			const systems = await prisma.system.findMany({
 				where: {
 					OR: [
@@ -34,7 +33,6 @@ export async function GET({ url, request }: RequestEvent) {
 
 			return systems;
 		} else {
-			const prisma = new PrismaClient();
 			const systems = await prisma.system.findMany({
 				select: {
 					id: true,

@@ -1,5 +1,5 @@
 import { validateAuthToken } from '$lib/authentication';
-import { PrismaClient } from '@prisma/client';
+import prisma from '$lib/prisma.js';
 import { error, type RequestEvent } from '@sveltejs/kit';
 
 /** @type {import('./$types').RequestHandler} */
@@ -11,7 +11,6 @@ export async function GET({ url, request }: RequestEvent) {
 		const developer = url.searchParams.get('developer');
 
 		if (developer) {
-			const prisma = new PrismaClient();
 			const developers = await prisma.developer.findMany({
 				where: {
 					name: { contains: developer },
@@ -31,7 +30,6 @@ export async function GET({ url, request }: RequestEvent) {
 
 			return developers;
 		} else {
-			const prisma = new PrismaClient();
 			const developers = await prisma.developer.findMany({
 				select: {
 					id: true,
