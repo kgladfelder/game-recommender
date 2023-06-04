@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { AppBar } from '@skeletonlabs/skeleton';
+	import { AppBar } from "@skeletonlabs/skeleton";
 
 	export let username: string | undefined;
 	export let admin: boolean | undefined;

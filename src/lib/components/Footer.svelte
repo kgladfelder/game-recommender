@@ -1,7 +1,7 @@
 <script>
-    import { LightSwitch } from '@skeletonlabs/skeleton';
+	import { LightSwitch } from "@skeletonlabs/skeleton";
 </script>
 
 <div>
-    <LightSwitch />
+	<LightSwitch />
 </div>
