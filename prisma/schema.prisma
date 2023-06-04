@@ -33,8 +33,6 @@ model Game {
   publisherId   String?
   developer     Developer?   @relation(fields: [developerId], references: [id])
   developerId   String?
-  createdDate   DateTime
-  updatedDate   DateTime?
   userGames     UserGame[]
   gameSystems   GameSystem[]
   gameGenres    GameGenre[]
@@ -78,7 +76,6 @@ model UserGame {
   userId        String
   game          Game           @relation(fields: [gameId], references: [id])
   gameId        String
-  added         DateTime
   completedTime DateTime?
   completed     Boolean        @default(false)
   userSystem    UserGameSystem @relation(fields: [userSystemId], references: [id])

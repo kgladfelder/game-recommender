@@ -6,21 +6,15 @@
 	let companies = data.companies;
 	let newCompany = "";
 	let invalid: boolean;
-	let showNewCompany = false;
 
 	const checkDisabled = (newCompany: string) => {
 		invalid = fieldInvalid(newCompany);
 		return invalid;
 	};
-
-	const switchShowNewCompany = () => {
-		newCompany = "";
-		showNewCompany = !showNewCompany;
-	};
 </script>
 
 <div class="container mx-auto">
-	<div class="h1 mt-2 mb-2">Manage Companies</div>
+	<div class="h1 mt-2">Manage Companies</div>
 	<hr class="!border-t-4 mb-2" />
 	<!-- List existing -->
 	<div class="table-container">
@@ -69,13 +63,12 @@
 					class="input"
 					name="companyName"
 					id="companyName"
-					placeholder="Company Name"
+					placeholder="Company"
 					bind:value="{newCompany}"
 					type="text"
 					required />
 			</label>
 			<button disabled="{checkDisabled(newCompany)}">Add Company</button>
-			<button on:click|preventDefault="{switchShowNewCompany}">Cancel</button>
 		</form>
 	</div>
 </div>
