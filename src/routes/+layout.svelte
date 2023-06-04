@@ -5,7 +5,11 @@
 	import "@skeletonlabs/skeleton/styles/skeleton.css";
 	// Most of your app wide CSS should be put in this file
 	import "../app.postcss";
+	import { computePosition, autoUpdate, offset, shift, flip, arrow } from "@floating-ui/dom";
+	import { storePopup } from "@skeletonlabs/skeleton";
 	import type { PageData } from "./$types";
+
+	storePopup.set({ computePosition, autoUpdate, offset, shift, flip, arrow });
 
 	export let data: PageData;
 	import Header from "$lib/components/Header.svelte";
@@ -20,9 +24,9 @@
 	<meta name="robots" content="noindex nofollow" />
 </svelte:head>
 
-<div>
+<div class="flex flex-col h-screen">
 	<Header username="{username}" admin="{admin}" />
-	<main>
+	<main class="flex-grow">
 		<slot />
 	</main>
 	<Footer />

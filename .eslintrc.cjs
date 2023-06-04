@@ -1,8 +1,8 @@
 module.exports = {
 	root: true,
 	parser: "@typescript-eslint/parser",
-	extends: ["eslint:recommended", "plugin:@typescript-eslint/recommended", "plugin:svelte/prettier", "prettier"],
-	plugins: ["@typescript-eslint"],
+	extends: ["eslint:recommended", "plugin:@typescript-eslint/recommended", "plugin:svelte/prettier", "prettier", "plugin:prettier/recommended"],
+	plugins: ["@typescript-eslint", "prettier"],
 	ignorePatterns: ["*.cjs"],
 	overrides: [
 		{ 
@@ -24,6 +24,6 @@ module.exports = {
 		node: true,
 	},
 	rules: {
-		quotes: ["warn", "double"],
+		"prettier/prettier": "error",
 	},
 };

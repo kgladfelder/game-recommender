@@ -18,15 +18,13 @@
 		"docker:down": "docker-compose down",
 		"lint": "npx eslint src",
 		"lint:fix": "npm run lint -- --fix",
-		"prettier": "npx prettier src --check",
-		"prettier:fix": "npm run prettier -- --write",
-		"format": "npm run prettier:fix && npm run lint:fix"
+		"format": "npm run lint:fix"
 	},
 	"devDependencies": {
-		"@floating-ui/dom": "^1.2.9",
-		"@skeletonlabs/skeleton": "^1.6.2",
 		"@commitlint/cli": "^17.1.2",
 		"@commitlint/config-conventional": "^17.1.0",
+		"@floating-ui/dom": "^1.2.9",
+		"@skeletonlabs/skeleton": "^1.6.2",
 		"@sveltejs/adapter-auto": "^2.1.0",
 		"@sveltejs/kit": "^1.0.0-next.515",
 		"@sveltejs/vite-plugin-svelte": "^2.4.1",
@@ -47,7 +45,8 @@
 		"chance": "^1.1.8",
 		"dotenv": "^16.0.3",
 		"eslint": "^8.41.0",
-		"eslint-config-prettier": "^8.5.0",
+		"eslint-config-prettier": "^8.8.0",
+		"eslint-plugin-prettier": "^4.2.1",
 		"eslint-plugin-svelte": "^2.29.0",
 		"husky": "^8.0.1",
 		"jsdom": "^22.1.0",
