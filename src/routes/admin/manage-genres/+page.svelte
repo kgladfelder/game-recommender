@@ -1,22 +1,22 @@
 <script lang="ts">
+	import { modalStore, type ModalSettings } from "@skeletonlabs/skeleton";
 	import type { PageData } from "./$types";
-	import { fieldInvalid } from "$lib/utils";
 	export let data: PageData;
 
 	let genres = data.genres;
-	let newGenre = "";
-	let invalid: boolean;
-
-	const checkDisabled = (newGenre: string) => {
-		invalid = fieldInvalid(newGenre);
-		return invalid;
+	
+	const addNewGenre = () => {
+		const modal: ModalSettings = {
+			type: "component",
+			component: "createGenre",
+		};
+		modalStore.trigger(modal);
 	};
 </script>
 
 <div class="container mx-auto">
 	<div class="h1 mt-2">Manage Genres</div>
 	<hr class="!border-t-4 mb-2" />
-	<!-- List existing -->
 	<div class="table-container">
 		<table class="table table-hover">
 			<thead>
@@ -46,7 +46,9 @@
 			<tfoot>
 				<tr>
 					<td>
-						<button class="btn btn-sm variant-ghost-secondary">
+						<button
+							class="btn btn-sm variant-ghost-secondary"
+							on:click|preventDefault="{addNewGenre}">
 							<span class="material-icons">add</span>
 							<span>New</span>
 						</button>
@@ -54,21 +56,5 @@
 				</tr>
 			</tfoot>
 		</table>
-	</div>
-	<div>
-		<form method="POST" action="?/create">
-			<label class="label">
-				<span>Genre</span>
-				<input
-					class="input"
-					name="genreName"
-					id="genreName"
-					placeholder="Genre"
-					bind:value="{newGenre}"
-					type="text"
-					required />
-			</label>
-			<button disabled="{checkDisabled(newGenre)}">Add Genre</button>
-		</form>
 	</div>
 </div>

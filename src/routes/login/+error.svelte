@@ -1,8 +1,5 @@
 <script lang="ts">
 	import { page } from "$app/stores";
-
-	import Button from "$lib/components/Button.svelte";
-	import Input from "$lib/components/Input.svelte";
 	import { fieldInvalid } from "$lib/utils";
 
 	let username: string;
@@ -24,11 +21,30 @@
 	};
 </script>
 
-<div>
+<div class="container mx-auto">
 	<form method="POST">
-		<Input label="username" bind:value="{username}" type="text" required />
-		<Input label="password" bind:value="{password}" type="password" required />
-		<Button disabled="{checkDisabled(username, password)}" invalid="{invalid}">Log In</Button>
+		<label class="label">
+			<span>Username</span>
+			<input
+				class="input"
+				name="username"
+				id="username"
+				placeholder="Username"
+				bind:value="{username}"
+				type="text"
+				required />
+		</label>
+		<label class="label">
+			<span>Password</span>
+			<input 
+				class="input"
+				name="password"
+				id="password"
+				bind:value="{password}" 
+				type="password" 
+				required />
+		</label>
+		<button class="btn mt-4 variant-ghost-primary" disabled="{checkDisabled(username, password)}">Log In</button>
 	</form>
 	<p role="alert">
 		{$page.error?.message}

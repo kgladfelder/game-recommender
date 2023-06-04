@@ -1,28 +1,29 @@
 <script lang="ts">
+	import { modalStore, type ModalSettings } from "@skeletonlabs/skeleton";
 	import type { PageData } from "./$types";
-	import { fieldInvalid } from "$lib/utils";
 	export let data: PageData;
 
 	let companies = data.companies;
-	let newCompany = "";
-	let invalid: boolean;
 
-	const checkDisabled = (newCompany: string) => {
-		invalid = fieldInvalid(newCompany);
-		return invalid;
+	const addNewCompany = () => {
+		const modal: ModalSettings = {
+			type: "component",
+			component: "createCompany",
+		};
+		modalStore.trigger(modal);
 	};
 </script>
 
 <div class="container mx-auto">
 	<div class="h1 mt-2">Manage Companies</div>
 	<hr class="!border-t-4 mb-2" />
-	<!-- List existing -->
 	<div class="table-container">
 		<table class="table table-hover">
 			<thead>
 				<tr>
-					<th>Company Name</th>
-					<th>Action</th>
+					<th>Company</th>
+					<th>Systems</th>
+					<th class="w-1" />
 				</tr>
 			</thead>
 			<tbody>
@@ -30,6 +31,7 @@
 					{#each companies as company (company.id)}
 						<tr>
 							<td>{company.name}</td>
+							<td>{company.Systems.map((system) => system.name).join(", ")}</td>
 							<td>
 								<form method="POST" action="?/delete">
 									<input type="hidden" name="id" value="{company.id}" />
@@ -46,7 +48,9 @@
 			<tfoot>
 				<tr>
 					<td>
-						<button class="btn btn-sm variant-ghost-secondary">
+						<button
+							class="btn btn-sm variant-ghost-secondary"
+							on:click|preventDefault="{addNewCompany}">
 							<span class="material-icons">add</span>
 							<span>New</span>
 						</button>
@@ -54,21 +58,5 @@
 				</tr>
 			</tfoot>
 		</table>
-	</div>
-	<div>
-		<form method="POST" action="?/create">
-			<label class="label">
-				<span>Company Name</span>
-				<input
-					class="input"
-					name="companyName"
-					id="companyName"
-					placeholder="Company"
-					bind:value="{newCompany}"
-					type="text"
-					required />
-			</label>
-			<button disabled="{checkDisabled(newCompany)}">Add Company</button>
-		</form>
 	</div>
 </div>

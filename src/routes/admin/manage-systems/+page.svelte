@@ -1,19 +1,19 @@
 <script lang="ts">
+	import { modalStore, type ModalSettings } from "@skeletonlabs/skeleton";
 	import type { PageData } from "./$types";
-	import { fieldInvalid } from "$lib/utils";
 	export let data: PageData;
 
 	const systems = data.systems;
-	let newSystemName = "";
-	let companyId = "";
-	let invalid: boolean;
-
-	const checkDisabled = (newSystemName: string) => {
-		invalid = fieldInvalid(newSystemName) || fieldInvalid(companyId);
-        
-		return invalid;
+	const companies = data.companies;
+	
+	const addNewSystem = () => {
+		const modal: ModalSettings = {
+			type: "component",
+			component: "createSystem",
+			meta: { companies }
+		};
+		modalStore.trigger(modal);
 	};
-
 </script>
 
 <div class="container mx-auto">
@@ -51,7 +51,9 @@
 			<tfoot>
 				<tr>
 					<td>
-						<button class="btn btn-sm variant-ghost-secondary">
+						<button 
+							class="btn btn-sm variant-ghost-secondary"
+							on:click|preventDefault="{addNewSystem}">
 							<span class="material-icons">add</span>
 							<span>New</span>
 						</button>
@@ -59,21 +61,5 @@
 				</tr>
 			</tfoot>
 		</table>
-	</div>
-	<div>
-		<form method="POST" action="?/create">
-			<label class="label">
-				<span>System</span>
-				<input
-					class="input"
-					name="systemName"
-					id="systemName"
-					placeholder="System"
-					bind:value="{newSystemName}"
-					type="text"
-					required />
-			</label>
-			<button disabled="{checkDisabled(newSystemName)}">Add System</button>
-		</form>
 	</div>
 </div>

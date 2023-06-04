@@ -11,6 +11,11 @@ export async function load({ cookies }: ServerLoadEvent) {
 				select: {
 					id: true,
 					name: true,
+					Systems: {
+						select: {
+							name: true,
+						},
+					},
 				},
 			});
 
@@ -50,7 +55,7 @@ export const actions = {
 	delete: async ({ request }: RequestEvent) => {
 		const form = await request.formData();
 		const id = form.get("id");
-		
+
 		if (typeof id !== "string") {
 			throw error(500, "Something went wrong");
 		}

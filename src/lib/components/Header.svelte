@@ -32,25 +32,25 @@
 							<span class="material-icons">apartment</span>
 							<span>Manage Companies</span>
 						</a>
-						<a href="/admin/manage-developers">
-							<span class="material-icons">code</span>
-							<span>Manage Developers</span>
-						</a>
-						<a href="/admin/manage-games">
-							<span class="material-icons">gamepad</span>
-							<span>Manage Games</span>
-						</a>
-						<a href="/admin/manage-genres">
-							<span class="material-icons">view_carousel</span>
-							<span>Manage Genres</span>
+						<a href="/admin/manage-systems">
+							<span class="material-icons">factory</span>
+							<span>Manage Systems</span>
 						</a>
 						<a href="/admin/manage-publishers">
 							<span class="material-icons">store</span>
 							<span>Manage Publishers</span>
 						</a>
-						<a href="/admin/manage-systems">
-							<span class="material-icons">factory</span>
-							<span>Manage Systems</span>
+						<a href="/admin/manage-developers">
+							<span class="material-icons">code</span>
+							<span>Manage Developers</span>
+						</a>
+						<a href="/admin/manage-genres">
+							<span class="material-icons">view_carousel</span>
+							<span>Manage Genres</span>
+						</a>
+						<a href="/admin/manage-games">
+							<span class="material-icons">gamepad</span>
+							<span>Manage Games</span>
 						</a>
 					{/if}
 				</ListBox>

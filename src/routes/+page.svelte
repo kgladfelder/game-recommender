@@ -31,5 +31,7 @@
 			<li>Promting user reviews on site</li>
 			<li>Advertising</li>
 		</ul>
+
+		<div>Layout via https://www.skeleton.dev/</div>
 	</div>
 </div>

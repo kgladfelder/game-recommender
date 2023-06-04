@@ -1,15 +1,16 @@
 <script lang="ts">
+	import { modalStore, type ModalSettings } from "@skeletonlabs/skeleton";
 	import type { PageData } from "./$types";
-	import { fieldInvalid } from "$lib/utils";
 	export let data: PageData;
 
 	let developers = data.developers;
-	let newDeveloper = "";
-	let invalid: boolean;
-
-	const checkDisabled = (newDeveloper: string) => {
-		invalid = fieldInvalid(newDeveloper);
-		return invalid;
+	
+	const addNewDeveloper = () => {
+		const modal: ModalSettings = {
+			type: "component",
+			component: "createDeveloper",
+		};
+		modalStore.trigger(modal);
 	};
 </script>
 
@@ -46,7 +47,9 @@
 			<tfoot>
 				<tr>
 					<td>
-						<button class="btn btn-sm variant-ghost-secondary">
+						<button
+							class="btn btn-sm variant-ghost-secondary"
+							on:click|preventDefault="{addNewDeveloper}">
 							<span class="material-icons">add</span>
 							<span>New</span>
 						</button>
@@ -54,21 +57,5 @@
 				</tr>
 			</tfoot>
 		</table>
-	</div>
-	<div>
-		<form method="POST" action="?/create">
-			<label class="label">
-				<span>Developer Name</span>
-				<input
-					class="input"
-					name="companyName"
-					id="companyName"
-					placeholder="Developer"
-					bind:value="{newDeveloper}"
-					type="text"
-					required />
-			</label>
-			<button disabled="{checkDisabled(newDeveloper)}">Add Developer</button>
-		</form>
 	</div>
 </div>

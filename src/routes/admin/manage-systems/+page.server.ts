@@ -11,7 +11,7 @@ export async function load({ cookies }: ServerLoadEvent) {
 				select: {
 					id: true,
 					name: true,
-				}
+				},
 			});
 
 			const systems = await prisma.system.findMany({
@@ -21,8 +21,9 @@ export async function load({ cookies }: ServerLoadEvent) {
 					company: {
 						select: {
 							name: true,
-						}
-					}
+							id: true,
+						},
+					},
 				},
 			});
 
@@ -38,22 +39,22 @@ export const actions = {
 	create: async ({ request }: RequestEvent) => {
 		const form = await request.formData();
 		const systemName = form.get("systemName");
-		const companyId = form.get("companyId");
+		const company = form.get("company");
 
 		if (typeof systemName !== "string") {
 			throw error(500, "Something went wrong");
 		}
 
-		if (typeof companyId !== "string") {
+		if (typeof company !== "string") {
 			throw error(500, "Something went wrong");
 		}
 
-		if (systemName && companyId) {
+		if (systemName && company) {
 			try {
 				await prisma.system.create({
 					data: {
 						name: systemName,
-						companyId,
+						companyId: company,
 					},
 				});
 			} catch (ex) {

@@ -1,6 +1,4 @@
 <script lang="ts">
-	import Button from "$lib/components/Button.svelte";
-	import Input from "$lib/components/Input.svelte";
 	import { fieldInvalid } from "$lib/utils";
 
 	let username: string;
@@ -30,24 +28,56 @@
 		) {
 			invalid = true;
 		}
-		console.log("--- Start ---");
-		console.log("username", fieldInvalid(username));
-		console.log("email", fieldInvalid(email));
-		console.log("password", fieldInvalid(password));
-		console.log("emailRegex", !emailRegex.test(String(email).toLowerCase()));
-		console.log("passwordRegex", !passwordRegex.test(String(password)));
-		console.log("comparison", password !== passwordRepeat);
-		console.log("--- End ---");
 		return invalid;
 	};
 </script>
 
-<form method="POST">
-	<Input label="username" bind:value="{username}" type="text" required />
-	<Input label="email" bind:value="{email}" type="email" required />
-	<Input label="password" bind:value="{password}" type="password" required />
-	<Input label="repeat password" bind:value="{passwordRepeat}" type="password" required />
-	<Button disabled="{checkDisabled(username, email, password, passwordRepeat)}" invalid="{invalid}">
-		Sign Up
-	</Button>
-</form>
+<div class="container mx-auto">
+	<form method="POST">
+		<label class="label">
+			<span>Username</span>
+			<input
+				class="input"
+				name="username"
+				id="username"
+				placeholder="Username"
+				bind:value="{username}"
+				type="text"
+				required />
+		</label>
+		<label class="label">
+			<span>E-mail</span>
+			<input
+				class="input"
+				name="email"
+				id="email"
+				placeholder="E-mail"
+				bind:value="{email}"
+				type="email"
+				required />
+		</label>
+		<label class="label">
+			<span>Password</span>
+			<input
+				class="input"
+				name="password"
+				id="password"
+				placeholder="Password"
+				bind:value="{password}"
+				type="password"
+				required />
+		</label>
+		<label class="label">
+			<span>Password</span>
+			<input
+				class="input"
+				name="passwordRepeat"
+				id="passwordRepeat"
+				placeholder="Repeat Password"
+				bind:value="{passwordRepeat}"
+				type="password"
+				required />
+		</label>
+		<button class="btn mt-4 variant-ghost-primary" disabled="{checkDisabled(username, email, password, passwordRepeat)}">Sign Up</button>
+	</form>
+</div>
