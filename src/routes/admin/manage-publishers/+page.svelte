@@ -4,11 +4,11 @@
 	export let data: PageData;
 
 	let publishers = data.publishers;
-	
+
 	const addNewPublisher = () => {
 		const modal: ModalSettings = {
 			type: "component",
-			component: "createCompany",
+			component: "createPublisher",
 		};
 		modalStore.trigger(modal);
 	};
@@ -22,7 +22,7 @@
 			<thead>
 				<tr>
 					<th>Publisher</th>
-					<th>Action</th>
+					<th class="w-1/4">Action</th>
 				</tr>
 			</thead>
 			<tbody>
@@ -46,7 +46,7 @@
 			<tfoot>
 				<tr>
 					<td>
-						<button 
+						<button
 							class="btn btn-sm variant-ghost-secondary"
 							on:click|preventDefault="{addNewPublisher}">
 							<span class="material-icons">add</span>

@@ -4,11 +4,16 @@
 	export let data: PageData;
 
 	let games = data.games;
-	
+	let publishers = data.publishers;
+	let developers = data.developers;
+	let systems = data.systems;
+	let genres = data.genres;
+
 	const addNewGame = () => {
 		const modal: ModalSettings = {
 			type: "component",
 			component: "createGame",
+			meta: { publishers, developers, systems, genres },
 		};
 		modalStore.trigger(modal);
 	};
@@ -22,7 +27,7 @@
 			<thead>
 				<tr>
 					<th>Game Name</th>
-					<th>Action</th>
+					<th class="w-1/4">Action</th>
 				</tr>
 			</thead>
 			<tbody>

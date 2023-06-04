@@ -3,7 +3,7 @@
 	import { fieldInvalid } from "$lib/utils";
 	import type { Company } from "@prisma/client";
 
-	export let companies: Company[];
+	let companies: Company[];
 
 	if ($modalStore[0] && $modalStore[0].meta.companies) {
 		companies = $modalStore[0].meta.companies;

@@ -22,7 +22,7 @@
 			<thead>
 				<tr>
 					<th>Genre</th>
-					<th>Action</th>
+					<th class="w-1/4">Action</th>
 				</tr>
 			</thead>
 			<tbody>

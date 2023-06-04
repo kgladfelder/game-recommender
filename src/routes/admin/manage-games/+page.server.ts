@@ -14,11 +14,40 @@ export async function load({ cookies }: ServerLoadEvent) {
 				},
 			});
 
-			if (games) {
-				return { games };
-			} else {
-				return { games: [] };
-			}
+			const publishers = await prisma.publisher.findMany({
+				select: {
+					id: true,
+					name: true,
+				},
+			});
+
+			const developers = await prisma.developer.findMany({
+				select: {
+					id: true,
+					name: true,
+				},
+			});
+
+			const systems = await prisma.system.findMany({
+				select: {
+					id: true,
+					name: true,
+					company: {
+						select: {
+							name: true,
+						},
+					},
+				},
+			});
+
+			const genres = await prisma.genre.findMany({
+				select: {
+					id: true,
+					name: true,
+				},
+			});
+
+			return { games, publishers, developers, systems, genres };
 		} catch (ex) {
 			throw error(500, "Something went wrong");
 		}
@@ -50,7 +79,7 @@ export const actions = {
 	delete: async ({ request }: RequestEvent) => {
 		const form = await request.formData();
 		const id = form.get("id");
-		
+
 		if (typeof id !== "string") {
 			throw error(500, "Something went wrong");
 		}

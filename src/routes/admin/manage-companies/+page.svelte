@@ -23,7 +23,7 @@
 				<tr>
 					<th>Company</th>
 					<th>Systems</th>
-					<th class="w-1" />
+					<th class="w-1/4" />
 				</tr>
 			</thead>
 			<tbody>
