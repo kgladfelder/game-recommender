@@ -1,12 +1,14 @@
 <script lang="ts">
+	import { AppBar } from '@skeletonlabs/skeleton';
+
 	export let username: string | undefined;
 	export let admin: boolean | undefined;
 </script>
 
 <nav>
-	<div>
+	<AppBar gridColumns="grid-cols-3" slotDefault="place-self-center" slotTrail="place-content-end">
+		<svelte:fragment slot="lead">(icon)</svelte:fragment>
 		<a href="/">Game Recommender</a>
-		<div id="navbarSupportedContent"></div>
 		{#if username}
 			<ul>
 				{#if admin}
@@ -43,5 +45,6 @@
 				</li>
 			</ul>
 		{/if}
-	</div>
+		<svelte:fragment slot="trail">(actions)</svelte:fragment>
+	</AppBar>
 </nav>
