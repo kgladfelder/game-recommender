@@ -16,15 +16,18 @@
 
 <AppBar gridColumns="grid-cols-3" slotDefault="place-self-center" slotTrail="place-content-end">
 	<svelte:fragment slot="lead">
-		<button class="btn variant-filled w-48 justify-between" use:popup="{popupCombobox}">
+		<button class="btn variant-filled-primary justify-between" use:popup="{popupCombobox}">
+			<span class="material-icons">menu</span>
 			<span class="capitalize">{comboboxValue ?? "Menu"}</span>
-			<span>↓</span>
 		</button>
 		<div class="card w-48 shadow-xl py-2" data-popup="popupCombobox">
 			<nav class="list-nav">
 				<ListBox rounded="rounded-none">
 					<ListBoxItem bind:group="{comboboxValue}" name="medium" value="home">
-						<a href="/">Home</a>
+						<a href="/">
+							<span class="material-icons">home</span>
+							<span>Home</span>
+						</a>
 					</ListBoxItem>
 					{#if username && admin}
 						<span class="ml-4">Admin</span>

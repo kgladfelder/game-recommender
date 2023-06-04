@@ -50,7 +50,7 @@ export const actions = {
 	delete: async ({ request }: RequestEvent) => {
 		const form = await request.formData();
 		const id = form.get("id");
-
+		
 		if (typeof id !== "string") {
 			throw error(500, "Something went wrong");
 		}
