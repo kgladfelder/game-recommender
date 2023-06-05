@@ -1,5 +1,22 @@
 # Changelog
 
+## [1.4.0](https://github.com/kgladfelder/game-recommender/compare/v1.3.0...v1.4.0) (2022-10-13)
+
+
+### Features
+
+* add game list download ([53c7698](https://github.com/kgladfelder/game-recommender/commit/53c7698f2c7364b4b975804bbc421936a8fc8596))
+* rewrite UI ([ff905b1](https://github.com/kgladfelder/game-recommender/commit/ff905b12a8d4768e5c38d6d9cb89e5ea3a3087cd))
+* set up routes for data ([af32d48](https://github.com/kgladfelder/game-recommender/commit/af32d4857d766cad00a0b273520822f089d1f84d))
+* start of db based rewrite ([d0fa768](https://github.com/kgladfelder/game-recommender/commit/d0fa7683921b8b9acc9e99d395a9e9c52432423a))
+* user login and storing in cookie ([3dc84f5](https://github.com/kgladfelder/game-recommender/commit/3dc84f58afddc272a4ed429b8509dd5856aa3c8f))
+* user modifiable completion date ([94f0ab7](https://github.com/kgladfelder/game-recommender/commit/94f0ab7632599aebdf4da5c1bb64a4a030dc55c2))
+
+
+### Bug Fixes
+
+* game edit screen ([f7fba67](https://github.com/kgladfelder/game-recommender/commit/f7fba678fa833e687c098bd01a80ce7f83792dca))
+
 ## [1.3.0](https://github.com/kgladfelder/game-recommender/compare/v1.2.1...v1.3.0) (2022-09-01)
 
 
