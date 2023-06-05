@@ -31,7 +31,7 @@
 					{#each companies as company (company.id)}
 						<tr>
 							<td>{company.name}</td>
-							<td>{company.Systems.map((system) => system.name).join(", ")}</td>
+							<td>{company.systems.map((system) => system.name).join(", ")}</td>
 							<td>
 								<form method="POST" action="?/delete">
 									<input type="hidden" name="id" value="{company.id}" />

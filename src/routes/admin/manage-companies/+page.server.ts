@@ -11,7 +11,7 @@ export async function load({ cookies }: ServerLoadEvent) {
 				select: {
 					id: true,
 					name: true,
-					Systems: {
+					systems: {
 						select: {
 							name: true,
 						},
