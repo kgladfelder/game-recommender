@@ -3,7 +3,7 @@
 
 	import Button from "$lib/components/Button.svelte";
 	import Input from "$lib/components/Input.svelte";
-	import { fieldInvalid } from "$lib/utils";
+	import { textFieldInvalid } from "$lib/utils";
 
 	let username: string;
 	let email: string;
@@ -23,9 +23,9 @@
 	): boolean => {
 		invalid = false;
 		if (
-			fieldInvalid(username) ||
-			fieldInvalid(email) ||
-			fieldInvalid(password) ||
+			textFieldInvalid(username) ||
+			textFieldInvalid(email) ||
+			textFieldInvalid(password) ||
 			!emailRegex.test(String(email).toLowerCase()) ||
 			!passwordRegex.test(String(password)) ||
 			password !== passwordRepeat

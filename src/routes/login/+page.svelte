@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { fieldInvalid } from "$lib/utils";
+	import { textFieldInvalid } from "$lib/utils";
 
 	let username: string;
 	let password: string;
@@ -8,11 +8,11 @@
 	const checkDisabled = (username: string, password: string): boolean => {
 		invalid = false;
 
-		if (fieldInvalid(username)) {
+		if (textFieldInvalid(username)) {
 			invalid = true;
 		}
 
-		if (fieldInvalid(password)) {
+		if (textFieldInvalid(password)) {
 			invalid = true;
 		}
 

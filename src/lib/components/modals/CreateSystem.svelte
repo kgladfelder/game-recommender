@@ -1,6 +1,6 @@
 <script lang="ts">
 	import { modalStore } from "@skeletonlabs/skeleton";
-	import { fieldInvalid } from "$lib/utils";
+	import { textFieldInvalid } from "$lib/utils";
 	import type { Company } from "@prisma/client";
 
 	let companies: Company[];
@@ -13,7 +13,7 @@
 	let invalid: boolean;
 
 	const checkDisabled = (newSystem: string) => {
-		invalid = fieldInvalid(newSystem);
+		invalid = textFieldInvalid(newSystem);
 		return invalid;
 	};
 </script>
@@ -23,7 +23,7 @@
 		<label class="label">
 			<span>System Name</span>
 			<input
-				class="input"
+				class="input variant-form-material"
 				name="systemName"
 				id="systemName"
 				placeholder="System"
@@ -35,7 +35,7 @@
 			<label class="label">
 				<span>Company</span>
 				<select
-                    class="input"
+                    class="input variant-form-material"
                     name="company"
                     id="company"
                     bind:value={selectedCompany} 

@@ -16,6 +16,14 @@ export const customResponse = (
 	return error(status, message);
 };
 
-export const fieldInvalid = (value: string): boolean => {
+export const textFieldInvalid = (value: string): boolean => {
 	return value === undefined || value === "";
+};
+
+export const numberFieldInvalid = (value: number): boolean => {
+	return value === undefined || Number.isNaN(value);
+};
+
+export const dateFieldInvalid = (value: Date): boolean => {
+	return value === undefined || Number.isNaN(value);
 };

@@ -1,11 +1,11 @@
 <script lang="ts">
-	import { fieldInvalid } from "$lib/utils";
+	import { textFieldInvalid } from "$lib/utils";
 
     let newPublisher = "";
 	let invalid: boolean;
 
     const checkDisabled = (newPublisher: string) => {
-		invalid = fieldInvalid(newPublisher);
+		invalid = textFieldInvalid(newPublisher);
 		return invalid;
 	};
 </script>
@@ -15,7 +15,7 @@
         <label class="label">
             <span>Publisher Name</span>
             <input
-                class="input"
+                class="input variant-form-material"
                 name="publisherName"
                 id="publisherName"
                 placeholder="Publisher"
