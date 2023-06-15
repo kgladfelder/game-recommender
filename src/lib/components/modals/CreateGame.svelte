@@ -6,7 +6,7 @@
 	let newGame = "";
 	let main: number = 0;
 	let extras: number = 0;
-	let completionsist: number = 0;
+	let completionist: number = 0;
 	let usReleaseDate: Date;
 	let euReleaseDate: Date;
 	let jpReleaseDate: Date;
@@ -22,25 +22,39 @@
 
 	let invalid: boolean;
 
-	if ($modalStore[0] && $modalStore[0].meta.publishers) {
-		publishers = $modalStore[0].meta.publishers;
-	}
-	if ($modalStore[0] && $modalStore[0].meta.developers) {
-		developers = $modalStore[0].meta.developers;
-	}
-	if ($modalStore[0] && $modalStore[0].meta.systems) {
-		systems = $modalStore[0].meta.systems;
-	}
-	if ($modalStore[0] && $modalStore[0].meta.genres) {
-		genres = $modalStore[0].meta.genres;
+	if ($modalStore[0]) {
+		if ($modalStore[0].meta.publishers) {
+			publishers = $modalStore[0].meta.publishers;
+		}
+		if ($modalStore[0].meta.developers) {
+			developers = $modalStore[0].meta.developers;
+		}
+		if ($modalStore[0].meta.systems) {
+			systems = $modalStore[0].meta.systems;
+		}
+		if ($modalStore[0].meta.genres) {
+			genres = $modalStore[0].meta.genres;
+		}
 	}
 
-	const checkDisabled = (newGame: string) => {
+	const checkDisabled = (
+		newGame: string,
+		main: number,
+		extras: number,
+		completionist: number,
+		usReleaseDate: Date,
+		euReleaseDate: Date,
+		jpReleaseDate: Date,
+		selectedPublisher: Publisher,
+		selectedDeveloper: Developer,
+		selectedSystems: System[],
+		selectedGenres: Genre[]
+	) => {
 		invalid =
-			textFieldInvalid(newGame) ||
+			textFieldInvalid(newGame, true) ||
 			numberFieldInvalid(main) ||
 			numberFieldInvalid(extras) ||
-			numberFieldInvalid(completionsist) ||
+			numberFieldInvalid(completionist) ||
 			dateFieldInvalid(usReleaseDate) ||
 			dateFieldInvalid(jpReleaseDate) ||
 			dateFieldInvalid(euReleaseDate) ||
@@ -50,6 +64,20 @@
 			selectedGenres.length === 0;
 		return invalid;
 	};
+
+	$: disabled = checkDisabled(
+		newGame,
+		main,
+		extras,
+		completionist,
+		usReleaseDate,
+		euReleaseDate,
+		jpReleaseDate,
+		selectedPublisher,
+		selectedDeveloper,
+		selectedSystems,
+		selectedGenres
+	);
 </script>
 
 <div class="card w-4/5 p-4 shadow-xl space-y-4">
@@ -95,7 +123,7 @@
 					name="completionist"
 					id="completionsist"
 					placeholder="Completionist"
-					bind:value="{completionsist}"
+					bind:value="{completionist}"
 					type="number"
 					min="0" />
 			</label>
@@ -209,8 +237,20 @@
 				<span>No Genres exist, please add some before creating a game.</span>
 			{/if}
 		</div>
-		<button class="btn variant-filled-primary mt-4" disabled="{checkDisabled(newGame)}">
-			Add Game
-		</button>
+		<button class="btn variant-filled-primary mt-4" disabled="{disabled}">Add Game</button>
 	</form>
 </div>
+
+<style>
+	/* Chrome, Safari, Edge, Opera */
+	input::-webkit-outer-spin-button,
+	input::-webkit-inner-spin-button {
+		-webkit-appearance: none;
+		margin: 0;
+	}
+
+	/* Firefox */
+	input[type="number"] {
+		-moz-appearance: textfield;
+	}
+</style>
