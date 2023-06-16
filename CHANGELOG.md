@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.6.0](https://github.com/kgladfelder/game-recommender/compare/v1.5.0...v1.6.0) (2023-06-16)
+
+
+### Features
+
+* favicon ([5b2f57b](https://github.com/kgladfelder/game-recommender/commit/5b2f57b84e983472d351764c416e61a9e2020432))
+
 ## [1.5.0](https://github.com/kgladfelder/game-recommender/compare/v1.4.0...v1.5.0) (2023-06-16)
 
 
