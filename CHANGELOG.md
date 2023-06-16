@@ -1,5 +1,19 @@
 # Changelog
 
+## [1.5.0](https://github.com/kgladfelder/game-recommender/compare/v1.4.0...v1.5.0) (2023-06-16)
+
+
+### Features
+
+* add company maintenance ([8a90fdd](https://github.com/kgladfelder/game-recommender/commit/8a90fddcb08657b1e77d380f7766dd41724b0c4f))
+* add database seed for developing on multiple computers ([608b744](https://github.com/kgladfelder/game-recommender/commit/608b7442726345091a67ce6297995e106bfe207d))
+* admin section skeleton ([9f689de](https://github.com/kgladfelder/game-recommender/commit/9f689de912150ee2896610af4431dc16670b639e))
+* better handling of signup and login errors ([20a2010](https://github.com/kgladfelder/game-recommender/commit/20a2010987b8613fd6d1735aa2c860429f29be2f))
+* create companies and systems ([fea54d7](https://github.com/kgladfelder/game-recommender/commit/fea54d7325d8e4909d6b1f38e58c5bcc79af2f91))
+* game related admin tasks done ([3a21a41](https://github.com/kgladfelder/game-recommender/commit/3a21a419eed044c31f5234624569f3cd6a236c29))
+* improve new game input ([c842f6a](https://github.com/kgladfelder/game-recommender/commit/c842f6a0cb93e95305db4318d89c993a314c21d0))
+* improved UI ([a4815e2](https://github.com/kgladfelder/game-recommender/commit/a4815e208748876555a88c63584e8517b223eeda))
+
 ## [1.4.0](https://github.com/kgladfelder/game-recommender/compare/v1.3.0...v1.4.0) (2022-10-13)
 
 
