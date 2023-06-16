@@ -1,7 +1,3 @@
-<script>
-	import Button from "$lib/components/Button.svelte";
-</script>
-
 <form method="POST">
-	<Button>Sign Out</Button>
+	<button class="btn mt-4 variant-ghost-primary">Sign Out</button>
 </form>
