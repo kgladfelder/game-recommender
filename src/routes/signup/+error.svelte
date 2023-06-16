@@ -1,8 +1,5 @@
 <script lang="ts">
 	import { page } from "$app/stores";
-
-	import Button from "$lib/components/Button.svelte";
-	import Input from "$lib/components/Input.svelte";
 	import { textFieldInvalid } from "$lib/utils";
 
 	let username: string;
@@ -36,17 +33,53 @@
 	};
 </script>
 
-<div>
+<div class="container mx-auto">
 	<form method="POST">
-		<Input label="username" bind:value="{username}" type="text" required />
-		<Input label="email" bind:value="{email}" type="email" required />
-		<Input label="password" bind:value="{password}" type="password" required />
-		<Input label="repeat password" bind:value="{passwordRepeat}" type="password" required />
-		<Button
-			disabled="{checkDisabled(username, email, password, passwordRepeat)}"
-			invalid="{invalid}">
-			Sign Up
-		</Button>
+		<label class="label">
+			<span>Username</span>
+			<input
+				class="input"
+				name="username"
+				id="username"
+				placeholder="Username"
+				bind:value="{username}"
+				type="text"
+				required />
+		</label>
+		<label class="label">
+			<span>E-mail</span>
+			<input
+				class="input"
+				name="email"
+				id="email"
+				placeholder="E-mail"
+				bind:value="{email}"
+				type="email"
+				required />
+		</label>
+		<label class="label">
+			<span>Password</span>
+			<input
+				class="input"
+				name="password"
+				id="password"
+				placeholder="Password"
+				bind:value="{password}"
+				type="password"
+				required />
+		</label>
+		<label class="label">
+			<span>Password</span>
+			<input
+				class="input"
+				name="passwordRepeat"
+				id="passwordRepeat"
+				placeholder="Repeat Password"
+				bind:value="{passwordRepeat}"
+				type="password"
+				required />
+		</label>
+		<button class="btn mt-4 variant-ghost-primary" disabled="{checkDisabled(username, email, password, passwordRepeat)}">Sign Up</button>
 	</form>
 	<p role="alert">
 		{$page.error?.message}
