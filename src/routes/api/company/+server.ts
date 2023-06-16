@@ -1,17 +1,16 @@
-import { PrismaClient } from '@prisma/client';
-import { error, type RequestEvent } from '@sveltejs/kit';
-import { validateAuthToken } from '$lib/authentication';
+import prisma from "$lib/prisma.js";
+import { error, type RequestEvent } from "@sveltejs/kit";
+import { validateAuthToken } from "$lib/authentication";
 
 /** @type {import('./$types').RequestHandler} */
 export async function GET({ url, request }: RequestEvent) {
-	const authHeader = request.headers.get('authorization');
+	const authHeader = request.headers.get("authorization");
 	const user = validateAuthToken(authHeader);
 
 	if (user) {
-		const companyName = url.searchParams.get('companyname');
+		const companyName = url.searchParams.get("companyname");
 
 		if (companyName) {
-			const prisma = new PrismaClient();
 			const companies = await prisma.company.findMany({
 				where: {
 					name: { contains: companyName },
@@ -21,22 +20,19 @@ export async function GET({ url, request }: RequestEvent) {
 					name: true,
 				},
 			});
-			await prisma.$disconnect();
 
 			return companies;
 		} else {
-			const prisma = new PrismaClient();
 			const companies = await prisma.company.findMany({
 				select: {
 					id: true,
 					name: true,
 				},
 			});
-			await prisma.$disconnect();
 
 			return companies;
 		}
 	}
 
-	throw error(401, 'Unauthorized');
+	throw error(401, "Unauthorized");
 }

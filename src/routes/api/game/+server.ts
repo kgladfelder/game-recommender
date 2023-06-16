@@ -1,17 +1,18 @@
-import { validateAuthToken } from '$lib/authentication';
-import { Prisma, PrismaClient } from '@prisma/client';
-import { error, type RequestEvent } from '@sveltejs/kit';
+import { validateAuthToken } from "$lib/authentication";
+import type { Prisma } from "@prisma/client";
+import prisma from "$lib/prisma.js";
+import { error, type RequestEvent } from "@sveltejs/kit";
 
 /** @type {import('./$types').RequestHandler} */
 export async function GET({ url, request }: RequestEvent) {
-	const authHeader = request.headers.get('authorization');
+	const authHeader = request.headers.get("authorization");
 	const user = validateAuthToken(authHeader);
 
 	if (user) {
-		const gamename = url.searchParams.get('gamename');
+		const gamename = url.searchParams.get("gamename");
 
 		if (!gamename) {
-			throw error(400, 'Username not provided');
+			throw error(400, "Username not provided");
 		}
 
 		//TODO: allow searching by more than just gamename, build dynamically generated select statements based on parameters
@@ -59,17 +60,16 @@ export async function GET({ url, request }: RequestEvent) {
 			},
 		};
 
-		const prisma = new PrismaClient();
 		const games = await prisma.game.findMany({
 			where: {
 				name: { contains: gamename }, //TODO: make this a more generalized search (case insensitive, etc)
 			},
 			select: gameSelect,
 		});
-		await prisma.$disconnect();
+
 		//TODO: Flatten gameSystems and gameGenres
 		return games;
 	}
 
-	throw error(401, 'Unauthorized');
+	throw error(401, "Unauthorized");
 }
