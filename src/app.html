@@ -1,22 +1,16 @@
 <!DOCTYPE html>
-<html lang="en" style="margin: 0; padding: 0">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" href="%sveltekit.assets%/favicon.png" />
-		<meta name="viewport" content="width=device-width, initial-scale=1" />
+<html lang="en" class="dark">
 
-		<!-- Material Icons -->
-		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+<head>
+	<meta charset="utf-8" />
+	<link rel="icon" href="%sveltekit.assets%/favicon.png" />
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	%sveltekit.head%
+</head>
 
-		<!-- Roboto Font -->
-		<link
-			rel="stylesheet"
-			href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" />
+<body data-sveltekit-preload-data="hover" data-theme="crimson">
+	<div style="display: contents" class="h-full overflow-hidden">%sveltekit.body%</div>
+</body>
 
-		%sveltekit.head%
-	</head>
-
-	<body style="margin: 0; padding: 0; font-family: Roboto">
-		<div>%sveltekit.body%</div>
-	</body>
 </html>

@@ -6,8 +6,8 @@ generator client {
 }
 
 datasource db {
-  provider = "postgresql"
-  url      = env("DATABASE_URL")
+  provider = "sqlite"
+  url      = "file:./dev.db"
 }
 
 model User {
@@ -33,8 +33,6 @@ model Game {
   publisherId   String?
   developer     Developer?   @relation(fields: [developerId], references: [id])
   developerId   String?
-  createdDate   DateTime
-  updatedDate   DateTime?
   userGames     UserGame[]
   gameSystems   GameSystem[]
   gameGenres    GameGenre[]
@@ -42,8 +40,7 @@ model Game {
 
 model System {
   id          String       @id @default(uuid())
-  name        String
-  alias       String[]
+  name        String       @unique
   company     Company      @relation(fields: [companyId], references: [id])
   companyId   String
   gameSystems GameSystem[]
@@ -51,8 +48,8 @@ model System {
 
 model Company {
   id      String   @id @default(uuid())
-  name    String
-  Systems System[]
+  name    String   @unique
+  systems System[]
 }
 
 model Genre {
@@ -79,7 +76,6 @@ model UserGame {
   userId        String
   game          Game           @relation(fields: [gameId], references: [id])
   gameId        String
-  added         DateTime
   completedTime DateTime?
   completed     Boolean        @default(false)
   userSystem    UserGameSystem @relation(fields: [userSystemId], references: [id])
