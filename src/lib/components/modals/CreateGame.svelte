@@ -12,9 +12,9 @@
 	let jpReleaseDate: Date;
 
 	let publishers: Publisher[];
-	let selectedPublisher: Publisher;
+	let selectedPublisher: Publisher | undefined;
 	let developers: Developer[];
-	let selectedDeveloper: Developer;
+	let selectedDeveloper: Developer | undefined;
 	let systems: System[];
 	let selectedSystems: System[] = [];
 	let genres: Genre[];
@@ -45,8 +45,8 @@
 		usReleaseDate: Date,
 		euReleaseDate: Date,
 		jpReleaseDate: Date,
-		selectedPublisher: Publisher,
-		selectedDeveloper: Developer,
+		selectedPublisher: Publisher | undefined,
+		selectedDeveloper: Developer | undefined,
 		selectedSystems: System[],
 		selectedGenres: Genre[]
 	) => {
@@ -173,6 +173,7 @@
 						id="publisher"
 						bind:value="{selectedPublisher}"
 						required>
+						<option>Select a publisher...</option>
 						{#each publishers as publisher (publisher.id)}
 							<option value="{publisher.id}">{publisher.name}</option>
 						{/each}
@@ -190,6 +191,7 @@
 						id="developer"
 						bind:value="{selectedDeveloper}"
 						required>
+						<option>Select a developer...</option>
 						{#each developers as developer (developer.id)}
 							<option value="{developer.id}">{developer.name}</option>
 						{/each}

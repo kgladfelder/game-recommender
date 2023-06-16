@@ -4,7 +4,7 @@
 
 		<p>Current Tasks</p>
 		<ul>
-			<li>Improve UI</li>
+			<li>Create migration scripts for a base level of Systems, Consoles, Developers, etc...</li>
 		</ul>
 		<p>Project purpose:</p>
 		<ul>
