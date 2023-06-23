@@ -43,12 +43,16 @@ model System {
   name        String       @unique
   company     Company      @relation(fields: [companyId], references: [id])
   companyId   String
+  usReleaseDate DateTime?
+  euReleaseDate DateTime?
+  jpReleaseDate DateTime?
   gameSystems GameSystem[]
 }
 
 model Company {
   id      String   @id @default(uuid())
   name    String   @unique
+  foundingDate DateTime?
   systems System[]
 }
 
@@ -61,12 +65,14 @@ model Genre {
 model Publisher {
   id    String @id @default(uuid())
   name  String
+  foundingDate DateTime?
   games Game[]
 }
 
 model Developer {
   id    String @id @default(uuid())
   name  String
+  foundingDate DateTime?
   games Game[]
 }
 

@@ -1,0 +1,30 @@
+{
+    "name": "Microsoft",
+    "foundingDate": "1974-04-04",
+    "systems": [
+        {
+            "name": "Xbox",
+            "usReleaseDate": "2001-11-15",
+            "euReleaseDate": "2002-03-14",
+            "jpReleaseDate": "2002-02-22"
+        },
+        {
+            "name": "Xbox 360",
+            "usReleaseDate": "2005-11-22",
+            "euReleaseDate": "2005-12-10",
+            "jpReleaseDate": "2005-12-02"
+        },
+        {
+            "name": "Xbox One",
+            "usReleaseDate": "2013-11-22",
+            "euReleaseDate": "2013-11-22",
+            "jpReleaseDate": "2014-09-04"
+        },
+        {
+            "name": "Xbox Series X|S",
+            "usReleaseDate": "2020-11-10",
+            "euReleaseDate": "2020-11-10",
+            "jpReleaseDate": "2020-11-10"
+        }
+    ]
+}

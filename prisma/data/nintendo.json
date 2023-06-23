@@ -1,0 +1,87 @@
+{
+    "name": "Nintendo",
+    "foundingDate": "1889-09-23",
+    "systems": [
+        {
+            "name": "NES",
+            "usReleaseDate": "1985-10-18",
+            "euReleaseDate": "1986-09-01",
+            "jpReleaseDate": "1983-04-15"
+        },
+        {
+            "name": "Super Nintendo",
+            "usReleaseDate": "1991-08-23",
+            "euReleaseDate": "1992-06-01",
+            "jpReleaseDate": "1990-11-21"
+        },
+        {
+            "name": "Nintendo 64",
+            "usReleaseDate": "1996-09-29",
+            "euReleaseDate": "1997-03-01",
+            "jpReleaseDate": "1996-06-23"
+        },
+        {
+            "name": "Nintendo GameCube",
+            "usReleaseDate": "2001-11-18",
+            "euReleaseDate": "2002-04-03",
+            "jpReleaseDate": "2001-09-14"
+        },
+        {
+            "name": "Wii",
+            "usReleaseDate": "2006-11-19",
+            "euReleaseDate": "2006-12-08",
+            "jpReleaseDate": "2006-12-02"
+        },
+        {
+            "name": "Wii U",
+            "usReleaseDate": "2012-11-18",
+            "euReleaseDate": "2012-11-30",
+            "jpReleaseDate": "2012-12-08"
+        },
+        {
+            "name": "Nintendo Switch",
+            "usReleaseDate": "2017-03-03",
+            "euReleaseDate": "2017-03-03",
+            "jpReleaseDate": "2017-03-03"
+        },
+        {
+            "name": "Virtual Boy",
+            "usReleaseDate": "1995-08-14",
+            "jpReleaseDate": "1995-07-21"
+        },
+        {
+            "name": "Game Boy",
+            "usReleaseDate": "1989-07-21",
+            "euReleaseDate": "1990-09-28",
+            "jpReleaseDate": "1989-04-21"
+        },
+        {
+            "name": "Game Boy Color",
+            "usReleaseDate": "1998-11-18",
+            "euReleaseDate": "1998-11-23",
+            "jpReleaseDate": "1998-10-21"
+        },
+        {
+            "name": "Game Boy Advance",
+            "usReleaseDate": "2001-06-11",
+            "euReleaseDate": "2001-06-22",
+            "jpReleaseDate": "2001-03-21"
+        },
+        {
+            "name": "Nintendo DS",
+            "usReleaseDate": "2004-11-21",
+            "euReleaseDate": "2005-03-11",
+            "jpReleaseDate": "2004-12-02"
+        },
+        {
+            "name": "Nintendo 3DS",
+            "usReleaseDate": "2011-03-27",
+            "euReleaseDate": "2011-03-25",
+            "jpReleaseDate": "2011-02-26"
+        }
+    ]
+}
+
+
+
+
