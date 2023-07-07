@@ -1,0 +1,4429 @@
+{
+    "publishers": [
+        {
+          "publisher": "07th Expansion",
+          "country": "Japan",
+          "year": 2002
+        },
+        {
+          "publisher": "11 bit studios",
+          "country": "Poland",
+          "year": 2010
+        },
+        {
+          "publisher": "1C Company",
+          "country": "Russia",
+          "year": 1991
+        },
+        {
+          "publisher": "20th Century Games",
+          "country": "United States",
+          "year": 2006
+        },
+        {
+          "publisher": "2K Games",
+          "country": "United States",
+          "year": 2005
+        },
+        {
+          "publisher": "3D Realms",
+          "country": "United States",
+          "year": 1987
+        },
+        {
+          "publisher": "The 3DO Company",
+          "country": "United States",
+          "year": 1991
+        },
+        {
+          "publisher": "505 Games",
+          "country": "Italy",
+          "year": 2006
+        },
+        {
+          "publisher": "7th Level",
+          "country": "United States",
+          "year": 1993
+        },
+        {
+          "publisher": "A&F Software",
+          "country": "United Kingdom",
+          "year": 1981
+        },
+        {
+          "publisher": "Aackosoft",
+          "country": "The Netherlands",
+          "year": 1983
+        },
+        {
+          "publisher": "Aardvark Software",
+          "country": "United Kingdom",
+          "year": 1983
+        },
+        {
+          "publisher": "ABC Software",
+          "country": "Switzerland",
+          "year": 1991
+        },
+        {
+          "publisher": "Absolute Entertainment",
+          "country": "United States",
+          "year": 1986
+        },
+        {
+          "publisher": "Access Software",
+          "country": "United States",
+          "year": 1982
+        },
+        {
+          "publisher": "Acclaim Entertainment",
+          "country": "United States",
+          "year": 1987
+        },
+        {
+          "publisher": "Accolade",
+          "country": "United States",
+          "year": 1984
+        },
+        {
+          "publisher": "Acornsoft",
+          "country": "United Kingdom",
+          "year": 1980
+        },
+        {
+          "publisher": "Acquire",
+          "country": "Japan",
+          "year": 1994
+        },
+        {
+          "publisher": "Active Gaming Media AGM",
+          "country": "Japan",
+          "year": 2006
+        },
+        {
+          "publisher": "Activision",
+          "country": "United States",
+          "year": 1979
+        },
+        {
+          "publisher": "Activision Blizzard",
+          "country": "United States",
+          "year": 2008
+        },
+        {
+          "publisher": "Addictive Games",
+          "country": "United Kingdom",
+          "year": 1982
+        },
+        {
+          "publisher": "The Adventure Company",
+          "country": "Canada",
+          "year": 2002
+        },
+        {
+          "publisher": "Adventure International",
+          "country": "United States",
+          "year": 1978
+        },
+        {
+          "publisher": "Adventure Soft",
+          "country": "United Kingdom",
+          "year": 1983
+        },
+        {
+          "publisher": "Affect",
+          "country": "Japan",
+          "year": 1990
+        },
+        {
+          "publisher": "Agatsuma Entertainment",
+          "country": "Japan",
+          "year": 1997
+        },
+        {
+          "publisher": "Âge",
+          "country": "Japan",
+          "year": 1999
+        },
+        {
+          "publisher": "AGEod",
+          "country": "France",
+          "year": 2005
+        },
+        {
+          "publisher": "Agetec",
+          "country": "United States",
+          "year": 1998
+        },
+        {
+          "publisher": "Akabeisoft2",
+          "country": "Japan",
+          "year": 2005
+        },
+        {
+          "publisher": "Akella",
+          "country": "Russia",
+          "year": 1995
+        },
+        {
+          "publisher": "Akupara Games",
+          "country": "United States",
+          "year": 2016
+        },
+        {
+          "publisher": "Aksys",
+          "country": "United States",
+          "year": 2006
+        },
+        {
+          "publisher": "ALcot",
+          "country": "Japan",
+          "year": 2003
+        },
+        {
+          "publisher": "Alawar",
+          "country": "Russia",
+          "year": 1999
+        },
+        {
+          "publisher": "AliceSoft",
+          "country": "Japan",
+          "year": 1989
+        },
+        {
+          "publisher": "AlphaDream",
+          "country": "Japan",
+          "year": 2000
+        },
+        {
+          "publisher": "ADK",
+          "country": "Japan",
+          "year": 1980
+        },
+        {
+          "publisher": "Alchemist",
+          "country": "Japan",
+          "year": 1991
+        },
+        {
+          "publisher": "All in! Games",
+          "country": "Poland",
+          "year": 2018
+        },
+        {
+          "publisher": "Alligata",
+          "country": "United Kingdom",
+          "year": 1983
+        },
+        {
+          "publisher": "Allumer",
+          "country": "Japan",
+          "year": 1983
+        },
+        {
+          "publisher": "Alten8",
+          "country": "United Kingdom",
+          "year": 2005
+        },
+        {
+          "publisher": "Alternative Software",
+          "country": "United Kingdom",
+          "year": 1985
+        },
+        {
+          "publisher": "Amazon Games",
+          "country": "United States",
+          "year": 2012
+        },
+        {
+          "publisher": "American Game Cartridges",
+          "country": "United States",
+          "year": 1990
+        },
+        {
+          "publisher": "American Laser Games",
+          "country": "United States",
+          "year": 1989
+        },
+        {
+          "publisher": "American Video Entertainment",
+          "country": "United States",
+          "year": 1990
+        },
+        {
+          "publisher": "Amplitude Studios",
+          "country": "France",
+          "year": 2011
+        },
+        {
+          "publisher": "Amsoft",
+          "country": "United Kingdom",
+          "year": 1984
+        },
+        {
+          "publisher": "ANALOG Software",
+          "country": "United States",
+          "year": 1981
+        },
+        {
+          "publisher": "Antic Software",
+          "country": "United States",
+          "year": 1982
+        },
+        {
+          "publisher": "APF Electronics Inc.",
+          "country": "United States",
+          "year": 1970
+        },
+        {
+          "publisher": "Apogee Software",
+          "country": "United States",
+          "year": 2008
+        },
+        {
+          "publisher": "Apple Inc.",
+          "country": "United States",
+          "year": 1976
+        },
+        {
+          "publisher": "Aquaplus",
+          "country": "Japan",
+          "year": 1994
+        },
+        {
+          "publisher": "AQ Interactive",
+          "country": "Japan",
+          "year": 2005
+        },
+        {
+          "publisher": "Arcadia Systems",
+          "country": "United States",
+          "year": 1987
+        },
+        {
+          "publisher": "Arcen Games",
+          "country": "United States",
+          "year": 2009
+        },
+        {
+          "publisher": "Arc System Works",
+          "country": "Japan",
+          "year": 1988
+        },
+        {
+          "publisher": "Argus Press",
+          "country": "United Kingdom",
+          "year": 1966
+        },
+        {
+          "publisher": "Arika",
+          "country": "Japan",
+          "year": 1995
+        },
+        {
+          "publisher": "Ariolasoft",
+          "country": "Germany",
+          "year": 1983
+        },
+        {
+          "publisher": "Armor Games",
+          "country": "United States",
+          "year": 2005
+        },
+        {
+          "publisher": "Arsys Software",
+          "country": "Japan",
+          "year": 1985
+        },
+        {
+          "publisher": "Artdink",
+          "country": "Japan",
+          "year": 1986
+        },
+        {
+          "publisher": "Artic Computing",
+          "country": "United Kingdom",
+          "year": 1980
+        },
+        {
+          "publisher": "Arush Entertainment",
+          "country": "United States",
+          "year": 1999
+        },
+        {
+          "publisher": "Arxel Tribe",
+          "country": "Slovenia",
+          "year": 1989
+        },
+        {
+          "publisher": "Ascaron",
+          "country": "Germany",
+          "year": 1992
+        },
+        {
+          "publisher": "ASC Games",
+          "country": "United States",
+          "year": 1992
+        },
+        {
+          "publisher": "Asmik Corporation of America",
+          "country": "Japan",
+          "year": 1985
+        },
+        {
+          "publisher": "Asmodee",
+          "country": "France",
+          "year": 1995
+        },
+        {
+          "publisher": "Aspyr Media",
+          "country": "United States",
+          "year": 1996
+        },
+        {
+          "publisher": "Astragon",
+          "country": "Germany",
+          "year": 2000
+        },
+        {
+          "publisher": "Asymmetric Publications",
+          "country": "United States",
+          "year": 2003
+        },
+        {
+          "publisher": "Atari, Inc",
+          "country": "United States",
+          "year": 1972
+        },
+        {
+          "publisher": "Atari Corp.",
+          "country": "United States",
+          "year": 1984
+        },
+        {
+          "publisher": "Atari Games",
+          "country": "United States",
+          "year": 1984
+        },
+        {
+          "publisher": "Atari, SA",
+          "country": "France",
+          "year": 2003
+        },
+        {
+          "publisher": "AtariAge",
+          "country": "United States",
+          "year": 1998
+        },
+        {
+          "publisher": "Athena",
+          "country": "Japan",
+          "year": 1987
+        },
+        {
+          "publisher": "Atlantis Software",
+          "country": "United Kingdom",
+          "year": 1984
+        },
+        {
+          "publisher": "Artech Digital Entertainment",
+          "country": "Canada",
+          "year": 1982
+        },
+        {
+          "publisher": "ASCII Corporation",
+          "country": "Japan",
+          "year": 1977
+        },
+        {
+          "publisher": "Atlus",
+          "country": "Japan",
+          "year": 1986
+        },
+        {
+          "publisher": "Attic Entertainment Software",
+          "country": "Germany",
+          "year": 1990
+        },
+        {
+          "publisher": "Audiogenic Limited",
+          "country": "United Kingdom",
+          "year": 1975
+        },
+        {
+          "publisher": "August",
+          "country": "Japan",
+          "year": 2001
+        },
+        {
+          "publisher": "Auran Development",
+          "country": "Australia",
+          "year": 1995
+        },
+        {
+          "publisher": "Automata United Kingdom",
+          "country": "United Kingdom",
+          "year": 1977
+        },
+        {
+          "publisher": "Autumn Games",
+          "country": "United States",
+          "year": 2007
+        },
+        {
+          "publisher": "Avalon Hill",
+          "country": "United States",
+          "year": 1954
+        },
+        {
+          "publisher": "Aventuras AD",
+          "country": "Spain",
+          "year": 1987
+        },
+        {
+          "publisher": "Aventurine SA",
+          "country": "Greece",
+          "year": 2002
+        },
+        {
+          "publisher": "BAM! Entertainment",
+          "country": "United States",
+          "year": 1999
+        },
+        {
+          "publisher": "Bandai Games",
+          "country": "Japan",
+          "year": 1950
+        },
+        {
+          "publisher": "Bandai Namco Entertainment",
+          "country": "Japan",
+          "year": 1955
+        },
+        {
+          "publisher": "Banpresto",
+          "country": "Japan",
+          "year": 1977
+        },
+        {
+          "publisher": "BBC Multimedia",
+          "country": "United Kingdom",
+          "year": 1995
+        },
+        {
+          "publisher": "Beagle Bros",
+          "country": "United States",
+          "year": 1980
+        },
+        {
+          "publisher": "Bergsala Lightweight",
+          "country": "Japan",
+          "year": 1995
+        },
+        {
+          "publisher": "Berkeley Systems",
+          "country": "United States",
+          "year": 1987
+        },
+        {
+          "publisher": "Bethesda Softworks",
+          "country": "United States",
+          "year": 1986
+        },
+        {
+          "publisher": "Beyond Software",
+          "country": "United Kingdom",
+          "year": 1983
+        },
+        {
+          "publisher": "Big Fish Games",
+          "country": "United States",
+          "year": 2002
+        },
+        {
+          "publisher": "Big Five Software",
+          "country": "United States",
+          "year": 1980
+        },
+        {
+          "publisher": "Bilibili",
+          "country": "China",
+          "year": 2009
+        },
+        {
+          "publisher": "Black Bean Games",
+          "country": "Italy",
+          "year": 2004
+        },
+        {
+          "publisher": "Blue Byte",
+          "country": "Germany",
+          "year": 1988
+        },
+        {
+          "publisher": "Broderbund",
+          "country": "United States",
+          "year": 1980
+        },
+        {
+          "publisher": "Black Legend",
+          "country": "United Kingdom",
+          "year": 1993
+        },
+        {
+          "publisher": "Blizzard Entertainment",
+          "country": "United States",
+          "year": 1991
+        },
+        {
+          "publisher": "Blue Ribbon",
+          "country": "United Kingdom",
+          "year": 1985
+        },
+        {
+          "publisher": "Bohemia Interactive",
+          "country": "Czech Republic",
+          "year": 1999
+        },
+        {
+          "publisher": "Box Office, Inc.",
+          "country": "United States",
+          "year": 1987
+        },
+        {
+          "publisher": "Brash Entertainment",
+          "country": "United States",
+          "year": 2007
+        },
+        {
+          "publisher": "Broccoli",
+          "country": "Japan",
+          "year": 1994
+        },
+        {
+          "publisher": "Bug-Byte",
+          "country": "United Kingdom",
+          "year": 1980
+        },
+        {
+          "publisher": "Bubble Bus Software",
+          "country": "United Kingdom",
+          "year": 1982
+        },
+        {
+          "publisher": "BudgeCo",
+          "country": "United States",
+          "year": 1981
+        },
+        {
+          "publisher": "Buka Entertainment",
+          "country": "Russia",
+          "year": 1994
+        },
+        {
+          "publisher": "Bullet-Proof Software",
+          "country": "Japan",
+          "year": 1980
+        },
+        {
+          "publisher": "Bungie",
+          "country": "United States",
+          "year": 1991
+        },
+        {
+          "publisher": "C&E",
+          "country": "Taiwan",
+          "year": 1990
+        },
+        {
+          "publisher": "California Dreams",
+          "country": "United States",
+          "year": 1987
+        },
+        {
+          "publisher": "California Pacific Computer Company",
+          "country": "United States",
+          "year": 1979
+        },
+        {
+          "publisher": "Camerica",
+          "country": "United States",
+          "year": 1988
+        },
+        {
+          "publisher": "Canal+ Multimedia",
+          "country": "France",
+          "year": 1984
+        },
+        {
+          "publisher": "Candy Soft",
+          "country": "Japan",
+          "year": 1996
+        },
+        {
+          "publisher": "Capcom",
+          "country": "Japan",
+          "year": 1979
+        },
+        {
+          "publisher": "Capstone Software",
+          "country": "United States",
+          "year": 1984
+        },
+        {
+          "publisher": "Carry Lab",
+          "country": "Japan",
+          "year": 1981
+        },
+        {
+          "publisher": "Casady & Greene",
+          "country": "United States",
+          "year": 1984
+        },
+        {
+          "publisher": "Cases Computer Simulations",
+          "country": "United Kingdom",
+          "year": 1982
+        },
+        {
+          "publisher": "Cave",
+          "country": "Japan",
+          "year": 1994
+        },
+        {
+          "publisher": "Cavedog Entertainment",
+          "country": "United States",
+          "year": 1995
+        },
+        {
+          "publisher": "CBS Electronics",
+          "country": "United States",
+          "year": 1982
+        },
+        {
+          "publisher": "CD Projekt Red",
+          "country": "Poland",
+          "year": 1994
+        },
+        {
+          "publisher": "CDS Software",
+          "country": "United Kingdom",
+          "year": 1982
+        },
+        {
+          "publisher": "CDV Software Entertainment AG",
+          "country": "Germany",
+          "year": 1989
+        },
+        {
+          "publisher": "Centuri",
+          "country": "United States",
+          "year": 1969
+        },
+        {
+          "publisher": "ChessBase",
+          "country": "Germany",
+          "year": 1986
+        },
+        {
+          "publisher": "Chucklefish",
+          "country": "United Kingdom",
+          "year": 2011
+        },
+        {
+          "publisher": "Cinemax",
+          "country": "Czech Republic",
+          "year": 1998
+        },
+        {
+          "publisher": "CI Games",
+          "country": "Poland",
+          "year": 2002
+        },
+        {
+          "publisher": "Cinematronics",
+          "country": "United States",
+          "year": 1975
+        },
+        {
+          "publisher": "Cinemaware",
+          "country": "United States",
+          "year": 1985
+        },
+        {
+          "publisher": "Circus",
+          "country": "Japan",
+          "year": 2000
+        },
+        {
+          "publisher": "Club Kidsoft",
+          "country": "United States",
+          "year": 1992
+        },
+        {
+          "publisher": "The Coca-Cola Company",
+          "country": "United States",
+          "year": 1886
+        },
+        {
+          "publisher": "Codemasters",
+          "country": "United Kingdom",
+          "year": 1985
+        },
+        {
+          "publisher": "Coktel Vision",
+          "country": "France",
+          "year": 1985
+        },
+        {
+          "publisher": "Coleco",
+          "country": "United States",
+          "year": 1932
+        },
+        {
+          "publisher": "Color Dreams",
+          "country": "United States",
+          "year": 1988
+        },
+        {
+          "publisher": "CommaVid",
+          "country": "United States",
+          "year": 1981
+        },
+        {
+          "publisher": "Commercial Data Systems",
+          "country": "Canada",
+          "year": 1982
+        },
+        {
+          "publisher": "Commodore",
+          "country": "United States",
+          "year": 1954
+        },
+        {
+          "publisher": "Compile",
+          "country": "Japan",
+          "year": 1982
+        },
+        {
+          "publisher": "Compile Heart",
+          "country": "Japan",
+          "year": 2006
+        },
+        {
+          "publisher": "CompuServe",
+          "country": "United States",
+          "year": 1969
+        },
+        {
+          "publisher": "Computer and Video Games",
+          "country": "United Kingdom",
+          "year": 1981
+        },
+        {
+          "publisher": "Conspiracy Entertainment",
+          "country": "United States",
+          "year": 1997
+        },
+        {
+          "publisher": "Core Design",
+          "country": "United Kingdom",
+          "year": 1988
+        },
+        {
+          "publisher": "Cosmi Corporation",
+          "country": "United States",
+          "year": 1982
+        },
+        {
+          "publisher": "Crave Entertainment",
+          "country": "United States",
+          "year": 1997
+        },
+        {
+          "publisher": "Creative Computing",
+          "country": "United States",
+          "year": 1974
+        },
+        {
+          "publisher": "Creatures",
+          "country": "Japan",
+          "year": 1995
+        },
+        {
+          "publisher": "Crimson Cow",
+          "country": "Germany",
+          "year": 2002
+        },
+        {
+          "publisher": "CRL Group",
+          "country": "United Kingdom",
+          "year": 1982
+        },
+        {
+          "publisher": "Cronosoft",
+          "country": "United Kingdom",
+          "year": 2002
+        },
+        {
+          "publisher": "Culture Brain Excel",
+          "country": "Japan",
+          "year": 1980
+        },
+        {
+          "publisher": "Cryo Interactive",
+          "country": "France",
+          "year": 1989
+        },
+        {
+          "publisher": "Crystal Computing",
+          "country": "United Kingdom",
+          "year": 1982
+        },
+        {
+          "publisher": "Crystal Dynamics",
+          "country": "United States",
+          "year": 1992
+        },
+        {
+          "publisher": "Crytek",
+          "country": "Germany",
+          "year": 1999
+        },
+        {
+          "publisher": "Crytivo Games",
+          "country": "United States",
+          "year": 2013
+        },
+        {
+          "publisher": "Cyberdreams",
+          "country": "United States",
+          "year": 1990
+        },
+        {
+          "publisher": "Cybersoft",
+          "country": "Florida",
+          "year": 1994
+        },
+        {
+          "publisher": "D3 publisher",
+          "country": "Japan",
+          "year": 1996
+        },
+        {
+          "publisher": "Daedalic Entertainment",
+          "country": "Germany",
+          "year": 2007
+        },
+        {
+          "publisher": "DarXabre",
+          "country": "The Netherlands",
+          "year": 2001
+        },
+        {
+          "publisher": "Datamost",
+          "country": "United States",
+          "year": 1981
+        },
+        {
+          "publisher": "Datam Polystar",
+          "country": "Japan",
+          "year": 1990
+        },
+        {
+          "publisher": "Datasoft",
+          "country": "United States",
+          "year": 1980
+        },
+        {
+          "publisher": "Data Age",
+          "country": "United States",
+          "year": 1982
+        },
+        {
+          "publisher": "Data Becker",
+          "country": "Germany",
+          "year": 1980
+        },
+        {
+          "publisher": "Data East",
+          "country": "Japan",
+          "year": 1976
+        },
+        {
+          "publisher": "Davidson & Associates",
+          "country": "United States",
+          "year": 1983
+        },
+        {
+          "publisher": "Davilex Games",
+          "country": "The Netherlands",
+          "year": 1997
+        },
+        {
+          "publisher": "Davka",
+          "country": "United States",
+          "year": 1982
+        },
+        {
+          "publisher": "Daybreak Game Company",
+          "country": "United States",
+          "year": 1995
+        },
+        {
+          "publisher": "dB-SOFT",
+          "country": "Japan",
+          "year": 1980
+        },
+        {
+          "publisher": "Deep Silver",
+          "country": "Germany",
+          "year": 2002
+        },
+        {
+          "publisher": "Delphine Software International",
+          "country": "France",
+          "year": 1988
+        },
+        {
+          "publisher": "Delta 4",
+          "country": "United Kingdom",
+          "year": 1984
+        },
+        {
+          "publisher": "Destination Software",
+          "country": "United States",
+          "year": 2001
+        },
+        {
+          "publisher": "Destineer",
+          "country": "United States",
+          "year": 2000
+        },
+        {
+          "publisher": "Devolver Digital",
+          "country": "United States",
+          "year": 2008
+        },
+        {
+          "publisher": "Digital Fantasia",
+          "country": "United Kingdom",
+          "year": 1982
+        },
+        {
+          "publisher": "Digital Integration",
+          "country": "United Kingdom",
+          "year": 1982
+        },
+        {
+          "publisher": "Digital Jesters",
+          "country": "United Kingdom",
+          "year": 2003
+        },
+        {
+          "publisher": "Digital Leisure",
+          "country": "Canada",
+          "year": 1997
+        },
+        {
+          "publisher": "Digital Pictures",
+          "country": "United States",
+          "year": 1991
+        },
+        {
+          "publisher": "Dinamic Multimedia",
+          "country": "Spain",
+          "year": 1993
+        },
+        {
+          "publisher": "Dinamic Software",
+          "country": "Spain",
+          "year": 1983
+        },
+        {
+          "publisher": "Disney Interactive Studios",
+          "country": "United States",
+          "year": 1988
+        },
+        {
+          "publisher": "DK'Tronics",
+          "country": "United Kingdom",
+          "year": 1981
+        },
+        {
+          "publisher": "Domark",
+          "country": "United Kingdom",
+          "year": 1984
+        },
+        {
+          "publisher": "Double Fine",
+          "country": "US",
+          "year": 2000
+        },
+        {
+          "publisher": "Dovetail Games",
+          "country": "United Kingdom",
+          "year": 2008
+        },
+        {
+          "publisher": "Dragon Data",
+          "country": "United Kingdom",
+          "year": 1980
+        },
+        {
+          "publisher": "DreamCatcher Games",
+          "country": "Canada",
+          "year": 1996
+        },
+        {
+          "publisher": "DreamWorks Interactive",
+          "country": "United States",
+          "year": 1995
+        },
+        {
+          "publisher": "Drecom",
+          "country": "Japan",
+          "year": 2001
+        },
+        {
+          "publisher": "DROsoft",
+          "country": "Spain",
+          "year": 1986
+        },
+        {
+          "publisher": "Dtp entertainment",
+          "country": "Germany",
+          "year": 1995
+        },
+        {
+          "publisher": "Dynamic Planning",
+          "country": "Japan",
+          "year": 1974
+        },
+        {
+          "publisher": "Dynamix",
+          "country": "United States",
+          "year": 1984
+        },
+        {
+          "publisher": "EasyGameStation",
+          "country": "Japan",
+          "year": 2001
+        },
+        {
+          "publisher": "Ecole Software",
+          "country": "Japan",
+          "year": 1989
+        },
+        {
+          "publisher": "Edge Games",
+          "country": "United States",
+          "year": 1990
+        },
+        {
+          "publisher": "Edu-Ware",
+          "country": "United States",
+          "year": 1979
+        },
+        {
+          "publisher": "eGames",
+          "country": "United States",
+          "year": 1992
+        },
+        {
+          "publisher": "Eidos Interactive",
+          "country": "United Kingdom",
+          "year": 1990
+        },
+        {
+          "publisher": "Electric Dreams Software",
+          "country": "United Kingdom",
+          "year": 1985
+        },
+        {
+          "publisher": "Electronic Arts",
+          "country": "United States",
+          "year": 1982
+        },
+        {
+          "publisher": "Electronic Arts Square",
+          "country": "Japan",
+          "year": 1998
+        },
+        {
+          "publisher": "Electronic Arts Victor",
+          "country": "Japan",
+          "year": 1993
+        },
+        {
+          "publisher": "Electro Brain",
+          "country": "United States",
+          "year": 1990
+        },
+        {
+          "publisher": "The Elektrik Keyboard",
+          "country": "United States",
+          "year": 1978
+        },
+        {
+          "publisher": "ELF Corporation",
+          "country": "Japan",
+          "year": 1989
+        },
+        {
+          "publisher": "Elite Systems",
+          "country": "United Kingdom",
+          "year": 1984
+        },
+        {
+          "publisher": "Empire Interactive",
+          "country": "United Kingdom",
+          "year": 1987
+        },
+        {
+          "publisher": "English Software",
+          "country": "United Kingdom",
+          "year": 1982
+        },
+        {
+          "publisher": "Enix",
+          "country": "Japan",
+          "year": 1975
+        },
+        {
+          "publisher": "Enlight Software",
+          "country": "United States",
+          "year": 1993
+        },
+        {
+          "publisher": "Enterbrain",
+          "country": "Japan",
+          "year": 1987
+        },
+        {
+          "publisher": "Durell Software",
+          "country": "United Kingdom",
+          "year": 1983
+        },
+        {
+          "publisher": "Eighting",
+          "country": "Japan",
+          "year": 1993
+        },
+        {
+          "publisher": "Electric Transit",
+          "country": "United States",
+          "year": 1985
+        },
+        {
+          "publisher": "Emerald Software",
+          "country": "Ireland",
+          "year": 1988
+        },
+        {
+          "publisher": "Encore, Inc.",
+          "country": "United States",
+          "year": 1994
+        },
+        {
+          "publisher": "Entertainment Software Publishing",
+          "country": "Japan",
+          "year": 1997
+        },
+        {
+          "publisher": "En Masse Entertainment",
+          "country": "United States",
+          "year": 2010
+        },
+        {
+          "publisher": "Eolith",
+          "country": "South Korea",
+          "year": 1996
+        },
+        {
+          "publisher": "Eon Digital Entertainment",
+          "country": "United Kingdom",
+          "year": 2000
+        },
+        {
+          "publisher": "Epic Games",
+          "country": "United States",
+          "year": 1991
+        },
+        {
+          "publisher": "Epoch Co.",
+          "country": "Japan",
+          "year": 1958
+        },
+        {
+          "publisher": "Epyx",
+          "country": "United States",
+          "year": 1978
+        },
+        {
+          "publisher": "ERE Informatique",
+          "country": "France",
+          "year": 1981
+        },
+        {
+          "publisher": "ESA (formerly Softmax)",
+          "country": "South Korea",
+          "year": 1994
+        },
+        {
+          "publisher": "Europress",
+          "country": "United Kingdom",
+          "year": 1965
+        },
+        {
+          "publisher": "Eushully",
+          "country": "Japan",
+          "year": 1998
+        },
+        {
+          "publisher": "Examu",
+          "country": "Japan",
+          "year": 1999
+        },
+        {
+          "publisher": "Exidy",
+          "country": "United States",
+          "year": 1974
+        },
+        {
+          "publisher": "F&C",
+          "country": "Japan",
+          "year": 1987
+        },
+        {
+          "publisher": "FASA",
+          "country": "United States",
+          "year": 1980
+        },
+        {
+          "publisher": "Fabtek",
+          "country": "United States",
+          "year": 1987
+        },
+        {
+          "publisher": "Fandom",
+          "country": "United States",
+          "year": 2004
+        },
+        {
+          "publisher": "Fairchild Semiconductor",
+          "country": "United States",
+          "year": 1957
+        },
+        {
+          "publisher": "Family Soft",
+          "country": "Japan",
+          "year": 1987
+        },
+        {
+          "publisher": "Fantasy Software",
+          "country": "United Kingdom",
+          "year": 1983
+        },
+        {
+          "publisher": "Faster Than Light",
+          "country": "United Kingdom",
+          "year": 1986
+        },
+        {
+          "publisher": "Fathammer",
+          "country": "Finland",
+          "year": 2002
+        },
+        {
+          "publisher": "Firebird Software",
+          "country": "United Kingdom",
+          "year": 1983
+        },
+        {
+          "publisher": "First Star Software",
+          "country": "United States",
+          "year": 1982
+        },
+        {
+          "publisher": "Fellow Traveller Games",
+          "country": "Australia",
+          "year": 2013
+        },
+        {
+          "publisher": "Feral Interactive",
+          "country": "United Kingdom",
+          "year": 1999
+        },
+        {
+          "publisher": "Fill-in-Cafe",
+          "country": "Japan",
+          "year": 1987
+        },
+        {
+          "publisher": "Finji",
+          "country": "United States",
+          "year": 2006
+        },
+        {
+          "publisher": "Fisher Price",
+          "country": "United States",
+          "year": 1930
+        },
+        {
+          "publisher": "Fishtank Interactive",
+          "country": "Germany",
+          "year": 2000
+        },
+        {
+          "publisher": "Flair Software",
+          "country": "United Kingdom",
+          "year": 1990
+        },
+        {
+          "publisher": "Flight-Plan",
+          "country": "Japan",
+          "year": 1989
+        },
+        {
+          "publisher": "Flying Edge",
+          "country": "United States",
+          "year": 1992
+        },
+        {
+          "publisher": "Focus Entertainment",
+          "country": "France",
+          "year": 1996
+        },
+        {
+          "publisher": "Focus Multimedia",
+          "country": "United Kingdom",
+          "year": 1995
+        },
+        {
+          "publisher": "FormGen",
+          "country": "United States",
+          "year": 1987
+        },
+        {
+          "publisher": "The Fourth Dimension",
+          "country": "United Kingdom",
+          "year": 1989
+        },
+        {
+          "publisher": "Fox Interactive",
+          "country": "United States",
+          "year": 1982
+        },
+        {
+          "publisher": "Freedom Games",
+          "country": "United States",
+          "year": 2021
+        },
+        {
+          "publisher": "Freeverse Software",
+          "country": "United States",
+          "year": 1994
+        },
+        {
+          "publisher": "French Bread",
+          "country": "Japan",
+          "year": 1998
+        },
+        {
+          "publisher": "Froggo",
+          "country": "United States",
+          "year": 1987
+        },
+        {
+          "publisher": "FromSoftware",
+          "country": "Japan",
+          "year": 1986
+        },
+        {
+          "publisher": "Front Wing",
+          "country": "Japan",
+          "year": 2000
+        },
+        {
+          "publisher": "FTL Games",
+          "country": "United States",
+          "year": 1982
+        },
+        {
+          "publisher": "Fujisankei Communications International",
+          "country": "United States",
+          "year": 1986
+        },
+        {
+          "publisher": "Fujitsu",
+          "country": "Japan",
+          "year": 1935
+        },
+        {
+          "publisher": "Full On Games",
+          "country": "Japan",
+          "year": 1996
+        },
+        {
+          "publisher": "Funcom",
+          "country": "Norway",
+          "year": 1993
+        },
+        {
+          "publisher": "funk",
+          "country": "Germany",
+          "year": 2016
+        },
+        {
+          "publisher": "Future Games",
+          "country": "Czech Republic",
+          "year": 1996
+        },
+        {
+          "publisher": "Fuuki",
+          "country": "Japan",
+          "year": 1977
+        },
+        {
+          "publisher": "G.rev",
+          "country": "Japan",
+          "year": 2000
+        },
+        {
+          "publisher": "Gaelco",
+          "country": "Spain",
+          "year": 1981
+        },
+        {
+          "publisher": "Game Designers' Workshop",
+          "country": "United States",
+          "year": 1973
+        },
+        {
+          "publisher": "Gaijinworks",
+          "country": "United States",
+          "year": 2006
+        },
+        {
+          "publisher": "Gainax",
+          "country": "Japan",
+          "year": 1984
+        },
+        {
+          "publisher": "Gakken",
+          "country": "Japan",
+          "year": 1947
+        },
+        {
+          "publisher": "Game",
+          "country": "United Kingdom",
+          "year": 1992
+        },
+        {
+          "publisher": "Gamecock",
+          "country": "United States",
+          "year": 2007
+        },
+        {
+          "publisher": "Gameloft",
+          "country": "France",
+          "year": 2000
+        },
+        {
+          "publisher": "Game Freak",
+          "country": "Japan",
+          "year": 1989
+        },
+        {
+          "publisher": "Games by Apollo",
+          "country": "United States",
+          "year": 1981
+        },
+        {
+          "publisher": "Games Workshop",
+          "country": "United Kingdom",
+          "year": 1975
+        },
+        {
+          "publisher": "GameTek",
+          "country": "United States",
+          "year": 1987
+        },
+        {
+          "publisher": "Game Arts",
+          "country": "Japan",
+          "year": 1985
+        },
+        {
+          "publisher": "The Game Factory",
+          "country": "Denmark",
+          "year": 2004
+        },
+        {
+          "publisher": "Game Park",
+          "country": "South Korea",
+          "year": 1996
+        },
+        {
+          "publisher": "Game Studio",
+          "country": "Japan",
+          "year": 1985
+        },
+        {
+          "publisher": "Gargoyle Games",
+          "country": "United Kingdom",
+          "year": 1983
+        },
+        {
+          "publisher": "Gathering of Developers",
+          "country": "United States",
+          "year": 1998
+        },
+        {
+          "publisher": "Gearbox Software",
+          "country": "United States",
+          "year": 1999
+        },
+        {
+          "publisher": "General Entertainment",
+          "country": "Japan",
+          "year": 1994
+        },
+        {
+          "publisher": "Genki",
+          "country": "Japan",
+          "year": 1990
+        },
+        {
+          "publisher": "Global Star Software",
+          "country": "Canada",
+          "year": 1992
+        },
+        {
+          "publisher": "Gathering of Developers",
+          "country": "United States",
+          "year": 1988
+        },
+        {
+          "publisher": "Gebelli Software",
+          "country": "United States",
+          "year": 1982
+        },
+        {
+          "publisher": "Giga",
+          "country": "Japan",
+          "year": 1993
+        },
+        {
+          "publisher": "Gizmondo",
+          "country": "Sweden",
+          "year": 2000
+        },
+        {
+          "publisher": "Global A Entertainment",
+          "country": "Japan",
+          "year": 1997
+        },
+        {
+          "publisher": "Global VR",
+          "country": "United States",
+          "year": 1998
+        },
+        {
+          "publisher": "GN Software",
+          "country": "Japan",
+          "year": 2003
+        },
+        {
+          "publisher": "GOG Ltd",
+          "country": "Poland",
+          "year": 2008
+        },
+        {
+          "publisher": "Gogii Games",
+          "country": "Canada",
+          "year": 2006
+        },
+        {
+          "publisher": "Gotham Games",
+          "country": "United States",
+          "year": 2002
+        },
+        {
+          "publisher": "Gottlieb",
+          "country": "United States",
+          "year": 1927
+        },
+        {
+          "publisher": "Got Game Entertainment",
+          "country": "United States",
+          "year": 2002
+        },
+        {
+          "publisher": "Grandslam Entertainment",
+          "country": "United Kingdom",
+          "year": 1987
+        },
+        {
+          "publisher": "Graphsim Entertainment",
+          "country": "United States",
+          "year": 1992
+        },
+        {
+          "publisher": "Gravity",
+          "country": "South Korea",
+          "year": 2013
+        },
+        {
+          "publisher": "Great Wave Software",
+          "country": "United States",
+          "year": 1984
+        },
+        {
+          "publisher": "Gremlin Industries",
+          "country": "United States",
+          "year": 1973
+        },
+        {
+          "publisher": "Gremlin Interactive",
+          "country": "United Kingdom",
+          "year": 1984
+        },
+        {
+          "publisher": "Grolier Interactive Inc",
+          "country": "United States",
+          "year": 1982
+        },
+        {
+          "publisher": "Groove Games",
+          "country": "Canada",
+          "year": 2001
+        },
+        {
+          "publisher": "GSC World Publishing",
+          "country": "Ukraine",
+          "year": 2004
+        },
+        {
+          "publisher": "GTE Interactive Media",
+          "country": "United States",
+          "year": 1990
+        },
+        {
+          "publisher": "GT Interactive",
+          "country": "United States",
+          "year": 1993
+        },
+        {
+          "publisher": "GungHo Online Entertainment",
+          "country": "Japan",
+          "year": 1998
+        },
+        {
+          "publisher": "Gust Co. Ltd.",
+          "country": "Japan",
+          "year": 1993
+        },
+        {
+          "publisher": "Hacker International",
+          "country": "Japan",
+          "year": 1990
+        },
+        {
+          "publisher": "HAL Laboratory",
+          "country": "Japan",
+          "year": 1980
+        },
+        {
+          "publisher": "Hamster Corporation",
+          "country": "Japan",
+          "year": 1999
+        },
+        {
+          "publisher": "HanbitSoft",
+          "country": "South Korea",
+          "year": 1999
+        },
+        {
+          "publisher": "Hasbro Interactive",
+          "country": "United States",
+          "year": 1995
+        },
+        {
+          "publisher": "Hect",
+          "country": "Japan",
+          "year": 1988
+        },
+        {
+          "publisher": "HeR Interactive",
+          "country": "United States",
+          "year": 1995
+        },
+        {
+          "publisher": "Heureka-Klett",
+          "country": "Germany",
+          "year": 1996
+        },
+        {
+          "publisher": "Hex",
+          "country": "United Kingdom",
+          "year": 1990
+        },
+        {
+          "publisher": "Hi Tech Expressions",
+          "country": "United States",
+          "year": 1988
+        },
+        {
+          "publisher": "Hewson Consultants",
+          "country": "United Kingdom",
+          "year": 1981
+        },
+        {
+          "publisher": "Hirameki",
+          "country": "United States",
+          "year": 2000
+        },
+        {
+          "publisher": "Hodder & Stoughton",
+          "country": "United Kingdom",
+          "year": 1868
+        },
+        {
+          "publisher": "Home Entertainment Suppliers",
+          "country": "Australia",
+          "year": 1984
+        },
+        {
+          "publisher": "HopeLab",
+          "country": "United States",
+          "year": 2001
+        },
+        {
+          "publisher": "Houghton Mifflin Harcourt",
+          "country": "United States",
+          "year": 1832
+        },
+        {
+          "publisher": "Hudson Soft",
+          "country": "Japan",
+          "year": 1973
+        },
+        {
+          "publisher": "Human Engineered Software",
+          "country": "United States",
+          "year": 1980
+        },
+        {
+          "publisher": "Human Entertainment",
+          "country": "Japan",
+          "year": 1983
+        },
+        {
+          "publisher": "Humble Bundle",
+          "country": "US",
+          "year": 2010
+        },
+        {
+          "publisher": "HummingBirdSoft",
+          "country": "Japan",
+          "year": 1982
+        },
+        {
+          "publisher": "Humongous Entertainment",
+          "country": "United States",
+          "year": 1992
+        },
+        {
+          "publisher": "IBM",
+          "country": "United States",
+          "year": 1911
+        },
+        {
+          "publisher": "Iceberg Interactive",
+          "country": "The Netherlands",
+          "year": 2009
+        },
+        {
+          "publisher": "ICOM Simulations",
+          "country": "United States",
+          "year": 1981
+        },
+        {
+          "publisher": "Idea Factory",
+          "country": "Japan",
+          "year": 1994
+        },
+        {
+          "publisher": "id Software",
+          "country": "United States",
+          "year": 1991
+        },
+        {
+          "publisher": "Ignition Entertainment",
+          "country": "United Kingdom",
+          "year": 2002
+        },
+        {
+          "publisher": "Illusion Soft",
+          "country": "Japan",
+          "year": 2001
+        },
+        {
+          "publisher": "Imageepoch",
+          "country": "Japan",
+          "year": 2005
+        },
+        {
+          "publisher": "Image Works",
+          "country": "United Kingdom",
+          "year": 1988
+        },
+        {
+          "publisher": "Imagic",
+          "country": "United States",
+          "year": 1981
+        },
+        {
+          "publisher": "Imagine Software",
+          "country": "United Kingdom",
+          "year": 1982
+        },
+        {
+          "publisher": "Impressions Games",
+          "country": "United States",
+          "year": 1989
+        },
+        {
+          "publisher": "Incentive Software",
+          "country": "United Kingdom",
+          "year": 1983
+        },
+        {
+          "publisher": "Incredible Technologies",
+          "country": "United States",
+          "year": 1985
+        },
+        {
+          "publisher": "index+",
+          "country": "France",
+          "year": 1992
+        },
+        {
+          "publisher": "indiePub Entertainment",
+          "country": "United States",
+          "year": 2008
+        },
+        {
+          "publisher": "Infocom",
+          "country": "United States",
+          "year": 1979
+        },
+        {
+          "publisher": "Infogrames",
+          "country": "France",
+          "year": 1983
+        },
+        {
+          "publisher": "Innerprise Software",
+          "country": "United States",
+          "year": 1989
+        },
+        {
+          "publisher": "Inscape",
+          "country": "United States",
+          "year": 1994
+        },
+        {
+          "publisher": "Intellivision Entertainment",
+          "country": "United States",
+          "year": 1997
+        },
+        {
+          "publisher": "Interactive Magic",
+          "country": "United States",
+          "year": 1994
+        },
+        {
+          "publisher": "Interceptor Micros",
+          "country": "United Kingdom",
+          "year": 1982
+        },
+        {
+          "publisher": "Interchannel",
+          "country": "Japan",
+          "year": 1995
+        },
+        {
+          "publisher": "Interplay Entertainment",
+          "country": "United States",
+          "year": 1983
+        },
+        {
+          "publisher": "Introversion Software",
+          "country": "United Kingdom",
+          "year": 2001
+        },
+        {
+          "publisher": "INTV Corporation",
+          "country": "United States",
+          "year": 1984
+        },
+        {
+          "publisher": "inXile Entertainment",
+          "country": "United States",
+          "year": 2002
+        },
+        {
+          "publisher": "iQue",
+          "country": "China",
+          "year": 2002
+        },
+        {
+          "publisher": "Irem",
+          "country": "Japan",
+          "year": 1997
+        },
+        {
+          "publisher": "ITE Media",
+          "country": "Denmark",
+          "year": 1998
+        },
+        {
+          "publisher": "Jaleco",
+          "country": "Japan",
+          "year": 1974
+        },
+        {
+          "publisher": "JAST USA",
+          "country": "United States",
+          "year": 1996
+        },
+        {
+          "publisher": "Jester Interactive",
+          "country": "United Kingdom",
+          "year": 1997
+        },
+        {
+          "publisher": "Johnson & Johnson",
+          "country": "United States",
+          "year": 1886
+        },
+        {
+          "publisher": "JoWooD Productions",
+          "country": "Austria",
+          "year": 1995
+        },
+        {
+          "publisher": "JumpStart Games (formerly Knowledge Adventure)",
+          "country": "United States",
+          "year": 1989
+        },
+        {
+          "publisher": "K2 Network (Gamersfirst)",
+          "country": "United States",
+          "year": 2001
+        },
+        {
+          "publisher": "Kakao Games",
+          "country": "South Korea",
+          "year": 2010
+        },
+        {
+          "publisher": "Kalisto Entertainment",
+          "country": "France",
+          "year": 1990
+        },
+        {
+          "publisher": "Kalypso Media",
+          "country": "Germany",
+          "year": 2006
+        },
+        {
+          "publisher": "Kaneko",
+          "country": "Japan",
+          "year": 1980
+        },
+        {
+          "publisher": "Kaypro",
+          "country": "United States",
+          "year": 1981
+        },
+        {
+          "publisher": "Kee Games",
+          "country": "United States",
+          "year": 1973
+        },
+        {
+          "publisher": "Kemco",
+          "country": "Japan",
+          "year": 1984
+        },
+        {
+          "publisher": "Ketchapp",
+          "country": "France",
+          "year": 2014
+        },
+        {
+          "publisher": "King Games",
+          "country": "Florida",
+          "year": 2006
+        },
+        {
+          "publisher": "KID",
+          "country": "Japan",
+          "year": 1988
+        },
+        {
+          "publisher": "Kingsoft",
+          "country": "Germany",
+          "year": 1983
+        },
+        {
+          "publisher": "King Records",
+          "country": "Japan",
+          "year": 1931
+        },
+        {
+          "publisher": "Koch Media",
+          "country": "Germany",
+          "year": 1994
+        },
+        {
+          "publisher": "Kodansha",
+          "country": "Japan",
+          "year": 1938
+        },
+        {
+          "publisher": "Koei",
+          "country": "Japan",
+          "year": 1976
+        },
+        {
+          "publisher": "Koei Tecmo",
+          "country": "Japan",
+          "year": 2009
+        },
+        {
+          "publisher": "Kogado Studio",
+          "country": "Japan",
+          "year": 1916
+        },
+        {
+          "publisher": "Konami",
+          "country": "Japan",
+          "year": 1969
+        },
+        {
+          "publisher": "Krisalis Software",
+          "country": "United Kingdom",
+          "year": 1987
+        },
+        {
+          "publisher": "KSS",
+          "country": "Japan",
+          "year": 1990
+        },
+        {
+          "publisher": "Kure Software Koubou",
+          "country": "Japan",
+          "year": 1985
+        },
+        {
+          "publisher": "Lankhor",
+          "country": "France",
+          "year": 1987
+        },
+        {
+          "publisher": "Le Lombard",
+          "country": "Belgium",
+          "year": 1946
+        },
+        {
+          "publisher": "Legacy Interactive",
+          "country": "United States",
+          "year": 1998
+        },
+        {
+          "publisher": "Legendo Entertainment",
+          "country": "Sweden",
+          "year": 1998
+        },
+        {
+          "publisher": "Legend Entertainment",
+          "country": "United States",
+          "year": 1989
+        },
+        {
+          "publisher": "Lego Interactive",
+          "country": "United Kingdom",
+          "year": 1996
+        },
+        {
+          "publisher": "Leland Corporation",
+          "country": "United States",
+          "year": 1987
+        },
+        {
+          "publisher": "Level-5",
+          "country": "Japan",
+          "year": 1998
+        },
+        {
+          "publisher": "Level 9 Computing",
+          "country": "United Kingdom",
+          "year": 1981
+        },
+        {
+          "publisher": "Limited Run Games",
+          "country": "United States",
+          "year": 2015
+        },
+        {
+          "publisher": "Linux Game Publishing",
+          "country": "United Kingdom",
+          "year": 2001
+        },
+        {
+          "publisher": "Lighthouse Interactive",
+          "country": "The Netherlands",
+          "year": 2005
+        },
+        {
+          "publisher": "LJN",
+          "country": "United States",
+          "year": 1970
+        },
+        {
+          "publisher": "LK Avalon",
+          "country": "Poland",
+          "year": 1989
+        },
+        {
+          "publisher": "Llamasoft",
+          "country": "United Kingdom",
+          "year": 1981
+        },
+        {
+          "publisher": "Lock 'n Load Publishing",
+          "country": "US",
+          "year": 2006
+        },
+        {
+          "publisher": "Logotron Ltd",
+          "country": "United Kingdom",
+          "year": 1987
+        },
+        {
+          "publisher": "Loki Software",
+          "country": "United States",
+          "year": 1998
+        },
+        {
+          "publisher": "Loriciel",
+          "country": "France",
+          "year": 1983
+        },
+        {
+          "publisher": "LucasArts",
+          "country": "United States",
+          "year": 1982
+        },
+        {
+          "publisher": "Lump of Sugar",
+          "country": "Japan",
+          "year": 2005
+        },
+        {
+          "publisher": "MacPlay",
+          "country": "United States",
+          "year": 1993
+        },
+        {
+          "publisher": "MacSoft",
+          "country": "United States",
+          "year": 1993
+        },
+        {
+          "publisher": "Mad Catz",
+          "country": "United States",
+          "year": 1989
+        },
+        {
+          "publisher": "Magical Company",
+          "country": "Japan",
+          "year": 1985
+        },
+        {
+          "publisher": "Magic Bytes",
+          "country": "Germany",
+          "year": 1987
+        },
+        {
+          "publisher": "Mages (formerly 5pb.)",
+          "country": "Japan",
+          "year": 2005
+        },
+        {
+          "publisher": "Magnavox",
+          "country": "United States",
+          "year": 1911
+        },
+        {
+          "publisher": "Mr Chip Software",
+          "country": "United Kingdom",
+          "year": 1982
+        },
+        {
+          "publisher": "magnussoft",
+          "country": "Germany",
+          "year": 1984
+        },
+        {
+          "publisher": "Mandarin Software",
+          "country": "United Kingdom",
+          "year": 1988
+        },
+        {
+          "publisher": "MangaGamer",
+          "country": "Japan",
+          "year": 2009
+        },
+        {
+          "publisher": "Martech",
+          "country": "United Kingdom",
+          "year": 1982
+        },
+        {
+          "publisher": "Majesco Entertainment",
+          "country": "United States",
+          "year": 1986
+        },
+        {
+          "publisher": "Marvelous",
+          "country": "Japan",
+          "year": 2011
+        },
+        {
+          "publisher": "Marvelous Entertainment",
+          "country": "Japan",
+          "year": 1997
+        },
+        {
+          "publisher": "Masaya",
+          "country": "Japan",
+          "year": 1985
+        },
+        {
+          "publisher": "Mastertronic",
+          "country": "United Kingdom",
+          "year": 1983
+        },
+        {
+          "publisher": "Mastiff",
+          "country": "United States",
+          "year": 2002
+        },
+        {
+          "publisher": "Matrix Games",
+          "country": "United States",
+          "year": 2000
+        },
+        {
+          "publisher": "Mattel",
+          "country": "United States",
+          "year": 1945
+        },
+        {
+          "publisher": "Mattel163",
+          "country": "United States",
+          "year": 2017
+        },
+        {
+          "publisher": "Maximum Games",
+          "country": "United States",
+          "year": 2009
+        },
+        {
+          "publisher": "Maxis",
+          "country": "United States",
+          "year": 1987
+        },
+        {
+          "publisher": "Max Design",
+          "country": "Austria",
+          "year": 1991
+        },
+        {
+          "publisher": "MC2 France",
+          "country": "France",
+          "year": 2003
+        },
+        {
+          "publisher": "MC Lothlorien",
+          "country": "United Kingdom",
+          "year": 1982
+        },
+        {
+          "publisher": "MECC",
+          "country": "United States",
+          "year": 1973
+        },
+        {
+          "publisher": "Med Systems Software",
+          "country": "United States",
+          "year": 1980
+        },
+        {
+          "publisher": "MediaWorks",
+          "country": "Japan",
+          "year": 1992
+        },
+        {
+          "publisher": "Media Factory",
+          "country": "Japan",
+          "year": 1986
+        },
+        {
+          "publisher": "Media Rings",
+          "country": "Japan",
+          "year": 1989
+        },
+        {
+          "publisher": "Mega Enterprise",
+          "country": "South Korea",
+          "year": 1998
+        },
+        {
+          "publisher": "Megatech Software",
+          "country": "United States",
+          "year": 1992
+        },
+        {
+          "publisher": "Melbourne House",
+          "country": "Australia",
+          "year": 1977
+        },
+        {
+          "publisher": "Meldac",
+          "country": "Japan",
+          "year": 1990
+        },
+        {
+          "publisher": "Metro3D, Inc.",
+          "country": "United States",
+          "year": 1998
+        },
+        {
+          "publisher": "Metropolis Software",
+          "country": "Poland",
+          "year": 1992
+        },
+        {
+          "publisher": "MGM Interactive",
+          "country": "United States",
+          "year": 1995
+        },
+        {
+          "publisher": "Microdeal",
+          "country": "United Kingdom",
+          "year": 1981
+        },
+        {
+          "publisher": "Microids",
+          "country": "France",
+          "year": 1984
+        },
+        {
+          "publisher": "MicroIllusions",
+          "country": "United States",
+          "year": 1987
+        },
+        {
+          "publisher": "Micronet co., Ltd.",
+          "country": "Japan",
+          "year": 1982
+        },
+        {
+          "publisher": "MicroProse",
+          "country": "United States",
+          "year": 1982
+        },
+        {
+          "publisher": "Microsoft",
+          "country": "United States",
+          "year": 1975
+        },
+        {
+          "publisher": "Microsphere",
+          "country": "United Kingdom",
+          "year": 1982
+        },
+        {
+          "publisher": "Microcabin",
+          "country": "Japan",
+          "year": 1982
+        },
+        {
+          "publisher": "Micrografx",
+          "country": "United States",
+          "year": 1982
+        },
+        {
+          "publisher": "MicroGraphic Image",
+          "country": "United States",
+          "year": 1983
+        },
+        {
+          "publisher": "Micro Genius",
+          "country": "Taiwan",
+          "year": 1989
+        },
+        {
+          "publisher": "Micro Power",
+          "country": "United Kingdom",
+          "year": 1980
+        },
+        {
+          "publisher": "Midway Games",
+          "country": "United States",
+          "year": 1988
+        },
+        {
+          "publisher": "Midway Manufacturing",
+          "country": "United States",
+          "year": 1958
+        },
+        {
+          "publisher": "Mikro-Gen",
+          "country": "United Kingdom",
+          "year": 1981
+        },
+        {
+          "publisher": "MileStone Inc.",
+          "country": "Japan",
+          "year": 2003
+        },
+        {
+          "publisher": "Millennium Interactive",
+          "country": "United Kingdom",
+          "year": 1988
+        },
+        {
+          "publisher": "Milton Bradley Company",
+          "country": "United States",
+          "year": 1860
+        },
+        {
+          "publisher": "Minato Soft",
+          "country": "Japan",
+          "year": 2006
+        },
+        {
+          "publisher": "Mindcraft",
+          "country": "United States",
+          "year": 1989
+        },
+        {
+          "publisher": "Mindscape",
+          "country": "United States",
+          "year": 1980
+        },
+        {
+          "publisher": "Minori",
+          "country": "Japan",
+          "year": 2001
+        },
+        {
+          "publisher": "Mirrorsoft",
+          "country": "United Kingdom",
+          "year": 1982
+        },
+        {
+          "publisher": "Mitchell Corporation",
+          "country": "Japan",
+          "year": 1960
+        },
+        {
+          "publisher": "Mode 7 Games",
+          "country": "England",
+          "year": 2005
+        },
+        {
+          "publisher": "Modus Games",
+          "country": "United States",
+          "year": 2018
+        },
+        {
+          "publisher": "Mojang",
+          "country": "Sweden",
+          "year": 2009
+        },
+        {
+          "publisher": "MonkeyPaw Games",
+          "country": "United States",
+          "year": 2011
+        },
+        {
+          "publisher": "Monolith Productions",
+          "country": "United States",
+          "year": 1994
+        },
+        {
+          "publisher": "Monte Cristo",
+          "country": "France",
+          "year": 1995
+        },
+        {
+          "publisher": "Moonstone",
+          "country": "Japan",
+          "year": 2003
+        },
+        {
+          "publisher": "Mosaic Publishing",
+          "country": "United Kingdom",
+          "year": 1983
+        },
+        {
+          "publisher": "MOSS",
+          "country": "Japan",
+          "year": 1993
+        },
+        {
+          "publisher": "Motown Games",
+          "country": "United States",
+          "year": 1994
+        },
+        {
+          "publisher": "Mountain King Studios",
+          "country": "United States",
+          "year": 1992
+        },
+        {
+          "publisher": "MTO",
+          "country": "Japan",
+          "year": 1996
+        },
+        {
+          "publisher": "MTV Games",
+          "country": "United States",
+          "year": 2006
+        },
+        {
+          "publisher": "Mud Duck Productions",
+          "country": "United States",
+          "year": 2002
+        },
+        {
+          "publisher": "Muse Software",
+          "country": "United States",
+          "year": 1978
+        },
+        {
+          "publisher": "MumboJumbo",
+          "country": "United States",
+          "year": 2001
+        },
+        {
+          "publisher": "Mystique",
+          "country": "United States",
+          "year": 1982
+        },
+        {
+          "publisher": "Nacon (formerly Bigben Interactive SA)",
+          "country": "France",
+          "year": 1981
+        },
+        {
+          "publisher": "Namco",
+          "country": "Japan",
+          "year": 1955
+        },
+        {
+          "publisher": "National Aeronautics & Space Administration",
+          "country": "United States",
+          "year": 1958
+        },
+        {
+          "publisher": "Natsume Co Ltd",
+          "country": "Japan",
+          "year": 1987
+        },
+        {
+          "publisher": "Natsume Inc",
+          "country": "United States",
+          "year": 1988
+        },
+        {
+          "publisher": "Navel",
+          "country": "Japan",
+          "year": 2003
+        },
+        {
+          "publisher": "Naxat Soft",
+          "country": "Japan",
+          "year": 1988
+        },
+        {
+          "publisher": "NBCUniversal",
+          "country": "Midtown New York City",
+          "year": 2004
+        },
+        {
+          "publisher": "NCsoft",
+          "country": "South Korea",
+          "year": 1997
+        },
+        {
+          "publisher": "NEC Corporation",
+          "country": "Japan",
+          "year": 1899
+        },
+        {
+          "publisher": "Neko Entertainment",
+          "country": "France",
+          "year": 1999
+        },
+        {
+          "publisher": "Netdragon",
+          "country": "China",
+          "year": 1997
+        },
+        {
+          "publisher": "Netease",
+          "country": "China",
+          "year": 1997
+        },
+        {
+          "publisher": "New Generation Software",
+          "country": "United Kingdom",
+          "year": 1982
+        },
+        {
+          "publisher": "NewKidCo",
+          "country": "United States",
+          "year": 1998
+        },
+        {
+          "publisher": "New World Computing",
+          "country": "United States",
+          "year": 1984
+        },
+        {
+          "publisher": "The New York Times Company",
+          "country": "United States",
+          "year": 1851
+        },
+        {
+          "publisher": "Nexon",
+          "country": "South Korea",
+          "year": 1994
+        },
+        {
+          "publisher": "Nihon Falcom",
+          "country": "Japan",
+          "year": 1981
+        },
+        {
+          "publisher": "Nintendo",
+          "country": "Japan",
+          "year": 1889
+        },
+        {
+          "publisher": "Nippon Ichi Software",
+          "country": "Japan",
+          "year": 1994
+        },
+        {
+          "publisher": "Nihon Bussan",
+          "country": "Japan",
+          "year": 1970
+        },
+        {
+          "publisher": "Nitroplus",
+          "country": "Japan",
+          "year": 2000
+        },
+        {
+          "publisher": "Novagen Software",
+          "country": "United Kingdom",
+          "year": 1983
+        },
+        {
+          "publisher": "Nokia",
+          "country": "Finland",
+          "year": 1865
+        },
+        {
+          "publisher": "Nordcurrent",
+          "country": "Lithuania",
+          "year": 2002
+        },
+        {
+          "publisher": "NovaLogic",
+          "country": "United States",
+          "year": 1985
+        },
+        {
+          "publisher": "NTDEC",
+          "country": "Taiwan",
+          "year": 1983
+        },
+        {
+          "publisher": "Nutting Associates",
+          "country": "United States",
+          "year": 1965
+        },
+        {
+          "publisher": "O3 Entertainment",
+          "country": "United States",
+          "year": 2001
+        },
+        {
+          "publisher": "Ocean Software",
+          "country": "United Kingdom",
+          "year": 1984
+        },
+        {
+          "publisher": "Ocean State Publishing",
+          "country": "United States",
+          "year": 1990
+        },
+        {
+          "publisher": "Oculus Studios",
+          "country": "United States",
+          "year": 2014
+        },
+        {
+          "publisher": "Odin Computer Graphics",
+          "country": "United Kingdom",
+          "year": 1985
+        },
+        {
+          "publisher": "Opera Soft",
+          "country": "Spain",
+          "year": 1986
+        },
+        {
+          "publisher": "Orbital Media",
+          "country": "Canada",
+          "year": 2003
+        },
+        {
+          "publisher": "Origin Systems",
+          "country": "United States",
+          "year": 1983
+        },
+        {
+          "publisher": "Orion Interactive",
+          "country": "United States",
+          "year": 1996
+        },
+        {
+          "publisher": "Out of the Park Developments",
+          "country": "Germany",
+          "year": 1999
+        },
+        {
+          "publisher": "0verflow",
+          "country": "Japan",
+          "year": 1997
+        },
+        {
+          "publisher": "Oxygen Games",
+          "country": "United Kingdom",
+          "year": 2004
+        },
+        {
+          "publisher": "OziSoft",
+          "country": "Australia",
+          "year": 1982
+        },
+        {
+          "publisher": "Pacific Novelty",
+          "country": "United States",
+          "year": 1980
+        },
+        {
+          "publisher": "Pack-In-Video",
+          "country": "Japan",
+          "year": 1970
+        },
+        {
+          "publisher": "Palace Software",
+          "country": "United Kingdom",
+          "year": 1983
+        },
+        {
+          "publisher": "Palette",
+          "country": "Japan",
+          "year": 2002
+        },
+        {
+          "publisher": "Panasonic",
+          "country": "Japan",
+          "year": 1918
+        },
+        {
+          "publisher": "Panda Entertainment",
+          "country": "Taiwan",
+          "year": 1993
+        },
+        {
+          "publisher": "Panesian Taiwan",
+          "country": "Taiwan",
+          "year": 1990
+        },
+        {
+          "publisher": "Panther Games",
+          "country": "Australia",
+          "year": 1985
+        },
+        {
+          "publisher": "Panther Software",
+          "country": "Japan",
+          "year": 1987
+        },
+        {
+          "publisher": "Paradox Interactive",
+          "country": "Sweden",
+          "year": 1998
+        },
+        {
+          "publisher": "Paragon Software",
+          "country": "United States",
+          "year": 1985
+        },
+        {
+          "publisher": "Parker Brothers",
+          "country": "United States",
+          "year": 1883
+        },
+        {
+          "publisher": "Parsoft Interactive",
+          "country": "United States",
+          "year": 1991
+        },
+        {
+          "publisher": "Penguin Software",
+          "country": "United States",
+          "year": 1978
+        },
+        {
+          "publisher": "Pentavision",
+          "country": "South Korea",
+          "year": 2003
+        },
+        {
+          "publisher": "Perfect World",
+          "country": "China",
+          "year": 2004
+        },
+        {
+          "publisher": "Personal Software Services",
+          "country": "United Kingdom",
+          "year": 1981
+        },
+        {
+          "publisher": "Petit Ferret",
+          "country": "Japan",
+          "year": 2002
+        },
+        {
+          "publisher": "Petroglyph Games",
+          "country": "United States",
+          "year": 2003
+        },
+        {
+          "publisher": "PF Magic",
+          "country": "United States",
+          "year": 1991
+        },
+        {
+          "publisher": "Phantagram",
+          "country": "South Korea",
+          "year": 1994
+        },
+        {
+          "publisher": "Philips",
+          "country": "The Netherlands",
+          "year": 1891
+        },
+        {
+          "publisher": "Phoenixx",
+          "country": "Japan",
+          "year": 2019
+        },
+        {
+          "publisher": "Pionesoft",
+          "country": "Japan",
+          "year": 2003
+        },
+        {
+          "publisher": "Piranha Bytes",
+          "country": "Germany",
+          "year": 1997
+        },
+        {
+          "publisher": "Piranha Interactive Publishing",
+          "country": "United States",
+          "year": 1995
+        },
+        {
+          "publisher": "Piranha Software",
+          "country": "United Kingdom",
+          "year": 1986
+        },
+        {
+          "publisher": "PlayFirst",
+          "country": "United States",
+          "year": 2004
+        },
+        {
+          "publisher": "Playlogic Entertainment, Inc.",
+          "country": "The Netherlands",
+          "year": 2002
+        },
+        {
+          "publisher": "Playmates Toys",
+          "country": "United States",
+          "year": 1966
+        },
+        {
+          "publisher": "The Pokémon Company",
+          "country": "Japan",
+          "year": 1998
+        },
+        {
+          "publisher": "Pony Canyon",
+          "country": "Japan",
+          "year": 1966
+        },
+        {
+          "publisher": "PopCap Games",
+          "country": "United States",
+          "year": 2000
+        },
+        {
+          "publisher": "Portkey Games",
+          "country": "United Kingdom",
+          "year": 2017
+        },
+        {
+          "publisher": "Positech Games",
+          "country": "United Kingdom",
+          "year": 1997
+        },
+        {
+          "publisher": "Presto Studios",
+          "country": "United States",
+          "year": 1991
+        },
+        {
+          "publisher": "PrincessSoft",
+          "country": "Japan",
+          "year": 2001
+        },
+        {
+          "publisher": "Prism Leisure Corporation",
+          "country": "United Kingdom",
+          "year": 1984
+        },
+        {
+          "publisher": "Private Division",
+          "country": "US",
+          "year": 2017
+        },
+        {
+          "publisher": "Probe Software",
+          "country": "United Kingdom",
+          "year": 1984
+        },
+        {
+          "publisher": "Programma International",
+          "country": "United States",
+          "year": 1978
+        },
+        {
+          "publisher": "Prototype",
+          "country": "Japan",
+          "year": 2006
+        },
+        {
+          "publisher": "Psygnosis",
+          "country": "United Kingdom",
+          "year": 1984
+        },
+        {
+          "publisher": "Psikyo",
+          "country": "Japan",
+          "year": 1992
+        },
+        {
+          "publisher": "Psytronik Software",
+          "country": "United Kingdom",
+          "year": 1993
+        },
+        {
+          "publisher": "Pulltop",
+          "country": "Japan",
+          "year": 2002
+        },
+        {
+          "publisher": "Purple Moon",
+          "country": "United States",
+          "year": 1997
+        },
+        {
+          "publisher": "Quality Software",
+          "country": "United States",
+          "year": 1978
+        },
+        {
+          "publisher": "Quantum Axcess",
+          "country": "United States",
+          "year": 1994
+        },
+        {
+          "publisher": "Quantum Quality Productions",
+          "country": "United States",
+          "year": 1991
+        },
+        {
+          "publisher": "Quest Corporation",
+          "country": "Japan",
+          "year": 1988
+        },
+        {
+          "publisher": "Quicksilva",
+          "country": "United Kingdom",
+          "year": 1983
+        },
+        {
+          "publisher": "QuinRose",
+          "country": "Japan",
+          "year": 2005
+        },
+        {
+          "publisher": "Quintet",
+          "country": "Japan",
+          "year": 1987
+        },
+        {
+          "publisher": "Qute",
+          "country": "Japan",
+          "year": 1999
+        },
+        {
+          "publisher": "Q Entertainment",
+          "country": "Japan",
+          "year": 2003
+        },
+        {
+          "publisher": "R2Games",
+          "country": "China",
+          "year": 2010
+        },
+        {
+          "publisher": "Rabbit Software",
+          "country": "United Kingdom",
+          "year": 1982
+        },
+        {
+          "publisher": "Radica Games",
+          "country": "United States",
+          "year": 1983
+        },
+        {
+          "publisher": "Rage Software",
+          "country": "United Kingdom",
+          "year": 1992
+        },
+        {
+          "publisher": "Rainbird Software",
+          "country": "United Kingdom",
+          "year": 1986
+        },
+        {
+          "publisher": "Rainbow Arts",
+          "country": "Germany",
+          "year": 1984
+        },
+        {
+          "publisher": "Random House",
+          "country": "United States",
+          "year": 1927
+        },
+        {
+          "publisher": "Rare",
+          "country": "United Kingdom",
+          "year": 1985
+        },
+        {
+          "publisher": "Ravensburger Interactive",
+          "country": "Germany",
+          "year": 1883
+        },
+        {
+          "publisher": "Raw Fury",
+          "country": "Sweden",
+          "year": 2015
+        },
+        {
+          "publisher": "Raw Thrills",
+          "country": "United States",
+          "year": 2001
+        },
+        {
+          "publisher": "Red Ant Enterprises",
+          "country": "Australia",
+          "year": 2001
+        },
+        {
+          "publisher": "Red Entertainment",
+          "country": "Japan",
+          "year": 1976
+        },
+        {
+          "publisher": "RedOctane",
+          "country": "United States",
+          "year": 1999
+        },
+        {
+          "publisher": "Red Orb Entertainment",
+          "country": "United States",
+          "year": 1997
+        },
+        {
+          "publisher": "Red Rat Software",
+          "country": "United Kingdom",
+          "year": 1985
+        },
+        {
+          "publisher": "Red Shift",
+          "country": "England",
+          "year": 1983
+        },
+        {
+          "publisher": "Red Storm Entertainment",
+          "country": "United States",
+          "year": 1996
+        },
+        {
+          "publisher": "Regista",
+          "country": "Japan",
+          "year": 2004
+        },
+        {
+          "publisher": "reLINE Software",
+          "country": "Germany",
+          "year": 1987
+        },
+        {
+          "publisher": "Renegade Software",
+          "country": "United Kingdom",
+          "year": 1991
+        },
+        {
+          "publisher": "Renovation Products",
+          "country": "United States",
+          "year": 1990
+        },
+        {
+          "publisher": "Richard Shepherd Software",
+          "country": "United Kingdom",
+          "year": 1982
+        },
+        {
+          "publisher": "Right Stuff",
+          "country": "Japan",
+          "year": 1990
+        },
+        {
+          "publisher": "Riot Games",
+          "country": "United States",
+          "year": 2006
+        },
+        {
+          "publisher": "Ripcord Games",
+          "country": "United States",
+          "year": 1996
+        },
+        {
+          "publisher": "Rising Star Games",
+          "country": "United Kingdom",
+          "year": 2004
+        },
+        {
+          "publisher": "Riverhillsoft",
+          "country": "Japan",
+          "year": 1982
+        },
+        {
+          "publisher": "Rock-Ola",
+          "country": "United States",
+          "year": 1927
+        },
+        {
+          "publisher": "Rockstar Games",
+          "country": "United States",
+          "year": 1998
+        },
+        {
+          "publisher": "Romstar",
+          "country": "United States",
+          "year": 1984
+        },
+        {
+          "publisher": "Romtech",
+          "country": "United States",
+          "year": 1999
+        },
+        {
+          "publisher": "Rovio Entertainment",
+          "country": "Finland",
+          "year": 2003
+        },
+        {
+          "publisher": "RTL Group",
+          "country": "Luxembourg",
+          "year": 1920
+        },
+        {
+          "publisher": "RuneSoft",
+          "country": "Germany",
+          "year": 2000
+        },
+        {
+          "publisher": "Saga Planets",
+          "country": "Japan",
+          "year": 1998
+        },
+        {
+          "publisher": "Sammy Studios",
+          "country": "Japan",
+          "year": 2004
+        },
+        {
+          "publisher": "Samsung",
+          "country": "South Korea",
+          "year": 1938
+        },
+        {
+          "publisher": "Sanctuary Woods",
+          "country": "Canada",
+          "year": 1988
+        },
+        {
+          "publisher": "Scavenger, Inc.",
+          "country": "United States",
+          "year": 1996
+        },
+        {
+          "publisher": "Scopely",
+          "country": "United States",
+          "year": 2011
+        },
+        {
+          "publisher": "SCi Games",
+          "country": "United Kingdom",
+          "year": 1988
+        },
+        {
+          "publisher": "SCS Software",
+          "country": "Czech Republic",
+          "year": 1997
+        },
+        {
+          "publisher": "Safari Software",
+          "country": "United States",
+          "year": 1989
+        },
+        {
+          "publisher": "Scholastic",
+          "country": "United States",
+          "year": 1920
+        },
+        {
+          "publisher": "Sears",
+          "country": "United States",
+          "year": 1886
+        },
+        {
+          "publisher": "Sega",
+          "country": "Japan",
+          "year": 1960
+        },
+        {
+          "publisher": "Seibu Kaihatsu",
+          "country": "Japan",
+          "year": 1982
+        },
+        {
+          "publisher": "Serenity Forge",
+          "country": "United States",
+          "year": 2014
+        },
+        {
+          "publisher": "SETA Corporation",
+          "country": "Japan",
+          "year": 1985
+        },
+        {
+          "publisher": "Seven45 Studios",
+          "country": "United States",
+          "year": 2007
+        },
+        {
+          "publisher": "Shadow Tor Studios",
+          "country": "United Kingdom",
+          "year": 2005
+        },
+        {
+          "publisher": "Shanda",
+          "country": "China",
+          "year": 1999
+        },
+        {
+          "publisher": "Sharp Corporation",
+          "country": "Japan",
+          "year": 1912
+        },
+        {
+          "publisher": "Shengqu Games",
+          "country": "China",
+          "year": 1999
+        },
+        {
+          "publisher": "Sherston Software",
+          "country": "United Kingdom",
+          "year": 1983
+        },
+        {
+          "publisher": "Shoeisha",
+          "country": "Japan",
+          "year": 1986
+        },
+        {
+          "publisher": "Shogakukan",
+          "country": "Japan",
+          "year": 1922
+        },
+        {
+          "publisher": "Sierra Entertainment",
+          "country": "United States",
+          "year": 1979
+        },
+        {
+          "publisher": "Silicon Beach Software",
+          "country": "United States",
+          "year": 1984
+        },
+        {
+          "publisher": "Silmarils",
+          "country": "France",
+          "year": 1987
+        },
+        {
+          "publisher": "Simon & Schuster Interactive",
+          "country": "United States",
+          "year": 1995
+        },
+        {
+          "publisher": "SIMS Co., Ltd.",
+          "country": "Japan",
+          "year": 1991
+        },
+        {
+          "publisher": "Simulations Canada",
+          "country": "Canada",
+          "year": 1977
+        },
+        {
+          "publisher": "Sinclair Research Ltd.",
+          "country": "United Kingdom",
+          "year": 1973
+        },
+        {
+          "publisher": "Sirius Software",
+          "country": "United States",
+          "year": 1980
+        },
+        {
+          "publisher": "Sir-Tech",
+          "country": "United States",
+          "year": 1979
+        },
+        {
+          "publisher": "Slitherine",
+          "country": "United Kingdom",
+          "year": 2000
+        },
+        {
+          "publisher": "SNK",
+          "country": "Japan",
+          "year": 2001
+        },
+        {
+          "publisher": "Soedesco",
+          "country": "The Netherlands",
+          "year": 2001
+        },
+        {
+          "publisher": "SOFEL",
+          "country": "Japan",
+          "year": 1979
+        },
+        {
+          "publisher": "Soft-World",
+          "country": "Taiwan",
+          "year": 1983
+        },
+        {
+          "publisher": "Softape",
+          "country": "United States",
+          "year": 1978
+        },
+        {
+          "publisher": "Softdisk",
+          "country": "United States",
+          "year": 1981
+        },
+        {
+          "publisher": "SoftKey",
+          "country": "United States",
+          "year": 1978
+        },
+        {
+          "publisher": "Softek International Ltd",
+          "country": "United Kingdom",
+          "year": 1980
+        },
+        {
+          "publisher": "SoftSide",
+          "country": "United States",
+          "year": 1978
+        },
+        {
+          "publisher": "Softstar",
+          "country": "Taiwan",
+          "year": 1988
+        },
+        {
+          "publisher": "Software 2000",
+          "country": "Germany",
+          "year": 1987
+        },
+        {
+          "publisher": "Software Dynamics",
+          "country": "Canada",
+          "year": 1987
+        },
+        {
+          "publisher": "The Software Exchange",
+          "country": "United States",
+          "year": 1978
+        },
+        {
+          "publisher": "Software Projects",
+          "country": "United Kingdom",
+          "year": 1983
+        },
+        {
+          "publisher": "Sony Imagesoft",
+          "country": "United States",
+          "year": 1989
+        },
+        {
+          "publisher": "Sony Interactive Entertainment",
+          "country": "United States",
+          "year": 1993
+        },
+        {
+          "publisher": "Sony Pictures Digital",
+          "country": "United States",
+          "year": 1997
+        },
+        {
+          "publisher": "SouthPeak Games",
+          "country": "United States",
+          "year": 1996
+        },
+        {
+          "publisher": "Spectral Associates",
+          "country": "United States",
+          "year": 1980
+        },
+        {
+          "publisher": "Spectravideo",
+          "country": "United States",
+          "year": 1981
+        },
+        {
+          "publisher": "Spectrum HoloByte",
+          "country": "United States",
+          "year": 1983
+        },
+        {
+          "publisher": "Spike",
+          "country": "Japan",
+          "year": 1991
+        },
+        {
+          "publisher": "Spike Chunsoft",
+          "country": "Japan",
+          "year": 1984
+        },
+        {
+          "publisher": "Spil Games",
+          "country": "The Netherlands",
+          "year": 2001
+        },
+        {
+          "publisher": "Spinnaker Software",
+          "country": "United States",
+          "year": 1982
+        },
+        {
+          "publisher": "Square",
+          "country": "Japan",
+          "year": 1986
+        },
+        {
+          "publisher": "Square Electronic Arts",
+          "country": "United States",
+          "year": 1998
+        },
+        {
+          "publisher": "Square Enix",
+          "country": "Japan",
+          "year": 1975
+        },
+        {
+          "publisher": "Stardock",
+          "country": "United States",
+          "year": 1991
+        },
+        {
+          "publisher": "Starpath",
+          "country": "United States",
+          "year": 1981
+        },
+        {
+          "publisher": "Starwave",
+          "country": "United States",
+          "year": 1993
+        },
+        {
+          "publisher": "Stern Electronics",
+          "country": "United States",
+          "year": 1977
+        },
+        {
+          "publisher": "Sting Entertainment",
+          "country": "Japan",
+          "year": 1989
+        },
+        {
+          "publisher": "Storm Impact",
+          "country": "United States",
+          "year": 1989
+        },
+        {
+          "publisher": "Strategic Simulations (SSI)",
+          "country": "United States",
+          "year": 1979
+        },
+        {
+          "publisher": "Strategic Studies Group",
+          "country": "Australia",
+          "year": 1983
+        },
+        {
+          "publisher": "Strat-O-Matic",
+          "country": "United States",
+          "year": 1961
+        },
+        {
+          "publisher": "Stormfront Studios",
+          "country": "United States",
+          "year": 1988
+        },
+        {
+          "publisher": "Strategy First",
+          "country": "Canada",
+          "year": 1988
+        },
+        {
+          "publisher": "Studio e.go!",
+          "country": "Japan",
+          "year": 1998
+        },
+        {
+          "publisher": "Sublogic",
+          "country": "United States",
+          "year": 1975
+        },
+        {
+          "publisher": "Success",
+          "country": "Japan",
+          "year": 1978
+        },
+        {
+          "publisher": "Sunflowers Interactive Entertainment Software",
+          "country": "Germany",
+          "year": 1993
+        },
+        {
+          "publisher": "Sunrise Interactive",
+          "country": "Japan",
+          "year": 1998
+        },
+        {
+          "publisher": "Sunsoft",
+          "country": "Japan",
+          "year": 1981
+        },
+        {
+          "publisher": "Superior Software",
+          "country": "United Kingdom",
+          "year": 1982
+        },
+        {
+          "publisher": "Supersoft",
+          "country": "United Kingdom",
+          "year": 1978
+        },
+        {
+          "publisher": "Sydney Development Corporation",
+          "country": "Canada",
+          "year": 1978
+        },
+        {
+          "publisher": "Super Fighter Team",
+          "country": "United States",
+          "year": 2004
+        },
+        {
+          "publisher": "Suzy Soft",
+          "country": "Croatia",
+          "year": 1985
+        },
+        {
+          "publisher": "Synapse Software",
+          "country": "United States",
+          "year": 1981
+        },
+        {
+          "publisher": "Synergistic Software",
+          "country": "United States",
+          "year": 1978
+        },
+        {
+          "publisher": "SystemSoft",
+          "country": "Japan",
+          "year": 1985
+        },
+        {
+          "publisher": "System 3",
+          "country": "United Kingdom",
+          "year": 1982
+        },
+        {
+          "publisher": "System Sacom",
+          "country": "Japan",
+          "year": 1981
+        },
+        {
+          "publisher": "Tactics",
+          "country": "Japan",
+          "year": 1997
+        },
+        {
+          "publisher": "Taito",
+          "country": "Japan",
+          "year": 1953
+        },
+        {
+          "publisher": "Takara",
+          "country": "Japan",
+          "year": 1955
+        },
+        {
+          "publisher": "Take-Two Interactive",
+          "country": "United States",
+          "year": 1993
+        },
+        {
+          "publisher": "TalonSoft",
+          "country": "United States",
+          "year": 1995
+        },
+        {
+          "publisher": "Tamsoft",
+          "country": "Japan",
+          "year": 1992
+        },
+        {
+          "publisher": "Tandy Corporation",
+          "country": "United States",
+          "year": 1919
+        },
+        {
+          "publisher": "Taxan",
+          "country": "Japan",
+          "year": 1981
+        },
+        {
+          "publisher": "TDK Mediactive",
+          "country": "United States",
+          "year": 1990
+        },
+        {
+          "publisher": "Team17",
+          "country": "United Kingdom",
+          "year": 1990
+        },
+        {
+          "publisher": "Team Shanghai Alice",
+          "country": "Japan",
+          "year": 1996
+        },
+        {
+          "publisher": "Techland",
+          "country": "Poland",
+          "year": 1991
+        },
+        {
+          "publisher": "Technical Group Laboratory",
+          "country": "Japan",
+          "year": 1984
+        },
+        {
+          "publisher": "Technology and Entertainment Software",
+          "country": "Japan",
+          "year": 1982
+        },
+        {
+          "publisher": "Technosoft",
+          "country": "Japan",
+          "year": 1980
+        },
+        {
+          "publisher": "Technos Japan",
+          "country": "Japan",
+          "year": 1981
+        },
+        {
+          "publisher": "TecMagik",
+          "country": "United States",
+          "year": 1991
+        },
+        {
+          "publisher": "Tecmo",
+          "country": "Japan",
+          "year": 1967
+        },
+        {
+          "publisher": "Tectoy",
+          "country": "Brazil",
+          "year": 1987
+        },
+        {
+          "publisher": "Telarium",
+          "country": "United States",
+          "year": 1984
+        },
+        {
+          "publisher": "Telesys",
+          "country": "United States",
+          "year": 1982
+        },
+        {
+          "publisher": "Telenet Japan",
+          "country": "Japan",
+          "year": 1983
+        },
+        {
+          "publisher": "Telltale Games",
+          "country": "United States",
+          "year": 2004
+        },
+        {
+          "publisher": "Tencent",
+          "country": "China",
+          "year": 1998
+        },
+        {
+          "publisher": "Tengen",
+          "country": "United States",
+          "year": 1987
+        },
+        {
+          "publisher": "Texas Instruments",
+          "country": "United States",
+          "year": 1930
+        },
+        {
+          "publisher": "Thalamus Ltd",
+          "country": "United Kingdom",
+          "year": 1986
+        },
+        {
+          "publisher": "Thalion Software",
+          "country": "Germany",
+          "year": 1988
+        },
+        {
+          "publisher": "The9",
+          "country": "China",
+          "year": 1999
+        },
+        {
+          "publisher": "The Learning Company",
+          "country": "United States",
+          "year": 1980
+        },
+        {
+          "publisher": "Thin Chen Enterprise",
+          "country": "Taiwan",
+          "year": 1988
+        },
+        {
+          "publisher": "Thinking Rabbit",
+          "country": "Japan",
+          "year": 1982
+        },
+        {
+          "publisher": "THQ",
+          "country": "United States",
+          "year": 1989
+        },
+        {
+          "publisher": "THQ Nordic",
+          "country": "Austria",
+          "year": 2011
+        },
+        {
+          "publisher": "Thorn EMI Computer Software",
+          "country": "United Kingdom",
+          "year": 1981
+        },
+        {
+          "publisher": "Three-Sixty Pacific",
+          "country": "United States",
+          "year": 1987
+        },
+        {
+          "publisher": "Tiertex Design Studios",
+          "country": "United Kingdom",
+          "year": 1987
+        },
+        {
+          "publisher": "Tiger Electronics",
+          "country": "United States",
+          "year": 1978
+        },
+        {
+          "publisher": "Time Warner Interactive",
+          "country": "United States",
+          "year": 1993
+        },
+        {
+          "publisher": "Titus Interactive",
+          "country": "France",
+          "year": 1985
+        },
+        {
+          "publisher": "Toaplan",
+          "country": "Japan",
+          "year": 1984
+        },
+        {
+          "publisher": "Toei Animation",
+          "country": "Japan",
+          "year": 1956
+        },
+        {
+          "publisher": "Toho",
+          "country": "Japan",
+          "year": 1932
+        },
+        {
+          "publisher": "Tokuma Shoten",
+          "country": "Japan",
+          "year": 1954
+        },
+        {
+          "publisher": "Tokyo Shoseki",
+          "country": "Japan",
+          "year": 1909
+        },
+        {
+          "publisher": "Tomy (Takara Tomy)",
+          "country": "Japan",
+          "year": 1924
+        },
+        {
+          "publisher": "Tommo",
+          "country": "United States",
+          "year": 1990
+        },
+        {
+          "publisher": "Tonkin House",
+          "country": "Japan",
+          "year": 1986
+        },
+        {
+          "publisher": "Topologika",
+          "country": "United Kingdom",
+          "year": 1983
+        },
+        {
+          "publisher": "Topo Soft",
+          "country": "Spain",
+          "year": 1987
+        },
+        {
+          "publisher": "TopWare Interactive",
+          "country": "Germany",
+          "year": 1995
+        },
+        {
+          "publisher": "Toshiba EMI",
+          "country": "Japan",
+          "year": 1960
+        },
+        {
+          "publisher": "Towa Chiki",
+          "country": "Japan",
+          "year": 1986
+        },
+        {
+          "publisher": "Tradewest",
+          "country": "United States",
+          "year": 1986
+        },
+        {
+          "publisher": "Treco",
+          "country": "United States",
+          "year": 1990
+        },
+        {
+          "publisher": "Triangle Service",
+          "country": "Japan",
+          "year": 2002
+        },
+        {
+          "publisher": "Triffix Entertainment",
+          "country": "Canada",
+          "year": 1991
+        },
+        {
+          "publisher": "Trilobyte Software",
+          "country": "United States",
+          "year": 1990
+        },
+        {
+          "publisher": "Tripwire Interactive",
+          "country": "United States",
+          "year": 2005
+        },
+        {
+          "publisher": "Tri Synergy",
+          "country": "United States",
+          "year": 1996
+        },
+        {
+          "publisher": "Tru Blu Entertainment",
+          "country": "Australia",
+          "year": 1999
+        },
+        {
+          "publisher": "TSR, Inc.",
+          "country": "United States",
+          "year": 1973
+        },
+        {
+          "publisher": "Tsunami Games",
+          "country": "United States",
+          "year": 1991
+        },
+        {
+          "publisher": "TT Games",
+          "country": "United Kingdom",
+          "year": 2005
+        },
+        {
+          "publisher": "Twilight Frontier",
+          "country": "Japan",
+          "year": 2002
+        },
+        {
+          "publisher": "Tynesoft",
+          "country": "United Kingdom",
+          "year": 1983
+        },
+        {
+          "publisher": "Type-Moon",
+          "country": "Japan",
+          "year": 2000
+        },
+        {
+          "publisher": "Ubisoft",
+          "country": "France",
+          "year": 1986
+        },
+        {
+          "publisher": "UEP Systems",
+          "country": "Japan",
+          "year": 1985
+        },
+        {
+          "publisher": "UFO Interactive Games",
+          "country": "United States",
+          "year": 1999
+        },
+        {
+          "publisher": "Ultimate Play the Game",
+          "country": "United Kingdom",
+          "year": 1982
+        },
+        {
+          "publisher": "Ultrasoft",
+          "country": "Slovakia",
+          "year": 1989
+        },
+        {
+          "publisher": "Ultra Games",
+          "country": "United States",
+          "year": 1988
+        },
+        {
+          "publisher": "United States Army",
+          "country": "United States",
+          "year": 1775
+        },
+        {
+          "publisher": "Universal Entertainment Corporation",
+          "country": "Japan",
+          "year": 1969
+        },
+        {
+          "publisher": "UserJoy Technology",
+          "country": "Taiwan",
+          "year": 1995
+        },
+        {
+          "publisher": "US Games",
+          "country": "United States",
+          "year": 1978
+        },
+        {
+          "publisher": "Valcon Games",
+          "country": "United States",
+          "year": 2005
+        },
+        {
+          "publisher": "Valve",
+          "country": "United States",
+          "year": 1996
+        },
+        {
+          "publisher": "VAP",
+          "country": "Japan",
+          "year": 1981
+        },
+        {
+          "publisher": "Varie",
+          "country": "Japan",
+          "year": 1986
+        },
+        {
+          "publisher": "VEB Polytechnik",
+          "country": "Germany",
+          "year": 1870
+        },
+        {
+          "publisher": "Vectorbeam",
+          "country": "United States",
+          "year": 1978
+        },
+        {
+          "publisher": "Viacom",
+          "country": "United States",
+          "year": 1952
+        },
+        {
+          "publisher": "Victor Interactive",
+          "country": "Japan",
+          "year": 1970
+        },
+        {
+          "publisher": "Vic Tokai",
+          "country": "Japan",
+          "year": 1977
+        },
+        {
+          "publisher": "Virgin Interactive",
+          "country": "United Kingdom",
+          "year": 1983
+        },
+        {
+          "publisher": "Virgin Play",
+          "country": "Spain",
+          "year": 1995
+        },
+        {
+          "publisher": "Virtual Programming",
+          "country": "United Kingdom",
+          "year": 2000
+        },
+        {
+          "publisher": "Visco Corporation",
+          "country": "Japan",
+          "year": 1982
+        },
+        {
+          "publisher": "VisiCorp",
+          "country": "United States",
+          "year": 1976
+        },
+        {
+          "publisher": "The Vision Factory",
+          "country": "The Netherlands",
+          "year": 1993
+        },
+        {
+          "publisher": "VisualArt's",
+          "country": "Japan",
+          "year": 1991
+        },
+        {
+          "publisher": "Vivarium Inc.",
+          "country": "Japan",
+          "year": 1993
+        },
+        {
+          "publisher": "Vivendi Games",
+          "country": "United States",
+          "year": 1993
+        },
+        {
+          "publisher": "Vortex Software",
+          "country": "United Kingdom",
+          "year": 1981
+        },
+        {
+          "publisher": "VoxelStorm",
+          "country": "United Kingdom",
+          "year": 2012
+        },
+        {
+          "publisher": "Vulcan Software",
+          "country": "United Kingdom",
+          "year": 1994
+        },
+        {
+          "publisher": "Wales Interactive",
+          "country": "United Kingdom",
+          "year": 2012
+        },
+        {
+          "publisher": "Walnut Creek CDROM",
+          "country": "United States",
+          "year": 1991
+        },
+        {
+          "publisher": "Wanadoo Edition",
+          "country": "France",
+          "year": 2000
+        },
+        {
+          "publisher": "Warashi",
+          "country": "Japan",
+          "year": 1995
+        },
+        {
+          "publisher": "Wargaming",
+          "country": "Cyprus",
+          "year": 1998
+        },
+        {
+          "publisher": "Warner Bros. Interactive",
+          "country": "United States",
+          "year": 1993
+        },
+        {
+          "publisher": "WARP",
+          "country": "Japan",
+          "year": 1994
+        },
+        {
+          "publisher": "Webfoot Technologies",
+          "country": "United States",
+          "year": 1993
+        },
+        {
+          "publisher": "Webzen",
+          "country": "South Korea",
+          "year": 2000
+        },
+        {
+          "publisher": "WildTangent",
+          "country": "United States",
+          "year": 1998
+        },
+        {
+          "publisher": "Williams Electronics",
+          "country": "United States",
+          "year": 1943
+        },
+        {
+          "publisher": "Windham Classics",
+          "country": "United States",
+          "year": 1984
+        },
+        {
+          "publisher": "Windmill",
+          "country": "Japan",
+          "year": 2002
+        },
+        {
+          "publisher": "Windmill Software",
+          "country": "Canada",
+          "year": 1982
+        },
+        {
+          "publisher": "Winkysoft",
+          "country": "Japan",
+          "year": 1983
+        },
+        {
+          "publisher": "Wisdom Tree",
+          "country": "United States",
+          "year": 1989
+        },
+        {
+          "publisher": "WizardWorks",
+          "country": "United States",
+          "year": 1990
+        },
+        {
+          "publisher": "Wolf Team",
+          "country": "Japan",
+          "year": 1986
+        },
+        {
+          "publisher": "Working Designs",
+          "country": "United States",
+          "year": 1986
+        },
+        {
+          "publisher": "Xicat Interactive",
+          "country": "United States",
+          "year": 1997
+        },
+        {
+          "publisher": "Xonox",
+          "country": "United States",
+          "year": 1983
+        },
+        {
+          "publisher": "Xseed Games",
+          "country": "United States",
+          "year": 2005
+        },
+        {
+          "publisher": "XS Games",
+          "country": "United States",
+          "year": 2002
+        },
+        {
+          "publisher": "Yeti",
+          "country": "Japan",
+          "year": 2005
+        },
+        {
+          "publisher": "Yojigen",
+          "country": "Japan",
+          "year": 1994
+        },
+        {
+          "publisher": "Yonezawa PR21",
+          "country": "Japan",
+          "year": 1988
+        },
+        {
+          "publisher": "Yuke's",
+          "country": "Japan",
+          "year": 1993
+        },
+        {
+          "publisher": "Yutaka",
+          "country": "Japan",
+          "year": 1990
+        },
+        {
+          "publisher": "Zaccaria",
+          "country": "Italy",
+          "year": 1974
+        },
+        {
+          "publisher": "ZAPiT Games",
+          "country": "Canada",
+          "year": 2003
+        },
+        {
+          "publisher": "ZeniMax Media",
+          "country": "United States",
+          "year": 1999
+        },
+        {
+          "publisher": "Zenobi",
+          "country": "United Kingdom",
+          "year": 1982
+        },
+        {
+          "publisher": "Zeppelin Games",
+          "country": "United Kingdom",
+          "year": 1987
+        },
+        {
+          "publisher": "Zigurat",
+          "country": "Spain",
+          "year": 1986
+        },
+        {
+          "publisher": "Zimag",
+          "country": "United States",
+          "year": 1982
+        },
+        {
+          "publisher": "Zoom",
+          "country": "Japan",
+          "year": 1988
+        },
+        {
+          "publisher": "Zuxxez Entertainment",
+          "country": "Germany",
+          "year": 2001
+        },
+        {
+          "publisher": "Zushi Games",
+          "country": "United Kingdom",
+          "year": 1999
+        },
+        {
+          "publisher": "Zynga",
+          "country": "United States",
+          "year": 2007
+        },
+        {
+          "publisher": "ZyX",
+          "country": "Japan",
+          "year": 1994
+        }
+      ]
+}

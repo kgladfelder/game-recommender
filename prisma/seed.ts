@@ -4,6 +4,8 @@ import microsoftJson from "./data/microsoft.json" assert { type: "json" };
 import nintendoJson from "./data/nintendo.json" assert { type: "json" };
 import sonyJson from "./data/sony.json" assert { type: "json" };
 import pcJson from "./data/pc.json" assert { type: "json" };
+import publisherJson from "./data/publisher.json" assert { type: "json" };
+import developerJson from "./data/developer.json" assert { type: "json" };
 
 const prisma = new PrismaClient();
 
@@ -123,6 +125,58 @@ async function main() {
 				usReleaseDate: new Date(system.usReleaseDate),
 				jpReleaseDate: new Date(system.jpReleaseDate),
 				euReleaseDate: new Date(system.euReleaseDate),
+			},
+		});
+	}
+
+	for (const publisher of publisherJson.publishers) {
+		const country = await prisma.country.upsert({
+			where: { name: publisher.country },
+			update: {
+				name: publisher.country,
+			},
+			create: {
+				name: publisher.country,
+			},
+		});
+
+		await prisma.publisher.upsert({
+			where: { name: publisher.publisher },
+			update: {
+				name: publisher.publisher,
+				foundingDate: new Date(publisher.year, 0),
+				countryId: country.id,
+			},
+			create: {
+				name: publisher.publisher,
+				foundingDate: new Date(publisher.year, 0),
+				countryId: country.id,
+			},
+		});
+	}
+
+	for (const developer of developerJson.developers) {
+		const country = await prisma.country.upsert({
+			where: { name: developer.country },
+			update: {
+				name: developer.country,
+			},
+			create: {
+				name: developer.country,
+			},
+		});
+
+		await prisma.publisher.upsert({
+			where: { name: developer.developer },
+			update: {
+				name: developer.developer,
+				foundingDate: new Date(developer.year, 0),
+				countryId: country.id,
+			},
+			create: {
+				name: developer.developer,
+				foundingDate: new Date(developer.year, 0),
+				countryId: country.id,
 			},
 		});
 	}
