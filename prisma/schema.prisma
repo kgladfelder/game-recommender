@@ -75,6 +75,8 @@ model Developer {
   id    String @id @default(uuid())
   name  String @unique
   foundingDate DateTime?
+  countryId String
+  country Country @relation(fields: [countryId], references: [id])
   games Game[]
 }
 
@@ -118,4 +120,5 @@ model Country {
   id String @id @default(uuid())
   name String @unique
   publishers Publisher[]
+  developers Developer[]
 }

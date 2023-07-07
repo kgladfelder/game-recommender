@@ -166,7 +166,7 @@ async function main() {
 			},
 		});
 
-		await prisma.publisher.upsert({
+		await prisma.developer.upsert({
 			where: { name: developer.developer },
 			update: {
 				name: developer.developer,
