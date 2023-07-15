@@ -6,6 +6,7 @@ import sonyJson from "./data/sony.json" assert { type: "json" };
 import pcJson from "./data/pc.json" assert { type: "json" };
 import publisherJson from "./data/publisher.json" assert { type: "json" };
 import developerJson from "./data/developer.json" assert { type: "json" };
+import genreJson from "./data/genre.json" assert { type: "json" };
 
 const prisma = new PrismaClient();
 
@@ -177,6 +178,16 @@ async function main() {
 				name: developer.developer,
 				foundingDate: new Date(developer.year, 0),
 				countryId: country.id,
+			},
+		});
+	}
+
+	for (const genre of genreJson.genres) {
+		await prisma.genre.upsert({
+			where: { name: genre.name },
+			update: {},
+			create: {
+				name: genre.name,
 			},
 		});
 	}
