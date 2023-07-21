@@ -17,11 +17,12 @@
 <div class="container mx-auto">
 	<div class="h1 mt-2">Manage Publishers</div>
 	<hr class="!border-t-4 mb-2" />
-	<div class="table-container">
+	<div class="table-container mb-2">
 		<table class="table table-hover">
 			<thead>
 				<tr>
 					<th>Publisher</th>
+					<th class="w-1/4">Country</th>
 					<th class="w-1/4">Action</th>
 				</tr>
 			</thead>
@@ -30,6 +31,7 @@
 					{#each publishers as publisher (publisher.id)}
 						<tr>
 							<td>{publisher.name}</td>
+							<td>{publisher.country.name}</td>
 							<td>
 								<form method="POST" action="?/delete">
 									<input type="hidden" name="id" value="{publisher.id}" />
@@ -43,18 +45,13 @@
 					{/each}
 				{/if}
 			</tbody>
-			<tfoot>
-				<tr>
-					<td>
-						<button
-							class="btn btn-sm variant-ghost-secondary"
-							on:click|preventDefault="{addNewPublisher}">
-							<span class="material-icons">add</span>
-							<span>New</span>
-						</button>
-					</td>
-				</tr>
-			</tfoot>
 		</table>
+	</div>
+	<div class="card variant-ghost-secondary p-4 mt-4 mb-4">
+		<button class="btn btn-sm variant-ghost-primary" on:click|preventDefault="{addNewPublisher}">
+			<span class="material-icons">add</span>
+			New
+		</button>
+		PAGINATE ME
 	</div>
 </div>

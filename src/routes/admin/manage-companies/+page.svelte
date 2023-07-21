@@ -23,7 +23,7 @@
 				<tr>
 					<th>Company</th>
 					<th>Systems</th>
-					<th class="w-1/4" />
+					<th class="w-1/4"></th>
 				</tr>
 			</thead>
 			<tbody>
@@ -45,18 +45,13 @@
 					{/each}
 				{/if}
 			</tbody>
-			<tfoot>
-				<tr>
-					<td>
-						<button
-							class="btn btn-sm variant-ghost-secondary"
-							on:click|preventDefault="{addNewCompany}">
-							<span class="material-icons">add</span>
-							<span>New</span>
-						</button>
-					</td>
-				</tr>
-			</tfoot>
 		</table>
+	</div>
+	<div class="card variant-ghost-secondary p-4 mt-4 mb-4">
+		<button class="btn btn-sm variant-ghost-primary" on:click|preventDefault="{addNewCompany}">
+			<span class="material-icons">add</span>
+			New
+		</button>
+		PAGINATE ME
 	</div>
 </div>

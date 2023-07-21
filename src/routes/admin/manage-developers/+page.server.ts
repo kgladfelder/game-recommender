@@ -11,6 +11,11 @@ export async function load({ cookies }: ServerLoadEvent) {
 				select: {
 					id: true,
 					name: true,
+					country: {
+						select: {
+							name: true,
+						},
+					},
 				},
 			});
 
@@ -30,16 +35,28 @@ export const actions = {
 	create: async ({ request }: RequestEvent) => {
 		const form = await request.formData();
 		const developerName = form.get("developerName");
+		const countryName = form.get("country");
 
-		if (typeof developerName !== "string") {
+		if (typeof developerName !== "string" || typeof countryName !== "string") {
 			throw error(500, "Something went wrong");
 		}
 
-		if (developerName) {
+		if (developerName && countryName) {
 			try {
+				const country = await prisma.country.upsert({
+					where: { name: countryName },
+					update: {
+						name: countryName,
+					},
+					create: {
+						name: countryName,
+					},
+				});
+
 				await prisma.developer.create({
 					data: {
 						name: developerName,
+						countryId: country.id,
 					},
 				});
 			} catch (ex) {

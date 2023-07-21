@@ -5,12 +5,12 @@
 
 	const systems = data.systems;
 	const companies = data.companies;
-	
+
 	const addNewSystem = () => {
 		const modal: ModalSettings = {
 			type: "component",
 			component: "createSystem",
-			meta: { companies }
+			meta: { companies },
 		};
 		modalStore.trigger(modal);
 	};
@@ -48,18 +48,13 @@
 					{/each}
 				{/if}
 			</tbody>
-			<tfoot>
-				<tr>
-					<td>
-						<button 
-							class="btn btn-sm variant-ghost-secondary"
-							on:click|preventDefault="{addNewSystem}">
-							<span class="material-icons">add</span>
-							<span>New</span>
-						</button>
-					</td>
-				</tr>
-			</tfoot>
 		</table>
+	</div>
+	<div class="card variant-ghost-secondary p-4 mt-4 mb-4">
+		<button class="btn btn-sm variant-ghost-primary" on:click|preventDefault="{addNewSystem}">
+			<span class="material-icons">add</span>
+			<span>New</span>
+		</button>
+		PAGINATE ME
 	</div>
 </div>

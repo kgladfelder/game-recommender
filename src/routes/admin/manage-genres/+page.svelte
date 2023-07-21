@@ -4,7 +4,7 @@
 	export let data: PageData;
 
 	let genres = data.genres;
-	
+
 	const addNewGenre = () => {
 		const modal: ModalSettings = {
 			type: "component",
@@ -43,18 +43,13 @@
 					{/each}
 				{/if}
 			</tbody>
-			<tfoot>
-				<tr>
-					<td>
-						<button
-							class="btn btn-sm variant-ghost-secondary"
-							on:click|preventDefault="{addNewGenre}">
-							<span class="material-icons">add</span>
-							<span>New</span>
-						</button>
-					</td>
-				</tr>
-			</tfoot>
 		</table>
+	</div>
+	<div class="card variant-ghost-secondary p-4 mt-4 mb-4">
+		<button class="btn btn-sm variant-ghost-primary" on:click|preventDefault="{addNewGenre}">
+			<span class="material-icons">add</span>
+			New
+		</button>
+		PAGINATE ME
 	</div>
 </div>

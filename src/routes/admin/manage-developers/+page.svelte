@@ -4,7 +4,7 @@
 	export let data: PageData;
 
 	let developers = data.developers;
-	
+
 	const addNewDeveloper = () => {
 		const modal: ModalSettings = {
 			type: "component",
@@ -23,6 +23,7 @@
 			<thead>
 				<tr>
 					<th>Developer Name</th>
+					<th class="w-1/4">Country</th>
 					<th class="w-1/4">Action</th>
 				</tr>
 			</thead>
@@ -31,6 +32,7 @@
 					{#each developers as developer (developer.id)}
 						<tr>
 							<td>{developer.name}</td>
+							<td>{developer.country.name}</td>
 							<td>
 								<form method="POST" action="?/delete">
 									<input type="hidden" name="id" value="{developer.id}" />
@@ -44,18 +46,13 @@
 					{/each}
 				{/if}
 			</tbody>
-			<tfoot>
-				<tr>
-					<td>
-						<button
-							class="btn btn-sm variant-ghost-secondary"
-							on:click|preventDefault="{addNewDeveloper}">
-							<span class="material-icons">add</span>
-							<span>New</span>
-						</button>
-					</td>
-				</tr>
-			</tfoot>
 		</table>
+	</div>
+	<div class="card variant-ghost-secondary p-4 mt-4 mb-4">
+		<button class="btn btn-sm variant-ghost-primary" on:click|preventDefault="{addNewDeveloper}">
+			<span class="material-icons">add</span>
+			New
+		</button>
+		PAGINATE ME
 	</div>
 </div>
