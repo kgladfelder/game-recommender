@@ -5,6 +5,7 @@
 
   const systems = data.systems;
   const companies = data.companies;
+  const count = data.count ? Math.ceil(data.count / 10) : 0;
 
   const addNewSystem = () => {
     const modal: ModalSettings = {
@@ -21,7 +22,7 @@
   <hr class="!border-t-4 mb-2" />
   <!-- List existing -->
   <div class="table-container">
-    <table class="table table-hover">
+    <table class="table table-hover mb-4">
       <thead>
         <tr>
           <th>System</th>
@@ -48,13 +49,37 @@
           {/each}
         {/if}
       </tbody>
+      <tfoot>
+        <tr>
+          <td colspan="{3}">
+            <div class="table-footer">
+              <div class="table-footer-new ml-4">
+                <button class="btn variant-ghost-primary" on:click|preventDefault="{addNewSystem}">
+                  <span class="material-icons">add</span>
+                  <span>New</span>
+                </button>
+              </div>
+              <div class="btn-group variant-ghost-tertiary">
+                {#each Array(count) as _, index (index)}
+                  <a
+                    href="/admin/manage-systems/{index + 1}"
+                    target="_self"
+                    data-sveltekit-preload-data="hover">{index + 1}</a>
+                {/each}
+              </div>
+            </div>
+          </td>
+        </tr>
+      </tfoot>
     </table>
   </div>
-  <div class="card variant-ghost-secondary p-4 mt-4 mb-4">
-    <button class="btn btn-sm variant-ghost-primary" on:click|preventDefault="{addNewSystem}">
-      <span class="material-icons">add</span>
-      <span>New</span>
-    </button>
-    PAGINATE ME
-  </div>
 </div>
+
+<style>
+  .table-footer {
+    display: flex;
+  }
+  .table-footer-new {
+    flex: 1;
+  }
+</style>

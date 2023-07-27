@@ -2,9 +2,13 @@ import { validateAuthToken } from "$lib/authentication";
 import prisma from "$lib/prisma";
 import { error, redirect, type RequestEvent, type ServerLoadEvent } from "@sveltejs/kit";
 
-export async function load({ cookies }: ServerLoadEvent) {
+export async function load({ cookies, params }: ServerLoadEvent) {
   const authToken = cookies.get("session");
   const jwt = validateAuthToken(authToken);
+  let page = Number(params.page);
+  if (isNaN(page)) {
+    page = 1;
+  }
   if (jwt && jwt.admin) {
     try {
       const companies = await prisma.company.findMany({
@@ -14,20 +18,35 @@ export async function load({ cookies }: ServerLoadEvent) {
         },
       });
 
-      const systems = await prisma.system.findMany({
-        select: {
-          id: true,
-          name: true,
-          company: {
-            select: {
-              name: true,
-              id: true,
+      const [count, systems] = await prisma.$transaction([
+        prisma.system.count(),
+        prisma.system.findMany({
+          select: {
+            id: true,
+            name: true,
+            company: {
+              select: {
+                name: true,
+                id: true,
+              },
             },
           },
-        },
-      });
+          skip: (page - 1) * 10,
+          take: 10,
+          orderBy: [
+            {
+              company: {
+                name: "asc",
+              },
+            },
+            {
+              usReleaseDate: "asc",
+            },
+          ],
+        }),
+      ]);
 
-      return { systems, companies };
+      return { systems, companies, count };
     } catch (ex) {
       throw error(500, "Something went wrong");
     }
