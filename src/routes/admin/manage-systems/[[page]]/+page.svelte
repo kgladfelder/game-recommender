@@ -1,5 +1,6 @@
 <script lang="ts">
   import { modalStore, type ModalSettings } from "@skeletonlabs/skeleton";
+  import PaginationFooter from "$lib/components/PaginationFooter.svelte";
   import type { PageData } from "./$types";
   export let data: PageData;
 
@@ -52,34 +53,13 @@
       <tfoot>
         <tr>
           <td colspan="{3}">
-            <div class="table-footer">
-              <div class="table-footer-new ml-4">
-                <button class="btn variant-ghost-primary" on:click|preventDefault="{addNewSystem}">
-                  <span class="material-icons">add</span>
-                  <span>New</span>
-                </button>
-              </div>
-              <div class="btn-group variant-ghost-tertiary">
-                {#each Array(count) as _, index (index)}
-                  <a
-                    href="/admin/manage-systems/{index + 1}"
-                    target="_self"
-                    data-sveltekit-preload-data="hover">{index + 1}</a>
-                {/each}
-              </div>
-            </div>
+            <PaginationFooter
+              count="{count}"
+              clickFn="{addNewSystem}"
+              url="/admin/manage-systems" />
           </td>
         </tr>
       </tfoot>
     </table>
   </div>
 </div>
-
-<style>
-  .table-footer {
-    display: flex;
-  }
-  .table-footer-new {
-    flex: 1;
-  }
-</style>
