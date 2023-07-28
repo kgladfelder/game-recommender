@@ -1,43 +1,44 @@
 <script lang="ts">
   import { modalStore, type ModalSettings } from "@skeletonlabs/skeleton";
   import type { PageData } from "./$types";
+  import PaginationFooter from "$lib/components/PaginationFooter.svelte";
   export let data: PageData;
 
-  let games = data.games;
-  let publishers = data.publishers;
-  let developers = data.developers;
-  let systems = data.systems;
-  let genres = data.genres;
+  const developers = data.developers;
+  const count = data.count ? Math.ceil(data.count / 10) : 0;
+  const page = data.page ?? 1;
 
-  const addNewGame = () => {
+  const addNewDeveloper = () => {
     const modal: ModalSettings = {
       type: "component",
-      component: "createGame",
-      meta: { publishers, developers, systems, genres },
+      component: "createDeveloper",
     };
     modalStore.trigger(modal);
   };
 </script>
 
 <div class="container mx-auto">
-  <div class="h1 mt-2">Manage Games</div>
+  <div class="h1 mt-2">Manage Developers</div>
   <hr class="!border-t-4 mb-2" />
+  <!-- List existing -->
   <div class="table-container">
     <table class="table table-hover">
       <thead>
         <tr>
-          <th>Game Name</th>
+          <th>Developer Name</th>
+          <th class="w-1/4">Country</th>
           <th class="w-1/4">Action</th>
         </tr>
       </thead>
       <tbody>
-        {#if games}
-          {#each games as game (game.id)}
+        {#if developers}
+          {#each developers as developer (developer.id)}
             <tr>
-              <td>{game.name}</td>
+              <td>{developer.name}</td>
+              <td>{developer.country.name}</td>
               <td>
                 <form method="POST" action="?/delete">
-                  <input type="hidden" name="id" value="{game.id}" />
+                  <input type="hidden" name="id" value="{developer.id}" />
                   <button class="btn btn-sm variant-ghost-error">
                     <span class="material-icons">delete</span>
                     <span>Delete</span>
@@ -48,13 +49,17 @@
           {/each}
         {/if}
       </tbody>
+      <tfoot>
+        <tr>
+          <td colspan="{3}">
+            <PaginationFooter
+              count="{count}"
+              clickFn="{addNewDeveloper}"
+              url="/admin/manage-developers"
+              currentPage="{page}" />
+          </td>
+        </tr>
+      </tfoot>
     </table>
-  </div>
-  <div class="card variant-ghost-secondary p-4 mt-4 mb-4">
-    <button class="btn btn-sm variant-ghost-primary" on:click|preventDefault="{addNewGame}">
-      <span class="material-icons">add</span>
-      New
-    </button>
-    PAGINATE ME
   </div>
 </div>

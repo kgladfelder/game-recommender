@@ -1,46 +1,46 @@
 <script lang="ts">
   import { modalStore, type ModalSettings } from "@skeletonlabs/skeleton";
-  import PaginationFooter from "$lib/components/PaginationFooter.svelte";
   import type { PageData } from "./$types";
+  import PaginationFooter from "$lib/components/PaginationFooter.svelte";
   export let data: PageData;
 
+  const games = data.games;
+  const publishers = data.publishers;
+  const developers = data.developers;
   const systems = data.systems;
-  const companies = data.companies;
+  const genres = data.genres;
   const count = data.count ? Math.ceil(data.count / 10) : 0;
   const page = data.page ?? 1;
 
-  const addNewSystem = () => {
+  const addNewGame = () => {
     const modal: ModalSettings = {
       type: "component",
-      component: "createSystem",
-      meta: { companies },
+      component: "createGame",
+      meta: { publishers, developers, systems, genres },
     };
     modalStore.trigger(modal);
   };
 </script>
 
 <div class="container mx-auto">
-  <div class="h1 mt-2">Manage Systems</div>
+  <div class="h1 mt-2">Manage Games</div>
   <hr class="!border-t-4 mb-2" />
-  <!-- List existing -->
   <div class="table-container">
-    <table class="table table-hover mb-4">
+    <table class="table table-hover">
       <thead>
         <tr>
-          <th>System</th>
-          <th>Company</th>
+          <th>Game Name</th>
           <th class="w-1/4">Action</th>
         </tr>
       </thead>
       <tbody>
-        {#if systems}
-          {#each systems as system (system.id)}
+        {#if games}
+          {#each games as game (game.id)}
             <tr>
-              <td>{system.name}</td>
-              <td>{system.company.name}</td>
+              <td>{game.name}</td>
               <td>
                 <form method="POST" action="?/delete">
-                  <input type="hidden" name="id" value="{system.id}" />
+                  <input type="hidden" name="id" value="{game.id}" />
                   <button class="btn btn-sm variant-ghost-error">
                     <span class="material-icons">delete</span>
                     <span>Delete</span>
@@ -50,14 +50,13 @@
             </tr>
           {/each}
         {/if}
-      </tbody>
-      <tfoot>
+      </tbody><tfoot>
         <tr>
           <td colspan="{3}">
             <PaginationFooter
               count="{count}"
-              clickFn="{addNewSystem}"
-              url="/admin/manage-systems"
+              clickFn="{addNewGame}"
+              url="/admin/manage-games"
               currentPage="{page}" />
           </td>
         </tr>

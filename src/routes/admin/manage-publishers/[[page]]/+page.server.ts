@@ -1,31 +1,41 @@
 import { validateAuthToken } from "$lib/authentication";
-import prisma from "$lib/prisma.js";
+import prisma from "$lib/prisma";
 import { error, redirect, type RequestEvent, type ServerLoadEvent } from "@sveltejs/kit";
 
-export async function load({ cookies }: ServerLoadEvent) {
+export async function load({ cookies, params }: ServerLoadEvent) {
   const authToken = cookies.get("session");
   const jwt = validateAuthToken(authToken);
+  let page = Number(params.page);
+  if (isNaN(page)) {
+    page = 1;
+  }
   if (jwt && jwt.admin) {
     try {
-      const developers = await prisma.developer.findMany({
-        select: {
-          id: true,
-          name: true,
-          country: {
-            select: {
-              name: true,
+      const [count, publishers] = await prisma.$transaction([
+        prisma.publisher.count(),
+        prisma.publisher.findMany({
+          select: {
+            id: true,
+            name: true,
+            country: {
+              select: {
+                name: true,
+              },
             },
           },
-        },
-      });
+          skip: (page - 1) * 10,
+          take: 10,
+          orderBy: [
+            {
+              name: "asc",
+            },
+          ],
+        }),
+      ]);
 
-      if (developers) {
-        return { developers };
-      } else {
-        return { developers: [] };
-      }
+      return { publishers, count, page };
     } catch (ex) {
-      throw error(500, "Somethine went wrong");
+      throw error(500, "Something went wrong");
     }
   }
   redirect(307, "/");
@@ -34,14 +44,14 @@ export async function load({ cookies }: ServerLoadEvent) {
 export const actions = {
   create: async ({ request }: RequestEvent) => {
     const form = await request.formData();
-    const developerName = form.get("developerName");
-    const countryName = form.get("country");
+    const publisherName = form.get("publisherName");
+    const countryName = form.get("countryName");
 
-    if (typeof developerName !== "string" || typeof countryName !== "string") {
+    if (typeof publisherName !== "string" || typeof countryName !== "string") {
       throw error(500, "Something went wrong");
     }
 
-    if (developerName && countryName) {
+    if (publisherName && countryName) {
       try {
         const country = await prisma.country.upsert({
           where: { name: countryName },
@@ -53,9 +63,9 @@ export const actions = {
           },
         });
 
-        await prisma.developer.create({
+        await prisma.publisher.create({
           data: {
-            name: developerName,
+            name: publisherName,
             countryId: country.id,
           },
         });
@@ -74,7 +84,7 @@ export const actions = {
 
     if (id) {
       try {
-        await prisma.developer.delete({
+        await prisma.publisher.delete({
           where: {
             id: id,
           },

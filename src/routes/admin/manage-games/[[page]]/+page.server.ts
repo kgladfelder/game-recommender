@@ -11,16 +11,20 @@ export async function load({ cookies, params }: ServerLoadEvent) {
   }
   if (jwt && jwt.admin) {
     try {
-      const [count, systems, companies] = await prisma.$transaction([
-        prisma.system.count(),
-        prisma.system.findMany({
+      const [count, games, publishers, developers, systems, genres] = await prisma.$transaction([
+        prisma.game.count(),
+        prisma.game.findMany({
           select: {
             id: true,
             name: true,
-            company: {
+            gameSystems: {
               select: {
-                name: true,
-                id: true,
+                system: {
+                  select: {
+                    name: true,
+                    usReleaseDate: true,
+                  },
+                },
               },
             },
           },
@@ -28,16 +32,37 @@ export async function load({ cookies, params }: ServerLoadEvent) {
           take: 10,
           orderBy: [
             {
-              company: {
-                name: "asc",
-              },
+              name: "asc",
             },
             {
               usReleaseDate: "asc",
             },
           ],
         }),
-        prisma.company.findMany({
+        prisma.publisher.findMany({
+          select: {
+            id: true,
+            name: true,
+          },
+        }),
+        prisma.developer.findMany({
+          select: {
+            id: true,
+            name: true,
+          },
+        }),
+        prisma.system.findMany({
+          select: {
+            id: true,
+            name: true,
+            company: {
+              select: {
+                name: true,
+              },
+            },
+          },
+        }),
+        prisma.genre.findMany({
           select: {
             id: true,
             name: true,
@@ -45,7 +70,7 @@ export async function load({ cookies, params }: ServerLoadEvent) {
         }),
       ]);
 
-      return { systems, companies, count, page };
+      return { games, publishers, developers, systems, genres, count, page };
     } catch (ex) {
       throw error(500, "Something went wrong");
     }
@@ -56,23 +81,17 @@ export async function load({ cookies, params }: ServerLoadEvent) {
 export const actions = {
   create: async ({ request }: RequestEvent) => {
     const form = await request.formData();
-    const systemName = form.get("systemName");
-    const company = form.get("company");
+    const gameName = form.get("companyName");
 
-    if (typeof systemName !== "string") {
+    if (typeof gameName !== "string") {
       throw error(500, "Something went wrong");
     }
 
-    if (typeof company !== "string") {
-      throw error(500, "Something went wrong");
-    }
-
-    if (systemName && company) {
+    if (gameName) {
       try {
-        await prisma.system.create({
+        await prisma.game.create({
           data: {
-            name: systemName,
-            companyId: company,
+            name: gameName,
           },
         });
       } catch (ex) {
@@ -90,7 +109,7 @@ export const actions = {
 
     if (id) {
       try {
-        await prisma.system.delete({
+        await prisma.game.delete({
           where: {
             id: id,
           },

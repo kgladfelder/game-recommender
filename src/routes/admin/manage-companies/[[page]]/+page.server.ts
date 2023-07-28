@@ -2,23 +2,38 @@ import { validateAuthToken } from "$lib/authentication";
 import prisma from "$lib/prisma";
 import { error, redirect, type RequestEvent, type ServerLoadEvent } from "@sveltejs/kit";
 
-export async function load({ cookies }: ServerLoadEvent) {
+export async function load({ cookies, params }: ServerLoadEvent) {
   const authToken = cookies.get("session");
   const jwt = validateAuthToken(authToken);
+  let page = Number(params.page);
+  if (isNaN(page)) {
+    page = 1;
+  }
   if (jwt && jwt.admin) {
     try {
-      const genres = await prisma.genre.findMany({
-        select: {
-          id: true,
-          name: true,
-        },
-      });
+      const [count, companies] = await prisma.$transaction([
+        prisma.company.count(),
+        prisma.company.findMany({
+          select: {
+            id: true,
+            name: true,
+            systems: {
+              select: {
+                name: true,
+              },
+            },
+          },
+          skip: (page - 1) * 10,
+          take: 10,
+          orderBy: [
+            {
+              name: "asc",
+            }
+          ]
+        }),
+      ]);
 
-      if (genres) {
-        return { genres };
-      } else {
-        return { genres: [] };
-      }
+      return { companies, count, page };
     } catch (ex) {
       throw error(500, "Something went wrong");
     }
@@ -29,17 +44,17 @@ export async function load({ cookies }: ServerLoadEvent) {
 export const actions = {
   create: async ({ request }: RequestEvent) => {
     const form = await request.formData();
-    const genreName = form.get("genreName");
+    const companyName = form.get("companyName");
 
-    if (typeof genreName !== "string") {
+    if (typeof companyName !== "string") {
       throw error(500, "Something went wrong");
     }
 
-    if (genreName) {
+    if (companyName) {
       try {
-        await prisma.genre.create({
+        await prisma.company.create({
           data: {
-            name: genreName,
+            name: companyName,
           },
         });
       } catch (ex) {
@@ -57,7 +72,7 @@ export const actions = {
 
     if (id) {
       try {
-        await prisma.genre.delete({
+        await prisma.company.delete({
           where: {
             id: id,
           },

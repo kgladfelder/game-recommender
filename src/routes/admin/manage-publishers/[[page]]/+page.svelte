@@ -1,9 +1,12 @@
 <script lang="ts">
   import { modalStore, type ModalSettings } from "@skeletonlabs/skeleton";
   import type { PageData } from "./$types";
+  import PaginationFooter from "$lib/components/PaginationFooter.svelte";
   export let data: PageData;
 
-  let publishers = data.publishers;
+  const publishers = data.publishers;
+  const count = data.count ? Math.ceil(data.count / 10) : 0;
+  const page = data.page ?? 1;
 
   const addNewPublisher = () => {
     const modal: ModalSettings = {
@@ -45,13 +48,17 @@
           {/each}
         {/if}
       </tbody>
+      <tfoot>
+        <tr>
+          <td colspan="{3}">
+            <PaginationFooter
+              count="{count}"
+              clickFn="{addNewPublisher}"
+              url="/admin/manage-publishers"
+              currentPage="{page}" />
+          </td>
+        </tr>
+      </tfoot>
     </table>
-  </div>
-  <div class="card variant-ghost-secondary p-4 mt-4 mb-4">
-    <button class="btn btn-sm variant-ghost-primary" on:click|preventDefault="{addNewPublisher}">
-      <span class="material-icons">add</span>
-      New
-    </button>
-    PAGINATE ME
   </div>
 </div>
