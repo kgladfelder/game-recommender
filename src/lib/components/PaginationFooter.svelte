@@ -20,7 +20,7 @@
     const pages: number[] = [];
     const isWithinLeft = activePage < maxAdjacent + 2;
     const isWithinRight = activePage > lastPage - (maxAdjacent + 2);
-    if (lastPage <= maxAdjacent * 2 + 1) {
+    if (lastPage <= maxAdjacent * 2 + 2) {
       return getFullPages();
     }
     pages.push(0);
