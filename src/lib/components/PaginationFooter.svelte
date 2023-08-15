@@ -49,7 +49,7 @@
 </script>
 
 <div class="table-footer">
-  <div class="table-footer-new ml-4">
+  <div class="table-footer-new-btn ml-4">
     <button class="btn variant-ghost-primary" on:click|preventDefault="{clickFn}">
       <span class="material-icons">add</span>
       <span>New</span>
@@ -73,7 +73,7 @@
   .table-footer {
     display: flex;
   }
-  .table-footer-new {
+  .table-footer-new-btn {
     flex: 1;
   }
 </style>
