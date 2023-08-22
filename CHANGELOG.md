@@ -1,5 +1,16 @@
 # Changelog
 
+## [1.7.0](https://github.com/kgladfelder/game-recommender/compare/v1.6.0...v1.7.0) (2023-08-22)
+
+
+### Features
+
+* add publisher and developer ([97d9f82](https://github.com/kgladfelder/game-recommender/commit/97d9f82656877195ea3c991b5c87afabd7e7fa92))
+* adjusting table structure ([6569e25](https://github.com/kgladfelder/game-recommender/commit/6569e2585a12acfaad17ae3afbd14e4433538ffd))
+* pagination of systems ([f5dd1a8](https://github.com/kgladfelder/game-recommender/commit/f5dd1a81246be380fe2e0e0171e03f8bd87e2d4b))
+* seed company information from json files ([b05bf56](https://github.com/kgladfelder/game-recommender/commit/b05bf565871a2464df2b4d3a4130b1e093187cce))
+* update manage pages to use pagination ([a721b3b](https://github.com/kgladfelder/game-recommender/commit/a721b3bad7df1674d893952c24aea31d7a41428f))
+
 ## [1.6.0](https://github.com/kgladfelder/game-recommender/compare/v1.5.0...v1.6.0) (2023-06-16)
 
 
