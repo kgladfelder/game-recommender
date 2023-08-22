@@ -4,47 +4,47 @@ import { error, type RequestEvent } from "@sveltejs/kit";
 
 /** @type {import('./$types').RequestHandler} */
 export async function GET({ url, request }: RequestEvent) {
-	const authHeader = request.headers.get("authorization");
-	const user = validateAuthToken(authHeader);
+  const authHeader = request.headers.get("authorization");
+  const user = validateAuthToken(authHeader);
 
-	if (user) {
-		const publisher = url.searchParams.get("publisher");
+  if (user) {
+    const publisher = url.searchParams.get("publisher");
 
-		if (publisher) {
-			const publishers = await prisma.publisher.findMany({
-				where: {
-					name: { contains: publisher },
-				},
-				select: {
-					id: true,
-					name: true,
-					games: {
-						select: {
-							id: true,
-							name: true,
-						},
-					},
-				},
-			});
+    if (publisher) {
+      const publishers = await prisma.publisher.findMany({
+        where: {
+          name: { contains: publisher },
+        },
+        select: {
+          id: true,
+          name: true,
+          games: {
+            select: {
+              id: true,
+              name: true,
+            },
+          },
+        },
+      });
 
-			return publishers;
-		} else {
-			const publishers = await prisma.publisher.findMany({
-				select: {
-					id: true,
-					name: true,
-					games: {
-						select: {
-							id: true,
-							name: true,
-						},
-					},
-				},
-			});
+      return publishers;
+    } else {
+      const publishers = await prisma.publisher.findMany({
+        select: {
+          id: true,
+          name: true,
+          games: {
+            select: {
+              id: true,
+              name: true,
+            },
+          },
+        },
+      });
 
-			return publishers;
-		}
-	}
+      return publishers;
+    }
+  }
 
-	throw error(401, "Unauthorized");
+  throw error(401, "Unauthorized");
 }

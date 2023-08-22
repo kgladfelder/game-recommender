@@ -1,0 +1,54 @@
+{
+    "name": "Sony",
+    "foundingDate": "1946-05-07",
+    "systems": [
+        {
+            "name": "PlayStation",
+            "usReleaseDate": "1995-09-09",
+            "euReleaseDate": "1995-09-29",
+            "jpReleaseDate": "1994-12-03"
+        },
+        {
+            "name": "PlayStation 2",
+            "usReleaseDate": "2000-10-26",
+            "euReleaseDate": "2000-11-24",
+            "jpReleaseDate": "2000-03-04"
+        },
+        {
+            "name": "PlayStation 3",
+            "usReleaseDate": "2006-11-17",
+            "euReleaseDate": "2007-03-23",
+            "jpReleaseDate": "2006-11-11"
+        },
+        {
+            "name": "PlayStation 4",
+            "usReleaseDate": "2013-11-15",
+            "euReleaseDate": "2013-11-29",
+            "jpReleaseDate": "2014-02-22"
+        },
+        {
+            "name": "PlayStation 5",
+            "usReleaseDate": "2020-11-19",
+            "euReleaseDate": "2020-11-19",
+            "jpReleaseDate": "2020-11-19"
+        },
+        {
+            "name": "PlayStation Mobile",
+            "usReleaseDate": "2012-10-03",
+            "euReleaseDate": "2012-10-03",
+            "jpReleaseDate": "2012-10-03"
+        },
+        {
+            "name": "PlayStation Portable",
+            "usReleaseDate": "2005-04-24",
+            "euReleaseDate": "2005-04-24",
+            "jpReleaseDate": "2004-12-12"
+        },
+        {
+            "name": "PlayStation Vita",
+            "usReleaseDate": "2012-02-15",
+            "euReleaseDate": "2012-02-22",
+            "jpReleaseDate": "2011-12-17"
+        }
+    ]
+}

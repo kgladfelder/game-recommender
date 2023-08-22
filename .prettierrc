@@ -1,10 +1,12 @@
 {
-	"useTabs": true,
+	"useTabs": false,
 	"singleQuote": false,
 	"trailingComma": "es5",
 	"printWidth": 100,
 	"svelteStrictMode": true,
 	"semi": true,
+	"bracketLine": true,
 	"bracketSameLine": true,
-	"arrowParens": "always"
+	"arrowParens": "always",
+	"plugins": ["prettier-plugin-svelte"]
 }

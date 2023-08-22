@@ -1,0 +1,127 @@
+{
+    "genres": [
+        {
+            "name": "Action"
+        },
+        {
+            "name": "Adventure"
+        },
+        {
+            "name": "Arcade"
+        },
+        {
+            "name": "Battle Arena"
+        },
+        {
+            "name": "Beat em Up"
+        },
+        {
+            "name": "Board Game"
+        },
+        {
+            "name": "Breakout"
+        },
+        {
+            "name": "Card Game"
+        },
+        {
+            "name": "City-Building"
+        },
+        {
+            "name": "Compilation"
+        },
+        {
+            "name": "Educational"
+        },
+        {
+            "name": "Fighting"
+        },
+        {
+            "name": "Fitness"
+        },
+        {
+            "name": "Flight"
+        },
+        {
+            "name": "Full Motion Video (FMV)"
+        },
+        {
+            "name": "Hack and Slash"
+        },
+        {
+            "name": "Hidden Object"
+        },
+        {
+            "name": "Horror"
+        },
+        {
+            "name": "Interactive Art"
+        },
+        {
+            "name": "Management"
+        },
+        {
+            "name": "Music/Rhythm"
+        },
+        {
+            "name": "Open World"
+        },
+        {
+            "name": "Party"
+        },
+        {
+            "name": "Pinball"
+        },
+        {
+            "name": "Platform"
+        },
+        {
+            "name": "Puzzle"
+        },
+        {
+            "name": "Racing/Driving"
+        },
+        {
+            "name": "Roguelike"
+        },
+        {
+            "name": "Role-Playing"
+        },
+        {
+            "name": "Sandbox"
+        },
+        {
+            "name": "Shooter"
+        },
+        {
+            "name": "Simulation"
+        },
+        {
+            "name": "Social"
+        },
+        {
+            "name": "Sports"
+        },
+        {
+            "name": "Stealth"
+        },
+        {
+            "name": "Strategy/Tactical"
+        },
+        {
+            "name": "Survival"
+        },
+        {
+            "name": "Tower Defense"
+        },
+        {
+            "name": "Trivia"
+        },
+        {
+            "name": "Vehicular Combat"
+        },
+        {
+            "name": "Visual Novel (VN)"
+        }
+    ]
+}

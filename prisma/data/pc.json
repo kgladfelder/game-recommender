@@ -1,0 +1,42 @@
+{
+    "name": "PC",
+    "foundingDate": "1974-04-04",
+    "systems": [
+        {
+            "name": "Steam",
+            "usReleaseDate": "2003-09-12",
+            "euReleaseDate": "2003-09-12",
+            "jpReleaseDate": "2003-09-12"
+        },
+        {
+            "name": "Epic Game Store",
+            "usReleaseDate": "2018-12-06",
+            "euReleaseDate": "2018-12-06",
+            "jpReleaseDate": "2018-12-06"
+        },
+        {
+            "name": "itch.io",
+            "usReleaseDate": "2013-03-03",
+            "euReleaseDate": "2013-03-03",
+            "jpReleaseDate": "2013-03-03"
+        },
+        {
+            "name": "GoG",
+            "usReleaseDate": "2010-09-22",
+            "euReleaseDate": "2010-09-22",
+            "jpReleaseDate": "2010-09-22"
+        },
+        {
+            "name": "Blizzard",
+            "usReleaseDate": "2013-08-15",
+            "euReleaseDate": "2013-08-15",
+            "jpReleaseDate": "2013-08-15"
+        },
+        {
+            "name": "Origin",
+            "usReleaseDate": "2011-06-03",
+            "euReleaseDate": "2011-06-03",
+            "jpReleaseDate": "2011-06-03"
+        }
+    ]
+}

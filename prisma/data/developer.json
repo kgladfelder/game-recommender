@@ -1,0 +1,5156 @@
+{
+    "developers": [
+        {
+            "developer": "0verflow",
+            "city": "Tokyo",
+            "administrative_division": "",
+            "country": "Japan",
+            "year": 1997
+        },
+        {
+            "developer": "11 bit studios",
+            "city": "Warsaw",
+            "administrative_division": "Masovian Voivodeship",
+            "country": "Poland",
+            "year": 2010
+        },
+        {
+            "developer": "1C Company",
+            "city": "Moscow",
+            "administrative_division": "",
+            "country": "Russia",
+            "year": 1991
+        },
+        {
+            "developer": "1-Up Studio",
+            "city": "Tokyo",
+            "administrative_division": "",
+            "country": "Japan",
+            "year": 2000
+        },
+        {
+            "developer": "2K Czech",
+            "city": "Brno",
+            "administrative_division": "",
+            "country": "Czech Republic",
+            "year": 1997
+        },
+        {
+            "developer": "2K",
+            "city": "Novato",
+            "administrative_division": "California",
+            "country": "United States",
+            "year": 2005
+        },
+        {
+            "developer": "343 Industries",
+            "city": "Redmond",
+            "administrative_division": "Washington",
+            "country": "United States",
+            "year": 2009
+        },
+        {
+            "developer": "38 Studios",
+            "city": "Providence",
+            "administrative_division": "Rhode Island",
+            "country": "United States",
+            "year": 2006
+        },
+        {
+            "developer": "3D Realms",
+            "city": "Garland",
+            "administrative_division": "Texas",
+            "country": "United States",
+            "year": 1987
+        },
+        {
+            "developer": "42 Entertainment",
+            "city": "Pasadena",
+            "administrative_division": "California",
+            "country": "United States",
+            "year": 1993
+        },
+        {
+            "developer": "4A Games",
+            "city": "Kyiv",
+            "administrative_division": "",
+            "country": "Ukraine",
+            "year": 2005
+        },
+        {
+            "developer": "5th Cell",
+            "city": "Bellevue",
+            "administrative_division": "Washington",
+            "country": "United States",
+            "year": 2003
+        },
+        {
+            "developer": "989 Studios",
+            "city": "Foster City",
+            "administrative_division": "California",
+            "country": "United States",
+            "year": 1995
+        },
+        {
+            "developer": "Acclaim Entertainment",
+            "city": "Glen Cove",
+            "administrative_division": "New York",
+            "country": "United States",
+            "year": 1987
+        },
+        {
+            "developer": "Acclaim Studios Austin",
+            "city": "Santa Clara",
+            "administrative_division": "California",
+            "country": "United States",
+            "year": 1991
+        },
+        {
+            "developer": "Accolade",
+            "city": "San Jose",
+            "administrative_division": "California",
+            "country": "United States",
+            "year": 1984
+        },
+        {
+            "developer": "Access Games",
+            "city": "Osaka",
+            "administrative_division": "",
+            "country": "Japan",
+            "year": 2002
+        },
+        {
+            "developer": "Access Software",
+            "city": "Salt Lake City",
+            "administrative_division": "Utah",
+            "country": "United States",
+            "year": 1982
+        },
+        {
+            "developer": "ACE Team",
+            "city": "Santiago de Chile",
+            "administrative_division": "",
+            "country": "Chile",
+            "year": 2007
+        },
+        {
+            "developer": "Aces Game Studio",
+            "city": "Redmond",
+            "administrative_division": "Washington",
+            "country": "United States",
+            "year": 1988
+        },
+        {
+            "developer": "Acquire",
+            "city": "Chiyoda, Tokyo",
+            "administrative_division": "",
+            "country": "Japan",
+            "year": 1994
+        },
+        {
+            "developer": "Action Forms",
+            "city": "Kyiv",
+            "administrative_division": "",
+            "country": "Ukraine",
+            "year": 1995
+        },
+        {
+            "developer": "Active Gaming Media",
+            "city": "Osaka",
+            "administrative_division": "",
+            "country": "Japan",
+            "year": 2006
+        },
+        {
+            "developer": "Activision",
+            "city": "Santa Monica",
+            "administrative_division": "California",
+            "country": "United States",
+            "year": 1979
+        },
+        {
+            "developer": "Adventure Soft",
+            "city": "Birmingham",
+            "administrative_division": "England",
+            "country": "United Kingdom",
+            "year": 1992
+        },
+        {
+            "developer": "Akella",
+            "city": "Moscow",
+            "administrative_division": "",
+            "country": "Russia",
+            "year": 1995
+        },
+        {
+            "developer": "Alfa System",
+            "city": "Kumamoto City",
+            "administrative_division": "",
+            "country": "Japan",
+            "year": 1988
+        },
+        {
+            "developer": "AlphaDream",
+            "city": "Tokyo",
+            "administrative_division": "",
+            "country": "Japan",
+            "year": 2000
+        },
+        {
+            "developer": "Amazon Game Studios",
+            "city": "Seattle",
+            "administrative_division": "Washington",
+            "country": "United States",
+            "year": 2012
+        },
+        {
+            "developer": "Animation Magic",
+            "city": "Gaithersburg",
+            "administrative_division": "Maryland",
+            "country": "United States",
+            "year": 1991
+        },
+        {
+            "developer": "Amazon Game Studios, Orange County (formerly Double Helix Games)",
+            "city": "Irvine",
+            "administrative_division": "California",
+            "country": "United States",
+            "year": 2007
+        },
+        {
+            "developer": "Ambrella",
+            "city": "Tokyo",
+            "administrative_division": "",
+            "country": "Japan",
+            "year": 1996
+        },
+        {
+            "developer": "Ancient",
+            "city": "Hino",
+            "administrative_division": "",
+            "country": "Japan",
+            "year": 1990
+        },
+        {
+            "developer": "Anino",
+            "city": "Manila",
+            "administrative_division": "",
+            "country": "Philippines",
+            "year": 2001
+        },
+        {
+            "developer": "Ankama Games",
+            "city": "Roubaix",
+            "administrative_division": "",
+            "country": "France",
+            "year": 2001
+        },
+        {
+            "developer": "Appy Entertainment",
+            "city": "Carlsbad",
+            "administrative_division": "California",
+            "country": "United States",
+            "year": 2008
+        },
+        {
+            "developer": "AQ Interactive",
+            "city": "Tokyo",
+            "administrative_division": "",
+            "country": "Japan",
+            "year": 2005
+        },
+        {
+            "developer": "Aquria",
+            "city": "Yokohama",
+            "administrative_division": "Kanagawa",
+            "country": "Japan",
+            "year": 2002
+        },
+        {
+            "developer": "Arc System Works",
+            "city": "Yokohama",
+            "administrative_division": "",
+            "country": "Japan",
+            "year": 1988
+        },
+        {
+            "developer": "Arcane Kids",
+            "city": "Los Angeles",
+            "administrative_division": "California",
+            "country": "United States",
+            "year": 2010
+        },
+        {
+            "developer": "Arcen Games",
+            "city": "Durham",
+            "administrative_division": "North Carolina",
+            "country": "United States",
+            "year": 2009
+        },
+        {
+            "developer": "Arkane Studios",
+            "city": "Lyon",
+            "administrative_division": "",
+            "country": "France",
+            "year": 1999
+        },
+        {
+            "developer": "Arkedo Studio",
+            "city": "Paris",
+            "administrative_division": "",
+            "country": "France",
+            "year": 2006
+        },
+        {
+            "developer": "ArenaNet",
+            "city": "Bellevue",
+            "administrative_division": "Washington",
+            "country": "United States",
+            "year": 2000
+        },
+        {
+            "developer": "Arika",
+            "city": "Tokyo",
+            "administrative_division": "",
+            "country": "Japan",
+            "year": 1995
+        },
+        {
+            "developer": "Art Co., Ltd",
+            "city": "Tokyo",
+            "administrative_division": "",
+            "country": "Japan",
+            "year": 1995
+        },
+        {
+            "developer": "Artech Digital Entertainment",
+            "city": "Ottawa",
+            "administrative_division": "Ontario",
+            "country": "Canada",
+            "year": 1982
+        },
+        {
+            "developer": "Artdink",
+            "city": "Tsukishima",
+            "administrative_division": "",
+            "country": "Japan",
+            "year": 1986
+        },
+        {
+            "developer": "ArtePiazza",
+            "city": "Tokyo",
+            "administrative_division": "",
+            "country": "Japan",
+            "year": 1989
+        },
+        {
+            "developer": "Artificial Studios",
+            "city": "Gainesville",
+            "administrative_division": "Florida",
+            "country": "United States",
+            "year": 2001
+        },
+        {
+            "developer": "Artoon",
+            "city": "Yokohama",
+            "administrative_division": "",
+            "country": "Japan",
+            "year": 1999
+        },
+        {
+            "developer": "Arzest",
+            "city": "Yokohama",
+            "administrative_division": "",
+            "country": "Japan",
+            "year": 2010
+        },
+        {
+            "developer": "Ascaron",
+            "city": "Gütersloh",
+            "administrative_division": "",
+            "country": "Germany",
+            "year": 1989
+        },
+        {
+            "developer": "Asobo Studio",
+            "city": "Bordeaux",
+            "administrative_division": "",
+            "country": "France",
+            "year": 2002
+        },
+        {
+            "developer": "Aspyr",
+            "city": "Austin",
+            "administrative_division": "Texas",
+            "country": "United States",
+            "year": 1996
+        },
+        {
+            "developer": "Atelier 801",
+            "city": "Lille",
+            "administrative_division": "Hauts-de-France",
+            "country": "France",
+            "year": 2011
+        },
+        {
+            "developer": "Atari Interactive (formerly Hasbro Interactive)",
+            "city": "Pawtucket",
+            "administrative_division": "Rhode Island",
+            "country": "United States",
+            "year": 1995
+        },
+        {
+            "developer": "Atlus",
+            "city": "Tokyo",
+            "administrative_division": "",
+            "country": "Japan",
+            "year": 1986
+        },
+        {
+            "developer": "Atomic Planet Entertainment",
+            "city": "Middlesbrough",
+            "administrative_division": "England",
+            "country": "United Kingdom",
+            "year": 2000
+        },
+        {
+            "developer": "Attic Entertainment Software",
+            "city": "Albstadt",
+            "administrative_division": "",
+            "country": "Germany",
+            "year": 1990
+        },
+        {
+            "developer": "Audiogenic",
+            "city": "Essex",
+            "administrative_division": "England",
+            "country": "United Kingdom",
+            "year": 1985
+        },
+        {
+            "developer": "Avalanche Studios Group",
+            "city": "Stockholm",
+            "administrative_division": "",
+            "country": "Sweden",
+            "year": 2003
+        },
+        {
+            "developer": "Aventurine SA",
+            "city": "Athens",
+            "administrative_division": "",
+            "country": "Greece",
+            "year": 2002
+        },
+        {
+            "developer": "Babaroga",
+            "city": "Chicago",
+            "administrative_division": "Illinois",
+            "country": "United States",
+            "year": 2001
+        },
+        {
+            "developer": "Backflip Studios",
+            "city": "Boulder",
+            "administrative_division": "Colorado",
+            "country": "United States",
+            "year": 2009
+        },
+        {
+            "developer": "Bandai Namco Entertainment",
+            "city": "Minato, Tokyo",
+            "administrative_division": "",
+            "country": "Japan",
+            "year": 1955
+        },
+        {
+            "developer": "Bauhaus Entertainment",
+            "city": "Tokyo",
+            "administrative_division": "",
+            "country": "Japan",
+            "year": 2006
+        },
+        {
+            "developer": "B.B. Studio",
+            "city": "Tokyo",
+            "administrative_division": "",
+            "country": "Japan",
+            "year": 1994
+        },
+        {
+            "developer": "Beamdog",
+            "city": "Edmonton",
+            "administrative_division": "Alberta",
+            "country": "Canada",
+            "year": 2009
+        },
+        {
+            "developer": "Beenox",
+            "city": "Quebec City",
+            "administrative_division": "Quebec",
+            "country": "Canada",
+            "year": 2000
+        },
+        {
+            "developer": "Behaviour Interactive",
+            "city": "Montreal",
+            "administrative_division": "Quebec",
+            "country": "Canada",
+            "year": 1992
+        },
+        {
+            "developer": "Behaviour Santiago",
+            "city": "Santiago de Chile",
+            "administrative_division": "",
+            "country": "Chile",
+            "year": 2002
+        },
+        {
+            "developer": "Bethesda Game Studios",
+            "city": "Rockville",
+            "administrative_division": "Maryland",
+            "country": "United States",
+            "year": 2001
+        },
+        {
+            "developer": "Big Blue Bubble",
+            "city": "Ontario",
+            "administrative_division": "",
+            "country": "Canada",
+            "year": 2004
+        },
+        {
+            "developer": "Big Finish Games",
+            "city": "Salt Lake City",
+            "administrative_division": "Utah",
+            "country": "United States",
+            "year": 2007
+        },
+        {
+            "developer": "Big Huge Games",
+            "city": "Baltimore",
+            "administrative_division": "Maryland",
+            "country": "United States",
+            "year": 2000
+        },
+        {
+            "developer": "BioWare",
+            "city": "Edmonton",
+            "administrative_division": "Alberta",
+            "country": "Canada",
+            "year": 1995
+        },
+        {
+            "developer": "The Bitmap Brothers",
+            "city": "London",
+            "administrative_division": "England",
+            "country": "United Kingdom",
+            "year": 1987
+        },
+        {
+            "developer": "Best Way",
+            "city": "Luhansk",
+            "administrative_division": "",
+            "country": "Ukraine",
+            "year": 1991
+        },
+        {
+            "developer": "Bits Studios",
+            "city": "London",
+            "administrative_division": "England",
+            "country": "United Kingdom",
+            "year": 1991
+        },
+        {
+            "developer": "Bizarre Creations",
+            "city": "Liverpool",
+            "administrative_division": "England",
+            "country": "United Kingdom",
+            "year": 1994
+        },
+        {
+            "developer": "Black Forest Games",
+            "city": "Offenburg",
+            "administrative_division": "",
+            "country": "Germany",
+            "year": 2012
+        },
+        {
+            "developer": "Black Isle Studios",
+            "city": "Orange County",
+            "administrative_division": "California",
+            "country": "United States",
+            "year": 1996
+        },
+        {
+            "developer": "Black Rock Studio",
+            "city": "Brighton",
+            "administrative_division": "England",
+            "country": "United Kingdom",
+            "year": 1998
+        },
+        {
+            "developer": "Black Wing Foundation",
+            "city": "Dnipro",
+            "administrative_division": "",
+            "country": "Ukraine",
+            "year": 2006
+        },
+        {
+            "developer": "Blind Squirrel Games",
+            "city": "Irvine",
+            "administrative_division": "California",
+            "country": "United States",
+            "year": 2010
+        },
+        {
+            "developer": "Blitz Games Studios",
+            "city": "Leamington Spa",
+            "administrative_division": "England",
+            "country": "United Kingdom",
+            "year": 1990
+        },
+        {
+            "developer": "Blizzard Entertainment",
+            "city": "Irvine",
+            "administrative_division": "California",
+            "country": "United States",
+            "year": 1991
+        },
+        {
+            "developer": "Bloober Team",
+            "city": "Kraków",
+            "administrative_division": "Lesser Poland Voivodeship",
+            "country": "Poland",
+            "year": 2008
+        },
+        {
+            "developer": "Bluepoint Games",
+            "city": "Austin",
+            "administrative_division": "Texas",
+            "country": "United States",
+            "year": 2006
+        },
+        {
+            "developer": "Blueside",
+            "city": "Seoul",
+            "administrative_division": "",
+            "country": "South Korea",
+            "year": 2003
+        },
+        {
+            "developer": "Blue Fang Games",
+            "city": "Waltham",
+            "administrative_division": "Massachusetts",
+            "country": "United States",
+            "year": 1998
+        },
+        {
+            "developer": "Blue Tongue Entertainment",
+            "city": "Melbourne",
+            "administrative_division": "Victoria",
+            "country": "Australia",
+            "year": 1995
+        },
+        {
+            "developer": "Bluehole Studio",
+            "city": "Seongnam",
+            "administrative_division": "",
+            "country": "South Korea",
+            "year": 2007
+        },
+        {
+            "developer": "Bohemia Interactive",
+            "city": "Prague",
+            "administrative_division": "",
+            "country": "Czech Republic",
+            "year": 1999
+        },
+        {
+            "developer": "Boss Fight Entertainment",
+            "city": "McKinney",
+            "administrative_division": "Texas",
+            "country": "United States",
+            "year": 2013
+        },
+        {
+            "developer": "Boss Key Productions",
+            "city": "Raleigh",
+            "administrative_division": "North Carolina",
+            "country": "United States",
+            "year": 2014
+        },
+        {
+            "developer": "BreakAway Games",
+            "city": "Hunt Valley",
+            "administrative_division": "Maryland",
+            "country": "United States",
+            "year": 1998
+        },
+        {
+            "developer": "Brøderbund",
+            "city": "Eugene",
+            "administrative_division": "Oregon",
+            "country": "United States",
+            "year": 1980
+        },
+        {
+            "developer": "Budcat Creations",
+            "city": "Iowa City",
+            "administrative_division": "Iowa",
+            "country": "United States",
+            "year": 2000
+        },
+        {
+            "developer": "Bugbear Entertainment",
+            "city": "Helsinki",
+            "administrative_division": "",
+            "country": "Finland",
+            "year": 2000
+        },
+        {
+            "developer": "Bullfrog Productions",
+            "city": "Guildford",
+            "administrative_division": "England",
+            "country": "United Kingdom",
+            "year": 1987
+        },
+        {
+            "developer": "Bungie",
+            "city": "Bellevue",
+            "administrative_division": "Washington",
+            "country": "United States",
+            "year": 1991
+        },
+        {
+            "developer": "Camelot Software Planning",
+            "city": "Tokyo",
+            "administrative_division": "",
+            "country": "Japan",
+            "year": 1990
+        },
+        {
+            "developer": "Capcom",
+            "city": "Osaka",
+            "administrative_division": "",
+            "country": "Japan",
+            "year": 1979
+        },
+        {
+            "developer": "Capcom Vancouver",
+            "city": "Burnaby",
+            "administrative_division": "British Columbia",
+            "country": "Canada",
+            "year": 2005
+        },
+        {
+            "developer": "Carbine Studios",
+            "city": "Aliso Viejo",
+            "administrative_division": "California",
+            "country": "United States",
+            "year": 2005
+        },
+        {
+            "developer": "Cattle Call",
+            "city": "Tokyo",
+            "administrative_division": "",
+            "country": "Japan",
+            "year": 1998
+        },
+        {
+            "developer": "Cauldron",
+            "city": "Bratislava",
+            "administrative_division": "",
+            "country": "Slovakia",
+            "year": 1996
+        },
+        {
+            "developer": "Cave",
+            "city": "Shinjuku, Tokyo",
+            "administrative_division": "",
+            "country": "Japan",
+            "year": 1994
+        },
+        {
+            "developer": "Cavia",
+            "city": "Tokyo",
+            "administrative_division": "",
+            "country": "Japan",
+            "year": 2000
+        },
+        {
+            "developer": "CCP Games",
+            "city": "Reykjavík",
+            "administrative_division": "",
+            "country": "Iceland",
+            "year": 1997
+        },
+        {
+            "developer": "CD Projekt Red",
+            "city": "Warsaw",
+            "administrative_division": "Masovian Voivodeship",
+            "country": "Poland",
+            "year": 2002
+        },
+        {
+            "developer": "Challengers Games",
+            "city": "Seoul",
+            "administrative_division": "",
+            "country": "South Korea",
+            "year": 2022
+        },
+        {
+            "developer": "Certain Affinity",
+            "city": "Austin",
+            "administrative_division": "Texas",
+            "country": "United States",
+            "year": 2006
+        },
+        {
+            "developer": "Chair Entertainment",
+            "city": "Salt Lake City",
+            "administrative_division": "Utah",
+            "country": "United States",
+            "year": 2005
+        },
+        {
+            "developer": "Chunsoft",
+            "city": "Shinjuku, Tokyo",
+            "administrative_division": "",
+            "country": "Japan",
+            "year": 1984
+        },
+        {
+            "developer": "Cing",
+            "city": "Fukuoka",
+            "administrative_division": "",
+            "country": "Japan",
+            "year": 1999
+        },
+        {
+            "developer": "Clap Hanz",
+            "city": "Yokohama",
+            "administrative_division": "",
+            "country": "Japan",
+            "year": 1998
+        },
+        {
+            "developer": "Climax Entertainment",
+            "city": "Tokyo",
+            "administrative_division": "",
+            "country": "Japan",
+            "year": 1990
+        },
+        {
+            "developer": "Climax Studios",
+            "city": "Portsmouth",
+            "administrative_division": "England",
+            "country": "United Kingdom",
+            "year": 1988
+        },
+        {
+            "developer": "Clover Studio",
+            "city": "Osaka",
+            "administrative_division": "",
+            "country": "Japan",
+            "year": 2004
+        },
+        {
+            "developer": "Coded Illusions",
+            "city": "Rotterdam",
+            "administrative_division": "",
+            "country": "Netherlands",
+            "year": 2005
+        },
+        {
+            "developer": "Codemasters",
+            "city": "Southam",
+            "administrative_division": "England",
+            "country": "United Kingdom",
+            "year": 1985
+        },
+        {
+            "developer": "Coffee Stain Studios",
+            "city": "Skövde",
+            "administrative_division": "",
+            "country": "Sweden",
+            "year": 2010
+        },
+        {
+            "developer": "Cohort Studios",
+            "city": "Cardiff",
+            "administrative_division": "Wales",
+            "country": "United Kingdom",
+            "year": 2006
+        },
+        {
+            "developer": "Coktel Vision",
+            "city": "Paris",
+            "administrative_division": "",
+            "country": "France",
+            "year": 1985
+        },
+        {
+            "developer": "Colossal Order",
+            "city": "Tampere",
+            "administrative_division": "",
+            "country": "Finland",
+            "year": 2009
+        },
+        {
+            "developer": "Compile Heart",
+            "city": "Tokyo",
+            "administrative_division": "",
+            "country": "Japan",
+            "year": 2006
+        },
+        {
+            "developer": "Compulsion Games",
+            "city": "Montreal",
+            "administrative_division": "Quebec",
+            "country": "Canada",
+            "year": 2009
+        },
+        {
+            "developer": "Com2uS",
+            "city": "Seoul",
+            "administrative_division": "",
+            "country": "South Korea",
+            "year": 1998
+        },
+        {
+            "developer": "Core Design",
+            "city": "Derby",
+            "administrative_division": "England",
+            "country": "United Kingdom",
+            "year": 1988
+        },
+        {
+            "developer": "Crafts & Meister",
+            "city": "Osaka",
+            "administrative_division": "",
+            "country": "Japan",
+            "year": 2004
+        },
+        {
+            "developer": "Crawfish Interactive",
+            "city": "Croydon",
+            "administrative_division": "England",
+            "country": "United Kingdom",
+            "year": 1997
+        },
+        {
+            "developer": "Creat Studios",
+            "city": "Canton",
+            "administrative_division": "Massachusetts",
+            "country": "United States",
+            "year": 1990
+        },
+        {
+            "developer": "Creative Assembly",
+            "city": "Horsham",
+            "administrative_division": "England",
+            "country": "United Kingdom",
+            "year": 1987
+        },
+        {
+            "developer": "Creatures",
+            "city": "Tokyo",
+            "administrative_division": "",
+            "country": "Japan",
+            "year": 1995
+        },
+        {
+            "developer": "Criterion Games",
+            "city": "Guildford",
+            "administrative_division": "England",
+            "country": "United Kingdom",
+            "year": 1993
+        },
+        {
+            "developer": "Croteam",
+            "city": "Zagreb",
+            "administrative_division": "",
+            "country": "Croatia",
+            "year": 1993
+        },
+        {
+            "developer": "Cryo Interactive",
+            "city": "Paris",
+            "administrative_division": "",
+            "country": "France",
+            "year": 1992
+        },
+        {
+            "developer": "Culture Brain Excel",
+            "city": "Tokyo",
+            "administrative_division": "",
+            "country": "Japan",
+            "year": 1980
+        },
+        {
+            "developer": "Crea-Tech",
+            "city": "Tokyo",
+            "administrative_division": "",
+            "country": "Japan",
+            "year": 1988
+        },
+        {
+            "developer": "Cryptic Studios",
+            "city": "Los Gatos",
+            "administrative_division": "California",
+            "country": "United States",
+            "year": 2000
+        },
+        {
+            "developer": "Crystal Dynamics",
+            "city": "Redwood City",
+            "administrative_division": "California",
+            "country": "United States",
+            "year": 1992
+        },
+        {
+            "developer": "Crytek",
+            "city": "Frankfurt",
+            "administrative_division": "",
+            "country": "Germany",
+            "year": 1999
+        },
+        {
+            "developer": "Crytek UK",
+            "city": "Nottingham",
+            "administrative_division": "England",
+            "country": "United Kingdom",
+            "year": 1999
+        },
+        {
+            "developer": "Cyan Worlds",
+            "city": "Mead",
+            "administrative_division": "Washington",
+            "country": "United States",
+            "year": 1987
+        },
+        {
+            "developer": "Cyanide",
+            "city": "Nanterre",
+            "administrative_division": "",
+            "country": "France",
+            "year": 2000
+        },
+        {
+            "developer": "CyberConnect2",
+            "city": "Fukuoka",
+            "administrative_division": "",
+            "country": "Japan",
+            "year": 1996
+        },
+        {
+            "developer": "Cyberlore Studios (Blueline Simulations)",
+            "city": "Northampton",
+            "administrative_division": "Massachusetts",
+            "country": "United States",
+            "year": 1992
+        },
+        {
+            "developer": "CyberStep",
+            "city": "Tokyo",
+            "administrative_division": "",
+            "country": "Japan",
+            "year": 2000
+        },
+        {
+            "developer": "Cygames",
+            "city": "Tokyo",
+            "administrative_division": "",
+            "country": "Japan",
+            "year": 2011
+        },
+        {
+            "developer": "Daedalic Entertainment",
+            "city": "Hamburg",
+            "administrative_division": "",
+            "country": "Germany",
+            "year": 2007
+        },
+        {
+            "developer": "Dambuster Studios",
+            "city": "Nottingham",
+            "administrative_division": "England",
+            "country": "United Kingdom",
+            "year": 2014
+        },
+        {
+            "developer": "Danger Close Games",
+            "city": "Los Angeles",
+            "administrative_division": "California",
+            "country": "United States",
+            "year": 1995
+        },
+        {
+            "developer": "Day 1 Studios",
+            "city": "Chicago",
+            "administrative_division": "Illinois",
+            "country": "United States",
+            "year": 2001
+        },
+        {
+            "developer": "Daybreak Game Company",
+            "city": "San Diego",
+            "administrative_division": "California",
+            "country": "United States",
+            "year": 1997
+        },
+        {
+            "developer": "Deadline Games",
+            "city": "Copenhagen",
+            "administrative_division": "",
+            "country": "Denmark",
+            "year": 1996
+        },
+        {
+            "developer": "Deck13",
+            "city": "Frankfurt",
+            "administrative_division": "",
+            "country": "Germany",
+            "year": 2001
+        },
+        {
+            "developer": "Deep Silver Volition",
+            "city": "Champaign",
+            "administrative_division": "Illinois",
+            "country": "United States",
+            "year": 1996
+        },
+        {
+            "developer": "Demiurge Studios",
+            "city": "Cambridge",
+            "administrative_division": "Massachusetts",
+            "country": "United States",
+            "year": 2002
+        },
+        {
+            "developer": "DeNA",
+            "city": "Tokyo",
+            "administrative_division": "",
+            "country": "Japan",
+            "year": 1999
+        },
+        {
+            "developer": "devCAT Studios (Nexon development 3rd division)",
+            "city": "Seoul",
+            "administrative_division": "",
+            "country": "South Korea",
+            "year": 2001
+        },
+        {
+            "developer": "Dhruva Interactive",
+            "city": "Bangalore",
+            "administrative_division": "",
+            "country": "India",
+            "year": 1997
+        },
+        {
+            "developer": "Die Gute Fabrik",
+            "city": "Copenhagen",
+            "administrative_division": "",
+            "country": "Denmark",
+            "year": 2006
+        },
+        {
+            "developer": "Digital Extremes",
+            "city": "London",
+            "administrative_division": "Ontario",
+            "country": "Canada",
+            "year": 1993
+        },
+        {
+            "developer": "Digital Eclipse",
+            "city": "Emeryville",
+            "administrative_division": "California",
+            "country": "United States",
+            "year": 1992
+        },
+        {
+            "developer": "Digital Happiness",
+            "city": "Bandung",
+            "administrative_division": "West Java",
+            "country": "Indonesia",
+            "year": 2013
+        },
+        {
+            "developer": "Digitalmindsoft",
+            "city": "Ulm",
+            "administrative_division": "",
+            "country": "Germany",
+            "year": 2006
+        },
+        {
+            "developer": "Digital Reality",
+            "city": "Budapest",
+            "administrative_division": "",
+            "country": "Hungary",
+            "year": 1991
+        },
+        {
+            "developer": "Dimps",
+            "city": "Osaka",
+            "administrative_division": "",
+            "country": "Japan",
+            "year": 2000
+        },
+        {
+            "developer": "Disney Interactive Studios",
+            "city": "Glendale",
+            "administrative_division": "California",
+            "country": "United States",
+            "year": 1988
+        },
+        {
+            "developer": "Don Bluth Entertainment",
+            "city": "Dublin",
+            "administrative_division": "",
+            "country": "Ireland",
+            "year": 1979
+        },
+        {
+            "developer": "Don't Nod",
+            "city": "Paris",
+            "administrative_division": "",
+            "country": "France",
+            "year": 2008
+        },
+        {
+            "developer": "DotEmu",
+            "city": "Paris",
+            "administrative_division": "",
+            "country": "France",
+            "year": 2007
+        },
+        {
+            "developer": "Double Fine Productions",
+            "city": "San Francisco",
+            "administrative_division": "California",
+            "country": "United States",
+            "year": 2000
+        },
+        {
+            "developer": "Dynamix",
+            "city": "Eugene",
+            "administrative_division": "Oregon",
+            "country": "United States",
+            "year": 1984
+        },
+        {
+            "developer": "Dovetail Games",
+            "city": "Chatham",
+            "administrative_division": "England",
+            "country": "United Kingdom",
+            "year": 2008
+        },
+        {
+            "developer": "The Dovetail Group",
+            "city": "",
+            "administrative_division": "",
+            "country": "United States",
+            "year": 1984
+        },
+        {
+            "developer": "EA Black Box",
+            "city": "British Columbia",
+            "administrative_division": "",
+            "country": "Canada",
+            "year": 1998
+        },
+        {
+            "developer": "EA Digital Illusions CE (EA DICE)",
+            "city": "Stockholm",
+            "administrative_division": "",
+            "country": "Sweden",
+            "year": 1992
+        },
+        {
+            "developer": "EA Gothenburg",
+            "city": "Gothenburg",
+            "administrative_division": "",
+            "country": "Sweden",
+            "year": 2011
+        },
+        {
+            "developer": "EA Phenomic",
+            "city": "Ingelheim am Rhein",
+            "administrative_division": "",
+            "country": "Germany",
+            "year": 1997
+        },
+        {
+            "developer": "EA Salt Lake",
+            "city": "Salt Lake City",
+            "administrative_division": "Utah",
+            "country": "United States",
+            "year": 1992
+        },
+        {
+            "developer": "EA Tiburon",
+            "city": "Maitland",
+            "administrative_division": "Florida",
+            "country": "United States",
+            "year": 1994
+        },
+        {
+            "developer": "EA Vancouver (formerly Distinctive Software)",
+            "city": "Burnaby",
+            "administrative_division": "British Columbia",
+            "country": "Canada",
+            "year": 1982
+        },
+        {
+            "developer": "Eat Sleep Play",
+            "city": "Salt Lake City",
+            "administrative_division": "Utah",
+            "country": "United States",
+            "year": 2007
+        },
+        {
+            "developer": "Eko Software",
+            "city": "Paris",
+            "administrative_division": "",
+            "country": "France",
+            "year": 1999
+        },
+        {
+            "developer": "Egosoft",
+            "city": "Würselen",
+            "administrative_division": "",
+            "country": "Germany",
+            "year": 1988
+        },
+        {
+            "developer": "Eden Games",
+            "city": "Lyon",
+            "administrative_division": "",
+            "country": "France",
+            "year": 1998
+        },
+        {
+            "developer": "Eidos-Montréal",
+            "city": "Montreal",
+            "administrative_division": "Quebec",
+            "country": "Canada",
+            "year": 2007
+        },
+        {
+            "developer": "Eighting",
+            "city": "Tokyo",
+            "administrative_division": "",
+            "country": "Japan",
+            "year": 1993
+        },
+        {
+            "developer": "Electronic Arts",
+            "city": "Redwood City",
+            "administrative_division": "California",
+            "country": "United States",
+            "year": 1982
+        },
+        {
+            "developer": "Elemental Games",
+            "city": "Vladivostok",
+            "administrative_division": "",
+            "country": "Russia",
+            "year": 1999
+        },
+        {
+            "developer": "Elite Systems",
+            "city": "Lichfield",
+            "administrative_division": "England",
+            "country": "United Kingdom",
+            "year": 1984
+        },
+        {
+            "developer": "Engine Software",
+            "city": "Doetinchem",
+            "administrative_division": "",
+            "country": "Netherlands",
+            "year": 1995
+        },
+        {
+            "developer": "Ensemble Studios",
+            "city": "Dallas",
+            "administrative_division": "Texas",
+            "country": "United States",
+            "year": 1995
+        },
+        {
+            "developer": "Epic Games",
+            "city": "Cary",
+            "administrative_division": "North Carolina",
+            "country": "United States",
+            "year": 1991
+        },
+        {
+            "developer": "Epics",
+            "city": "Tokyo",
+            "administrative_division": "",
+            "country": "Japan",
+            "year": 1987
+        },
+        {
+            "developer": "Epicenter Studios",
+            "city": "Sherman Oaks",
+            "administrative_division": "California",
+            "country": "United States",
+            "year": 2007
+        },
+        {
+            "developer": "ESA (formerly Softmax)",
+            "city": "Seoul",
+            "administrative_division": "",
+            "country": "South Korea",
+            "year": 1994
+        },
+        {
+            "developer": "Eric Barone",
+            "city": "Seattle",
+            "administrative_division": "",
+            "country": "United States",
+            "year": 2012
+        },
+        {
+            "developer": "Epyx",
+            "city": "San Francisco",
+            "administrative_division": "California",
+            "country": "United States",
+            "year": 1978
+        },
+        {
+            "developer": "Étranges Libellules",
+            "city": "Lyon",
+            "administrative_division": "",
+            "country": "France",
+            "year": 1994
+        },
+        {
+            "developer": "Eugen Systems",
+            "city": "Paris",
+            "administrative_division": "",
+            "country": "France",
+            "year": 2000
+        },
+        {
+            "developer": "Eurocom",
+            "city": "Derby",
+            "administrative_division": "England",
+            "country": "United Kingdom",
+            "year": 1988
+        },
+        {
+            "developer": "Evolution Studios",
+            "city": "Runcorn",
+            "administrative_division": "England",
+            "country": "United Kingdom",
+            "year": 1999
+        },
+        {
+            "developer": "Examu",
+            "city": "Tokyo",
+            "administrative_division": "",
+            "country": "Japan",
+            "year": 2007
+        },
+        {
+            "developer": "Eyedentity Games",
+            "city": "Seoul",
+            "administrative_division": "",
+            "country": "South Korea",
+            "year": 2007
+        },
+        {
+            "developer": "Facepunch Studios",
+            "city": "Walsall",
+            "administrative_division": "England",
+            "country": "United Kingdom",
+            "year": 2009
+        },
+        {
+            "developer": "FarSight Studios",
+            "city": "Big Bear Lake",
+            "administrative_division": "California",
+            "country": "United States",
+            "year": 1989
+        },
+        {
+            "developer": "FASA Studio",
+            "city": "Redmond",
+            "administrative_division": "Washington",
+            "country": "United States",
+            "year": 1994
+        },
+        {
+            "developer": "Fatshark",
+            "city": "Stockholm",
+            "administrative_division": "",
+            "country": "Sweden",
+            "year": 2008
+        },
+        {
+            "developer": "feelplus",
+            "city": "Tokyo",
+            "administrative_division": "",
+            "country": "Japan",
+            "year": 1992
+        },
+        {
+            "developer": "Felistella",
+            "city": "Gifu",
+            "administrative_division": "",
+            "country": "Japan",
+            "year": 2010
+        },
+        {
+            "developer": "Firaxis Games",
+            "city": "Sparks",
+            "administrative_division": "Maryland",
+            "country": "United States",
+            "year": 1996
+        },
+        {
+            "developer": "Firefly Studios",
+            "city": "London",
+            "administrative_division": "England",
+            "country": "United Kingdom",
+            "year": 1999
+        },
+        {
+            "developer": "Firesprite",
+            "city": "Liverpool",
+            "administrative_division": "England",
+            "country": "United Kingdom",
+            "year": 2012
+        },
+        {
+            "developer": "First Star Software",
+            "city": "Chappaqua",
+            "administrative_division": "New York",
+            "country": "United States",
+            "year": 1982
+        },
+        {
+            "developer": "Flagship Studios",
+            "city": "San Francisco",
+            "administrative_division": "California",
+            "country": "United States",
+            "year": 2003
+        },
+        {
+            "developer": "Flight-Plan",
+            "city": "Gifu",
+            "administrative_division": "",
+            "country": "Japan",
+            "year": 1989
+        },
+        {
+            "developer": "Flying Wild Hog",
+            "city": "Warsaw",
+            "administrative_division": "",
+            "country": "Poland",
+            "year": 2009
+        },
+        {
+            "developer": "Focus Entertainment",
+            "city": "Paris",
+            "administrative_division": "",
+            "country": "France",
+            "year": 1996
+        },
+        {
+            "developer": "Foundation 9 Entertainment",
+            "city": "Emeryville",
+            "administrative_division": "California",
+            "country": "United States",
+            "year": 1992
+        },
+        {
+            "developer": "Fox Digital Entertainment",
+            "city": "Los Angeles",
+            "administrative_division": "California",
+            "country": "United States",
+            "year": 2002
+        },
+        {
+            "developer": "FoxNext",
+            "city": "Los Angeles",
+            "administrative_division": "California",
+            "country": "United States",
+            "year": 2017
+        },
+        {
+            "developer": "Frictional Games",
+            "city": "Helsingborg",
+            "administrative_division": "",
+            "country": "Sweden",
+            "year": 2001
+        },
+        {
+            "developer": "Frogwares",
+            "city": "Kyiv",
+            "administrative_division": "",
+            "country": "Ukraine",
+            "year": 2000
+        },
+        {
+            "developer": "Frog City Software",
+            "city": "San Francisco",
+            "administrative_division": "California",
+            "country": "United States",
+            "year": 1994
+        },
+        {
+            "developer": "FromSoftware",
+            "city": "Tokyo",
+            "administrative_division": "",
+            "country": "Japan",
+            "year": 1986
+        },
+        {
+            "developer": "Frontier Developments",
+            "city": "Cambridge",
+            "administrative_division": "England",
+            "country": "United Kingdom",
+            "year": 1994
+        },
+        {
+            "developer": "Frozenbyte",
+            "city": "Helsinki",
+            "administrative_division": "",
+            "country": "Finland",
+            "year": 2001
+        },
+        {
+            "developer": "FTL Games",
+            "city": "San Diego",
+            "administrative_division": "California",
+            "country": "United States",
+            "year": 1982
+        },
+        {
+            "developer": "Fun Labs",
+            "city": "Bucharest",
+            "administrative_division": "",
+            "country": "Romania",
+            "year": 1999
+        },
+        {
+            "developer": "Funcom",
+            "city": "Oslo",
+            "administrative_division": "",
+            "country": "Norway",
+            "year": 1993
+        },
+        {
+            "developer": "FuRyu",
+            "city": "Tokyo",
+            "administrative_division": "",
+            "country": "Japan",
+            "year": 2007
+        },
+        {
+            "developer": "Futuremark",
+            "city": "Espoo",
+            "administrative_division": "",
+            "country": "Finland",
+            "year": 1997
+        },
+        {
+            "developer": "Gaijin Entertainment",
+            "city": "Budapest",
+            "administrative_division": "",
+            "country": "Hungary",
+            "year": 2002
+        },
+        {
+            "developer": "Game Arts",
+            "city": "Chiyoda, Tokyo",
+            "administrative_division": "",
+            "country": "Japan",
+            "year": 1985
+        },
+        {
+            "developer": "Game Freak",
+            "city": "Setagaya-ku, Tokyo",
+            "administrative_division": "",
+            "country": "Japan",
+            "year": 1989
+        },
+        {
+            "developer": "GameHouse",
+            "city": "Seattle",
+            "administrative_division": "Washington",
+            "country": "United States",
+            "year": 1998
+        },
+        {
+            "developer": "Gameloft",
+            "city": "Paris",
+            "administrative_division": "",
+            "country": "France",
+            "year": 1999
+        },
+        {
+            "developer": "Gamevil",
+            "city": "Seoul",
+            "administrative_division": "",
+            "country": "South Korea",
+            "year": 2000
+        },
+        {
+            "developer": "Ganbarion",
+            "city": "Fukuoka",
+            "administrative_division": "",
+            "country": "Japan",
+            "year": 1999
+        },
+        {
+            "developer": "Gearbox Software",
+            "city": "Plano",
+            "administrative_division": "Texas",
+            "country": "United States",
+            "year": 1999
+        },
+        {
+            "developer": "Geewa",
+            "city": "Prague",
+            "administrative_division": "",
+            "country": "Czech Republic",
+            "year": 2005
+        },
+        {
+            "developer": "Genius Sonority",
+            "city": "Tokyo",
+            "administrative_division": "",
+            "country": "Japan",
+            "year": 2002
+        },
+        {
+            "developer": "Genki",
+            "city": "Shinjuku, Tokyo",
+            "administrative_division": "",
+            "country": "Japan",
+            "year": 1990
+        },
+        {
+            "developer": "Glu Mobile",
+            "city": "San Francisco",
+            "administrative_division": "California",
+            "country": "United States",
+            "year": 2001
+        },
+        {
+            "developer": "Gogii Games",
+            "city": "Moncton",
+            "administrative_division": "New Brunswick",
+            "country": "Canada",
+            "year": 2006
+        },
+        {
+            "developer": "Good-Feel",
+            "city": "Kobe",
+            "administrative_division": "",
+            "country": "Japan",
+            "year": 2005
+        },
+        {
+            "developer": "Goodgame Studios",
+            "city": "Hamburg",
+            "administrative_division": "Hamburg",
+            "country": "Germany",
+            "year": 2009
+        },
+        {
+            "developer": "Granzella",
+            "city": "Nonoichi",
+            "administrative_division": "",
+            "country": "Japan",
+            "year": 2011
+        },
+        {
+            "developer": "Grasshopper Manufacture",
+            "city": "Chiyoda, Tokyo",
+            "administrative_division": "",
+            "country": "Japan",
+            "year": 1998
+        },
+        {
+            "developer": "Gravity",
+            "city": "Seoul",
+            "administrative_division": "",
+            "country": "South Korea",
+            "year": 2000
+        },
+        {
+            "developer": "Gray Matter Studios",
+            "city": "Los Angeles",
+            "administrative_division": "California",
+            "country": "United States",
+            "year": 1993
+        },
+        {
+            "developer": "Gremlin Interactive",
+            "city": "Sheffield",
+            "administrative_division": "England",
+            "country": "United Kingdom",
+            "year": 1984
+        },
+        {
+            "developer": "Grezzo",
+            "city": "Shibuya, Tokyo",
+            "administrative_division": "",
+            "country": "Japan",
+            "year": 2006
+        },
+        {
+            "developer": "Grin",
+            "city": "Stockholm",
+            "administrative_division": "",
+            "country": "Sweden",
+            "year": 1997
+        },
+        {
+            "developer": "Grinding Gear Games",
+            "city": "Auckland",
+            "administrative_division": "",
+            "country": "New Zealand",
+            "year": 2006
+        },
+        {
+            "developer": "Griptonite Games",
+            "city": "Kirkland",
+            "administrative_division": "Washington",
+            "country": "United States",
+            "year": 1994
+        },
+        {
+            "developer": "GSC Game World",
+            "city": "Kyiv",
+            "administrative_division": "",
+            "country": "Ukraine",
+            "year": 1995
+        },
+        {
+            "developer": "Guerrilla Cambridge",
+            "city": "Cambridge",
+            "administrative_division": "England",
+            "country": "United Kingdom",
+            "year": 1997
+        },
+        {
+            "developer": "Guerrilla Games",
+            "city": "Amsterdam",
+            "administrative_division": "",
+            "country": "Netherlands",
+            "year": 2000
+        },
+        {
+            "developer": "Gunfire Games",
+            "city": "Austin",
+            "administrative_division": "Texas",
+            "country": "United States",
+            "year": 2014
+        },
+        {
+            "developer": "GungHo Online Entertainment",
+            "city": "Chiyoda, Tokyo",
+            "administrative_division": "",
+            "country": "Japan",
+            "year": 1998
+        },
+        {
+            "developer": "Gust",
+            "city": "Nagano",
+            "administrative_division": "",
+            "country": "Japan",
+            "year": 1993
+        },
+        {
+            "developer": "Haemimont Games",
+            "city": "Sofia",
+            "administrative_division": "",
+            "country": "Bulgaria",
+            "year": 1997
+        },
+        {
+            "developer": "HAL Laboratory",
+            "city": "Chiyoda, Tokyo",
+            "administrative_division": "",
+            "country": "Japan",
+            "year": 1980
+        },
+        {
+            "developer": "Halfbrick",
+            "city": "Brisbane",
+            "administrative_division": "Queensland",
+            "country": "Australia",
+            "year": 2001
+        },
+        {
+            "developer": "Hanaho",
+            "city": "Cerritos",
+            "administrative_division": "California",
+            "country": "United States",
+            "year": 1992
+        },
+        {
+            "developer": "h.a.n.d.",
+            "city": "Sapporo",
+            "administrative_division": "",
+            "country": "Japan",
+            "year": 1993
+        },
+        {
+            "developer": "Hangar 13",
+            "city": "Novato",
+            "administrative_division": "California",
+            "country": "United States",
+            "year": 2014
+        },
+        {
+            "developer": "Harebrained Schemes",
+            "city": "Seattle",
+            "administrative_division": "Washington",
+            "country": "United States",
+            "year": 2011
+        },
+        {
+            "developer": "Harmonix Music Systems",
+            "city": "Cambridge",
+            "administrative_division": "Massachusetts",
+            "country": "United States",
+            "year": 1995
+        },
+        {
+            "developer": "Hazelight Studios",
+            "city": "Stockholm",
+            "administrative_division": "",
+            "country": "Sweden",
+            "year": 2014
+        },
+        {
+            "developer": "Headstrong Games",
+            "city": "London",
+            "administrative_division": "England",
+            "country": "United Kingdom",
+            "year": 2000
+        },
+        {
+            "developer": "Heartbeat",
+            "city": "Tokyo",
+            "administrative_division": "",
+            "country": "Japan",
+            "year": 1992
+        },
+        {
+            "developer": "Heavy Iron Studios",
+            "city": "Manhattan Beach",
+            "administrative_division": "California",
+            "country": "United States",
+            "year": 1999
+        },
+        {
+            "developer": "HB Studios",
+            "city": "Lunenburg",
+            "administrative_division": "Nova Scotia",
+            "country": "Canada",
+            "year": 2000
+        },
+        {
+            "developer": "HeroCraft",
+            "city": "Kaliningrad",
+            "administrative_division": "",
+            "country": "Russia",
+            "year": 2001
+        },
+        {
+            "developer": "HexaDrive",
+            "city": "Osaka",
+            "administrative_division": "",
+            "country": "Japan",
+            "year": 2007
+        },
+        {
+            "developer": "High Impact Games",
+            "city": "Burbank",
+            "administrative_division": "California",
+            "country": "United States",
+            "year": 2003
+        },
+        {
+            "developer": "High Moon Studios",
+            "city": "San Diego",
+            "administrative_division": "California",
+            "country": "United States",
+            "year": 2005
+        },
+        {
+            "developer": "High Voltage Software",
+            "city": "Hoffman Estates",
+            "administrative_division": "Illinois",
+            "country": "United States",
+            "year": 1993
+        },
+        {
+            "developer": "Hothead Games",
+            "city": "Vancouver",
+            "administrative_division": "British Columbia",
+            "country": "Canada",
+            "year": 2006
+        },
+        {
+            "developer": "Housemarque",
+            "city": "Helsinki",
+            "administrative_division": "",
+            "country": "Finland",
+            "year": 1995
+        },
+        {
+            "developer": "Hudson Soft",
+            "city": "Tokyo",
+            "administrative_division": "",
+            "country": "Japan",
+            "year": 1973
+        },
+        {
+            "developer": "Human Entertainment",
+            "city": "Tokyo",
+            "administrative_division": "",
+            "country": "Japan",
+            "year": 1983
+        },
+        {
+            "developer": "Human Head Studios",
+            "city": "Madison",
+            "administrative_division": "Wisconsin",
+            "country": "United States",
+            "year": 1997
+        },
+        {
+            "developer": "Humongous Entertainment",
+            "city": "Bothell",
+            "administrative_division": "Washington",
+            "country": "United States",
+            "year": 1992
+        },
+        {
+            "developer": "Hyperion Entertainment",
+            "city": "Brussels",
+            "administrative_division": "",
+            "country": "Belgium",
+            "year": 1999
+        },
+        {
+            "developer": "Ice-Pick Lodge",
+            "city": "Moscow",
+            "administrative_division": "",
+            "country": "Russia",
+            "year": 2002
+        },
+        {
+            "developer": "id Software",
+            "city": "Mesquite",
+            "administrative_division": "Texas",
+            "country": "United States",
+            "year": 1991
+        },
+        {
+            "developer": "Idea Factory",
+            "city": "Shibuya, Tokyo",
+            "administrative_division": "",
+            "country": "Japan",
+            "year": 1994
+        },
+        {
+            "developer": "Idol Minds",
+            "city": "Westminster",
+            "administrative_division": "Colorado",
+            "country": "United States",
+            "year": 1997
+        },
+        {
+            "developer": "Imageepoch",
+            "city": "Tokyo",
+            "administrative_division": "",
+            "country": "Japan",
+            "year": 2005
+        },
+        {
+            "developer": "Image & Form",
+            "city": "Gothenburg",
+            "administrative_division": "",
+            "country": "Sweden",
+            "year": 1997
+        },
+        {
+            "developer": "Imagineer",
+            "city": "Tokyo",
+            "administrative_division": "",
+            "country": "Japan",
+            "year": 1986
+        },
+        {
+            "developer": "Infinity Ward",
+            "city": "Woodland Hills",
+            "administrative_division": "California",
+            "country": "United States",
+            "year": 2002
+        },
+        {
+            "developer": "Infocom",
+            "city": "Cambridge]",
+            "administrative_division": "Massachusetts",
+            "country": "United States",
+            "year": 1979
+        },
+        {
+            "developer": "InfoshellGames",
+            "city": "Erevan",
+            "administrative_division": "",
+            "country": "Armenia",
+            "year": 2018
+        },
+        {
+            "developer": "Incognito Entertainment",
+            "city": "Salt Lake City",
+            "administrative_division": "Utah",
+            "country": "United States",
+            "year": 1999
+        },
+        {
+            "developer": "Incredible Technologies",
+            "city": "Arlington Heights",
+            "administrative_division": "Illinois",
+            "country": "United States",
+            "year": 1985
+        },
+        {
+            "developer": "indieszero",
+            "city": "Musashino",
+            "administrative_division": "",
+            "country": "Japan",
+            "year": 1997
+        },
+        {
+            "developer": "Innerloop Studios",
+            "city": "Oslo",
+            "administrative_division": "",
+            "country": "Norway",
+            "year": 1996
+        },
+        {
+            "developer": "Insomniac Games",
+            "city": "Burbank",
+            "administrative_division": "California",
+            "country": "United States",
+            "year": 1994
+        },
+        {
+            "developer": "Intelligent Systems",
+            "city": "Tokyo",
+            "administrative_division": "",
+            "country": "Japan",
+            "year": 1986
+        },
+        {
+            "developer": "Interplay Entertainment",
+            "city": "Beverly Hills",
+            "administrative_division": "California",
+            "country": "United States",
+            "year": 1983
+        },
+        {
+            "developer": "Inti Creates",
+            "city": "Ichikawa, Chiba",
+            "administrative_division": "",
+            "country": "Japan",
+            "year": 1996
+        },
+        {
+            "developer": "Introversion Software",
+            "city": "London",
+            "administrative_division": "England",
+            "country": "United Kingdom",
+            "year": 2002
+        },
+        {
+            "developer": "inXile Entertainment",
+            "city": "Newport Beach",
+            "administrative_division": "California",
+            "country": "United States",
+            "year": 2002
+        },
+        {
+            "developer": "IO Interactive",
+            "city": "Copenhagen",
+            "administrative_division": "",
+            "country": "Denmark",
+            "year": 1998
+        },
+        {
+            "developer": "Ion Storm",
+            "city": "Dallas",
+            "administrative_division": "Texas",
+            "country": "United States",
+            "year": 1996
+        },
+        {
+            "developer": "Ion Storm Austin",
+            "city": "Austin",
+            "administrative_division": "Texas",
+            "country": "United States",
+            "year": 1997
+        },
+        {
+            "developer": "Irem",
+            "city": "Hakusan",
+            "administrative_division": "",
+            "country": "Japan",
+            "year": 1974
+        },
+        {
+            "developer": "Iron Galaxy Studios",
+            "city": "Chicago",
+            "administrative_division": "Illinois",
+            "country": "United States",
+            "year": 2008
+        },
+        {
+            "developer": "Iron Lore Entertainment",
+            "city": "Maynard",
+            "administrative_division": "Massachusetts",
+            "country": "United States",
+            "year": 2000
+        },
+        {
+            "developer": "Irrational Games",
+            "city": "Quincy",
+            "administrative_division": "Massachusetts",
+            "country": "United States",
+            "year": 1996
+        },
+        {
+            "developer": "Ivory Tower",
+            "city": "Lyon",
+            "administrative_division": "",
+            "country": "France",
+            "year": 2007
+        },
+        {
+            "developer": "Jackbox Games",
+            "city": "Chicago",
+            "administrative_division": "Illinois",
+            "country": "United States",
+            "year": 1989
+        },
+        {
+            "developer": "Jadestone Group",
+            "city": "Stockholm",
+            "administrative_division": "",
+            "country": "Sweden",
+            "year": 2000
+        },
+        {
+            "developer": "Jagex",
+            "city": "Cambridge",
+            "administrative_division": "England",
+            "country": "United Kingdom",
+            "year": 2001
+        },
+        {
+            "developer": "Jaleco",
+            "city": "Tokyo",
+            "administrative_division": "",
+            "country": "Japan",
+            "year": 1974
+        },
+        {
+            "developer": "Jam City",
+            "city": "Los Angeles",
+            "administrative_division": "California",
+            "country": "United States",
+            "year": 2007
+        },
+        {
+            "developer": "Javaground",
+            "city": "Irvine",
+            "administrative_division": "Massachusetts",
+            "country": "United States",
+            "year": 2001
+        },
+        {
+            "developer": "Jupiter",
+            "city": "Kyoto",
+            "administrative_division": "",
+            "country": "Japan",
+            "year": 1996
+        },
+        {
+            "developer": "JV Games",
+            "city": "Las Vegas",
+            "administrative_division": "Nevada",
+            "country": "United States",
+            "year": 1999
+        },
+        {
+            "developer": "Kairosoft",
+            "city": "Tokyo",
+            "administrative_division": "",
+            "country": "Japan",
+            "year": 1996
+        },
+        {
+            "developer": "Kalypso Media",
+            "city": "Worms",
+            "administrative_division": "",
+            "country": "Germany",
+            "year": 2006
+        },
+        {
+            "developer": "Kaos Studios",
+            "city": "New York City",
+            "administrative_division": "New York",
+            "country": "United States",
+            "year": 2006
+        },
+        {
+            "developer": "Keen Software House",
+            "city": "Prague",
+            "administrative_division": "",
+            "country": "Czech Republic",
+            "year": 2010
+        },
+        {
+            "developer": "Kesmai",
+            "city": "Charlottesville",
+            "administrative_division": "Virginia",
+            "country": "United States",
+            "year": 1981
+        },
+        {
+            "developer": "Kiloo Games",
+            "city": "Aarhus",
+            "administrative_division": "",
+            "country": "Denmark",
+            "year": 2000
+        },
+        {
+            "developer": "King",
+            "city": "Stockholm",
+            "administrative_division": "",
+            "country": "Sweden",
+            "year": 2003
+        },
+        {
+            "developer": "Klei Entertainment",
+            "city": "Vancouver",
+            "administrative_division": "British Columbia",
+            "country": "Canada",
+            "year": 2005
+        },
+        {
+            "developer": "Koei Tecmo Games (formerly Koei)",
+            "city": "Ashikaga",
+            "administrative_division": "",
+            "country": "Japan",
+            "year": 1978
+        },
+        {
+            "developer": "KOG Studios",
+            "city": "Seoul",
+            "administrative_division": "",
+            "country": "South Korea",
+            "year": 2000
+        },
+        {
+            "developer": "Kojima Productions",
+            "city": "Tokyo",
+            "administrative_division": "",
+            "country": "Japan",
+            "year": 2005
+        },
+        {
+            "developer": "Konami",
+            "city": "Tokyo Midtown",
+            "administrative_division": "",
+            "country": "Japan",
+            "year": 1969
+        },
+        {
+            "developer": "Kongzhong",
+            "city": "Beijing",
+            "administrative_division": "",
+            "country": "China",
+            "year": 2002
+        },
+        {
+            "developer": "Krome Studios",
+            "city": "Brisbane",
+            "administrative_division": "Queensland",
+            "country": "Australia",
+            "year": 1999
+        },
+        {
+            "developer": "Krome Studios Melbourne",
+            "city": "Melbourne",
+            "administrative_division": "Victoria",
+            "country": "Australia",
+            "year": 1988
+        },
+        {
+            "developer": "Kuju Entertainment",
+            "city": "Shalford",
+            "administrative_division": "England",
+            "country": "United Kingdom",
+            "year": 1998
+        },
+        {
+            "developer": "Kunos Simulazioni",
+            "city": "Rome",
+            "administrative_division": "",
+            "country": "Italy",
+            "year": 2005
+        },
+        {
+            "developer": "Kush Games",
+            "city": "Camarillo",
+            "administrative_division": "California",
+            "country": "United States",
+            "year": 1998
+        },
+        {
+            "developer": "Kuma Reality Games",
+            "city": "New York City",
+            "administrative_division": "New York",
+            "country": "United States",
+            "year": 2003
+        },
+        {
+            "developer": "Kylotonn",
+            "city": "Paris",
+            "administrative_division": "",
+            "country": "France",
+            "year": 2002
+        },
+        {
+            "developer": "Larian Studios",
+            "city": "Oudenaarde",
+            "administrative_division": "",
+            "country": "Belgium",
+            "year": 1996
+        },
+        {
+            "developer": "Left Field Productions",
+            "city": "Ventura",
+            "administrative_division": "California",
+            "country": "United States",
+            "year": 1994
+        },
+        {
+            "developer": "Legacy Interactive",
+            "city": "Los Angeles",
+            "administrative_division": "California",
+            "country": "United States",
+            "year": 1998
+        },
+        {
+            "developer": "Legend Entertainment",
+            "city": "Chantilly",
+            "administrative_division": "Virginia",
+            "country": "United States",
+            "year": 1989
+        },
+        {
+            "developer": "Legendo Entertainment",
+            "city": "Gothenburg",
+            "administrative_division": "",
+            "country": "Sweden",
+            "year": 2004
+        },
+        {
+            "developer": "Level-5",
+            "city": "Fukuoka",
+            "administrative_division": "",
+            "country": "Japan",
+            "year": 1998
+        },
+        {
+            "developer": "Lift London",
+            "city": "London",
+            "administrative_division": "England",
+            "country": "United Kingdom",
+            "year": 2012
+        },
+        {
+            "developer": "Limbic Entertainment",
+            "city": "Langen",
+            "administrative_division": "",
+            "country": "Germany",
+            "year": 2002
+        },
+        {
+            "developer": "Lionhead Studios",
+            "city": "Guildford",
+            "administrative_division": "England",
+            "country": "United Kingdom",
+            "year": 1997
+        },
+        {
+            "developer": "Liquid Entertainment",
+            "city": "Pasadena",
+            "administrative_division": "California",
+            "country": "United States",
+            "year": 1999
+        },
+        {
+            "developer": "Little Green Men Games",
+            "city": "Zagreb",
+            "administrative_division": "",
+            "country": "Croatia",
+            "year": 2006
+        },
+        {
+            "developer": "LK Avalon",
+            "city": "Świlcza, Rzeszów",
+            "administrative_division": "",
+            "country": "Poland",
+            "year": 1989
+        },
+        {
+            "developer": "Llamasoft",
+            "city": "Reading",
+            "administrative_division": "England",
+            "country": "United Kingdom",
+            "year": 1982
+        },
+        {
+            "developer": "Linden Lab",
+            "city": "San Francisco",
+            "administrative_division": "California",
+            "country": "United States",
+            "year": 1999
+        },
+        {
+            "developer": "Locomotive Games",
+            "city": "Santa Clara",
+            "administrative_division": "California",
+            "country": "United States",
+            "year": 1997
+        },
+        {
+            "developer": "Looking Glass Studios",
+            "city": "Cambridge",
+            "administrative_division": "Massachusetts",
+            "country": "United States",
+            "year": 1990
+        },
+        {
+            "developer": "Love-de-Lic",
+            "city": "Tokyo",
+            "administrative_division": "",
+            "country": "Japan",
+            "year": 1995
+        },
+        {
+            "developer": "LucasArts",
+            "city": "San Francisco",
+            "administrative_division": "California",
+            "country": "United States",
+            "year": 1982
+        },
+        {
+            "developer": "Luma Arcade",
+            "city": "Johannesburg",
+            "administrative_division": "",
+            "country": "South Africa",
+            "year": 2006
+        },
+        {
+            "developer": "Luxoflux",
+            "city": "Santa Monica",
+            "administrative_division": "California",
+            "country": "United States",
+            "year": 1998
+        },
+        {
+            "developer": "MachineGames",
+            "city": "Uppsala",
+            "administrative_division": "",
+            "country": "Sweden",
+            "year": 2009
+        },
+        {
+            "developer": "Magenta Software",
+            "city": "Liverpool",
+            "administrative_division": "England",
+            "country": "United Kingdom",
+            "year": 1994
+        },
+        {
+            "developer": "MAGES.",
+            "city": "Shibuya, Tokyo",
+            "administrative_division": "",
+            "country": "Japan",
+            "year": 2005
+        },
+        {
+            "developer": "Majesco Entertainment",
+            "city": "Edison",
+            "administrative_division": "New Jersey",
+            "country": "United States",
+            "year": 1986
+        },
+        {
+            "developer": "Marvelous",
+            "city": "Shibuya, Tokyo",
+            "administrative_division": "",
+            "country": "Japan",
+            "year": 1997
+        },
+        {
+            "developer": "Massive Entertainment",
+            "city": "Malmö",
+            "administrative_division": "",
+            "country": "Sweden",
+            "year": 1997
+        },
+        {
+            "developer": "Masthead Studios",
+            "city": "Sofia",
+            "administrative_division": "",
+            "country": "Bulgaria",
+            "year": 2005
+        },
+        {
+            "developer": "Matrix Software",
+            "city": "Tokyo",
+            "administrative_division": "",
+            "country": "Japan",
+            "year": 1994
+        },
+        {
+            "developer": "Maxis",
+            "city": "Emeryville",
+            "administrative_division": "California",
+            "country": "United States",
+            "year": 1987
+        },
+        {
+            "developer": "Mean Hamster Software",
+            "city": "Deer Park",
+            "administrative_division": "Washington",
+            "country": "United States",
+            "year": 1985
+        },
+        {
+            "developer": "Media Molecule",
+            "city": "Guildford",
+            "administrative_division": "England",
+            "country": "United Kingdom",
+            "year": 2006
+        },
+        {
+            "developer": "Media.Vision",
+            "city": "Tokyo",
+            "administrative_division": "",
+            "country": "Japan",
+            "year": 1993
+        },
+        {
+            "developer": "Mediatonic",
+            "city": "London",
+            "administrative_division": "England",
+            "country": "United Kingdom",
+            "year": 2005
+        },
+        {
+            "developer": "MegaZebra",
+            "city": "Munich",
+            "administrative_division": "",
+            "country": "Germany",
+            "year": 2009
+        },
+        {
+            "developer": "Mercury Steam",
+            "city": "Madrid",
+            "administrative_division": "",
+            "country": "Spain",
+            "year": 2002
+        },
+        {
+            "developer": "Metropolis Software",
+            "city": "Warsaw",
+            "administrative_division": "",
+            "country": "Poland",
+            "year": 1992
+        },
+        {
+            "developer": "MicroProse Software",
+            "city": "Hunt Valley",
+            "administrative_division": "Maryland",
+            "country": "United States",
+            "year": 1982
+        },
+        {
+            "developer": "Microsoft Casual Games",
+            "city": "Redmond",
+            "administrative_division": "Washington",
+            "country": "United States",
+            "year": 2013
+        },
+        {
+            "developer": "Midway Games",
+            "city": "Chicago",
+            "administrative_division": "Illinois",
+            "country": "United States",
+            "year": 1988
+        },
+        {
+            "developer": "Midway Studios – Newcastle",
+            "city": "Gateshead",
+            "administrative_division": "England",
+            "country": "United Kingdom",
+            "year": 1996
+        },
+        {
+            "developer": "Might and Delight",
+            "city": "Stockholm",
+            "administrative_division": "",
+            "country": "Sweden",
+            "year": 2010
+        },
+        {
+            "developer": "miHoYo",
+            "city": "Shanghai",
+            "administrative_division": "",
+            "country": "China",
+            "year": 2012
+        },
+        {
+            "developer": "Milestone",
+            "city": "Suginami, Tokyo",
+            "administrative_division": "",
+            "country": "Japan",
+            "year": 2003
+        },
+        {
+            "developer": "Milestone srl",
+            "city": "Milan",
+            "administrative_division": "",
+            "country": "Italy",
+            "year": 1996
+        },
+        {
+            "developer": "Millennium Kitchen",
+            "city": "Tokyo",
+            "administrative_division": "",
+            "country": "Japan",
+            "year": 1997
+        },
+        {
+            "developer": "Mimimi Games",
+            "city": "Munich",
+            "administrative_division": "",
+            "country": "Germany",
+            "year": 2011
+        },
+        {
+            "developer": "Mistwalker",
+            "city": "Tokyo",
+            "administrative_division": "",
+            "country": "Japan",
+            "year": 2004
+        },
+        {
+            "developer": "Mitchell Corporation",
+            "city": "Tokyo",
+            "administrative_division": "",
+            "country": "Japan",
+            "year": 1960
+        },
+        {
+            "developer": "MLB Advanced Media",
+            "city": "New York City",
+            "administrative_division": "New York",
+            "country": "United States",
+            "year": 2000
+        },
+        {
+            "developer": "Mode 7 Games",
+            "city": "Brighton",
+            "administrative_division": "East Sussex",
+            "country": "United Kingdom",
+            "year": 2005
+        },
+        {
+            "developer": "Mojang AB",
+            "city": "Stockholm",
+            "administrative_division": "",
+            "country": "Sweden",
+            "year": 2009
+        },
+        {
+            "developer": "Monolith Productions",
+            "city": "Kirkland",
+            "administrative_division": "Washington",
+            "country": "United States",
+            "year": 1994
+        },
+        {
+            "developer": "Monolith Soft",
+            "city": "Tokyo",
+            "administrative_division": "",
+            "country": "Japan",
+            "year": 1999
+        },
+        {
+            "developer": "Monster Games",
+            "city": "Northfield",
+            "administrative_division": "Minnesota",
+            "country": "United States",
+            "year": 1996
+        },
+        {
+            "developer": "Monte Cristo",
+            "city": "Paris",
+            "administrative_division": "",
+            "country": "France",
+            "year": 1995
+        },
+        {
+            "developer": "Moonton",
+            "city": "Shanghai",
+            "administrative_division": "",
+            "country": "China",
+            "year": 2015
+        },
+        {
+            "developer": "Moon Studios",
+            "city": "Vienna",
+            "administrative_division": "",
+            "country": "Austria",
+            "year": 2010
+        },
+        {
+            "developer": "Motion Twin",
+            "city": "Bordeaux",
+            "administrative_division": "",
+            "country": "France",
+            "year": 2001
+        },
+        {
+            "developer": "MTO",
+            "city": "Yokohama",
+            "administrative_division": "",
+            "country": "Japan",
+            "year": 1996
+        },
+        {
+            "developer": "Mythic Entertainment",
+            "city": "Fairfax",
+            "administrative_division": "Virginia",
+            "country": "United States",
+            "year": 1995
+        },
+        {
+            "developer": "Nadeo",
+            "city": "Paris",
+            "administrative_division": "",
+            "country": "France",
+            "year": 2000
+        },
+        {
+            "developer": "Namco Tales Studio",
+            "city": "Tokyo",
+            "administrative_division": "",
+            "country": "Japan",
+            "year": 1986
+        },
+        {
+            "developer": "Nanobit",
+            "city": "Zagreb",
+            "administrative_division": "",
+            "country": "Croatia",
+            "year": 2008
+        },
+        {
+            "developer": "NAPS team",
+            "city": "Messina",
+            "administrative_division": "",
+            "country": "Italy",
+            "year": 1993
+        },
+        {
+            "developer": "Natsume",
+            "city": "Shinjuku, Tokyo",
+            "administrative_division": "",
+            "country": "Japan",
+            "year": 1987
+        },
+        {
+            "developer": "NaturalMotion",
+            "city": "London",
+            "administrative_division": "England",
+            "country": "United Kingdom",
+            "year": 2001
+        },
+        {
+            "developer": "Naughty Dog",
+            "city": "Santa Monica",
+            "administrative_division": "California",
+            "country": "United States",
+            "year": 1986
+        },
+        {
+            "developer": "NCSoft",
+            "city": "Seoul",
+            "administrative_division": "",
+            "country": "South Korea",
+            "year": 1997
+        },
+        {
+            "developer": "NDcube",
+            "city": "Tokyo",
+            "administrative_division": "",
+            "country": "Japan",
+            "year": 2000
+        },
+        {
+            "developer": "NDOORS Corporation",
+            "city": "Seoul",
+            "administrative_division": "",
+            "country": "South Korea",
+            "year": 1999
+        },
+        {
+            "developer": "Neko Entertainment",
+            "city": "Montreuil-sous-Bois",
+            "administrative_division": "",
+            "country": "France",
+            "year": 1998
+        },
+        {
+            "developer": "Nerve Software",
+            "city": "Richardson",
+            "administrative_division": "Texas",
+            "country": "United States",
+            "year": 1999
+        },
+        {
+            "developer": "NetDevil",
+            "city": "Louisville",
+            "administrative_division": "Colorado",
+            "country": "United States",
+            "year": 1997
+        },
+        {
+            "developer": "NetDragon Websoft",
+            "city": "Fuzhou",
+            "administrative_division": "",
+            "country": "China",
+            "year": 1999
+        },
+        {
+            "developer": "NetEase",
+            "city": "Guangzhou",
+            "administrative_division": "",
+            "country": "China",
+            "year": 1997
+        },
+        {
+            "developer": "NetherRealm Studios",
+            "city": "Chicago",
+            "administrative_division": "Illinois",
+            "country": "United States",
+            "year": 2010
+        },
+        {
+            "developer": "Neverland",
+            "city": "Tokyo",
+            "administrative_division": "",
+            "country": "Japan",
+            "year": 1993
+        },
+        {
+            "developer": "Neversoft",
+            "city": "Woodland Hills",
+            "administrative_division": "California",
+            "country": "United States",
+            "year": 1994
+        },
+        {
+            "developer": "Nevosoft",
+            "city": "St. Petersburg",
+            "administrative_division": "",
+            "country": "Russia",
+            "year": 2002
+        },
+        {
+            "developer": "New World Computing",
+            "city": "Agoura Hills",
+            "administrative_division": "California",
+            "country": "United States",
+            "year": 1984
+        },
+        {
+            "developer": "New World Interactive",
+            "city": "Denver",
+            "administrative_division": "Colorado",
+            "country": "United States",
+            "year": 2010
+        },
+        {
+            "developer": "Nexon",
+            "city": "Tokyo",
+            "administrative_division": "",
+            "country": "Japan",
+            "year": 2002
+        },
+        {
+            "developer": "Next Level Games",
+            "city": "Vancouver",
+            "administrative_division": "British Columbia",
+            "country": "Canada",
+            "year": 2002
+        },
+        {
+            "developer": "Niantic",
+            "city": "San Francisco",
+            "administrative_division": "California",
+            "country": "United States",
+            "year": 2010
+        },
+        {
+            "developer": "Nibris",
+            "city": "Kraków",
+            "administrative_division": "",
+            "country": "Poland",
+            "year": 2000
+        },
+        {
+            "developer": "Nicalis",
+            "city": "Santa Ana",
+            "administrative_division": "California",
+            "country": "United States",
+            "year": 2007
+        },
+        {
+            "developer": "Night School Studio",
+            "city": "Glendale",
+            "administrative_division": "California",
+            "country": "United States",
+            "year": 2014
+        },
+        {
+            "developer": "Nihon Falcom",
+            "city": "Tokyo",
+            "administrative_division": "",
+            "country": "Japan",
+            "year": 1981
+        },
+        {
+            "developer": "Nikita Online",
+            "city": "St. Petersburg",
+            "administrative_division": "",
+            "country": "Russia",
+            "year": 1991
+        },
+        {
+            "developer": "Nimble Giant Entertainment",
+            "city": "Buenos Aires",
+            "administrative_division": "",
+            "country": "Argentina",
+            "year": 2002
+        },
+        {
+            "developer": "Ninjabee",
+            "city": "Orem",
+            "administrative_division": "Utah",
+            "country": "United States",
+            "year": 2005
+        },
+        {
+            "developer": "Ninja Theory",
+            "city": "Cambridge",
+            "administrative_division": "England",
+            "country": "United Kingdom",
+            "year": 2000
+        },
+        {
+            "developer": "Nintendo",
+            "city": "Kyoto",
+            "administrative_division": "",
+            "country": "Japan",
+            "year": 1889
+        },
+        {
+            "developer": "Nintendo Software Technology",
+            "city": "Redmond",
+            "administrative_division": "Washington",
+            "country": "United States",
+            "year": 1998
+        },
+        {
+            "developer": "Nippon Ichi Software",
+            "city": "Kakamigahara",
+            "administrative_division": "",
+            "country": "Japan",
+            "year": 1991
+        },
+        {
+            "developer": "Nival",
+            "city": "St. Petersburg",
+            "administrative_division": "",
+            "country": "Russia",
+            "year": 1996
+        },
+        {
+            "developer": "Nordeus",
+            "city": "Belgrade",
+            "administrative_division": "",
+            "country": "Serbia",
+            "year": 2009
+        },
+        {
+            "developer": "NovaLogic",
+            "city": "Agoura Hills",
+            "administrative_division": "California",
+            "country": "United States",
+            "year": 1985
+        },
+        {
+            "developer": "Novarama",
+            "city": "Barcelona",
+            "administrative_division": "",
+            "country": "Spain",
+            "year": 2003
+        },
+        {
+            "developer": "Now Production",
+            "city": "Osaka",
+            "administrative_division": "",
+            "country": "Japan",
+            "year": 1986
+        },
+        {
+            "developer": "Nude Maker",
+            "city": "Tokyo",
+            "administrative_division": "",
+            "country": "Japan",
+            "year": 2002
+        },
+        {
+            "developer": "NuFX",
+            "city": "Hoffman Estates",
+            "administrative_division": "Illinois",
+            "country": "United States",
+            "year": 1990
+        },
+        {
+            "developer": "n-Space",
+            "city": "Orlando",
+            "administrative_division": "Florida",
+            "country": "United States",
+            "year": 1994
+        },
+        {
+            "developer": "Obsidian Entertainment",
+            "city": "Irvine",
+            "administrative_division": "California",
+            "country": "United States",
+            "year": 2004
+        },
+        {
+            "developer": "Oddworld Inhabitants",
+            "city": "San Luis Obispo",
+            "administrative_division": "California",
+            "country": "United States",
+            "year": 1994
+        },
+        {
+            "developer": "Omega Force",
+            "city": "Ashikaga",
+            "administrative_division": "",
+            "country": "Japan",
+            "year": 1997
+        },
+        {
+            "developer": "Origin Systems",
+            "city": "Austin",
+            "administrative_division": "Texas",
+            "country": "United States",
+            "year": 1983
+        },
+        {
+            "developer": "OtherSide Entertainment",
+            "city": "Boston",
+            "administrative_division": "Massachusetts",
+            "country": "United States",
+            "year": 2013
+        },
+        {
+            "developer": "Outfit7",
+            "city": "Ljubljana",
+            "administrative_division": "",
+            "country": "Slovenia",
+            "year": 2010
+        },
+        {
+            "developer": "Outrage Entertainment",
+            "city": "Ann Arbor",
+            "administrative_division": "Michigan",
+            "country": "United States",
+            "year": 1996
+        },
+        {
+            "developer": "Out of the Park Developments",
+            "city": "Hollern-Twielenfleth",
+            "administrative_division": "",
+            "country": "Germany",
+            "year": 1999
+        },
+        {
+            "developer": "Overkill Software",
+            "city": "Stockholm",
+            "administrative_division": "",
+            "country": "Sweden",
+            "year": 2009
+        },
+        {
+            "developer": "Oxygen Studios",
+            "city": "Croydon",
+            "administrative_division": "England",
+            "country": "United Kingdom",
+            "year": 2006
+        },
+        {
+            "developer": "Page 44 Studios",
+            "city": "San Francisco",
+            "administrative_division": "California",
+            "country": "United States",
+            "year": 1998
+        },
+        {
+            "developer": "Pangea Software",
+            "city": "Austin",
+            "administrative_division": "Texas",
+            "country": "United States",
+            "year": 1987
+        },
+        {
+            "developer": "Paradigm Entertainment",
+            "city": "Farmers Branch",
+            "administrative_division": "Texas",
+            "country": "United States",
+            "year": 1997
+        },
+        {
+            "developer": "People Can Fly",
+            "city": "Warsaw",
+            "administrative_division": "",
+            "country": "Poland",
+            "year": 2002
+        },
+        {
+            "developer": "Project Sora",
+            "city": "Tokyo",
+            "administrative_division": "",
+            "country": "Japan",
+            "year": 2009
+        },
+        {
+            "developer": "Purple Lamp Studios",
+            "city": "Vienna",
+            "administrative_division": "",
+            "country": "Austria",
+            "year": 2018
+        },
+        {
+            "developer": "Papaya Studio",
+            "city": "Irvine",
+            "administrative_division": "California",
+            "country": "United States",
+            "year": 1999
+        },
+        {
+            "developer": "Project Soul",
+            "city": "Tokyo",
+            "administrative_division": "",
+            "country": "Japan",
+            "year": 1996
+        },
+        {
+            "developer": "Panther Games Pty Ltd",
+            "city": "Canberra",
+            "administrative_division": "",
+            "country": "Australia",
+            "year": 1985
+        },
+        {
+            "developer": "Paradox Development Studio",
+            "city": "Stockholm",
+            "administrative_division": "",
+            "country": "Sweden",
+            "year": 1995
+        },
+        {
+            "developer": "Parallax Software",
+            "city": "Ann Arbor",
+            "administrative_division": "Michigan",
+            "country": "United States",
+            "year": 1993
+        },
+        {
+            "developer": "Pandemic Studios",
+            "city": "Los Angeles",
+            "administrative_division": "California",
+            "country": "United States",
+            "year": 1998
+        },
+        {
+            "developer": "Pendulo Studios",
+            "city": "Madrid",
+            "administrative_division": "",
+            "country": "Spain",
+            "year": 1993
+        },
+        {
+            "developer": "Penguin Software",
+            "city": "Geneva",
+            "administrative_division": "Illinois",
+            "country": "United States",
+            "year": 1978
+        },
+        {
+            "developer": "Perfect World",
+            "city": "Beijing",
+            "administrative_division": "",
+            "country": "China",
+            "year": 2004
+        },
+        {
+            "developer": "Petroglyph",
+            "city": "Las Vegas",
+            "administrative_division": "Nevada",
+            "country": "United States",
+            "year": 2003
+        },
+        {
+            "developer": "Phantagram",
+            "city": "Seoul",
+            "administrative_division": "",
+            "country": "South Korea",
+            "year": 1994
+        },
+        {
+            "developer": "Pipeworks Studios",
+            "city": "Eugene",
+            "administrative_division": "Oregon",
+            "country": "United States",
+            "year": 1999
+        },
+        {
+            "developer": "Piranha Bytes",
+            "city": "Essen",
+            "administrative_division": "",
+            "country": "Germany",
+            "year": 1997
+        },
+        {
+            "developer": "Piranha Games",
+            "city": "Vancouver",
+            "administrative_division": "British Columbia",
+            "country": "Canada",
+            "year": 2000
+        },
+        {
+            "developer": "Pi Studios",
+            "city": "Houston",
+            "administrative_division": "Texas",
+            "country": "United States",
+            "year": 2002
+        },
+        {
+            "developer": "Pivotal Games",
+            "city": "Bath",
+            "administrative_division": "England",
+            "country": "United Kingdom",
+            "year": 2000
+        },
+        {
+            "developer": "Pixel Federation",
+            "city": "Bratislava",
+            "administrative_division": "",
+            "country": "Slovakia",
+            "year": 2007
+        },
+        {
+            "developer": "Playdom",
+            "city": "San Francisco",
+            "administrative_division": "California",
+            "country": "United States",
+            "year": 2009
+        },
+        {
+            "developer": "Playfish",
+            "city": "London",
+            "administrative_division": "England",
+            "country": "United Kingdom",
+            "year": 2007
+        },
+        {
+            "developer": "PlayFirst",
+            "city": "San Francisco",
+            "administrative_division": "California",
+            "country": "United States",
+            "year": 2004
+        },
+        {
+            "developer": "Playground Games",
+            "city": "Royal Leamington Spa",
+            "administrative_division": "England",
+            "country": "United Kingdom",
+            "year": 2009
+        },
+        {
+            "developer": "PlatinumGames",
+            "city": "Osaka",
+            "administrative_division": "",
+            "country": "Japan",
+            "year": 2006
+        },
+        {
+            "developer": "Polyphony Digital",
+            "city": "Tokyo",
+            "administrative_division": "",
+            "country": "Japan",
+            "year": 1998
+        },
+        {
+            "developer": "PopCap Games",
+            "city": "Seattle",
+            "administrative_division": "Washington",
+            "country": "United States",
+            "year": 2000
+        },
+        {
+            "developer": "PopTop Software",
+            "city": "Fenton",
+            "administrative_division": "Missouri",
+            "country": "United States",
+            "year": 1993
+        },
+        {
+            "developer": "Press Play",
+            "city": "Copenhagen",
+            "administrative_division": "",
+            "country": "Denmark",
+            "year": 2006
+        },
+        {
+            "developer": "Private Division",
+            "city": "New York City",
+            "administrative_division": "New York",
+            "country": "United States",
+            "year": 2017
+        },
+        {
+            "developer": "Psyonix",
+            "city": "San Diego",
+            "administrative_division": "California",
+            "country": "United States",
+            "year": 2001
+        },
+        {
+            "developer": "PUBG Studios",
+            "city": "Seongnam",
+            "administrative_division": "",
+            "country": "South Korea",
+            "year": 2009
+        },
+        {
+            "developer": "Punch Entertainment",
+            "city": "Hanoi",
+            "administrative_division": "",
+            "country": "Vietnam",
+            "year": 2005
+        },
+        {
+            "developer": "Pyro Mobile",
+            "city": "Madrid",
+            "administrative_division": "",
+            "country": "Spain",
+            "year": 1996
+        },
+        {
+            "developer": "Q Entertainment",
+            "city": "Tokyo",
+            "administrative_division": "",
+            "country": "Japan",
+            "year": 2003
+        },
+        {
+            "developer": "Q-Games",
+            "city": "Nakagyō-ku",
+            "administrative_division": "",
+            "country": "Japan",
+            "year": 2001
+        },
+        {
+            "developer": "Quantic Dream",
+            "city": "Paris",
+            "administrative_division": "",
+            "country": "France",
+            "year": 1997
+        },
+        {
+            "developer": "Quest Corporation",
+            "city": "Tokyo",
+            "administrative_division": "",
+            "country": "Japan",
+            "year": 1988
+        },
+        {
+            "developer": "Quintet",
+            "city": "Tokyo",
+            "administrative_division": "",
+            "country": "Japan",
+            "year": 1989
+        },
+        {
+            "developer": "Radical Entertainment",
+            "city": "Vancouver",
+            "administrative_division": "",
+            "country": "Canada",
+            "year": 1991
+        },
+        {
+            "developer": "Rage Games",
+            "city": "Liverpool",
+            "administrative_division": "England",
+            "country": "United Kingdom",
+            "year": 1992
+        },
+        {
+            "developer": "Rainbow Studios",
+            "city": "Phoenix",
+            "administrative_division": "Arizona",
+            "country": "United States",
+            "year": 1996
+        },
+        {
+            "developer": "Rare",
+            "city": "Twycross",
+            "administrative_division": "England",
+            "country": "United Kingdom",
+            "year": 1985
+        },
+        {
+            "developer": "Raven Software",
+            "city": "Middleton",
+            "administrative_division": "Wisconsin",
+            "country": "United States",
+            "year": 1990
+        },
+        {
+            "developer": "RDI Video Systems",
+            "city": "Carlsbad",
+            "administrative_division": "California",
+            "country": "United States",
+            "year": 1982
+        },
+        {
+            "developer": "Ready at Dawn",
+            "city": "Irvine",
+            "administrative_division": "California",
+            "country": "United States",
+            "year": 2003
+        },
+        {
+            "developer": "Red Entertainment",
+            "city": "Tokyo",
+            "administrative_division": "",
+            "country": "Japan",
+            "year": 1976
+        },
+        {
+            "developer": "Reality Pump Studios",
+            "city": "Kraków",
+            "administrative_division": "",
+            "country": "Poland",
+            "year": 1995
+        },
+        {
+            "developer": "Realtime Associates",
+            "city": "Los Angeles",
+            "administrative_division": "California",
+            "country": "United States",
+            "year": 1986
+        },
+        {
+            "developer": "Realtime Worlds",
+            "city": "Dundee",
+            "administrative_division": "Scotland",
+            "country": "United Kingdom",
+            "year": 2002
+        },
+        {
+            "developer": "Rebellion Developments",
+            "city": "Oxford",
+            "administrative_division": "England",
+            "country": "United Kingdom",
+            "year": 1992
+        },
+        {
+            "developer": "Rebellion Warwick",
+            "city": "Leamington Spa",
+            "administrative_division": "England",
+            "country": "United Kingdom",
+            "year": 2013
+        },
+        {
+            "developer": "RedLynx",
+            "city": "Helsinki",
+            "administrative_division": "",
+            "country": "Finland",
+            "year": 2000
+        },
+        {
+            "developer": "Red Thread Games",
+            "city": "Oslo",
+            "administrative_division": "",
+            "country": "Norway",
+            "year": 2012
+        },
+        {
+            "developer": "Red Storm Entertainment",
+            "city": "Cary",
+            "administrative_division": "North Carolina",
+            "country": "United States",
+            "year": 1996
+        },
+        {
+            "developer": "RedTribe (Tribalant)",
+            "city": "Melbourne",
+            "administrative_division": "Victoria",
+            "country": "Australia",
+            "year": 2003
+        },
+        {
+            "developer": "Reflexive Entertainment",
+            "city": "Lake Forest",
+            "administrative_division": "California",
+            "country": "United States",
+            "year": 1997
+        },
+        {
+            "developer": "Relic Entertainment",
+            "city": "Vancouver",
+            "administrative_division": "British Columbia",
+            "country": "Canada",
+            "year": 1997
+        },
+        {
+            "developer": "Remedy Entertainment",
+            "city": "Espoo",
+            "administrative_division": "",
+            "country": "Finland",
+            "year": 1995
+        },
+        {
+            "developer": "Respawn Entertainment",
+            "city": "Sherman Oaks, Los Angeles",
+            "administrative_division": "California",
+            "country": "United States",
+            "year": 2010
+        },
+        {
+            "developer": "Reto-Moto",
+            "city": "Copenhagen",
+            "administrative_division": "",
+            "country": "Denmark",
+            "year": 2008
+        },
+        {
+            "developer": "Retro Studios",
+            "city": "Austin",
+            "administrative_division": "Texas",
+            "country": "United States",
+            "year": 1998
+        },
+        {
+            "developer": "Revolution Software",
+            "city": "York",
+            "administrative_division": "England",
+            "country": "United Kingdom",
+            "year": 1990
+        },
+        {
+            "developer": "Riot Games",
+            "city": "Santa Monica",
+            "administrative_division": "California",
+            "country": "United States",
+            "year": 2006
+        },
+        {
+            "developer": "Rising Star Games",
+            "city": "Luton",
+            "administrative_division": "England",
+            "country": "United Kingdom",
+            "year": 2004
+        },
+        {
+            "developer": "Robomodo",
+            "city": "Chicago",
+            "administrative_division": "Illinois",
+            "country": "United States",
+            "year": 2008
+        },
+        {
+            "developer": "Robot Entertainment",
+            "city": "Plano",
+            "administrative_division": "Texas",
+            "country": "United States",
+            "year": 2009
+        },
+        {
+            "developer": "Rockstar Games",
+            "city": "",
+            "administrative_division": "",
+            "country": "United States",
+            "year": 1998
+        },
+        {
+            "developer": "Rockstar India",
+            "city": "",
+            "administrative_division": "",
+            "country": "India",
+            "year": 2016
+        },
+        {
+            "developer": "Rockstar Leeds",
+            "city": "",
+            "administrative_division": "",
+            "country": "United Kingdom",
+            "year": 2004
+        },
+        {
+            "developer": "Rockstar Lincoln",
+            "city": "",
+            "administrative_division": "",
+            "country": "United Kingdom",
+            "year": 2002
+        },
+        {
+            "developer": "Rockstar London",
+            "city": "",
+            "administrative_division": "",
+            "country": "United Kingdom",
+            "year": 2005
+        },
+        {
+            "developer": "Rockstar New England",
+            "city": "",
+            "administrative_division": "",
+            "country": "United States",
+            "year": 2008
+        },
+        {
+            "developer": "Rockstar North",
+            "city": "",
+            "administrative_division": "",
+            "country": "Scotland",
+            "year": 2002
+        },
+        {
+            "developer": "Rockstar Sand Diego",
+            "city": "",
+            "administrative_division": "",
+            "country": "United States",
+            "year": 2002
+        },
+        {
+            "developer": "Rockstar Toronto",
+            "city": "",
+            "administrative_division": "",
+            "country": "Canada",
+            "year": 1999
+        },
+        {
+            "developer": "Rockstar Dundee",
+            "city": "Dundee",
+            "administrative_division": "Scotland",
+            "country": "United Kingdom",
+            "year": 2008
+        },
+        {
+            "developer": "Rocksteady Studios",
+            "city": "London",
+            "administrative_division": "England",
+            "country": "United Kingdom",
+            "year": 2005
+        },
+        {
+            "developer": "Robinson Technologies",
+            "city": "Hiroshima",
+            "administrative_division": "",
+            "country": "Japan",
+            "year": 1989
+        },
+        {
+            "developer": "Romero Games",
+            "city": "Galway",
+            "administrative_division": "",
+            "country": "Ireland",
+            "year": 2015
+        },
+        {
+            "developer": "Rovio Entertainment",
+            "city": "Espoo",
+            "administrative_division": "",
+            "country": "Finland",
+            "year": 2003
+        },
+        {
+            "developer": "Runic Games",
+            "city": "Seattle",
+            "administrative_division": "Washington",
+            "country": "United States",
+            "year": 2008
+        },
+        {
+            "developer": "Running with Scissors",
+            "city": "Tucson",
+            "administrative_division": "Arizona",
+            "country": "United States",
+            "year": 1997
+        },
+        {
+            "developer": "Saber Interactive",
+            "city": "Millburn",
+            "administrative_division": "New Jersey",
+            "country": "United States",
+            "year": 2001
+        },
+        {
+            "developer": "Sandlot",
+            "city": "Tokyo",
+            "administrative_division": "",
+            "country": "Japan",
+            "year": 2001
+        },
+        {
+            "developer": "Sanzaru Games",
+            "city": "Foster City",
+            "administrative_division": "California",
+            "country": "United States",
+            "year": 2006
+        },
+        {
+            "developer": "Sir-Tech",
+            "city": "Ogdensburg",
+            "administrative_division": "New York",
+            "country": "United States",
+            "year": 1979
+        },
+        {
+            "developer": "Schell Games",
+            "city": "Pittsburgh",
+            "administrative_division": "Pennsylvania",
+            "country": "United States",
+            "year": 2002
+        },
+        {
+            "developer": "SCS Software",
+            "city": "Prague",
+            "administrative_division": "",
+            "country": "Czech Republic",
+            "year": 1997
+        },
+        {
+            "developer": "Sega",
+            "city": "Tokyo",
+            "administrative_division": "",
+            "country": "Japan",
+            "year": 1960
+        },
+        {
+            "developer": "Sensible Software",
+            "city": "Cambridge",
+            "administrative_division": "England",
+            "country": "United Kingdom",
+            "year": 1986
+        },
+        {
+            "developer": "Bend Studio",
+            "city": "Bend",
+            "administrative_division": "Oregon",
+            "country": "United States",
+            "year": 1993
+        },
+        {
+            "developer": "San Mateo Studio (formerly Foster City Studio)",
+            "city": "San Mateo",
+            "administrative_division": "California",
+            "country": "United States",
+            "year": 1998
+        },
+        {
+            "developer": "Japan Studio",
+            "city": "Tokyo",
+            "administrative_division": "",
+            "country": "Japan",
+            "year": 1993
+        },
+        {
+            "developer": "London Studio",
+            "city": "London",
+            "administrative_division": "England",
+            "country": "United Kingdom",
+            "year": 2002
+        },
+        {
+            "developer": "San Diego Studio",
+            "city": "San Diego",
+            "administrative_division": "California",
+            "country": "United States",
+            "year": 2001
+        },
+        {
+            "developer": "Santa Monica Studio",
+            "city": "Los Angeles",
+            "administrative_division": "California",
+            "country": "United States",
+            "year": 1999
+        },
+        {
+            "developer": "Studio Liverpool",
+            "city": "Liverpool",
+            "administrative_division": "England",
+            "country": "United Kingdom",
+            "year": 1984
+        },
+        {
+            "developer": "Shaba Games",
+            "city": "San Francisco",
+            "administrative_division": "California",
+            "country": "United States",
+            "year": 1997
+        },
+        {
+            "developer": "SIE Worldwide Studios",
+            "city": "Tokyo, Fukuoka, Santa Monica, Los Angeles, San Diego, Bend, Amsterdam, London, Guildford, Cambridge",
+            "administrative_division": "California, Washington, Oregon, England",
+            "country": "Japan",
+            "year": 2005
+        },
+        {
+            "developer": "SingleTrac",
+            "city": "Salt Lake City",
+            "administrative_division": "Utah",
+            "country": "United States",
+            "year": 1994
+        },
+        {
+            "developer": "Shengqu Games",
+            "city": "Shanghai",
+            "administrative_division": "",
+            "country": "China",
+            "year": 1999
+        },
+        {
+            "developer": "Sherman3D",
+            "city": "Petaling Jaya",
+            "administrative_division": "",
+            "country": "Malaysia",
+            "year": 2003
+        },
+        {
+            "developer": "Shin'en Multimedia",
+            "city": "Munich",
+            "administrative_division": "",
+            "country": "Germany",
+            "year": 1999
+        },
+        {
+            "developer": "Sierra Entertainment",
+            "city": "Oakhurst",
+            "administrative_division": "California",
+            "country": "United States",
+            "year": 1979
+        },
+        {
+            "developer": "Silicon Knights",
+            "city": "St. Catharines",
+            "administrative_division": "Ontario",
+            "country": "Canada",
+            "year": 1992
+        },
+        {
+            "developer": "Silicon Studio",
+            "city": "Tokyo",
+            "administrative_division": "",
+            "country": "Japan",
+            "year": 2000
+        },
+        {
+            "developer": "Simtex",
+            "city": "Austin",
+            "administrative_division": "Texas",
+            "country": "United States",
+            "year": 1988
+        },
+        {
+            "developer": "skip Ltd.",
+            "city": "Tokyo",
+            "administrative_division": "",
+            "country": "Japan",
+            "year": 2000
+        },
+        {
+            "developer": "SkyBox Labs",
+            "city": "Burnaby",
+            "administrative_division": "British Columbia",
+            "country": "Canada",
+            "year": 2011
+        },
+        {
+            "developer": "Slant Six Games",
+            "city": "Vancouver",
+            "administrative_division": "British Columbia",
+            "country": "Canada",
+            "year": 2005
+        },
+        {
+            "developer": "Sledgehammer Games",
+            "city": "Foster City",
+            "administrative_division": "California",
+            "country": "United States",
+            "year": 2009
+        },
+        {
+            "developer": "Snail",
+            "city": "Suzhou",
+            "administrative_division": "",
+            "country": "China",
+            "year": 2000
+        },
+        {
+            "developer": "Snapshot Games",
+            "city": "Sofia",
+            "administrative_division": "",
+            "country": "Bulgaria",
+            "year": 2013
+        },
+        {
+            "developer": "Slightly Mad Studios",
+            "city": "London",
+            "administrative_division": "England",
+            "country": "United Kingdom",
+            "year": 2008
+        },
+        {
+            "developer": "Slipgate Ironworks",
+            "city": "Aars",
+            "administrative_division": "",
+            "country": "Denmark",
+            "year": 2017
+        },
+        {
+            "developer": "Slitherine Software",
+            "city": "Epsom",
+            "administrative_division": "England",
+            "country": "United Kingdom",
+            "year": 2000
+        },
+        {
+            "developer": "Smilegate",
+            "city": "Seoul",
+            "administrative_division": "",
+            "country": "South Korea",
+            "year": 2002
+        },
+        {
+            "developer": "SNK",
+            "city": "Osaka",
+            "administrative_division": "",
+            "country": "Japan",
+            "year": 2001
+        },
+        {
+            "developer": "Sobee Studios",
+            "city": "Istanbul",
+            "administrative_division": "",
+            "country": "Turkey",
+            "year": 2000
+        },
+        {
+            "developer": "Snowblind Studios",
+            "city": "Seattle",
+            "administrative_division": "Washington",
+            "country": "United States",
+            "year": 1997
+        },
+        {
+            "developer": "Software 2000",
+            "city": "Eutin",
+            "administrative_division": "",
+            "country": "Germany",
+            "year": 1987
+        },
+        {
+            "developer": "Sony Interactive Entertainment",
+            "city": "Tokyo (SIE, Inc.)San Mateo (SIE, LLC)",
+            "administrative_division": "Japan (SIE, Inc.)California (SIE, LLC)",
+            "country": "United States",
+            "year": 1994
+        },
+        {
+            "developer": "Sora Ltd.",
+            "city": "Tokyo",
+            "administrative_division": "",
+            "country": "Japan",
+            "year": 2005
+        },
+        {
+            "developer": "Spellbound Entertainment",
+            "city": "Offenburg",
+            "administrative_division": "",
+            "country": "Germany",
+            "year": 1994
+        },
+        {
+            "developer": "Spiders",
+            "city": "Paris",
+            "administrative_division": "",
+            "country": "France",
+            "year": 2008
+        },
+        {
+            "developer": "Spike",
+            "city": "Tokyo",
+            "administrative_division": "",
+            "country": "Japan",
+            "year": 1991
+        },
+        {
+            "developer": "Spike Chunsoft",
+            "city": "Tokyo",
+            "administrative_division": "",
+            "country": "Japan",
+            "year": 2012
+        },
+        {
+            "developer": "Spil Games",
+            "city": "Hilversum",
+            "administrative_division": "",
+            "country": "Netherlands",
+            "year": 2001
+        },
+        {
+            "developer": "Splash Damage",
+            "city": "London",
+            "administrative_division": "England",
+            "country": "United Kingdom",
+            "year": 2001
+        },
+        {
+            "developer": "Sports Interactive",
+            "city": "London",
+            "administrative_division": "England",
+            "country": "United Kingdom",
+            "year": 1994
+        },
+        {
+            "developer": "Sproing Interactive Media",
+            "city": "Vienna",
+            "administrative_division": "",
+            "country": "Austria",
+            "year": 2001
+        },
+        {
+            "developer": "Square Enix",
+            "city": "Shinjuku, Tokyo",
+            "administrative_division": "",
+            "country": "Japan",
+            "year": 1975
+        },
+        {
+            "developer": "Squad",
+            "city": "Mexico City",
+            "administrative_division": "",
+            "country": "Mexico",
+            "year": 2009
+        },
+        {
+            "developer": "Stainless Games",
+            "city": "Newport",
+            "administrative_division": "England",
+            "country": "United Kingdom",
+            "year": 1993
+        },
+        {
+            "developer": "Stainless Steel Studios",
+            "city": "Cambridge",
+            "administrative_division": "Massachusetts",
+            "country": "United States",
+            "year": 1998
+        },
+        {
+            "developer": "Starbreeze Studios",
+            "city": "Uppsala",
+            "administrative_division": "",
+            "country": "Sweden",
+            "year": 1998
+        },
+        {
+            "developer": "Stardock",
+            "city": "Plymouth",
+            "administrative_division": "Michigan",
+            "country": "United States",
+            "year": 1991
+        },
+        {
+            "developer": "Sting Entertainment",
+            "city": "Tokyo",
+            "administrative_division": "",
+            "country": "Japan",
+            "year": 1989
+        },
+        {
+            "developer": "Strategic Simulations",
+            "city": "Sunnyvale",
+            "administrative_division": "California",
+            "country": "United States",
+            "year": 1979
+        },
+        {
+            "developer": "Stoic Studio",
+            "city": "Austin",
+            "administrative_division": "Texas",
+            "country": "United States",
+            "year": 2011
+        },
+        {
+            "developer": "Strawdog Studios",
+            "city": "Derby",
+            "administrative_division": "England",
+            "country": "United Kingdom",
+            "year": 2003
+        },
+        {
+            "developer": "Straylight Studios",
+            "city": "Dunedin",
+            "administrative_division": "",
+            "country": "New Zealand",
+            "year": 2004
+        },
+        {
+            "developer": "Streamline Studios",
+            "city": "Kuala Lumpur",
+            "administrative_division": "",
+            "country": "Malaysia",
+            "year": 2001
+        },
+        {
+            "developer": "Success",
+            "city": "Tokyo",
+            "administrative_division": "",
+            "country": "Japan",
+            "year": 1978
+        },
+        {
+            "developer": "Sucker Punch Productions",
+            "city": "Bellevue",
+            "administrative_division": "Washington",
+            "country": "United States",
+            "year": 1997
+        },
+        {
+            "developer": "Sumo Digital",
+            "city": "Sheffield",
+            "administrative_division": "England",
+            "country": "United Kingdom",
+            "year": 2003
+        },
+        {
+            "developer": "Sunsoft",
+            "city": "Kōnan",
+            "administrative_division": "Aichi",
+            "country": "Japan",
+            "year": 1978
+        },
+        {
+            "developer": "Supercell",
+            "city": "Helsinki",
+            "administrative_division": "",
+            "country": "Finland",
+            "year": 2010
+        },
+        {
+            "developer": "Supermassive Games",
+            "city": "Guildford",
+            "administrative_division": "England",
+            "country": "United Kingdom",
+            "year": 2008
+        },
+        {
+            "developer": "Supergiant Games",
+            "city": "San Francisco",
+            "administrative_division": "California",
+            "country": "United States",
+            "year": 2009
+        },
+        {
+            "developer": "SuperVillain Studios",
+            "city": "Orange County",
+            "administrative_division": "California",
+            "country": "United States",
+            "year": 2004
+        },
+        {
+            "developer": "Survios",
+            "city": "Los Angeles",
+            "administrative_division": "California",
+            "country": "United States",
+            "year": 2013
+        },
+        {
+            "developer": "Studio Wildcard",
+            "city": "Kirkland",
+            "administrative_division": "Washington",
+            "country": "United States",
+            "year": 2014
+        },
+        {
+            "developer": "Swordfish Studios",
+            "city": "Birmingham",
+            "administrative_division": "England",
+            "country": "United Kingdom",
+            "year": 2002
+        },
+        {
+            "developer": "Swingin' Ape Studios",
+            "city": "Aliso Viejo",
+            "administrative_division": "California",
+            "country": "United States",
+            "year": 2000
+        },
+        {
+            "developer": "StormRegion",
+            "city": "Budapest",
+            "administrative_division": "",
+            "country": "Hungary",
+            "year": 2001
+        },
+        {
+            "developer": "Sunstorm Interactive",
+            "city": "Indianapolis",
+            "administrative_division": "Indiana",
+            "country": "United States",
+            "year": 1995
+        },
+        {
+            "developer": "Syn Sophia",
+            "city": "Tokyo",
+            "administrative_division": "",
+            "country": "Japan",
+            "year": 1995
+        },
+        {
+            "developer": "SystemSoft Beta",
+            "city": "Tokyo",
+            "administrative_division": "",
+            "country": "Japan",
+            "year": 1999
+        },
+        {
+            "developer": "Taito",
+            "city": "Shinjuku, Tokyo",
+            "administrative_division": "",
+            "country": "Japan",
+            "year": 1953
+        },
+        {
+            "developer": "Tango Gameworks",
+            "city": "Minato, Tokyo",
+            "administrative_division": "",
+            "country": "Japan",
+            "year": 2010
+        },
+        {
+            "developer": "Tag Games",
+            "city": "Dundee",
+            "administrative_division": "Scotland",
+            "country": "United Kingdom",
+            "year": 2006
+        },
+        {
+            "developer": "TaleWorlds Entertainment",
+            "city": "Ankara",
+            "administrative_division": "",
+            "country": "Turkey",
+            "year": 2005
+        },
+        {
+            "developer": "Tamsoft",
+            "city": "Asakusa",
+            "administrative_division": "",
+            "country": "Japan",
+            "year": 1992
+        },
+        {
+            "developer": "T&E Soft",
+            "city": "",
+            "administrative_division": "Aichi",
+            "country": "Japan",
+            "year": 1982
+        },
+        {
+            "developer": "Tantalus Media",
+            "city": "Melbourne",
+            "administrative_division": "Victoria",
+            "country": "Australia",
+            "year": 1994
+        },
+        {
+            "developer": "Tarsier Studios",
+            "city": "Malmö",
+            "administrative_division": "",
+            "country": "Sweden",
+            "year": 2004
+        },
+        {
+            "developer": "Tate Multimedia",
+            "city": "Warsaw",
+            "administrative_division": "",
+            "country": "Poland",
+            "year": 2002
+        },
+        {
+            "developer": "Team17",
+            "city": "Ossett",
+            "administrative_division": "England",
+            "country": "United Kingdom",
+            "year": 1990
+        },
+        {
+            "developer": "Team Asobi",
+            "city": "Tokyo",
+            "administrative_division": "",
+            "country": "Japan",
+            "year": 2012
+        },
+        {
+            "developer": "Team Bondi",
+            "city": "Sydney",
+            "administrative_division": "New South Wales",
+            "country": "Australia",
+            "year": 2003
+        },
+        {
+            "developer": "Team Ico",
+            "city": "Tokyo",
+            "administrative_division": "",
+            "country": "Japan",
+            "year": 1997
+        },
+        {
+            "developer": "Team Ninja",
+            "city": "Tokyo",
+            "administrative_division": "",
+            "country": "Japan",
+            "year": 1995
+        },
+        {
+            "developer": "Techland",
+            "city": "Wrocław, Warszawa",
+            "administrative_division": "",
+            "country": "Poland",
+            "year": 1991
+        },
+        {
+            "developer": "Tecmo",
+            "city": "Tokyo",
+            "administrative_division": "",
+            "country": "Japan",
+            "year": 1967
+        },
+        {
+            "developer": "Telltale Games",
+            "city": "San Rafael",
+            "administrative_division": "California",
+            "country": "United States",
+            "year": 2004
+        },
+        {
+            "developer": "Tencent",
+            "city": "Shenzhen",
+            "administrative_division": "",
+            "country": "China",
+            "year": 1998
+        },
+        {
+            "developer": "Tencent Games",
+            "city": "Shenzhen",
+            "administrative_division": "",
+            "country": "China",
+            "year": 2003
+        },
+        {
+            "developer": "Tequila Works",
+            "city": "Madrid",
+            "administrative_division": "",
+            "country": "Spain",
+            "year": 2009
+        },
+        {
+            "developer": "Terminal Reality",
+            "city": "Lewisville",
+            "administrative_division": "Texas",
+            "country": "United States",
+            "year": 1994
+        },
+        {
+            "developer": "Tetris Online",
+            "city": "Honolulu",
+            "administrative_division": "Hawaii",
+            "country": "United States",
+            "year": 2006
+        },
+        {
+            "developer": "Teyon",
+            "city": "Kraków",
+            "administrative_division": "",
+            "country": "Poland",
+            "year": 2006
+        },
+        {
+            "developer": "Thatgamecompany",
+            "city": "Santa Monica",
+            "administrative_division": "California",
+            "country": "United States",
+            "year": 2006
+        },
+        {
+            "developer": "The Chinese Room",
+            "city": "Brighton",
+            "administrative_division": "England",
+            "country": "United Kingdom",
+            "year": 2007
+        },
+        {
+            "developer": "The Coalition",
+            "city": "Vancouver",
+            "administrative_division": "",
+            "country": "Canada",
+            "year": 2010
+        },
+        {
+            "developer": "The Farm 51",
+            "city": "Gliwice",
+            "administrative_division": "",
+            "country": "Poland",
+            "year": 2005
+        },
+        {
+            "developer": "The Initiative",
+            "city": "Santa Monica",
+            "administrative_division": "California",
+            "country": "United States",
+            "year": 2018
+        },
+        {
+            "developer": "THQ",
+            "city": "Agoura Hills",
+            "administrative_division": "California",
+            "country": "United States",
+            "year": 1989
+        },
+        {
+            "developer": "THQ Nordic",
+            "city": "Vienna",
+            "administrative_division": "",
+            "country": "Austria",
+            "year": 2011
+        },
+        {
+            "developer": "Three Fields Entertainment",
+            "city": "Petersfield",
+            "administrative_division": "England",
+            "country": "United Kingdom",
+            "year": 2014
+        },
+        {
+            "developer": "Three Rings Design",
+            "city": "San Francisco",
+            "administrative_division": "California",
+            "country": "United States",
+            "year": 2001
+        },
+        {
+            "developer": "TimeGate Studios",
+            "city": "Sugar Land",
+            "administrative_division": "Texas",
+            "country": "United States",
+            "year": 1998
+        },
+        {
+            "developer": "TiMi Studios",
+            "city": "Shenzhen",
+            "administrative_division": "",
+            "country": "China",
+            "year": 2008
+        },
+        {
+            "developer": "Toaplan",
+            "city": "Tokyo",
+            "administrative_division": "",
+            "country": "Japan",
+            "year": 1984
+        },
+        {
+            "developer": "Toby Fox",
+            "city": "",
+            "administrative_division": "",
+            "country": "United States",
+            "year": 2015
+        },
+        {
+            "developer": "ToeJam & Earl Productions",
+            "city": "San Francisco",
+            "administrative_division": "California",
+            "country": "United States",
+            "year": 1989
+        },
+        {
+            "developer": "Tokyo RPG Factory",
+            "city": "Tokyo",
+            "administrative_division": "",
+            "country": "Japan",
+            "year": 2014
+        },
+        {
+            "developer": "Toolworks",
+            "city": "Novato",
+            "administrative_division": "California",
+            "country": "United States",
+            "year": 1980
+        },
+        {
+            "developer": "TopWare Interactive",
+            "city": "Karlsruhe",
+            "administrative_division": "",
+            "country": "Germany",
+            "year": 1995
+        },
+        {
+            "developer": "Torpex Games",
+            "city": "Bellevue",
+            "administrative_division": "Washington",
+            "country": "United States",
+            "year": 2005
+        },
+        {
+            "developer": "Torus Games",
+            "city": "Bayswater",
+            "administrative_division": "Victoria",
+            "country": "Australia",
+            "year": 1994
+        },
+        {
+            "developer": "Tose",
+            "city": "Kyoto",
+            "administrative_division": "",
+            "country": "Japan",
+            "year": 1979
+        },
+        {
+            "developer": "Toys for Bob",
+            "city": "Novato",
+            "administrative_division": "California",
+            "country": "United States",
+            "year": 1989
+        },
+        {
+            "developer": "Trapdoor",
+            "city": "Montreal",
+            "administrative_division": "Quebec",
+            "country": "Canada",
+            "year": 2010
+        },
+        {
+            "developer": "Transmission Games",
+            "city": "Melbourne",
+            "administrative_division": "Victoria",
+            "country": "Australia",
+            "year": 1996
+        },
+        {
+            "developer": "Traveller's Tales",
+            "city": "Knutsford",
+            "administrative_division": "England",
+            "country": "United Kingdom",
+            "year": 1990
+        },
+        {
+            "developer": "Treyarch",
+            "city": "Santa Monica",
+            "administrative_division": "California",
+            "country": "United States",
+            "year": 1996
+        },
+        {
+            "developer": "Treasure",
+            "city": "Tokyo",
+            "administrative_division": "",
+            "country": "Japan",
+            "year": 1992
+        },
+        {
+            "developer": "tri-Ace",
+            "city": "Tokyo",
+            "administrative_division": "",
+            "country": "Japan",
+            "year": 1995
+        },
+        {
+            "developer": "tri-Crescendo",
+            "city": "Tokyo",
+            "administrative_division": "",
+            "country": "Japan",
+            "year": 1999
+        },
+        {
+            "developer": "Trion Worlds",
+            "city": "Redwood City",
+            "administrative_division": "California",
+            "country": "United States",
+            "year": 2006
+        },
+        {
+            "developer": "Tripwire Interactive",
+            "city": "Roswell",
+            "administrative_division": "Georgia",
+            "country": "United States",
+            "year": 2005
+        },
+        {
+            "developer": "Triumph Studios",
+            "city": "Delft",
+            "administrative_division": "",
+            "country": "Netherlands",
+            "year": 1997
+        },
+        {
+            "developer": "Turn 10 Studios",
+            "city": "Redmond",
+            "administrative_division": "Washington",
+            "country": "United States",
+            "year": 2001
+        },
+        {
+            "developer": "Turtle Rock Studios",
+            "city": "Lake Forest",
+            "administrative_division": "California",
+            "country": "United States",
+            "year": 2002
+        },
+        {
+            "developer": "Two Point Studios",
+            "city": "Farnham, Surrey",
+            "administrative_division": "England",
+            "country": "United Kingdom",
+            "year": 2016
+        },
+        {
+            "developer": "Two Tribes",
+            "city": "Amersfoort",
+            "administrative_division": "",
+            "country": "Netherlands",
+            "year": 2000
+        },
+        {
+            "developer": "Typhoon Games (HK)",
+            "city": "Hong Kong SAR",
+            "administrative_division": "",
+            "country": "China",
+            "year": 2001
+        },
+        {
+            "developer": "Ubisoft",
+            "city": "Montreuil-sous-Bois",
+            "administrative_division": "",
+            "country": "France",
+            "year": 1986
+        },
+        {
+            "developer": "Ubisoft Blue Byte",
+            "city": "Düsseldorf",
+            "administrative_division": "",
+            "country": "Germany",
+            "year": 1988
+        },
+        {
+            "developer": "Ubisoft Leamington",
+            "city": "Leamington Spa",
+            "administrative_division": "England",
+            "country": "United Kingdom",
+            "year": 2002
+        },
+        {
+            "developer": "Ubisoft Reflections",
+            "city": "Newcastle upon Tyne",
+            "administrative_division": "England",
+            "country": "United Kingdom",
+            "year": 1984
+        },
+        {
+            "developer": "UEP Systems",
+            "city": "Tokyo",
+            "administrative_division": "",
+            "country": "Japan",
+            "year": 1985
+        },
+        {
+            "developer": "Ultimate Play the Game",
+            "city": "Ashby-de-la-Zouch",
+            "administrative_division": "England",
+            "country": "United Kingdom",
+            "year": 1982
+        },
+        {
+            "developer": "Undead Labs",
+            "city": "Seattle",
+            "administrative_division": "Washington",
+            "country": "United States",
+            "year": 2009
+        },
+        {
+            "developer": "Underground Development",
+            "city": "Foster City",
+            "administrative_division": "California",
+            "country": "United States",
+            "year": 1994
+        },
+        {
+            "developer": "United Front Games",
+            "city": "Vancouver",
+            "administrative_division": "British Columbia",
+            "country": "Canada",
+            "year": 2006
+        },
+        {
+            "developer": "United Game Artists",
+            "city": "Tokyo",
+            "administrative_division": "",
+            "country": "Japan",
+            "year": 1996
+        },
+        {
+            "developer": "Universomo",
+            "city": "Tampere",
+            "administrative_division": "",
+            "country": "Finland",
+            "year": 2002
+        },
+        {
+            "developer": "Unknown Worlds Entertainment",
+            "city": "San Francisco",
+            "administrative_division": "California",
+            "country": "United States",
+            "year": 2001
+        },
+        {
+            "developer": "Valhalla Game Studios",
+            "city": "Tokyo",
+            "administrative_division": "",
+            "country": "Japan",
+            "year": 2008
+        },
+        {
+            "developer": "Valve",
+            "city": "Kirkland",
+            "administrative_division": "Washington",
+            "country": "United States",
+            "year": 1996
+        },
+        {
+            "developer": "Vanillaware",
+            "city": "Chūō-ku, Osaka",
+            "administrative_division": "",
+            "country": "Japan",
+            "year": 2002
+        },
+        {
+            "developer": "Vanpool",
+            "city": "Tokyo",
+            "administrative_division": "",
+            "country": "Japan",
+            "year": 1999
+        },
+        {
+            "developer": "Venan Entertainment",
+            "city": "Cromwell",
+            "administrative_division": "Connecticut",
+            "country": "United States",
+            "year": 2002
+        },
+        {
+            "developer": "Vic Tokai",
+            "city": "",
+            "administrative_division": "Shizuoka",
+            "country": "Japan",
+            "year": 1984
+        },
+        {
+            "developer": "Vicarious Visions",
+            "city": "Albany (Menands)",
+            "administrative_division": "New York",
+            "country": "United States",
+            "year": 1990
+        },
+        {
+            "developer": "Vigil Games",
+            "city": "Austin",
+            "administrative_division": "Texas",
+            "country": "United States",
+            "year": 2005
+        },
+        {
+            "developer": "Virtual Heroes",
+            "city": "Raleigh",
+            "administrative_division": "North Carolina",
+            "country": "United States",
+            "year": 2004
+        },
+        {
+            "developer": "Virtuos",
+            "city": "",
+            "administrative_division": "",
+            "country": "Singapore",
+            "year": 2004
+        },
+        {
+            "developer": "Visceral Games",
+            "city": "Redwood City",
+            "administrative_division": "California",
+            "country": "United States",
+            "year": 1998
+        },
+        {
+            "developer": "Visual Concepts",
+            "city": "Novato",
+            "administrative_division": "California",
+            "country": "United States",
+            "year": 1988
+        },
+        {
+            "developer": "Vostok Games",
+            "city": "Kyiv",
+            "administrative_division": "",
+            "country": "Ukraine",
+            "year": 2012
+        },
+        {
+            "developer": "VoxelStorm",
+            "city": "Manchester",
+            "administrative_division": "England",
+            "country": "United Kingdom",
+            "year": 2012
+        },
+        {
+            "developer": "Wahoo Studios",
+            "city": "Orem",
+            "administrative_division": "Utah",
+            "country": "United States",
+            "year": 2001
+        },
+        {
+            "developer": "Warhorse Studios",
+            "city": "Prague",
+            "administrative_division": "",
+            "country": "Czech Republic",
+            "year": 2011
+        },
+        {
+            "developer": "Wargaming",
+            "city": "Nicosia",
+            "administrative_division": "",
+            "country": "Cyprus",
+            "year": 1998
+        },
+        {
+            "developer": "Lesta Studio (formerly Wargaming Saint Petersburg)",
+            "city": "Saint Petersburg",
+            "administrative_division": "",
+            "country": "Russia",
+            "year": 1991
+        },
+        {
+            "developer": "Wargaming Seattle",
+            "city": "Redmond",
+            "administrative_division": "Washington",
+            "country": "United States",
+            "year": 1998
+        },
+        {
+            "developer": "Warner Bros. Interactive Entertainment",
+            "city": "Chicago",
+            "administrative_division": "Illinois",
+            "country": "United States",
+            "year": 1988
+        },
+        {
+            "developer": "WB Games Boston (formerly Turbine)",
+            "city": "Needham",
+            "administrative_division": "Massachusetts",
+            "country": "United States",
+            "year": 1994
+        },
+        {
+            "developer": "WB Games - Avalanche (formerly Avalanche Software)",
+            "city": "Salt Lake City",
+            "administrative_division": "Utah",
+            "country": "United States",
+            "year": 1995
+        },
+        {
+            "developer": "Webfoot Technologies",
+            "city": "Chicago",
+            "administrative_division": "Illinois",
+            "country": "United States",
+            "year": 1993
+        },
+        {
+            "developer": "WeMade",
+            "city": "Seoul",
+            "administrative_division": "",
+            "country": "South Korea",
+            "year": 2000
+        },
+        {
+            "developer": "Westone Bit Entertainment",
+            "city": "Tokyo",
+            "administrative_division": "",
+            "country": "Japan",
+            "year": 1986
+        },
+        {
+            "developer": "Westwood Studios",
+            "city": "Las Vegas",
+            "administrative_division": "Nevada",
+            "country": "United States",
+            "year": 1985
+        },
+        {
+            "developer": "Wideload Games",
+            "city": "Chicago",
+            "administrative_division": "Illinois",
+            "country": "United States",
+            "year": 2003
+        },
+        {
+            "developer": "Wildfire Studios",
+            "city": "Brisbane",
+            "administrative_division": "Queensland",
+            "country": "Australia",
+            "year": 1995
+        },
+        {
+            "developer": "Wizet studio (Nexon development 1st division)",
+            "city": "Seoul",
+            "administrative_division": "",
+            "country": "South Korea",
+            "year": 1999
+        },
+        {
+            "developer": "Wolfire Games",
+            "city": "Berkeley",
+            "administrative_division": "California",
+            "country": "United States",
+            "year": 2003
+        },
+        {
+            "developer": "World Forge",
+            "city": "Voronezh",
+            "administrative_division": "",
+            "country": "Russia",
+            "year": 2004
+        },
+        {
+            "developer": "Xbox Game Studios",
+            "city": "Redmond",
+            "administrative_division": "Washington",
+            "country": "United States",
+            "year": 2002
+        },
+        {
+            "developer": "XPEC Entertainment",
+            "city": "Taipei",
+            "administrative_division": "",
+            "country": "Taiwan",
+            "year": 2000
+        },
+        {
+            "developer": "Yager Development",
+            "city": "Berlin",
+            "administrative_division": "",
+            "country": "Germany",
+            "year": 1999
+        },
+        {
+            "developer": "Yuke's",
+            "city": "Osaka",
+            "administrative_division": "",
+            "country": "Japan",
+            "year": 1993
+        },
+        {
+            "developer": "ZeniMax Online Studios",
+            "city": "Hunt Valley",
+            "administrative_division": "Maryland",
+            "country": "United States",
+            "year": 2007
+        },
+        {
+            "developer": "Zen Studios",
+            "city": "Budapest",
+            "administrative_division": "",
+            "country": "Hungary",
+            "year": 2003
+        },
+        {
+            "developer": "Zipper Interactive",
+            "city": "Redmond",
+            "administrative_division": "Washington",
+            "country": "United States",
+            "year": 1995
+        },
+        {
+            "developer": "Zombie Studios",
+            "city": "Seattle",
+            "administrative_division": "Washington",
+            "country": "United States",
+            "year": 1994
+        },
+        {
+            "developer": "ZootFly",
+            "city": "Ljubljana",
+            "administrative_division": "",
+            "country": "Slovenia",
+            "year": 2002
+        },
+        {
+            "developer": "Zynga",
+            "city": "San Francisco",
+            "administrative_division": "California",
+            "country": "United States",
+            "year": 2007
+        }
+    ]
+}

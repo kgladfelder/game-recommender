@@ -43,30 +43,40 @@ model System {
   name        String       @unique
   company     Company      @relation(fields: [companyId], references: [id])
   companyId   String
+  usReleaseDate DateTime?
+  euReleaseDate DateTime?
+  jpReleaseDate DateTime?
   gameSystems GameSystem[]
 }
 
 model Company {
   id      String   @id @default(uuid())
   name    String   @unique
+  foundingDate DateTime?
   systems System[]
 }
 
 model Genre {
   id         String      @id @default(uuid())
-  name       String
+  name       String      @unique
   gameGenres GameGenre[]
 }
 
 model Publisher {
   id    String @id @default(uuid())
-  name  String
+  name  String @unique
+  foundingDate DateTime?
+  countryId String
+  country Country @relation(fields: [countryId], references: [id])
   games Game[]
 }
 
 model Developer {
   id    String @id @default(uuid())
-  name  String
+  name  String @unique
+  foundingDate DateTime?
+  countryId String
+  country Country @relation(fields: [countryId], references: [id])
   games Game[]
 }
 
@@ -104,4 +114,11 @@ model GameGenre {
   genreId String
   game    Game   @relation(fields: [gameId], references: [id])
   gameId  String
+}
+
+model Country {
+  id String @id @default(uuid())
+  name String @unique
+  publishers Publisher[]
+  developers Developer[]
 }
